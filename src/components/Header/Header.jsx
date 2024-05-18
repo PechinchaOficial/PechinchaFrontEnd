@@ -15,6 +15,9 @@ function Header() {
                 <li>
                     <Link to="/register">Register</Link>
                 </li>
+                <li>
+                    <Link to="/homemarket">Homemarket</Link>
+                </li>
             </ul>
         </header>
     )
