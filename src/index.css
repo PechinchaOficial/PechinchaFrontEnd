@@ -23,12 +23,12 @@ body {
   --amarelo: #FFDD41;
   --azul: #343BCC;
   --vermelho: #D92622
-
 }
 
 .conteudo{
   width: 100%;
   max-width: 1400px;
-  height: 300px;
+  height: 700px;
   margin: auto;
+  background-color: red;
 }
