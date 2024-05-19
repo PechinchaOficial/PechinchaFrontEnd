@@ -1,0 +1,15 @@
+.hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0px;
+    width: 100%;
+    background-color: var(--azul);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img_logo{
+    height: 300px;
+}
+

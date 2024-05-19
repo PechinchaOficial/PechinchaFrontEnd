@@ -1,9 +1,14 @@
+import CategorySection from './CategorySection/CategorySection';
+import HeroSection from './HeroSection/HeroSection';
 import styles from './Home.module.css'
+import Promotion from './Promotion/Promotion';
 
 function Home() {
     return (
-        <main className='conteudo'>
-            <h1>sdfg</h1>
+        <main>
+            <HeroSection />
+            <CategorySection/>
+            <Promotion/>
         </main>
     )
 }
