@@ -23,17 +23,23 @@ body {
   --amarelo: #FFDD41;
   --azul: #4e6fc9;
   --vermelho: #D92622;
-  --background: #f1f1f1
+  --background: #f1f1f1;
+  --btn: #2ed270;
+  --btn_hover: #43bf75;
 }
 
 .conteudo{
   width: 100%;
-  max-width: 1400px;
-  height: 700px;
+  max-width: 1600px;
+  height: auto;
   margin: auto;
   padding: 10px;
 }
 
 .background{
+  background-color: var(--background);
+}
+
+#background{
   background-color: var(--background);
 }

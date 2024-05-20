@@ -16,6 +16,7 @@ function CategorySection() {
                 <CardProduct/>
                 <CardProduct/>
                 <CardProduct/>
+                <CardProduct/>
             </div>
 
         </section>

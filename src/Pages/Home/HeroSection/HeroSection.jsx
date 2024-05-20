@@ -1,10 +1,14 @@
 import styles from './HeroSection.module.css'
-import img from '../../../assets/img/img.svg'
+import slogan from '../../../assets/img/slogan.svg'
+import star from '../../../assets/img/star.svg'
+
 
 function HeroSection() {
     return (
         <section className={styles.hero_section}>
-            <img src={img} alt="logo" className={styles.img_logo}/>
+            <div className={styles.container_slogan}>
+                <img src={slogan} alt="logo" className={styles.img_logo} />
+            </div>
         </section>
     )
 }

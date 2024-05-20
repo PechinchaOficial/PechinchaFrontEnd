@@ -1,0 +1,59 @@
+.comofuncionaimg{
+    height: 500px;
+}
+
+
+.container_tutorial{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;flex-wrap: wrap;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    padding: 0px 10px 20px 10px;
+}
+
+
+
+
+.container_passos{
+    display: flex;
+    gap: 5px;
+}
+
+.passos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 700px;
+}
+
+.passo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 80px;
+    background-color: var(--azul);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.4s all;
+
+}
+
+.passo:hover{
+    transform: translateY(-3px);
+}
+
+
+.title{
+    font-size: 3rem;
+}
+
+.desc{
+    font-size: 1.6rem;
+
+}

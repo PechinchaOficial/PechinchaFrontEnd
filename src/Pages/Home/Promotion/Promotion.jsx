@@ -1,6 +1,7 @@
 import styles from './Promocao.module.css'
 import Banner from '../../../components/Banner/Banner';
 import imgBanner from '../../../assets/img/banner1.svg';
+import CardProduto from '../../../components/CardProduto/CardProduto';
 
 function Promotion() {
     return (
@@ -8,7 +9,16 @@ function Promotion() {
             <div className="conteudo">
                 <Banner 
                 bannerimg={imgBanner}/>
-                <div className={styles.carousel_prod}></div>
+                <div className={styles.carousel_prod}>
+                    <CardProduto/>
+                    <CardProduto/>
+                    <CardProduto/>
+                    <CardProduto/>
+                    <CardProduto/>
+                    
+
+
+                </div>
             </div>
         </section>
     )
