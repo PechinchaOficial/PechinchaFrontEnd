@@ -7,17 +7,13 @@ function Promotion() {
     return (
         <section className="background">
             <div className="conteudo">
-                <Banner 
-                bannerimg={imgBanner}/>
+                <Banner bannerimg={imgBanner} />
                 <div className={styles.carousel_prod}>
-                    <CardProduto/>
-                    <CardProduto/>
-                    <CardProduto/>
-                    <CardProduto/>
-                    <CardProduto/>
-                    
-
-
+                    <CardProduto />
+                    <CardProduto />
+                    <CardProduto />
+                    <CardProduto />
+                    <CardProduto />
                 </div>
             </div>
         </section>

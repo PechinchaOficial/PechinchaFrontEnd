@@ -27,7 +27,7 @@
 
 .container_card{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
     align-items: center;
     margin-top: 40px;
