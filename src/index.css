@@ -6,7 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+    background-color: var(--azul);
 }
 
 /* Outros estilos globais */
@@ -21,14 +21,36 @@ body {
 
 :root {
   --amarelo: #FFDD41;
-  --azul: #343BCC;
-  --vermelho: #D92622
+  --azul: #4e6fc9;
+  --vermelho: #D92622;
+  --background: #f1f1f1;
+  --btn: #2ed270;
+  --btn_hover: #43bf75;
 }
 
 .conteudo{
   width: 100%;
-  max-width: 1400px;
-  height: 700px;
+  max-width: 1600px;
+  height: auto;
   margin: auto;
-  background-color: rgb(192, 178, 178);
+  padding: 10px;
+}
+
+#conteudo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  margin: auto;
+}
+
+.background{
+  background-color: var(--background);
+}
+
+#background{
+  background-color: var(--background);
 }

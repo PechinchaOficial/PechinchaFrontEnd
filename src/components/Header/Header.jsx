@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Header() {
     return (
         <header className={styles.cabecalho}>
-            <ul>
+            <ul className={styles.nav_link}>
                 <li>
                     <Link to="/">Home</Link>
                 </li>

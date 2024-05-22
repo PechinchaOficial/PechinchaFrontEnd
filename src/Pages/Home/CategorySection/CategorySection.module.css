@@ -1,0 +1,39 @@
+.categorySection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 100px 0px;
+    border-radius: 60px 60px 0px 0px;
+    background-color: var(--background);
+}
+
+.text{
+    text-align: center;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.subtitle{
+    font-size: 2rem;
+}
+
+.destaque{
+    color: var(--vermelho);
+}
+
+.container_card{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    max-width: 1600px;
+}
+
