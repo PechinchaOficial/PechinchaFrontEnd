@@ -2,7 +2,10 @@ import styles from './Mercados.module.css'
 import mercadoLogo from '../../../assets/img/mercadodia.svg'
 import CardMercado from '../../../components/CardMercado/CardMercado';
 
+
 function Mercados() {
+
+
     return (
         <div id="background">
             <section className={styles.mercados} id='conteudo'>
@@ -24,18 +27,6 @@ function Mercados() {
 
                     <CardMercado
                         logo={mercadoLogo} />
-
-
-                    <div className={styles.card_mercado}>
-                    </div>
-
-                    <div className={styles.card_mercado}>
-                    </div>
-
-                    <div className={styles.card_mercado}>
-                    </div>
-
-
                 </div>
             </section>
         </div>

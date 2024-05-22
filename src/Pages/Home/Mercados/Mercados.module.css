@@ -22,9 +22,10 @@
 
 .container_mercados{
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
 }
