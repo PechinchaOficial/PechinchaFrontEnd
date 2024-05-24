@@ -37,3 +37,13 @@
     max-width: 1600px;
 }
 
+#snacks{
+    background-color: var(--snacks);
+}
+
+
+
+#bebidas{
+    background-color: var(--bebidas);
+}
+

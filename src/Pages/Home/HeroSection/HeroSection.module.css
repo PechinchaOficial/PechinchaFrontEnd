@@ -5,6 +5,7 @@
     padding: 160px 0px;
     width: 100%;
     background-color: var(--azul);
+    background-image: url('../../../assets/img/textura.svg');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;

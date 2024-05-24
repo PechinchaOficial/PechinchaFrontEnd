@@ -12,11 +12,18 @@ function CategorySection() {
             </div>
 
             <div className={styles.container_card}>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
+                <CardProduct
+                nome='Snacks'/>
+                <CardProduct
+                categoria='azul'
+                nome='Enlatados'/>
+                <CardProduct
+                 nome='Grãos'/>
+                <CardProduct
+                nome='Massas'
+                categoria='azul'/>
+                <CardProduct
+                nome='Indefinido'/>
             </div>
 
         </section>

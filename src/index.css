@@ -7,6 +7,9 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: var(--azul);
+    background-image: url('/src/assets/img/textura.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Outros estilos globais */
@@ -26,6 +29,10 @@ body {
   --background: #f1f1f1;
   --btn: #2ed270;
   --btn_hover: #43bf75;
+  --snacks: #FFDD41;
+  --massas: #7bc277;
+  --bebidas: #4e6fc9;
+  
 }
 
 .conteudo{
@@ -53,4 +60,9 @@ body {
 
 #background{
   background-color: var(--background);
+}
+
+#azul{
+  background-color: var(--azul);
+  color: #fff;
 }
