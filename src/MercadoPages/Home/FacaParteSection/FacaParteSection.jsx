@@ -1,17 +1,18 @@
-import Styles from "../FacaParteSection/FacaPartemodule.css"
+import Styles from "./FacaParte.module.css";
 
 function FacaParte() {
     return (
         <section className={Styles.Background}>
             <article className={Styles.BoxLeft}>
-                <h1>FAÇA PARTE DESSA EQUIPE</h1>
-                <p>nós somos o app nº1 do Brasil contra o desperdício de alimentos!nascemos para revolucionar a forma como consumimos e a nossa missão.</p>
+                <h1 className={Styles.Title}>FAÇA PARTE DESSA EQUIPE</h1>
+                <p className={Styles.Text}>nós somos o app nº1 do Brasil contra o desperdício de alimentos!nascemos para revolucionar a forma como consumimos e a nossa missão.</p>
+                <button className={Styles.Btn}>Saiba mais</button>
             </article>
             <article className={Styles.BoxRight}>
-                <div className={Styles.BoxB1}></div>
-                <div className={Styles.BoxB2}></div>
-                <div className={Styles.BoxB3}></div>
-                <div className={Styles.BoxB4}></div>
+                <div className={Styles.Box}></div>
+                <div className={Styles.Box}></div>
+                <div className={Styles.Box}></div>
+                <div className={Styles.Box}></div>
             </article>
         </section>
     )

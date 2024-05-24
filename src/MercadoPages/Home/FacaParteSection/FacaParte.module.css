@@ -1,0 +1,61 @@
+.Background {
+    margin-top: 70px;
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: var(--background);
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.BoxLeft {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Title {
+    font-size: 2rem;
+}
+.Text {
+    font-size: 1.5rem;
+}
+.Btn {
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--azul);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 11px 12px 7px -3px rgba(0,0,0,0.1);
+}
+.BoxRight {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.Box {
+    width: 40%;
+    height: 200px;
+    background-color: var(--azul);
+    
+}
+@media screen and (max-width: 1000px) {
+    .Background {
+        align-items: center;
+        justify-content: center;
+    }
+    .BoxLeft {
+        align-items: center;
+        text-align: center;
+    }
+}
