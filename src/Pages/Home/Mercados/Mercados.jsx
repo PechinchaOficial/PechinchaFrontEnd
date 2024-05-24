@@ -1,6 +1,7 @@
 import styles from './Mercados.module.css'
 import mercadoLogo from '../../../assets/img/mercadodia.svg'
 import CardMercado from '../../../components/CardMercado/CardMercado';
+import TituloFormato from '../../../components/TituloFormato/TituloFormato';
 
 
 function Mercados() {
@@ -9,12 +10,10 @@ function Mercados() {
     return (
         <div id="background">
             <section className={styles.mercados} id='conteudo'>
-                <div className={styles.title}>
-                    <h2>Mercados Parceiros</h2>
-                </div>
 
+                <TituloFormato 
+                categoria='Mercados'/>
                 <div className={styles.container_mercados}>
-
 
                     <CardMercado
                         logo={mercadoLogo} />

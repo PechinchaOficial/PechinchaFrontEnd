@@ -12,7 +12,7 @@ function ComoFunciona() {
       }
     }
     return (
-        <div className="background">
+        <div className="backgound">
             <section className={styles.container_tutorial}>
                 <div className={styles.passos}>
 

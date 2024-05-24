@@ -1,3 +1,4 @@
+import Perguntas from './Perguntas/Perguntas';
 import CategorySection from './CategorySection/CategorySection';
 import ComoFunciona from './ComoFunciona/ComoFunciona';
 import HeroSection from './HeroSection/HeroSection';
@@ -13,6 +14,7 @@ function Home() {
             <ComoFunciona/>
             <Promotion/>
             <Mercados/>
+            <Perguntas/>
         </main>
     )
 }

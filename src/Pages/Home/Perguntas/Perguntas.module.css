@@ -1,0 +1,35 @@
+
+
+.pergunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.container_perguntas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.pergunta h3{
+    opacity: 60%;
+}
+
+.pergunta i{
+    font-size: 2rem;
+    opacity: 20%;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.pergunta i:hover{
+    opacity: 40%;
+}
