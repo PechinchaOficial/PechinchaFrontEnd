@@ -1,0 +1,31 @@
+.Background {
+    height: auto;
+    width: 100%;
+    background-color: var(--background);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.BoxUp {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 2rem;
+    color: var(--azul);
+}
+.BoxDown {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+.Box {
+    width: 10%;
+    height: 100px;
+    background-color: rgb(149, 145, 145);
+}
