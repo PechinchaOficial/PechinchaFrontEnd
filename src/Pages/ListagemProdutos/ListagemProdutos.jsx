@@ -1,15 +1,23 @@
 import Banner from '../../components/Banner/Banner'
 import styles from './ListagemProdutos.module.css'
 import imgBanner from '../../assets/img/banner1.svg';
-import MercadoCard from './MercadoCard/MercadoCard';
+import MercadosRegiao from './MercadosRegiao/MercadosRegiao';
+import CategoriaProduto from './CategoriaProduto/CategoriaProduto';
 
-function ListagemProdutos(){
-    return(
+function ListagemProdutos() {
+    return (
         <main className="conteudo">
-           <Banner
-           bannerimg={imgBanner}/>
-            <div className={styles.teste}>
-                <MercadoCard/>
+            <div className={styles.margin}>
+            <Banner
+                bannerimg={imgBanner} />
+            <MercadosRegiao />
+            <CategoriaProduto
+                categoria='Massas' />
+            <CategoriaProduto
+                categoria='Enlatados' />
+
+            <CategoriaProduto
+                categoria='Bebidas' />
             </div>
         </main>
     )
