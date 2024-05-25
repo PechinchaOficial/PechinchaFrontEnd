@@ -12,11 +12,11 @@ function ComoFunciona() {
       }
     }
     return (
-        <div className="backgound">
-            <section className={styles.container_tutorial}>
+    
+            <section className={styles.comoFunciona} >
                 <div className={styles.passos}>
 
-                    <div className={styles.container_passos}>
+                    <div className={styles.boxLeft}>
                         <div className={styles.passo}>
                             <span>1</span>
                         </div>
@@ -38,13 +38,13 @@ function ComoFunciona() {
                     </p>
                 </div>
 
-                <div className={styles.passo_detalhes}>
+                <div className={styles.boxRight}>
                     <div className={styles.card_etapa} id={styles.etapa_1}></div>
                     <div className={styles.card_etapa} id={styles.etapa_2}></div>
                     <div className={styles.card_etapa} id={styles.etapa_3}></div>
                 </div>
             </section>
-        </div>
+       
     )
 }
 

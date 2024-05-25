@@ -1,5 +1,5 @@
 
-.container_tutorial{
+.comoFunciona{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,12 +10,12 @@
 
 }
 
-.container_passos{
+.boxLeft{
     display: flex;
     gap: 5px;
 }
 
-.passo_detalhes{
+.boxRight{
     height: 600px;
     position: relative;
     width: 300px;
@@ -65,16 +65,22 @@
     background-color: var(--amarelo);
     border-radius: 10px;
     left: 100px;
+    clip-path: polygon(0 1%, 100% 4%, 100% 100%, 0 94%);
+    -webkit-box-shadow: -34px 35px 28px -13px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -34px 35px 28px -13px rgba(66, 68, 90, 1);
+    box-shadow: -34px 35px 28px -13px rgba(66, 68, 90, 1);
 }
 
 #etapa_1{
     top: 190px;
     left: -120px;
+    clip-path: polygon(0 1%, 100% 4%, 100% 100%, 0 94%);
 }
 
 #etapa_2{
     top: 300px;
     left: 100px;
+    clip-path: polygon(0 1%, 100% 4%, 100% 100%, 0 94%);
 }
 
 /* #etapa_3{
