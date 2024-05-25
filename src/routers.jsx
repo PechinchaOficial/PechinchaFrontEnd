@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import Login from './Pages/Login/Login'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomeMarket from './MercadoPages/Home/Home'
+import ListagemProdutos from './Pages/ListagemProdutos/ListagemProdutos'
 
 function RouterApp() {
     return (
@@ -13,6 +14,7 @@ function RouterApp() {
             <Routes>
                 <Route path='/' element={<Home />}></Route>
                 <Route path='/login' element={<Login />}></Route>
+                <Route path='/listagem' element={<ListagemProdutos />}></Route>
                 <Route path='/homemarket' element={<HomeMarket />}></Route>
             </Routes>
             <Footer />

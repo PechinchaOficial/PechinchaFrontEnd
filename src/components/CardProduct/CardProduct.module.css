@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 300px;
+    height: 330px;
     width: 300px;
     background-color: var(--amarelo);
     border-radius: 10px;
@@ -11,8 +11,8 @@
 }
 
 .prodImg {
-    height: 140px;
+    height: 190px;
     margin-left: 20px;
-    width: 200px;
-    object-fit: cover;
+
+
 }

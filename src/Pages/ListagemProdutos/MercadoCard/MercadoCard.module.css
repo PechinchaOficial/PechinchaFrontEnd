@@ -1,0 +1,8 @@
+.mercadoCard{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(46, 64, 221);
+    border-radius: 10px;
+    border-bottom: 3px solid var(--vermelho);
+    
+}
