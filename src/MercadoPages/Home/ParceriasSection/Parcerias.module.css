@@ -23,9 +23,15 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
+    margin-top: 2%;
 }
 .Box {
     width: 10%;
-    height: 100px;
+    height: 150px;
     background-color: rgb(149, 145, 145);
+    clip-path:
+    polygon(0 4%, 95% 10%, 100% 100%, 0 100%);
+    border-radius: 10px;
+    border-top-left-radius: 25.5px;
+    border-top-right-radius: 45px;
 }
