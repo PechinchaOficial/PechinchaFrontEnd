@@ -9,10 +9,10 @@ function FacaParte() {
                 <button className={Styles.Btn}>Saiba mais</button>
             </article>
             <article className={Styles.BoxRight}>
-                <div className={Styles.Box}></div>
-                <div className={Styles.Box}></div>
-                <div className={Styles.Box}></div>
-                <div className={Styles.Box}></div>
+                <div className={Styles.Box} id={Styles.Box1}></div>
+                <div className={Styles.Box} id={Styles.Box2}></div>
+                <div className={Styles.Box} id={Styles.Box3}></div>
+                <div className={Styles.Box} id={Styles.Box4}></div>
             </article>
         </section>
     )

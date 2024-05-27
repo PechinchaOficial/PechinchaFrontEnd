@@ -1,5 +1,5 @@
 .Background {
-    margin-top: 70px;
+    margin-top: 0px;
     position: relative;
     height: auto;
     width: 100%;
@@ -47,6 +47,7 @@
     width: 40%;
     height: 200px;
     background-color: var(--azul);
+    margin-top:  40%;
     
 }
 @media screen and (max-width: 1000px) {
@@ -59,3 +60,37 @@
         text-align: center;
     }
 }
+
+#Box1 {
+clip-path:
+polygon(0 8%, 100% 0, 100% 90%, 0 100%);
+border-radius: 8px;
+border-top-left-radius: 28px;
+border-bottom-right-radius: 28px;
+height: 250px;
+}
+
+#Box2 {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    border-radius: 8px;
+    border-top-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    height: 400px;
+    }
+  #Box3 {
+    clip-path:
+    polygon(0 7%, 100% 0, 100% 93%, 0 100%);
+        border-radius: 8px;
+        border-top-left-radius: 28px;
+        border-bottom-right-radius: 28px;
+        height: 400px;
+        margin-top: -180px;
+        }
+        #Box4 {
+            clip-path: polygon(0 3%, 100% 10%, 100% 100%, 0 91%);
+            border-radius: 8px;
+            border-top-right-radius: 28px;
+            border-bottom-left-radius: 28px;
+            height: 250px;
+            margin-top: -35px;
+            }
