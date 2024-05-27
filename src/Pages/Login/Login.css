@@ -1,3 +1,58 @@
-.teste{
+section{
 	background-color: blue;
+	width: 80%;
+
+
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+}
+
+
+.forms-register{
+	background-color: chartreuse;
+	width: 50%;
+	height: 600px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+label{
+	font-size: 25px;
+	
+}
+
+.forms-login{
+	display: flex;
+	flex-direction: column;
+	
+
+	height:  500px;
+	width:  90%;
+	background-color: crimson;
+
+}
+
+
+
+.banner-login{
+	background-color: blueviolet;
+	height: 600px;
+	width: 50%;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 }
