@@ -1,9 +1,9 @@
 import styles from './CardMercado.module.css'
 
 
-function CardMercado({ logo }) {
+function CardMercado({ logo, estilo }) {
     return (
-        <div className={styles.card_mercado}>
+        <div className={styles.card_mercado} id={estilo}>
             <img src={logo} alt="" className={styles.logo_mercado} />
             <button className={styles.btn}>
                 Ver Promoções

@@ -1,19 +1,25 @@
 import styles from './ComoFunciona.module.css'
 import comoFuncionaImg from '../../../assets/img/comofunciona.svg'
+import arroz from '../../../assets/img/arroz.svg'
+
 import React, { useRef } from 'react';
+import TituloFormato from '../../../components/TituloFormato/TituloFormato';
 
 function ComoFunciona() {
 
     const descRef = useRef(null);
 
     function alterarConteudo() {
-      if (descRef.current) {
-        descRef.current.innerHTML = '<p>Novo conteúdo HTML</p>';
-      }
+        if (descRef.current) {
+            descRef.current.innerHTML = '<p>Novo conteúdo HTML</p>';
+        }
     }
     return (
-    
-            <section className={styles.comoFunciona} >
+
+        <section className={styles.comoFunciona} >
+            <TituloFormato
+            categoria='Como funciona?'/>
+            <div className={styles.container_content}>
                 <div className={styles.passos}>
 
                     <div className={styles.boxLeft}>
@@ -39,12 +45,15 @@ function ComoFunciona() {
                 </div>
 
                 <div className={styles.boxRight}>
-                    <div className={styles.card_etapa} id={styles.etapa_1}></div>
+                    <div className={styles.card_etapa} id={styles.etapa_1}>
+                        <img src={arroz} className={styles.produto_img} alt="produto" />
+                    </div>
                     <div className={styles.card_etapa} id={styles.etapa_2}></div>
                     <div className={styles.card_etapa} id={styles.etapa_3}></div>
                 </div>
-            </section>
-       
+            </div>
+        </section>
+
     )
 }
 

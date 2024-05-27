@@ -3,14 +3,18 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 330px;
-    width: 300px;
+    height: 320px;
+    width: 250px;
     background-color: var(--amarelo);
-    border-radius: 10px;
+    border-radius: 5px;
     color: var(--vermelho);
-}
+    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.1);}
 
 .prodImg {
-    height: 190px;
+    height: 180px;
     margin-left: 20px;
+}
+
+.title_prod{
+    font-size: 2rem;
 }

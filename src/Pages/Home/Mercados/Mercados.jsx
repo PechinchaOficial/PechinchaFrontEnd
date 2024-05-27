@@ -12,7 +12,7 @@ function Mercados() {
             <section className={styles.mercados} id='conteudo'>
 
                 <TituloFormato 
-                categoria='Mercados'/>
+                categoria='Ja trabalham conosco'/>
                 <div className={styles.container_mercados}>
 
                     <CardMercado

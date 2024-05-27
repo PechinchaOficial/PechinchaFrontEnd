@@ -1,34 +1,38 @@
-
-.comoFunciona{
+.comoFunciona {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
     max-width: 1600px;
     margin: auto;
 
 }
 
-.boxLeft{
+.container_content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.boxLeft {
     display: flex;
     gap: 5px;
 }
 
-.boxRight{
+.boxRight {
     height: 600px;
     position: relative;
     width: 300px;
 }
 
-.passos{
+.passos {
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: 700px;
 }
 
-.passo{
+.passo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,43 +48,51 @@
 
 }
 
-.passo:hover{
+.passo:hover {
     transform: translateY(-3px);
 }
 
 
-.title{
+.title {
     font-size: 2.5rem;
+    color: var(--azul);
 }
 
-.desc{
+.desc {
     font-size: 1.6rem;
 
 }
 
-.card_etapa{
+.card_etapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     height: 250px;
     width: 250px;
     background-color: var(--amarelo);
-    border-radius: 10px;
     left: 100px;
-    clip-path: polygon(0 1%, 100% 4%, 100% 100%, 0 94%);
-    -webkit-box-shadow: -34px 35px 28px -13px rgba(66, 68, 90, 1);
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 90%);
     -moz-box-shadow: -34px 35px 28px -13px rgba(66, 68, 90, 1);
     box-shadow: -34px 35px 28px -13px rgba(66, 68, 90, 1);
+    top: 20px;
+    border: 7px solid #bd0303;
 }
 
-#etapa_1{
+.produto_img {
+    height: 200px;
+}
+
+#etapa_1 {
     top: 190px;
     left: -120px;
-    clip-path: polygon(0 1%, 100% 4%, 100% 100%, 0 94%);
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 86%);
 }
 
-#etapa_2{
+#etapa_2 {
     top: 300px;
     left: 100px;
-    clip-path: polygon(0 1%, 100% 4%, 100% 100%, 0 94%);
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 5% 99%);
 }
 
 /* #etapa_3{

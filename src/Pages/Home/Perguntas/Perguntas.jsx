@@ -5,7 +5,7 @@ function Perguntas(){
     return(
         <section className={styles.perguntas} id='conteudo'>
             <TituloFormato
-            categoria='Perguntas'/>
+            categoria='Perguntas frequentes'/>
             <div className={styles.container_perguntas}>
                 <div className={styles.pergunta}>
                     <h3>A Pechincha é um App de descontos?</h3>
