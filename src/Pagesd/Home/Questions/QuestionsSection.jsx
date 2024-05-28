@@ -1,8 +1,9 @@
 import TituloFormato from '../../../components/TituloFormato/TituloFormato'
-import styles from './Perguntas.module.css'
+import styles from './QuestionsSection.module.css'
 
 function Perguntas(){
     return(
+        <div id="background">
         <section className={styles.perguntas} id='conteudo'>
             <TituloFormato
             categoria='Perguntas frequentes'/>
@@ -34,6 +35,7 @@ function Perguntas(){
                 </div>
             </div>
         </section>
+        </div>
     )
 }
 

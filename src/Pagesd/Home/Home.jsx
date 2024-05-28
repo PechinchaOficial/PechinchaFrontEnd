@@ -1,4 +1,4 @@
-import Perguntas from './Perguntas/Perguntas';
+import Perguntas from './Questions/QuestionsSection';
 import CategorySection from './CategorySection/CategorySection';
 import ComoFunciona from './ComoFunciona/ComoFunciona';
 import HeroSection from './HeroSection/HeroSection';

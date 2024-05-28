@@ -6,8 +6,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--background);
     background-repeat: no-repeat;
+    background: url('/src/assets/img/textura.svg');
 }
 
 /* Outros estilos globais */
@@ -35,7 +35,7 @@ body {
 
 .conteudo{
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   height: auto;
   margin: auto;
   padding: 10px;

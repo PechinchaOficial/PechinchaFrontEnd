@@ -1,9 +1,0 @@
-.container_mercados {
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    height: auto;
-}

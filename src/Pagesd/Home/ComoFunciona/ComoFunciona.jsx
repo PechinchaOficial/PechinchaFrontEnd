@@ -16,6 +16,7 @@ function ComoFunciona() {
     }
     return (
 
+        <div id="background">
         <section className={styles.comoFunciona} >
             <TituloFormato
             categoria='Como funciona?'/>
@@ -53,6 +54,7 @@ function ComoFunciona() {
                 </div>
             </div>
         </section>
+        </div>
 
     )
 }
