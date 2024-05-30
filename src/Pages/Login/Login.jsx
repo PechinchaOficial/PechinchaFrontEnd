@@ -2,7 +2,7 @@ import  './Login.css';
 
 function Login() {
     return (
-        <main className='conteudo'>
+        <main className='conteudo-login'>
             <h1>Login</h1>
             <section className='container-login'>
                     <div  className='forms-register'>
@@ -44,6 +44,7 @@ function Login() {
                                 </button>
                             </a>
                     </div>
+                    
             </section>
         </main>
     )

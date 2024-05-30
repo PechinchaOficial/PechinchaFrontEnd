@@ -3,24 +3,18 @@
 	background-size: cover; /* A imagem cobrirá todo o fundo */
     background-repeat: no-repeat; /* A imagem não se repetirá */
     background-position: center center; /* A imagem ficará centralizada */
-}
-
-section{
-	background-color:  rgb(255, 255, 255);
-	width: 80%;
-
-
-
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin: auto;
-
-	margin-top: 100px;
-	margin-bottom: 100px;
 
 	
+	
+}
+.container-login{
+	background-color: white;
 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin: 150px 0px 150px 0px;
 }
 
 /*Estilizando o fomrulario de Login*/
