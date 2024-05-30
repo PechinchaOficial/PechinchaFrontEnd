@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomeMarket from './MarketPages/Home/Home'
 import ListagemProdutos from './ConsumerPages/ListagemProdutos/ListagemProdutos'
 import AboutUs from './ConsumerPages/AboutUs/AboutUs'
+import RegisterMarket from './MarketPages/Register/Register'
 
 function RouterApp() {
     return (
@@ -18,6 +19,7 @@ function RouterApp() {
                 <Route path='/listagem' element={<ListagemProdutos />}></Route>
                 <Route path='/homemarket' element={<HomeMarket />}></Route>
                 <Route path='/about' element={<AboutUs />}></Route>
+                <Route path='/registerMarket' element={<RegisterMarket />}></Route>
             </Routes>
             <Footer />
         </Router>
