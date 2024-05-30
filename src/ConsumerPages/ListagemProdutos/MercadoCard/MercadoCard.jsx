@@ -2,7 +2,7 @@ import styles from './MercadoCard.module.css'
 
 function MercadoCard({ logo }) {
     return (
-        <div className={styles.mercadoCard}>
+        <div className={styles.marketCard}>
             <div className={styles.container_img}>
                 <img src={logo} alt="" className={styles.img} />
             </div>

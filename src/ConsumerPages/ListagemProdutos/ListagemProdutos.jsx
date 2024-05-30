@@ -6,8 +6,8 @@ import CategoriaProduto from './CategoriaProduto/CategoriaProduto';
 
 function ListagemProdutos() {
     return (
-        <div className="background">
-            <main className="conteudo">
+        <main className="background">
+            <div className="conteudo">
                 <div className={styles.margin}>
                     <Banner bannerimg={imgBanner} />
                     <MercadosRegiao />
@@ -15,8 +15,9 @@ function ListagemProdutos() {
                     <CategoriaProduto categoria='Enlatados' />
                     <CategoriaProduto categoria='Bebidas' />
                 </div>
-            </main>
-        </div>
+            </div>
+        </main>
+
     )
 }
 

@@ -1,11 +1,11 @@
 
-import Home from './Pagesd/Home/Home'
+import Home from './ConsumerPages/Home/Home'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Login from './Pagesd/Login/Login'
+import Login from './ConsumerPages/Login/Login'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import HomeMarket from './MercadoPages/Home/Home'
-import ListagemProdutos from './Pagesd/ListagemProdutos/ListagemProdutos'
+import HomeMarket from './MarketPages/Home/Home'
+import ListagemProdutos from './ConsumerPages/ListagemProdutos/ListagemProdutos'
 
 function RouterApp() {
     return (

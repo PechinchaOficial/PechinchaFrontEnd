@@ -6,8 +6,14 @@ import CardProduto from '../../../components/CardProduto/CardProduto';
 function Promotion() {
     return (
         <section className="background">
+
+            {/* Container */}
             <div className="conteudo">
+
+                {/* Banner de promoções */}
                 <Banner bannerimg={imgBanner} />
+
+                {/* Carrossel de produtos */}
                 <div className={styles.carousel_prod}>
                     <CardProduto />
                     <CardProduto />

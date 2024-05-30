@@ -1,7 +1,7 @@
 .container_card{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 5px;
     width: 100%;
     height: auto;
     margin-top: 20px;
