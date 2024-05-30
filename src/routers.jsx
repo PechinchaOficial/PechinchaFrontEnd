@@ -6,6 +6,7 @@ import Login from './ConsumerPages/Login/Login'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomeMarket from './MarketPages/Home/Home'
 import ListagemProdutos from './ConsumerPages/ListagemProdutos/ListagemProdutos'
+import AboutUs from './ConsumerPages/AboutUs/AboutUs'
 
 function RouterApp() {
     return (
@@ -16,6 +17,7 @@ function RouterApp() {
                 <Route path='/login' element={<Login />}></Route>
                 <Route path='/listagem' element={<ListagemProdutos />}></Route>
                 <Route path='/homemarket' element={<HomeMarket />}></Route>
+                <Route path='/about' element={<AboutUs />}></Route>
             </Routes>
             <Footer />
         </Router>

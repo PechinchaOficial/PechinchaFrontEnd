@@ -22,7 +22,7 @@ function Header() {
                     </li>
 
                     <li>
-                        <Link to="/register">Register</Link>
+                        <Link to="/about">Sobre nós</Link>
                     </li>
 
                     <li>
