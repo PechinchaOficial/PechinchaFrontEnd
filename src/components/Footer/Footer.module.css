@@ -4,9 +4,10 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: #fff;
+    background-color: #a8abd2;
     padding: 50px 70px;
     border-top: 3px solid var(--vermelho);
+    color: #f2f2f2;
 }
 
 .footer_content {
@@ -15,6 +16,7 @@
     max-width: 1600px;
     width: 100%;
     flex-wrap: wrap;
+    color: #fff;
 }
 
 .logo_footer {
@@ -38,7 +40,7 @@
 
 .footer_item a {
     text-decoration: none;
-    color: #6d6d6d;
+    color: #d9d9d9;
 }
 
 .logo {

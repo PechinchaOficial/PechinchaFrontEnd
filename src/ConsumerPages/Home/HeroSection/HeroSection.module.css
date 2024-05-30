@@ -1,0 +1,31 @@
+.hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0px;
+    width: 100%;
+    /* background-color: var(--azul); */
+    background-image: url('../../../assets/img/textura.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.img_logo {
+    height: 100%;
+    width: 100%;
+}
+
+.container_slogan {
+    height: 400px;
+    width: 80%;
+}
+
+.star{
+    height: 300px;
+    position: absolute;
+    bottom:00px;
+    left: 0px;
+}
+

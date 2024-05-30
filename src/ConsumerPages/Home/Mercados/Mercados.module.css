@@ -1,0 +1,53 @@
+.container_mercados {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    transition: 0.5s all;
+}
+
+.card_mercado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    height:350px;
+    width: 380px;
+    background-color: #C6DC8D;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0px 100px 6px -3px rgba(0,0,0,0.1);
+    transition: 0.5s all;
+
+}
+
+.logo_mercado{
+    height: 100px;
+}
+
+.btn{
+    border: none;
+    height: 50px;
+    padding: 0px 30px;
+    background-color: var(--vermelho);
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#marketTwo{
+    clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
+    background-color: #AECBEB;
+}
+
+#marketThree{
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+    background-color: #FCF299;
+
+}
