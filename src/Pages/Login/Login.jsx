@@ -19,13 +19,15 @@ function Login() {
                                 <label htmlFor="">Confirmar sua senha</label>
                                 <input type="text" placeholder='Digite sua senha' />
 
-                                <p>Esqueceu sua senha? <a href="#">Recupere aqui</a></p>
+                                <p className='recover-password'>Esqueceu sua senha? <a href="#">Recupere aqui</a></p>
 
                                 <button>ENTRAR</button>
 
+                                <p className='privacy-policy'>Ao continuar com o acesso você concorda com a nossa <a href="#">politica de privacidade</a></p>
+
                             </form>
 
-                            <p>Ao continuar com o acesso você concorda com a nossa <a href="#">politica de privacidade</a></p>
+                            
 
                     </div>
 
@@ -36,9 +38,11 @@ function Login() {
                             </h2>
                             <p>Clique abaixo caso ainda não tenha uma conta e aproveite de todas as funções</p>
 
-                            <button>
-                                    CADASTRAR
-                            </button>
+                            <a href="">
+                                <button>
+                                        CADASTRAR
+                                </button>
+                            </a>
                     </div>
             </section>
         </main>

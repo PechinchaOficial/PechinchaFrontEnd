@@ -1,5 +1,12 @@
+.conteudo{
+	background-image: url('/src/assets/img/fundo\ mercado.png');
+	background-size: cover; /* A imagem cobrirá todo o fundo */
+    background-repeat: no-repeat; /* A imagem não se repetirá */
+    background-position: center center; /* A imagem ficará centralizada */
+}
+
 section{
-	background-color: blue;
+	background-color:  rgb(255, 255, 255);
 	width: 80%;
 
 
@@ -12,11 +19,13 @@ section{
 	margin-top: 100px;
 	margin-bottom: 100px;
 
+	
+
 }
 
-
+/*Estilizando o fomrulario de Login*/
 .forms-register{
-	background-color: chartreuse;
+	background-color:  white;
 	width: 50%;
 	height: 600px;
 
@@ -24,6 +33,8 @@ section{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	
 
 }
 
@@ -35,18 +46,65 @@ label{
 .forms-login{
 	display: flex;
 	flex-direction: column;
-	
+	gap: 8px;	
 
 	height:  500px;
 	width:  90%;
-	background-color: crimson;
+	
 
 }
 
 
+/*Estilizando os input*/
+.forms-login input{
+	width: 100%;
+	height: 55px;
 
+	border: 0.2px solid grey;
+	border-radius: 10px;
+
+	padding: 10px;
+}
+
+::-webkit-input-placeholder{
+	font-size:  18px;
+
+}
+/* Estilizando o Botão*/
+.forms-register button{
+	margin-top: 15px;
+
+	height: 60px;
+	background-color: red;
+	color: white;
+
+	font-size: 22px;
+	font-weight: bold;
+
+	border-radius:  10px;
+	border:  0px solid ;
+}
+
+
+/*Recuperação de senha*/
+.recover-password{
+	text-align: center;
+	font-size: 18px;
+}
+
+.recover-password a{
+	text-decoration: none;
+}
+
+/*Politica de privacidade*/
+.privacy-policy{
+	text-align: center;
+	width:  90%;
+}
+
+/*Banner do lado direito*/
 .banner-login{
-	background-color: blueviolet;
+	
 	height: 600px;
 	width: 50%;
 
@@ -54,5 +112,49 @@ label{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	gap:  25px;
+
+	background-image: url('/src/assets/img/fundo_banner_login.png') ;
+	background-size: cover; /* A imagem cobrirá todo o fundo */
+    background-repeat: no-repeat; /* A imagem não se repetirá */
+    background-position: center center; /* A imagem ficará centralizada */
+
+	border-top-left-radius:  40px;
+	border-bottom-left-radius:  40px;
+}
+
+.title-banner-login{
+	color: white;
+	font-size:  40px;
+	text-align: center;
+
+}
+
+.banner-login p{
+		font-size:  23px;
+		text-align: center;
+
+		color: white;
+}
+
+.banner-login button{
+	background-color:  transparent;
+	width:  250px;
+	height:  50px;
+	
+	border-radius: 10px;
+
+
+	color: white;
+	border:  0.5px solid white;
+
+	font-size: 20px;
+
+	transition: all 0.4s;
+}
+
+.banner-login button:hover{
+	background-color: white;
+	color: black;
 
 }
