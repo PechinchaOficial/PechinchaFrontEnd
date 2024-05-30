@@ -28,8 +28,10 @@ function Login() {
                             <p>Ao continuar com o acesso você concorda com a nossa <a href="#">politica de privacidade</a></p>
 
                     </div>
+
+
                     <div className='banner-login'>
-                            <h2>
+                            <h2 className='title-banner-login'>
                                 Bem vindo de volta! 
                             </h2>
                             <p>Clique abaixo caso ainda não tenha uma conta e aproveite de todas as funções</p>
