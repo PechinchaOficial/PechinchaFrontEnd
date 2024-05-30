@@ -2,7 +2,7 @@ import  './Login.css';
 
 function Login() {
     return (
-        <main className='conteudo'>
+        <main className='conteudo-login'>
             <h1>Login</h1>
             <section>
                     <div  className='forms-register'>
