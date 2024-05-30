@@ -1,4 +1,7 @@
-
+.perguntas{
+    display: flex;
+    flex-direction: column;
+}
 
 .pergunta {
     display: flex;

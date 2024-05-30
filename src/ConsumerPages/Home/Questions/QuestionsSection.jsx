@@ -4,7 +4,7 @@ import styles from './QuestionsSection.module.css'
 function Perguntas(){
     return(
         <div id="background">
-        <section className={styles.perguntas} id='conteudo'>
+        <section className={styles.perguntas} id='container'>
             <TituloFormato
             categoria='Perguntas frequentes'/>
             <div className={styles.container_perguntas}>

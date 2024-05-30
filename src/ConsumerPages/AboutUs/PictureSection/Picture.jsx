@@ -2,7 +2,7 @@ import Styles from './Picture.module.css'
 
 function Picture() {
     return (
-        <section className={Styles.block} id='conteudo'>
+        <section className={Styles.block} id='container'>
             <div className={Styles.container_picture}>
                 <div className={Styles.pic}></div>
                 <div className={Styles.pic1}></div>

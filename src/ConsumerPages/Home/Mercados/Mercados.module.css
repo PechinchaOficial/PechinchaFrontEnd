@@ -1,3 +1,8 @@
+.mercados{
+    display: flex;
+    flex-direction: column;
+}
+
 .container_mercados {
     display: flex;
     gap: 10px;
@@ -14,8 +19,8 @@
     justify-content: center;
     gap: 60px;
     align-items: center;
-    height:350px;
-    width: 380px;
+    height:320px;
+    width: 330px;
     background-color: #C6DC8D;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
     box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.1);
@@ -26,13 +31,13 @@
 }
 
 .logo_mercado{
-    height: 100px;
+    height: 70px;
 }
 
 .btn{
     border: none;
     height: 50px;
-    padding: 0px 30px;
+    padding: 0px 20px;
     background-color: var(--vermelho);
     cursor: pointer;
     color: #fff;
