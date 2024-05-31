@@ -30,19 +30,18 @@
 }
 
 .btn_carousel i{
-    top: 560px;
+    top: 620px;
     position: absolute;
-    font-size: 5rem;
+    font-size: 3rem;
     cursor: pointer;
     opacity: 80%;
     color: var(--vermelho);
 }
 
 #left{
-    left: -60px;
+    left: -40px;
 }
 
 #right{
-    
-    right: -60px;
+    right: -40px;
 }

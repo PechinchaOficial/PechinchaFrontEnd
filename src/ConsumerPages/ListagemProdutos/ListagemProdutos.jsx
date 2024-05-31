@@ -8,14 +8,12 @@ function ListagemProdutos() {
 
     
     return (
-        <main id="container">
-            <div className={styles.margin}>
+        <main className={styles.prod_list}>
                 <Banner bannerimg={imgBanner} />
                 <MercadosRegiao />
                 <CategoriaProduto categoria='Massas' />
                 <CategoriaProduto categoria='Enlatados' />
-                <CategoriaProduto categoria='Bebidas' />
-            </div>
+                <CategoriaProduto categoria='Bebidas' />  
         </main>
 
     )
