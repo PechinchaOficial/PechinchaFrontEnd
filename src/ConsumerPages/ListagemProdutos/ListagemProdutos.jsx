@@ -5,16 +5,16 @@ import MercadosRegiao from './MercadosRegiao/MercadosRegiao';
 import CategoriaProduto from './CategoriaProduto/CategoriaProduto';
 
 function ListagemProdutos() {
+
+    
     return (
-        <main className="background">
-            <div className="conteudo">
-                <div className={styles.margin}>
-                    <Banner bannerimg={imgBanner} />
-                    <MercadosRegiao />
-                    <CategoriaProduto categoria='Massas' />
-                    <CategoriaProduto categoria='Enlatados' />
-                    <CategoriaProduto categoria='Bebidas' />
-                </div>
+        <main id="container">
+            <div className={styles.margin}>
+                <Banner bannerimg={imgBanner} />
+                <MercadosRegiao />
+                <CategoriaProduto categoria='Massas' />
+                <CategoriaProduto categoria='Enlatados' />
+                <CategoriaProduto categoria='Bebidas' />
             </div>
         </main>
 
