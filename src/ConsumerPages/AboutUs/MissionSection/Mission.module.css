@@ -1,0 +1,29 @@
+.missao{
+    display: flex;
+    margin-top: 150px; 
+}
+
+.imagem_missao{
+    width: 400px;
+    height: 400px;
+    margin-right: 30px;
+    
+}
+
+.texto_missao{
+    background-color: rgb(87, 68, 68);
+    width: 600px;
+    height: 400px;
+    margin-left: 30px;
+    clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0 89%);
+    border-radius: 20px;
+    
+}
+
+.titulo_missao{
+    background-color: #343BCC;
+    width: 600px;
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
+    
+}
