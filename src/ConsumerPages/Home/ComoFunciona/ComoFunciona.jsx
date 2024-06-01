@@ -4,17 +4,44 @@ import step from '../../../assets/img/etapa (1).svg'
 
 import React, { useRef } from 'react';
 import TituloFormato from '../../../components/TituloFormato/TituloFormato';
+import {useState, useEffect} from 'react'
+import { register } from 'swiper/element/bundle'
+
+register();
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
+
+import { Swiper, SwiperSlide} from 'swiper/react';
 
 function ComoFunciona() {
+
+    const [slidesPerView, setSlidePerView] = useState(1)
+
+    useEffect(() => {
+        function handleResize(){
+            if(window.innerWidth > 720){
+                setSlidePerView(1);
+            }else{
+                setSlidePerView(2);
+            }
+        }
+
+        handleResize();
+    }, [])
+    
 
     const descRef = useRef();
     const titleRef = useRef();
 
 
     function alterarConteudo() {
-        if (descRef.current ||titleRef.current ) {
-            descRef.current.innerHTML = '<p>Sempre que o mercado olgar o produto e nao sei oq sdfgsd sd d sfdffff fdsfsdfdsf   fddf</p>';
-            titleRef.current.innerHTML = '2. Como chega os produtos?';
+        if (descRef.current || titleRef.current) {
+            descRef.current.innerHTML = '<p>Com o produto cadastrado, ele ficará disponível na aba de produtos, na barra de pesquisa inicial, ou em categorias no início do site.</p>';
+            titleRef.current.innerHTML = '  2. Como encontrar os produtos?';
 
         }
     }
@@ -50,10 +77,32 @@ function ComoFunciona() {
                     </article>
 
                     <div className={styles.boxRight}>
-                       
-                            <img src={step} className={styles.step_img} alt="produto" />
-                      
-                       
+
+                        <Swiper
+                            // controla quantos slides por foto quero que apareça
+                            slidesPerView={slidesPerView}
+                            // define se é clicavel ou não
+                            pagination={{ clickable: true }}
+                            autoplay
+                            navigation
+
+                        >
+                          
+                            <SwiperSlide>
+                                <img src={step} alt="Banner Promocional" className={styles.step_img} />
+                            </SwiperSlide>
+
+
+                            <SwiperSlide>
+                                <img src={step} alt="Banner Promocional" className={styles.step_img} />
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <img src={step} alt="Banner Promocional" className={styles.step_img} />
+                            </SwiperSlide>
+                        </Swiper>
+
+        
                     </div>
                 </div>
             </div>
