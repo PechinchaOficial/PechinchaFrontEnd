@@ -2,7 +2,7 @@ import Styles from "./FacaParte.module.css";
 
 function FacaParte() {
     return (
-        <section className={Styles.Background}>
+        <section className={Styles.Background} id="container">
             <article className={Styles.BoxLeft}>
                 <h1 className={Styles.Title}>FAÇA PARTE DESSA EQUIPE</h1>
                 <p className={Styles.Text}>nós somos o app nº1 do Brasil contra o desperdício de alimentos!nascemos para revolucionar a forma como consumimos e a nossa missão.</p>

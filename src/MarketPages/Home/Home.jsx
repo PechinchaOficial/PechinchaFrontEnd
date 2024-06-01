@@ -6,7 +6,7 @@ import Parcerias from "./ParceriasSection/ParceriasSection";
 
 function HomeMarket() {
     return (
-        <main className='conteudo'>
+        <main>
             <FacaParte />
             <Parcerias />
             <NossosPlanos />

@@ -32,6 +32,15 @@ function Header() {
                     <li>
                         <Link to="/homemarket">Homemarket</Link>
                     </li>
+
+                    
+                    <li>
+                        <Link to="/registerMarket">Seja Parceiro</Link>
+                    </li>
+
+                    <li>
+                        <Link to="/marketSystem">Sistema</Link>
+                    </li>
                 </ul>
 
 

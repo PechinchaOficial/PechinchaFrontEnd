@@ -30,7 +30,7 @@ function CardProduto() {
             </div>
 
             <button className={styles.btn}>
-                COMPRAR
+                ADICIONAR
             </button>
         </div>
     )

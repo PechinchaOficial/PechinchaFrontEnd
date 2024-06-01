@@ -5,3 +5,7 @@
     background-color: red;
     margin: auto;
 }
+
+.main{
+    background: url('/src/assets/img/textura.svg');
+}

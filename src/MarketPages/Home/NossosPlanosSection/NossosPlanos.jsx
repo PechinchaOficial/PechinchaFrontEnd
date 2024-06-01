@@ -2,7 +2,7 @@ import Styles from './NossosPlanos.module.css'
 
 function NossosPlanos() {
     return (
-        <section className={Styles.Background}>
+        <section className={Styles.Background} id='container'>
             <article className={Styles.BoxUp}>
                 <div className={Styles.BackgroundText}>
                     <h1>Nossos Planos</h1>

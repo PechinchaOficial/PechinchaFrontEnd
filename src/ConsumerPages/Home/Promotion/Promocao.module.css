@@ -1,3 +1,8 @@
+.container_promotion{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
 .carousel_prod{
     margin-top: 30px;
@@ -7,8 +12,36 @@
     display: flex;
     gap: 10px;
     justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth; /*Deixa a rolagem suave*/
+}
+
+.carousel_prod::-webkit-scrollbar{ /*Esconde rolagem*/
+    display: none;
 }
 
 .background{
     background-color: var(--background);
+}
+
+.btn_carousel{
+    background-color: transparent;
+    border: none;
+}
+
+.btn_carousel i{
+    top: 620px;
+    position: absolute;
+    font-size: 3rem;
+    cursor: pointer;
+    opacity: 80%;
+    color: var(--vermelho);
+}
+
+#left{
+    left: -40px;
+}
+
+#right{
+    right: -40px;
 }

@@ -1,5 +1,6 @@
 import styles from './ComoFunciona.module.css'
 import arroz from '../../../assets/img/arroz.svg'
+import step from '../../../assets/img/etapa (1).svg'
 
 import React, { useRef } from 'react';
 import TituloFormato from '../../../components/TituloFormato/TituloFormato';
@@ -49,11 +50,10 @@ function ComoFunciona() {
                     </article>
 
                     <div className={styles.boxRight}>
-                        <div className={styles.card_etapa} id={styles.etapa_1}>
-                            <img src={arroz} className={styles.produto_img} alt="produto" />
-                        </div>
-                        <div className={styles.card_etapa} id={styles.etapa_2}></div>
-                        <div className={styles.card_etapa} id={styles.etapa_3}></div>
+                       
+                            <img src={step} className={styles.step_img} alt="produto" />
+                      
+                       
                     </div>
                 </div>
             </div>
