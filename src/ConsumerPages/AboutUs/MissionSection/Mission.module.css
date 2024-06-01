@@ -1,0 +1,30 @@
+.missao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imagem_missao{
+    width: 400px;
+    height: 400px;
+    
+}
+
+.texto_missao{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 400px;
+    margin-left: 30px;
+    clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0 89%);
+    border-radius: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.24);
+    
+}
+
+.titulo_missao{
+    background-color: #343BCC;
+    width: 600px;
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
+}
