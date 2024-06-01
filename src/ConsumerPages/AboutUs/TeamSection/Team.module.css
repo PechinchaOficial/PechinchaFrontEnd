@@ -1,33 +1,25 @@
+.team_section{
+    flex-direction: column;
+}
+
 .team{
     margin-top: 30px;
 }
 
 
-.title_team{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    background-color: var(--vermelho);
-    color: #fff;
-    border-radius: 10px;
-    clip-path: polygon(0 0, 100% 0, 94% 96%, 6% 95%);
-    padding: 20px 40px;
-    margin: 70px 50px;
-}
 
 .pics{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     width: 80%;
-    margin-top: 100px;
     justify-content: center;
     margin-bottom: 150px;
 }
 
 
 .square{
+    position: relative;
     background-color: rgb(255, 255, 255);
     width: 290px;
     height: 350px;
@@ -36,34 +28,19 @@
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.267);
 }
 
-.image{
-    width: 200px;
-    height: 200px;
-    margin-left: 45px;
-    position: absolute;
-    top: 133rem;
-}
-
 .luane{
     width: 270px;
     height: 270px;
     margin-left: -35px;
 }
 
-.image1{
+.image{
     width: 200px;
     height: 200px;
     margin-left: 40px;
     position: absolute;
-    top: 161.2rem;
-}
-
-.image2{
-    width: 200px;
-    height: 200px;
-    margin-left: 40px;
-    position: absolute;
-    top: 189.2rem;
+    top: -50px;
+  
 }
 
 .name{

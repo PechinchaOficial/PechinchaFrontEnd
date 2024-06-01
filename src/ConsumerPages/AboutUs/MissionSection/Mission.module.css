@@ -1,22 +1,24 @@
 .missao{
     display: flex;
-    margin-top: 150px; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .imagem_missao{
     width: 400px;
     height: 400px;
-    margin-right: 30px;
     
 }
 
 .texto_missao{
-    background-color: rgb(87, 68, 68);
+    background-color: rgb(255, 255, 255);
     width: 600px;
     height: 400px;
     margin-left: 30px;
     clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0 89%);
     border-radius: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.24);
     
 }
 
