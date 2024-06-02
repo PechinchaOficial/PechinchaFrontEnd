@@ -1,3 +1,7 @@
-.margin{
-    margin-top: 80px;
+
+
+.prod_list{
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
 }

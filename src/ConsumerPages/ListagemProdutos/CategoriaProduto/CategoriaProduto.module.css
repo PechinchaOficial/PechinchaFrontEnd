@@ -1,5 +1,8 @@
 .categoria_produto{
+    display: flex;
+    flex-direction: column;
     margin-top: 60px;
+    position: relative;
 }
 
 .title{
@@ -7,11 +10,12 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    width: 100%;
 }
 
 .title h2{
     font-weight: 500;
-
+    font-size: 1.4rem;
 }
 
 .filtro{
@@ -24,15 +28,18 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-top: 30px;
 }
 
-.container_card{
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    flex-wrap: wrap;
+.carousel_prod{
     width: 100%;
-    margin-top: 20px;
+    height: auto;
+    padding: 10px 0px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth; /*Deixa a rolagem suave*/
 }
 
 #arrow{
@@ -44,4 +51,49 @@
 .filtro_atual{
    color: var(--azul);
 }
+
+.carousel_prod::-webkit-scrollbar{ /*Esconde rolagem*/
+    display: none;
+}
+
+.background{
+    background-color: var(--background);
+}
+
+.btn_carousel{
+    background-color: transparent;
+    border: none;
+}
+
+
+.btn_carousel{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    border: 0.5px solid #00000043;
+    top: 260px;
+    position: absolute;
+    font-size: 1.9rem;
+    cursor: pointer;
+    opacity: 80%;
+    color: var(--vermelho);
+    transition: 0.5s all;
+}
+
+.btn_carousel:hover{
+    background-color: #f0f0f0;
+}
+
+#left{
+    left: -55px;
+}
+
+#right{
+    right: -55px;
+}
+
 

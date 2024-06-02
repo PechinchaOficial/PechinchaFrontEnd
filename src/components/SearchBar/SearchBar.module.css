@@ -1,0 +1,39 @@
+.search{
+    position: relative;
+    width: 50%;
+}
+
+
+.search_bar{
+    border: none;
+    height: 50px;
+    width: 100%;
+    padding: 10px 0px 10px 30px;
+    border: 0.5px solid #00000021;
+    outline: none;
+    clip-path: polygon(2% 0, 100% 0%, 98% 100%, 0 100%);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    height: 50px;
+    width: 80px;
+    border: none;
+    background-color: var(--azul);
+    position: absolute;
+    top: 0px;
+    right: 0;
+    clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0 100%);
+    cursor: pointer;
+    transition: 0.5s all;
+
+}
+
+.btn:hover{
+background-color: rgb(44, 44, 221);
+}

@@ -19,11 +19,11 @@
     gap: 5px;
 }
 
-.boxRight {
-    height: 600px;
-    position: relative;
-    width: 300px;
+.boxRight{
+    width: 600px;
 }
+
+
 
 .passos {
     display: flex;
@@ -79,8 +79,8 @@
     border: 7px solid #bd0303;
 }
 
-.produto_img {
-    height: 200px;
+.step_img {
+    height: 500px;
 }
 
 #etapa_1 {

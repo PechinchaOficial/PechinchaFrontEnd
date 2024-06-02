@@ -1,33 +1,38 @@
 .cabecalho {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     position: fixed;
     width: 100%;
-    z-index: 1; 
+    z-index: 2; 
 }
 
 .header_up{
     display: flex;
     width: 100%;
-    justify-content: space-around;
     align-items: center;
-    padding: 10px;
-    height: 70px;
+    height: 90px;
     background-color: var(--amarelo);
 
 }
 
 .header_down{
-    background-color: #fff;
-    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    height: 50px;
+    width: 100%;
+}
+
+.container_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
 
 
 .nav_link{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
     gap: 30px;
     list-style: none;
 }
@@ -44,15 +49,3 @@ height: 30px;
 
 
 
-.search_bar{
-    border: none;
-    height: 45px;
-    width: 400px;
-    padding: 10px 0px 10px 30px;
-    border-radius: 5px;
-    border: 0.5px solid #00000021;
-    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.1);
-    outline: none;
-    clip-path: polygon(4% 0, 100% 0%, 97% 99%, 0% 100%);
-
-}
