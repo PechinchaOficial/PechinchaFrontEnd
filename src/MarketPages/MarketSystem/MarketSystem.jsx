@@ -108,6 +108,13 @@ function MarketSystem(){
             <main id="container">
                 <div className={Styles.main}>
                     <CardFunction />
+                    <CardFunction />
+                    <CardFunction />
+                    <CardFunction />
+                    <CardFunction />
+                    <div className={Styles.container_table}>
+                    
+                    </div>
                 </div>
 
             </main>
