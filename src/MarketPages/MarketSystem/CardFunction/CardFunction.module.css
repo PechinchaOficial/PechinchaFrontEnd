@@ -8,11 +8,22 @@
     padding-top: 50px;
     margin-left: 20px;
     margin-bottom: 20px;
+    transition: background-color 0.3s;
 }
 
 .container:hover{
     background-color: #4c53d9;
     transition: all 0.3s;
+    animation: moveUp 0.5s forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
 }
 
 .container_imagens{                 /*Container das divs das imagens*/
