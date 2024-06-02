@@ -3,9 +3,10 @@ import'./Password.css';
 function Password() {
     return (
 
-        <main>
+        <main className='informacao'>
+            <h1>Senha</h1>
 
-            <section>
+            <section className='conteiner_password' >
                 <div  className='forms_recover'>
                     <h2>Recuperar Senha</h2>
                     <h3>Digite seu email para enviarmos um código de segurança.</h3>
