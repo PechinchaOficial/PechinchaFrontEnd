@@ -41,7 +41,7 @@
     margin-top: 5%;
 }
 .Box {
-    width: 30%;
+    width: 400px;
     height: 700px;
     background-color: var(--amarelo);
     display: flex;
@@ -78,7 +78,7 @@
     background-color: var(--azul);
     text-decoration: none;
     border: none;
-    width: 70%;
+    width: 200px;
     height: 10%;
     font-size: 1.8rem;
     color: white;
@@ -90,4 +90,14 @@
 .Beneficios {
     font-size: 1.3rem;
     margin-top: 5%;
+}
+
+@media screen and (min-width: 1000) {
+    .Conteiner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center
+        
+    }
 }

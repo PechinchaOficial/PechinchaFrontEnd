@@ -44,30 +44,20 @@
     justify-content: center;
 }
 .Box {
-    width: 40%;
+    width: 45%;
     height: 200px;
     background-color: var(--azul);
     margin-top:  40%;
     
 }
-@media screen and (max-width: 1000px) {
-    .Background {
-        align-items: center;
-        justify-content: center;
-    }
-    .BoxLeft {
-        align-items: center;
-        text-align: center;
-    }
-}
 
 #Box1 {
-clip-path:
-polygon(0 8%, 100% 0, 100% 90%, 0 100%);
-border-radius: 8px;
-border-top-left-radius: 28px;
-border-bottom-right-radius: 28px;
-height: 250px;
+    clip-path:
+    polygon(0 8%, 100% 0, 100% 90%, 0 100%);
+    border-radius: 8px;
+    border-top-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    height: 250px;
 }
 
 #Box2 {
@@ -76,8 +66,8 @@ height: 250px;
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
     height: 400px;
-    }
-  #Box3 {
+}
+#Box3 {
     clip-path:
     polygon(0 7%, 100% 0, 100% 93%, 0 100%);
         border-radius: 8px;
@@ -93,4 +83,25 @@ height: 250px;
             border-bottom-left-radius: 28px;
             height: 250px;
             margin-top: -35px;
+        }
+
+
+        /*------------------------------ Responsivo notebook ----------------------------*/
+
+
+        @media screen and (max-width: 1000px) {
+            .Background {
+                align-items: center;
+                justify-content: center;
             }
+            .BoxLeft {
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+
+        /*------------------------------Responsivo Celular --------------------------*/
+
+
+        

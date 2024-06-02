@@ -9,7 +9,7 @@ function FacaParte() {
                 <button className={Styles.Btn}>Saiba mais</button>
             </article>
             <article className={Styles.BoxRight}>
-                <div className={Styles.Box} id={Styles.Box1}></div>
+                 <div className={Styles.Box} id={Styles.Box1}></div> {/* Caixas de fotos */}
                 <div className={Styles.Box} id={Styles.Box2}></div>
                 <div className={Styles.Box} id={Styles.Box3}></div>
                 <div className={Styles.Box} id={Styles.Box4}></div>
@@ -17,4 +17,5 @@ function FacaParte() {
         </section>
     )
 }
+
 export default FacaParte;
