@@ -8,7 +8,7 @@ import Promotion from './Promotion/Promotion';
 
 function Home() {
     return (
-        <main className={styles.main}>
+        <main className={styles.container_home}>
             <HeroSection />
             <CategorySection/>
             <ComoFunciona/>
