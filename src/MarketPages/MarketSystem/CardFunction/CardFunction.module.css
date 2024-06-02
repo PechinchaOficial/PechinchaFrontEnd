@@ -10,6 +10,11 @@
     margin-bottom: 20px;
 }
 
+.container:hover{
+    background-color: #4c53d9;
+    transition: all 0.3s;
+}
+
 .container_imagens{                 /*Container das divs das imagens*/
     width: 100%;
     height: 70px;
