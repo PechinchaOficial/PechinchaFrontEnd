@@ -52,6 +52,10 @@ function Header() {
                         <li>
                             <Link to="/marketSystem">Sistema</Link>
                         </li>
+
+                        <li>
+                            <Link to="/cart">Carrinho</Link>
+                        </li>
                     </ul>
                 </div>
             </div>

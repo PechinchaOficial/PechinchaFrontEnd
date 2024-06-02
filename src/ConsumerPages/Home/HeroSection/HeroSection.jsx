@@ -8,6 +8,7 @@ function HeroSection() {
         <section className={styles.hero_section}>
             <div className={styles.container_slogan}>
                 <img src={slogan} alt="logo" className={styles.img_logo} />
+                div
             </div>
         </section>
     )
