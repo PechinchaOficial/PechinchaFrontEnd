@@ -22,7 +22,7 @@ function NossosPlanos() {
                     </ul>
 
 
-                    <button className={Styles.Btn}> Selecionar </button>
+                    <button className={Styles.Btn}> SELECIONAR </button>
                     
                 </div>
                 <div className={Styles.Box}>
@@ -38,7 +38,7 @@ function NossosPlanos() {
                     </ul>
 
 
-                    <button className={Styles.Btn}> Selecionar </button>
+                    <button className={Styles.Btn}> SELECIONAR </button>
                     
                 </div>
                 <div className={Styles.Box}>
@@ -54,7 +54,7 @@ function NossosPlanos() {
                     </ul>
 
 
-                    <button className={Styles.Btn}> Selecionar </button>
+                    <button className={Styles.Btn}> SELECIONAR </button>
                     
                 </div>
             </article>
