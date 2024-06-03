@@ -1,22 +1,25 @@
 .container{
     width: 100%;
-    background-color: rebeccapurple;  /*Container pai*/
+    background-color: #f2f2f2;;  /*Container pai*/
     display: flex;
 }
 
 .side_bar{                         /*Nav-bar lateral*/
     width: 330px;   
-    height: 100vh;
     background-color: #FFF;      
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Garante que a barra lateral tenha pelo menos a altura da viewport */
 }
  
 .main{                          /*Conteudo principal*/
     width: 100%;
-    height: 100vh;
-    background-color: red;
+    height: auto;
     margin-top: 120px;
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .div_mercado{                    /*Container da div mercado (dentro da Nav-bar)*/
@@ -55,6 +58,13 @@
 .nome_responsavel{         
     padding-left: 9px;
     font-size: 14px;
+}
+
+.titulo_table{   /*titulo da tabeça*/
+    font-size: 32px;
+    font-weight: 450;
+    padding-top: 100px;
+    margin-bottom: 30px;
 }
 
 .container_btn{        /*Div container do btn*/
@@ -108,8 +118,6 @@
     font-weight: 550;
 }
 
-
-
 .div_nav{
     width: 100%;
     height: 80px;
@@ -147,6 +155,15 @@
 .texto_nav{
     font-size: 22px;
     font-weight: 500;
+}
+
+.container_table{
+    width: 95%;
+    height: 600px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 

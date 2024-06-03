@@ -6,6 +6,341 @@
     margin: auto;
 }
 
-.main{
+.container_home{
     background: url('/src/assets/img/textura.svg');
 }
+
+/* Hero section */
+
+.hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0px;
+    width: 100%;
+    /* background-color: var(--azul); */
+    background-image: url('../../../assets/img/textura.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.img_logo {
+    height: 100%;
+    width: 100%;
+}
+
+.container_slogan {
+    height: 400px;
+    width: 80%;
+}
+
+.star{
+    height: 300px;
+    position: absolute;
+    bottom:00px;
+    left: 0px;
+}
+
+/* Produtos e categorias */
+
+.categorySection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 100px;
+    border-radius: 60px 60px 0px 0px;
+    background-color: var(--background);
+}
+
+.text{
+    text-align: center;
+}
+
+.title{
+    font-size: 3.8rem;
+    font-family: offer;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.subtitle{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.destaque{
+    color: var(--vermelho);
+    font-family: offer;
+}
+
+/* Como funciona a chegada dos produtos */
+
+.comoFunciona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1500px;
+    margin: auto;
+
+}
+
+.container_content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.boxLeft {
+    display: flex;
+    gap: 5px;
+}
+
+.boxRight{
+    width: 600px;
+}
+
+
+
+.passos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 700px;
+}
+
+.passo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 80px;
+    border-radius: 10px;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.4s all;
+    font-family: offer !important;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+
+}
+
+.passo:hover {
+    transform: translateY(-3px);
+}
+
+
+.title_tutorial{
+    font-size: 2.5rem;
+    color: var(--azul);
+    font-family: offer;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+}
+
+.desc {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.card_etapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background-color: var(--amarelo);
+    left: 100px;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 90%);
+    -moz-box-shadow: -34px 35px 28px -13px rgba(66, 68, 90, 1);
+    box-shadow: -34px 35px 28px -13px rgba(66, 68, 90, 1);
+    top: 20px;
+    border: 7px solid #bd0303;
+}
+
+.step_img {
+    height: 500px;
+}
+
+#etapa_1 {
+    top: 190px;
+    left: -120px;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 86%);
+}
+
+#etapa_2 {
+    top: 300px;
+    left: 100px;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 5% 99%);
+}
+
+/* #etapa_3{
+    background-color: red;
+} */
+
+/* Promoções */
+
+.container_promotion{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.carousel_prod{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth; /*Deixa a rolagem suave*/
+}
+
+.carousel_prod::-webkit-scrollbar{ /*Esconde rolagem*/
+    display: none;
+}
+
+.background{
+    background-color: var(--background);
+}
+
+.btn_carousel{
+    background-color: transparent;
+    border: none;
+}
+
+.btn_carousel i{
+    top: 620px;
+    position: absolute;
+    font-size: 3rem;
+    cursor: pointer;
+    opacity: 80%;
+    color: var(--vermelho);
+}
+
+#left{
+    left: -40px;
+}
+
+#right{
+    right: -40px;
+}
+
+/* Mercados cadastrados */
+
+.mercados{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_mercados {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    transition: 0.5s all;
+}
+
+.card_mercado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    height:320px;
+    width: 330px;
+    background-color: #C6DC8D;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0px 100px 6px -3px rgba(0,0,0,0.1);
+    transition: 0.5s all;
+
+}
+
+.logo_mercado{
+    height: 70px;
+}
+
+.btn{
+    border: none;
+    height: 50px;
+    padding: 0px 20px;
+    background-color: var(--vermelho);
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#marketTwo{
+    clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
+    background-color: #AECBEB;
+}
+
+#marketThree{
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+    background-color: #FCF299;
+
+}
+
+/* Perguntas frequentes */
+
+.perguntas{
+    display: flex;
+    flex-direction: column;
+}
+
+.pergunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 10px;
+    clip-path: polygon(2% 0, 100% 0%, 99% 100%, 0% 100%);
+    border: 0.5px solid rgba(0, 0, 0, 0.214);
+    
+}
+.container_perguntas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.pergunta h3{
+    opacity: 60%;
+    font-size: 1.5rem;
+}
+
+.pergunta i{
+    font-size: 2.6rem;
+    opacity: 30%;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.pergunta i:hover{
+    opacity: 40%;
+}
+
+
+
+

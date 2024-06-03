@@ -1,0 +1,11 @@
+.cart{
+padding-top: 200px;
+width: 100%;
+}
+
+.container_cart{
+    width: 100%;
+    height: 400px;
+    background-color: blue;
+}
+

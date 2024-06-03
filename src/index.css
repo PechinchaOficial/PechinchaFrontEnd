@@ -5,6 +5,8 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+
+
 .light {
   font-weight: 300;
 }
@@ -42,14 +44,18 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+  font-family: offer;
+  src: url('./assets/Fonts/Oferta-do-Dia.ttf');
 }
 
 :root {
   --amarelo: #FFDD41;
   --azul: #4e6fc9;
   --vermelho: #D92622;
-  --background: #f1f1f1;
+  --background: #f2f2f2;
   --btn: #2ed270;
   --btn_hover: #43bf75;
   --snacks: #FFDD41;

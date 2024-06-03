@@ -9,6 +9,8 @@ import ListagemProdutos from './ConsumerPages/ListagemProdutos/ListagemProdutos'
 import AboutUs from './ConsumerPages/AboutUs/AboutUs'
 import RegisterMarket from './MarketPages/Register/Register'
 import MarketSystem from './MarketPages/MarketSystem/MarketSystem'
+import Cart from './ConsumerPages/Cart/Cart.'
+import Password from './ConsumerPages/RecuperarSenha/Password'
 
 function RouterApp() {
     return (
@@ -22,6 +24,8 @@ function RouterApp() {
                 <Route path='/about' element={<AboutUs />}></Route>
                 <Route path='/registerMarket' element={<RegisterMarket />}></Route>
                 <Route path='/marketSystem' element={<MarketSystem />}></Route>
+                <Route path='/cart' element={<Cart/>}></Route>
+                <Route path='/recover' element={<Password/>}></Route>
 
             </Routes>
             <Footer />
