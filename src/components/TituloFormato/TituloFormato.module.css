@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
     background-color: var(--vermelho);
     color: #fff;
     border-radius: 10px;
@@ -14,5 +13,7 @@
 
 .title h2{
     color: #fff;
-    font-size: 1.8rem;
+    font-family: offer;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
 }

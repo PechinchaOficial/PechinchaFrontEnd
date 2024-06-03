@@ -1,0 +1,13 @@
+.container_card{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    max-width: 1600px;
+    padding: 10px;
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
