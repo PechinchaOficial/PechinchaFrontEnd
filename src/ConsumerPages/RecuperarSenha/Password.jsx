@@ -1,15 +1,17 @@
-import './Password.module.css'
+import styles from './Password.module.css';
 
 function Password () {
     return (
         <main className='conteudo'>
+            <h1>Senha</h1> 
 
-            <section className='container_password'>
-                  <div  className='forms'>
+             <section className={styles.Password} id="container" >
+          
+                  <div  className='forms_recover'>
                         <h2>Recuperar senha</h2>
                         <h3>Digite seu email para enviarmos um código de segurança</h3>
 
-                            <form action="" className='forms_password'>
+                            <form  className='forms_password'>
                                 <label htmlFor="">Email</label>
                                 <input type="text"  placeholder='Digite seu Email'/>
 
