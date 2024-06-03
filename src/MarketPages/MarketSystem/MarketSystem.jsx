@@ -6,7 +6,7 @@ import Produtos from '../../assets/img/Produtos_market.png'
 import Add_Market from '../../assets/img/Add_market.png'
 import Conta from '../../assets/img/Conta.png'
 import Sair from '../../assets/img/Sair.png'
-
+import Table from './TableMarket/TableMarket'
 
 function MarketSystem(){
     return(
@@ -113,7 +113,8 @@ function MarketSystem(){
                     <CardFunction />
                     <CardFunction />
                     <div className={Styles.container_table}>
-                    
+                        <h2 className={Styles.titulo_table}>Últimas movimentações</h2>
+                         <Table /> 
                     </div>
                 </div>
 
