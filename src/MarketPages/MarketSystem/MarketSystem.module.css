@@ -6,10 +6,10 @@
 
 .side_bar{                         /*Nav-bar lateral*/
     width: 330px;   
-    height: 100vh;
     background-color: #FFF;      
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Garante que a barra lateral tenha pelo menos a altura da viewport */
 }
  
 .main{                          /*Conteudo principal*/
