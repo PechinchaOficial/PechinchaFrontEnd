@@ -1,43 +1,67 @@
 import styles from './CarouselProd.module.css'
 import { useRef } from 'react'
 import CardProduto from '../../components/CardProduto/CardProduto';
+import { useState, useEffect } from 'react'
+import { register } from 'swiper/element/bundle'
+
+register();
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 function CarouselProd() {
 
-    const carousel = useRef(null);
+    const [slidesPerView, setSlidePerView] = useState(4)
 
-    const handleLeftClick = (e) => {
-        e.preventDefault();
-        carousel.current.scrollLeft -= carousel.current.offsetWidth
-    }
 
-    const handleRightClick = (e) => {
-        e.preventDefault();
-        carousel.current.scrollLeft += carousel.current.offsetWidth
+    useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth > 720) {
+                setSlidePerView(1);
+            } else {
+                setSlidePerView(2);
+            }
+        }
 
-    }
-
+        handleResize();
+    }, [])
     return (
         <section id='container'>
-            <div className={styles.carousel_prod} ref={carousel}>
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-            </div>
+            <Swiper
+                // controla quantos slides por foto quero que apareça
+                slidesPerView={slidesPerView}
+                // define se é clicavel ou não
+                pagination={{ clickable: true }}
+                navigation>
 
-            <button className={styles.btn_carousel} onClick={handleLeftClick}><i class="fa-solid fa-chevron-left" id={styles.left}></i></button>
-            <button className={styles.btn_carousel} onClick={handleRightClick}><i class="fa-solid fa-chevron-right" id={styles.right}></i></button>
+                {/* corresponde a cada item do coarrossel */}
+                <SwiperSlide>
+                    <div className={styles.carousel_prod}>
+                        <CardProduto />
+                        <CardProduto />
+                        <CardProduto />
+                        <CardProduto />
+                        <CardProduto />
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className={styles.carousel_prod}>
+                        <CardProduto />
+                        <CardProduto />
+                        <CardProduto />
+                        <CardProduto />
+                        <CardProduto />
+                    </div>
+                </SwiperSlide>
+            </Swiper>
         </section>
-
-
     )
 }
 

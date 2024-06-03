@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 320px;
+    height: 350px;
     width: 280px;
     background-color: var(--amarelo);
     border-radius: 5px;
@@ -27,4 +27,7 @@
 
 .title_prod{
     font-size: 2rem;
+    font-family: offer;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
 }

@@ -25,7 +25,7 @@ function RouterApp() {
                 <Route path='/registerMarket' element={<RegisterMarket />}></Route>
                 <Route path='/marketSystem' element={<MarketSystem />}></Route>
                 <Route path='/cart' element={<Cart/>}></Route>
-                <Route path='/Password' element={<Password/>}></Route>
+                <Route path='/recover' element={<Password/>}></Route>
 
             </Routes>
             <Footer />

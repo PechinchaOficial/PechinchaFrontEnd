@@ -6,10 +6,10 @@
 
 .side_bar{                         /*Nav-bar lateral*/
     width: 330px;   
-    height: 100vh;
     background-color: #FFF;      
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Garante que a barra lateral tenha pelo menos a altura da viewport */
 }
  
 .main{                          /*Conteudo principal*/
@@ -58,6 +58,13 @@
 .nome_responsavel{         
     padding-left: 9px;
     font-size: 14px;
+}
+
+.titulo_table{   /*titulo da tabeça*/
+    font-size: 32px;
+    font-weight: 450;
+    padding-top: 100px;
+    margin-bottom: 30px;
 }
 
 .container_btn{        /*Div container do btn*/
@@ -152,10 +159,11 @@
 
 .container_table{
     width: 95%;
-    height: 400px;
-    background-color: green;
+    height: 600px;
     margin-left: 20px;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 
