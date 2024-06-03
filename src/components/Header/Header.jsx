@@ -95,6 +95,10 @@ function Header() {
                         <li>
                             <Link to="/cart">Carrinho</Link>
                         </li>
+
+                        <li>
+                            <Link to="/recover">senha</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
