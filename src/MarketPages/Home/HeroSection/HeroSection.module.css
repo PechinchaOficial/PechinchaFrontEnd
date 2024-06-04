@@ -21,11 +21,12 @@
 }
 .Banner {
     position: relative;
-    height: 50%;
-    width: 75%;
-    background-image: url('../../../assets/img/HeroMercado1.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 339px;
+    width: 1047px;
+}
+.Bannerz {
+    height: 100%;
+    width: 100%;
 }
 .BodySect {
     position: relative;
