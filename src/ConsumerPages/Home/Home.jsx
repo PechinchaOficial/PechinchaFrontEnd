@@ -1,10 +1,11 @@
 import styles from './Home.module.css'
-import teste from '../../assets/img/slogan.svg'
+import teste from '../../assets/img/mercadodia.svg'
 import CategoryProd from '../../components/CategoryProd/CategoryProd';
 import step from '../../assets/img/etapa (1).svg'
 import React, { useRef } from 'react';
 import TituloFormato from '../../components/TituloFormato/TituloFormato';
 import { useState, useEffect } from 'react'
+// import carrossel
 import { Swiper, SwiperSlide } from 'swiper/react';
 // imports banner
 import Banner from '../../components/Banner/Banner';
@@ -48,7 +49,6 @@ function Home() {
             <section className={styles.hero_section}>
                 <div className={styles.container_slogan}>
                     <img src={teste} alt="logo" className={styles.img_logo} />
-                    div
                 </div>
             </section>
 
@@ -60,7 +60,7 @@ function Home() {
                     <p className={styles.subtitle}>Escolha uma das categorias abaixo, e economize</p>
                 </header>
 
-                <CategoryProd />  {/* Categorias dos produtos */}
+                <CategoryProd /> 
             </section>
 
             {/* Como funciona a chegada dos produtos na plataforma*/}
@@ -130,82 +130,76 @@ function Home() {
             </section>
 
             <div id="background">
-            <section className={styles.mercados} id='container'>
+                <section className={styles.mercados} id='container'>
+                    <TituloFormato
+                        categoria='Ja trabalham conosco' />
+                    <div className={styles.container_mercados}>
+                        <div className={styles.card_mercado}>
+                            <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
+                            <button className={styles.btn}>
+                                Ver Promoções
+                            </button>
+                        </div>
 
-                <TituloFormato
-                    categoria='Ja trabalham conosco' />
+                        <div className={styles.card_mercado} id={styles.marketTwo}>
+                            <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
+                            <button className={styles.btn}>
+                                Ver Promoções
+                            </button>
+                        </div>
 
-                <div className={styles.container_mercados}>
+                        <div className={styles.card_mercado} id={styles.marketThree}>
+                            <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
+                            <button className={styles.btn}>
+                                Ver Promoções
+                            </button>
+                        </div>
 
-                    <div className={styles.card_mercado}>
-                        <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
-                        <button className={styles.btn}>
-                            Ver Promoções
-                        </button>
+                        <div className={styles.card_mercado} id={styles.marketTwo}>
+                            <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
+                            <button className={styles.btn}>
+                                Ver Promoções
+                            </button>
+                        </div>
                     </div>
-
-                    <div className={styles.card_mercado} id={styles.marketTwo}>
-                        <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
-                        <button className={styles.btn}>
-                            Ver Promoções
-                        </button>
-                    </div>
-
-                    <div className={styles.card_mercado} id={styles.marketThree}>
-                        <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
-                        <button className={styles.btn}>
-                            Ver Promoções
-                        </button>
-                    </div>
-
-                    <div className={styles.card_mercado} id={styles.marketTwo}>
-                        <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
-                        <button className={styles.btn}>
-                            Ver Promoções
-                        </button>
-                    </div>
-
-                </div>
-
-                
-
-            </section>
-        </div>
-
-        {/* Perguntas frequentes */}
-        <div id="background">
-        <section className={styles.perguntas} id='container'>
-            <TituloFormato
-            categoria='Perguntas frequentes'/>
-            <div className={styles.container_perguntas}>
-                <div className={styles.pergunta}>
-                    <h3>A Pechincha é um App de descontos?</h3>
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </div>
-
-                <div className={styles.pergunta}>
-                    <h3>A Pechincha é um App de descontos?</h3>
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </div>
-
-                <div className={styles.pergunta}>
-                    <h3>A Pechincha é um App de descontos?</h3>
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </div>
-
-                <div className={styles.pergunta}>
-                    <h3>A Pechincha é um App de descontos?</h3>
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </div>
-                
-
-                <div className={styles.pergunta}>
-                    <h3>A Pechincha é um App de descontos?</h3>
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </div>
+                </section>
             </div>
-        </section>
-        </div>
+
+            {/* Perguntas frequentes */}
+
+            <div id="background">
+                <section className={styles.perguntas} id='container'>
+                    <TituloFormato
+                        categoria='Perguntas frequentes' />
+                    <div className={styles.container_perguntas}>
+                        <div className={styles.pergunta}>
+                            <h3>A Pechincha é um App de descontos?</h3>
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </div>
+
+                        <div className={styles.pergunta}>
+                            <h3>A Pechincha é um App de descontos?</h3>
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </div>
+
+                        <div className={styles.pergunta}>
+                            <h3>A Pechincha é um App de descontos?</h3>
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </div>
+
+                        <div className={styles.pergunta}>
+                            <h3>A Pechincha é um App de descontos?</h3>
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </div>
+
+
+                        <div className={styles.pergunta}>
+                            <h3>A Pechincha é um App de descontos?</h3>
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
     )
 }
