@@ -1,7 +1,6 @@
 import RouterApp from "./routers"
 import { useState, useEffect } from 'react'
 import { register } from 'swiper/element/bundle'
-
 register();
 
 import 'swiper/css';

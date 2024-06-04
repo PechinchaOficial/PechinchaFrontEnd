@@ -1,20 +1,23 @@
 .container{
     width: 333px;                          /*Div container*/
     height: 243px;
-    background-color: #5B63FF;
+    background-color: var(--azul);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     padding-top: 50px;
     margin-left: 20px;
     margin-bottom: 20px;
-    transition: background-color 0.3s;
+    transition: 0.4s all;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1);
+
 }
 
 .container:hover{
     background-color: #4c53d9;
-    transition: all 0.3s;
-    animation: moveUp 0.5s forwards;
+   transform: translateY(-10px);
+    
 }
 
 @keyframes moveUp {
