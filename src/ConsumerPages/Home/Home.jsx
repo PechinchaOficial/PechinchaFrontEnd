@@ -51,19 +51,20 @@ function Home() {
             <section className={styles.hero_section}>
                 <div className={styles.container_slogan} id='container'>
                     <img src={teste} alt="logo" className={styles.img_logo} />
-
-
-                </div>
-                
-                <img src={star} alt="star" className={styles.star} />
+                    <h2 className={styles.slogan_subtitle}>Nós combatemos o <strong className={styles.strong}>desperdicio</strong> e ainda fazemos aquela diferença no bolso</h2>
 
                     <div className={styles.search}>
                         <input type="search" placeholder='Pechinchar' className={styles.search_bar} />
                         <button className={styles.btn_bar}><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-                    <img src={starYellow} alt="star" className={styles.star_2} />
+                </div>
 
-              
+
+                <img src={star} alt="star" className={styles.star} />
+
+                <img src={starYellow} alt="star" className={styles.star_2} />
+
+
 
 
             </section>

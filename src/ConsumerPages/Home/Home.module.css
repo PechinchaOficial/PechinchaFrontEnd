@@ -17,7 +17,7 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    padding: 250px 0px 160px 0px;
+    padding: 200px 0px 120px 0px;
     width: 100%;
     /* background-color: var(--azul); */
     background-image: url('../../../assets/img/textura.svg');
@@ -28,7 +28,7 @@
 }
 
 .img_logo {
-    height: 300px;
+    height: 350px;
     width: 100%;
     margin-right: 150px;
 }
@@ -37,23 +37,35 @@
     display: flex;
     flex-direction: column;
     margin-top: 70px;
+    justify-content: space-around;
+    gap: 30px;
 }
 
+.slogan_subtitle{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    max-width: 800px;
+    font-size: 1.7rem;
+}
 
+.strong{
+color: var(--vermelho);
+}
 
 .star {
     height: 400px;
     position: absolute;
     bottom: 00px;
     left: -170px;
-    top: 400px;
+    top: 500px;
 }
 
 .star_2 {
     height: 400px;
     position: absolute;
     bottom: 00px;
-    top: 400px;
+    top: 500px;
     right:0px;
 }
 .container_efeitos{
@@ -66,8 +78,7 @@
 
 .search {
     position: relative;
-    width: 900px;
-    margin-top: 50px;
+    width: 1000px;
     z-index: 1;
 
 }
@@ -80,8 +91,12 @@
     padding: 10px 0px 10px 30px;
     border: 0.5px solid #00000021;
     outline: none;
-    border-radius: 20px;
+    font-size: 1.5rem;
+    clip-path: polygon(1% 0, 100% 0%, 98% 100%, 0 100%);
+
+
 }
+
 
 .search_bar::placeholder{
     font-size: 1.5rem;
@@ -103,7 +118,8 @@
     right: 0;
     cursor: pointer;
     transition: 0.5s all;
-    border-radius:  0px 20px 20px 0px;
+    clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0 100%);
+
 
 }
 
@@ -138,7 +154,7 @@
 
 .subtitle {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .destaque {
@@ -414,6 +430,15 @@
 }
 
 @media screen and (max-width: 1280px){
+}
+
+
+
+@media screen and (max-width: 1280px){
+
+    .img_logo{
+        height: 300px;
+    }
     .star, .star_2{
         height: 300px;
     }

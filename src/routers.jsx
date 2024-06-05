@@ -11,11 +11,13 @@ import RegisterMarket from './MarketPages/Register/Register'
 import MarketSystem from './MarketPages/MarketSystem/MarketSystem'
 import Cart from './ConsumerPages/Cart/Cart.'
 import Password from './ConsumerPages/RecuperarSenha/Password'
+import HeaderConsumer from './components/HeaderConsumer/HeaderConsumer'
 
 function RouterApp() {
     return (
         <Router>
-            <Header />
+           
+            <Header/>
             <Routes>
                 <Route path='/' element={<Home />}></Route>
                 <Route path='/login' element={<Login />}></Route>
