@@ -1,5 +1,7 @@
 import styles from './Home.module.css'
-import teste from '../../assets/img/mercadodia.svg'
+import teste from '../../assets/img/pechinchaLogo.svg'
+import star from '../../assets/img/star.svg'
+import starYellow from '../../assets/img/starYellow.svg'
 import CategoryProd from '../../components/CategoryProd/CategoryProd';
 import step from '../../assets/img/etapa (1).svg'
 import React, { useRef } from 'react';
@@ -47,9 +49,23 @@ function Home() {
         <main className={styles.container_home}>
             {/*  Categorias dos produto*/}
             <section className={styles.hero_section}>
-                <div className={styles.container_slogan}>
+                <div className={styles.container_slogan} id='container'>
                     <img src={teste} alt="logo" className={styles.img_logo} />
+
+
                 </div>
+                
+                <img src={star} alt="star" className={styles.star} />
+
+                    <div className={styles.search}>
+                        <input type="search" placeholder='Pechinchar' className={styles.search_bar} />
+                        <button className={styles.btn_bar}><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <img src={starYellow} alt="star" className={styles.star_2} />
+
+              
+
+
             </section>
 
             {/*  Categorias dos produto*/}
@@ -60,7 +76,7 @@ function Home() {
                     <p className={styles.subtitle}>Escolha uma das categorias abaixo, e economize</p>
                 </header>
 
-                <CategoryProd /> 
+                <CategoryProd />
             </section>
 
             {/* Como funciona a chegada dos produtos na plataforma*/}
