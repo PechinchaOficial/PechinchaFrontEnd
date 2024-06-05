@@ -31,7 +31,7 @@ function CardProduto() {
                 </div>
             </div>
 
-<Link to='/login'>
+<Link to='/cart'>
 <button className={styles.btn}>
                 ADICIONAR
             </button>

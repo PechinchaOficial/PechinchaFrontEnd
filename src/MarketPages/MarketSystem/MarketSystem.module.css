@@ -88,7 +88,7 @@
 
 .btn_cds_produto:hover{       /*Hover do btn*/
     background-color: #1aa357;
-    transition: all 0.25s;
+
 }
 
 .conteudo_btn{         /*Centraliza o conteudo do btn*/
@@ -164,6 +164,15 @@
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
+}
+
+.table {
+	width: 100%;
+    height: 400px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 
 
