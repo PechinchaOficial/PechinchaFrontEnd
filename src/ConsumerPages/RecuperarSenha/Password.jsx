@@ -11,7 +11,7 @@ function Password () {
 
                             <form action='' className={Styles.forms_password} id='forms-password' >
                                 <label htmlFor="">E-mail</label>
-                                <input type="text"  placeholder='Digite seu Email'/>
+                                <input type="email"  placeholder='Digite seu Email' className={Styles.email} />
 
                                 <button>ENVIAR</button>
 
