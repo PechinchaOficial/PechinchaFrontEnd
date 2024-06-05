@@ -1,12 +1,14 @@
-import CardFunction from './CardFunction/CardFunction';
-import Styles from './MarketSystem.module.css'
-import Add from '../../assets/img/Add.png'
-import Home from '../../assets/img/Home_markt.png'
-import Produtos from '../../assets/img/Produtos_market.png'
-import Add_Market from '../../assets/img/Add_market.png'
-import Conta from '../../assets/img/Conta.png'
-import Sair from '../../assets/img/Sair.png'
-import Table from './TableMarket/TableMarket'
+import Styles from './MarketProduct.module.css'
+import Add from '../../../assets/img/Add.png'
+import Home from '../../../assets/img/Home_markt.png'
+import Produtos from '../../../assets/img/Produtos_market.png'
+import Add_Market from '../../../assets/img/Add_market.png'
+import Conta from '../../../assets/img/Conta.png'
+import Sair from '../../../assets/img/Sair.png'
+import Services from '../../../assets/img/Services.png'
+import Btn from '../BtnMarket/BtnMarket'
+import Table from '../TableMarket/TableMarket'
+
 
 function MarketSystem(){
     return(
@@ -105,21 +107,23 @@ function MarketSystem(){
 
             </nav>
 
-            <main id="container">
-                <div className={Styles.main}>
-                    <CardFunction />
-                    <CardFunction />
-                    <CardFunction />
-                    <CardFunction />
-                    <CardFunction />
-                    <div className={Styles.container_table}>
-                        <h2 className={Styles.titulo_table}>Últimas movimentações</h2>
-                         <Table 
-                         classe={Styles.table}
-                         /> 
+            <main id="container"> {/*Main*/}
+                <div className={Styles.main}> {/*Container na main*/}
+                    <div className={Styles.conteudo_central}> {/*Container oara os conteudos centrais*/}
+                        <div className={Styles.container_actions}> {/*Container para btn e barra de pesquisa*/}
+                            <Btn imagem={Services} texto="Mais ações" classe={Styles.action}container={Styles.container_btn_action} />
+                            <form action="/search" method="get">
+                            <input type="search" name="q" placeholder="Buscar" className={Styles.search_market} />
+                            </form>
+                        </div>
+
+                        <div className={Styles.container_table}>
+                            <Table 
+                             classe={Styles.table}
+                            />
+                        </div>
                     </div>
                 </div>
-
             </main>
         </div>
     )

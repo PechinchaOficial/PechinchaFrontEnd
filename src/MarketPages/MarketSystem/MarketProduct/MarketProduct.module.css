@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    background-color: #f2f2f2;;  /*Container pai*/
+    background-color: #f2f2f2;  /*Container pai*/
     display: flex;
 }
 
@@ -14,12 +14,11 @@
  
 .main{                          /*Conteudo principal*/
     width: 100%;
-    height: auto;
-    margin-top: 120px;
+    height: 100vh;
+    margin-top: 90px;
     padding-top: 50px;
     padding-left: 50px;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .div_mercado{                    /*Container da div mercado (dentro da Nav-bar)*/
@@ -58,13 +57,6 @@
 .nome_responsavel{         
     padding-left: 9px;
     font-size: 14px;
-}
-
-.titulo_table{   /*titulo da tabeça*/
-    font-size: 32px;
-    font-weight: 450;
-    padding-top: 100px;
-    margin-bottom: 30px;
 }
 
 .container_btn{        /*Div container do btn*/
@@ -157,22 +149,81 @@
     font-weight: 500;
 }
 
-.container_table{
-    width: 95%;
-    height: 600px;
-    margin-left: 20px;
-    margin-bottom: 60px;
+.conteudo_central{
+    width: 97%;
+    height: 800px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.container_actions{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.action{
+    width: 160px;
+    height: 45px;
+    background-color: #1E50E7;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius:5px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3); 
+    margin-left: 35px;
+}
+
+.action:hover{
+    background-color: #173eb6;
+    transition: all 0.3s;
+    animation: moveUp 0.5s forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-2px);
+    }
+}
+
+.container_btn_action{
+    width: 27px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.search_market{
+    width: 340px;
+    height: 45px;
+    border-radius: 7px;
+    border:  0.5px solid #000;
+    font-size: 25px;
+    padding-left: 10px;
+    margin-right: 35px;
+}
+
+.container_table{
+    width: 95%;
+    height: 465px;
+    margin-top: 25px;
 }
 
 .table {
 	width: 100%;
-    height: 400px;
+    height: 465px;
 	border-collapse: collapse;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
     border-radius: 10px;
 }
+
 
 
