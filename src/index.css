@@ -1,5 +1,32 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 
 body {
     margin: 0;
@@ -17,14 +44,18 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+  font-family: offer;
+  src: url('./assets/Fonts/Oferta-do-Dia.ttf');
 }
 
 :root {
   --amarelo: #FFDD41;
   --azul: #4e6fc9;
   --vermelho: #D92622;
-  --background: #f1f1f1;
+  --background: #f2f2f2;
   --btn: #2ed270;
   --btn_hover: #43bf75;
   --snacks: #FFDD41;

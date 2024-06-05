@@ -1,0 +1,229 @@
+.container{
+    width: 100%;
+    background-color: #f2f2f2;  /*Container pai*/
+    display: flex;
+}
+
+.side_bar{                         /*Nav-bar lateral*/
+    width: 330px;   
+    background-color: #FFF;      
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que a barra lateral tenha pelo menos a altura da viewport */
+}
+ 
+.main{                          /*Conteudo principal*/
+    width: 100%;
+    height: 100vh;
+    margin-top: 90px;
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+}
+
+.div_mercado{                    /*Container da div mercado (dentro da Nav-bar)*/
+    width: 100%;
+    height: 100px;
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.imagem_mercado{
+    width: 61px;
+    height: 61px;
+    background-color: #43B4DC;
+    margin-left: 25px;
+    border-radius: 100%;
+}
+
+.nome_mercado{
+    width: 75%;
+    height: 100px;
+    background-color: transparent;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titulo_mercado{               /*Nome do mercado*/
+    font-size: 20px;
+    padding-top: 25px;
+    padding-left: 9px;
+}
+
+.nome_responsavel{         
+    padding-left: 9px;
+    font-size: 14px;
+}
+
+.container_btn{        /*Div container do btn*/
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_cds_produto{
+    width: 260px;
+    height: 55px;
+    background-color: #1FCD6C;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_cds_produto:hover{       /*Hover do btn*/
+    background-color: #1aa357;
+
+}
+
+.conteudo_btn{         /*Centraliza o conteudo do btn*/
+    width: 90%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container_img_add{
+    width: 37px;
+    height: 31px;
+}
+
+.container_texto_cadastro{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.texto_cadastro{
+    font-size: 20px;
+    color: #FFF;
+    padding-left: 5px;
+    font-weight: 550;
+}
+
+.div_nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_nav:hover{
+    background-color: #d6d6d6;
+    transition: all 0.6s;
+}
+
+.container_central{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.container_img_nav{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.container_texto_nav{
+    width: 80%;
+    height: 45px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.texto_nav{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.conteudo_central{
+    width: 97%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_actions{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.action{
+    width: 160px;
+    height: 45px;
+    background-color: #1E50E7;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius:5px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3); 
+    margin-left: 35px;
+}
+
+.action:hover{
+    background-color: #173eb6;
+    transition: all 0.3s;
+    animation: moveUp 0.5s forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-2px);
+    }
+}
+
+.container_btn_action{
+    width: 27px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.search_market{
+    width: 340px;
+    height: 45px;
+    border-radius: 7px;
+    border:  0.5px solid #000;
+    font-size: 25px;
+    padding-left: 10px;
+    margin-right: 35px;
+}
+
+.container_table{
+    width: 95%;
+    height: 465px;
+    margin-top: 25px;
+}
+
+.table {
+	width: 100%;
+    height: 465px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+
+

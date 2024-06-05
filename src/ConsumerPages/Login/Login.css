@@ -1,20 +1,19 @@
-.conteudo-login{
+.background_login{
+	background-color: red;
+	width: 100%;
 	background-image: url('/src/assets/img/fundo\ mercado.png');
-	background-size: cover; /* A imagem cobrirá todo o fundo */
-    background-repeat: no-repeat; /* A imagem não se repetirá */
-    background-position: center center; /* A imagem ficará centralizada */
-
-	
-	
-}
-.container-login{
-	background-color: white;
-
+	padding: 300px 0px 150px 0px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
 
-	margin: 150px 0px 150px 0px;
+.container-login{
+	background-color: white;
+	width: 1200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /*Estilizando o fomrulario de Login*/

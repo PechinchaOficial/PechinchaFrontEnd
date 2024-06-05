@@ -1,9 +1,9 @@
 import  './Login.css';
+import {Link} from 'react-router-dom'
 
 function Login() {
     return (
-        <main className='conteudo'>
-            <h1>Login</h1>
+        <main className=' background_login' >
             <section className='container-login'>
                     <div  className='forms-register'>
                         <h2>Entre com a sua conta</h2>
@@ -19,7 +19,7 @@ function Login() {
                                 <label htmlFor="">Confirmar sua senha</label>
                                 <input type="text" placeholder='Digite sua senha' />
 
-                                <p className='recover-password'>Esqueceu sua senha? <a href="#">Recupere aqui</a></p>
+                                <p className='recover-password'>Esqueceu sua senha? <Link to="/recover">Recupere aqui</Link></p>
 
                                 <button>ENTRAR</button>
 

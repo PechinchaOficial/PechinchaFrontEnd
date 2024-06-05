@@ -1,11 +1,11 @@
 .marketCard{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     align-items: flex-start;
     padding: 16px;
-    height: 240px;
+    height: 220px;
     width: 365px;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;

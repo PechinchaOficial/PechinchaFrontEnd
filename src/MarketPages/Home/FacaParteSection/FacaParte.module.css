@@ -20,6 +20,9 @@
 }
 .Title {
     font-size: 2rem;
+    font-family: offer;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
 }
 .Text {
     font-size: 1.5rem;

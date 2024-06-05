@@ -1,0 +1,56 @@
+.team_section{
+    flex-direction: column;
+}
+
+.team{
+    margin-top: 30px;
+}
+
+
+
+.pics{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 80%;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+
+.square{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 290px;
+    height: 350px;
+    border-radius: 38px;
+    margin-top: 60px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.267);
+}
+
+.luane{
+    width: 270px;
+    height: 270px;
+    margin-left: -35px;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+    position: absolute;
+    top: -50px;
+  
+}
+
+.name{
+    width: 250px;
+    height: 100px;
+    margin-top: 210px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.title{
+    font-size: 25px;
+}
