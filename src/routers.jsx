@@ -11,6 +11,7 @@ import RegisterMarket from './MarketPages/Register/Register'
 import MarketSystem from './MarketPages/MarketSystem/MarketSystem'
 import Cart from './ConsumerPages/Cart/Cart.'
 import Password from './ConsumerPages/RecuperarSenha/Password'
+import Product from './ConsumerPages/Product/Product'
 
 function RouterApp() {
     return (
@@ -26,6 +27,8 @@ function RouterApp() {
                 <Route path='/marketSystem' element={<MarketSystem />}></Route>
                 <Route path='/cart' element={<Cart/>}></Route>
                 <Route path='/recover' element={<Password/>}></Route>
+                <Route path='/product' element={<Product/>}></Route>
+
 
             </Routes>
             <Footer />

@@ -16,7 +16,6 @@ function Parcerias() {
                 </article></div>
         </section>
 
-
     )
 }
 
