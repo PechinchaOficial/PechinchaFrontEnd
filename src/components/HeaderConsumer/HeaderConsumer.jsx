@@ -93,6 +93,10 @@ function HeaderConsumer() {
                             <Link to="/product">product</Link>
                         </li>
 
+                        <li>
+                            <Link to="/marketproductpage">pagina do mercado</Link>
+                        </li>
+
 
                     </ul>
                 </div>

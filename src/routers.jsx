@@ -16,6 +16,8 @@ import Product from './ConsumerPages/Product/Product'
 import HeaderConsumer from './components/HeaderConsumer/HeaderConsumer'
 import MarketProduct from './MarketPages/MarketSystem/MarketProduct/MarketProduct'
 import ProductRegistration from './MarketPages/MarketSystem/ProductRegistration/ProductRegistration'
+import MarketProductPage from './ConsumerPages/MarketProductPage/MarketProductPage'
+
 
 
 function RouterApp() {
@@ -37,6 +39,8 @@ function RouterApp() {
 
                 <Route path='/marketproduct' element={<MarketProduct />}></Route>
                 <Route path='/productregistration' element={<ProductRegistration />}></Route>
+                <Route path='/marketproductpage' element={<MarketProductPage/>}></Route>
+               
             </Routes>
             <Footer />
         </Router>

@@ -1,11 +1,17 @@
+
+import { Link } from 'react-router-dom';
 import styles from './MercadoCard.module.css'
 
-function MercadoCard({ img,name,  rate, andress }) {
+
+
+ function MercadoCard({ img,name,  rate, andress }) {
     return (
-        <div className={styles.marketCard}>
+        <Link to="/marketproductpage">
+            <div className={styles.marketCard}>
             <div className={styles.container_img}>
-                <img src={img} alt="Logo Mercado" className={styles.img} />
+                  <img src={img} alt="Logo Mercado" className={styles.img} /> 
             </div>
+            
             <div className={styles.mercado_info}>
 
                 <h2 className={styles.title_card}>{name}</h2>
@@ -22,8 +28,10 @@ function MercadoCard({ img,name,  rate, andress }) {
                     <p>(123)</p>
                 </div>
             </div>
-        </div>
+            </div>
+        </Link>
     )
 }
+
 
 export default MercadoCard;
