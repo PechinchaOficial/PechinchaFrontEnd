@@ -63,6 +63,11 @@ height: 100%;
     transition: 0.5s all;
 }
 
+#cart_icon{
+    text-decoration: none;
+    color: #000000c3;
+}
+
 .nav_right{
     display: flex;
     justify-content: center;

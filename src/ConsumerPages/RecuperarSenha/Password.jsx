@@ -1,4 +1,5 @@
 import Styles from './Password.module.css';
+import {Link} from 'react-router-dom'
 
 function Password () {
     return (
@@ -15,7 +16,7 @@ function Password () {
 
                                 <button>ENVIAR</button>
 
-                                <p className={Styles.recover_password}>Já possui cadastro? <a href="#">Entre aqui</a></p>
+                                <p className={Styles.recover_password}>Já possui cadastro? <Link to="/login">Entre aqui</Link></p>
 
                             </form>
 

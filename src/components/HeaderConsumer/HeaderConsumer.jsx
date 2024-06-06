@@ -47,7 +47,7 @@ function HeaderConsumer() {
                                 <div className={styles.cart_notify}>
                                     <span>1</span>
                                 </div>
-                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-cart-shopping" id={styles.cart_icon}></i>
                             </div>
 
                         </Link>
