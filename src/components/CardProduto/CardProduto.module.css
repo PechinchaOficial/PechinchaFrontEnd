@@ -19,6 +19,11 @@
 }
 .imgprod{
     height: 230px;
+    transition: 0.5s all
+}
+
+.imgprod:hover{
+    transform: translateY(-5px);
 }
 
 .info_prod{

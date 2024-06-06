@@ -1,5 +1,9 @@
 // Import do Arroz //
 import arroz from '../img/Products/arroz/solito_01-removebg-preview.png'
+
+import feijaoMs from '../img/Products/feijao/feijao_bom_01-removebg-preview.png'
+
+
 import premium from '../img/Products/arroz/solito_02-removebg-preview.png'
 import solito from '../img/Products/arroz/solito_03-removebg-preview.png'
 import tipo from '../img/Products/arroz/solito_04-removebg-preview.png'
@@ -21,11 +25,15 @@ import kicaldo from '../img/Products/feijao/feijao_kicaldo_02-removebg-preview.p
 import caldo from '../img/Products/feijao/feijao_kicaldo_03-removebg-preview.png'
 import kicaldo_feijao from '../img/Products/feijao/feijao_kicaldo_04-removebg-preview.png'
 
+
 const graos = [
 
         // Cartaz de Arroz //
         {
             id: 1,
+            img: `${feijaoMs}`,
+            name: 'feijaoMs',
+            price: '1,90',
             img: `${arroz}`,
             name: 'Solito Tradicional',
             price: '25,90',

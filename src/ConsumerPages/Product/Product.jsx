@@ -1,9 +1,15 @@
+import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
+import CategoriaProduto from '../ListagemProdutos/CategoriaProduto/CategoriaProduto';
+import Enlatados from '../ListagemProdutos/CategoriaProduto/Enlatados';
 import Styles from './Product.module.css'
 
 function Product() {
 
     return (
-        <section className={Styles.Background} id="container">
+        <div>
+
+      <HeaderConsumer/>
+        <main className={Styles.Background} id="container">
             <article className={Styles.Boxtext}>
                 <h1 className={Styles.title}>Finalize seu pedido</h1>
                 <div className={Styles.Subtitlebox}>
@@ -67,8 +73,12 @@ function Product() {
                     </article>
                 </div>
             </article>
+            
 
-        </section>
+            <CategoriaProduto categoria="Produtos relacionados"/>
+
+        </main>
+        </div>
     )
 
 }
