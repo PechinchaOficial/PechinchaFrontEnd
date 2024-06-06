@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 function CardProduto({ img, name, price, dateVenc, qtdUnit, discount }) {
     return (
         <div className={styles.cardproduto}>
-            <div className={styles.container_img}>
-                <img src={img} alt="Produto" className={styles.imgprod} />
-            </div>
+            <Link to='/product'>
+                <div className={styles.container_img}>
+                    <img src={img} alt="Produto" className={styles.imgprod} />
+                </div>
+            </Link>
             <h1 className={styles.prodNome}>{name}</h1>
             <div className={styles.prod_info}>
                 <span className={styles.info_prod}>

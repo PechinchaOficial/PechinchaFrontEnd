@@ -7,11 +7,14 @@ import Graos from './CategoriaProduto/Graos';
 import Bebidas from './CategoriaProduto/Bebidas';
 import Enlatados from './CategoriaProduto/Enlatados';
 import Massas from './CategoriaProduto/Massas';
+import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 
 function ListagemProdutos() {
 
     
     return (
+        <div>
+            <HeaderConsumer/>
         <main className={styles.prod_list}>
                 <Banner bannerimg={imgBanner} />
                 <MercadosRegiao />
@@ -21,6 +24,7 @@ function ListagemProdutos() {
                 <Enlatados categoria="Enlatados"/>
                 <Massas categoria="Massas"/>
         </main>
+        </div>
 
     )
 }

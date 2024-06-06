@@ -7,120 +7,121 @@ import Add_Market from '../../assets/img/Add_market.png'
 import Conta from '../../assets/img/Conta.png'
 import Sair from '../../assets/img/Sair.png'
 import Table from './TableMarket/TableMarket'
+import HeaderMarket from '../../components/CardProduct/HeaderMarket/HeaderMarket';
+import { Link } from 'react-router-dom';
 
-function MarketSystem(){
-    return(
-        <div className={Styles.container}>  {/* Container pai*/}
+function MarketSystem() {
+    return (
+        <div>
+            <HeaderMarket />
 
-            <nav className={Styles.side_bar}>  {/*Nav-bar lateral */}
+            <div className={Styles.container}>  {/* Container pai*/}
 
-                <div className={Styles.div_mercado}> {/* Div que mostra o nome e a imagem do mercado*/}
+                <nav className={Styles.side_bar}>  {/*Nav-bar lateral */}
 
-                    <div className={Styles.imagem_mercado}> {/* Imagem do mercado */}
+                    <div className={Styles.div_mercado}> {/* Div que mostra o nome e a imagem do mercado*/}
 
+                        <div className={Styles.imagem_mercado}> {/* Imagem do mercado */}
+
+                        </div>
+
+                        <div className={Styles.nome_mercado}> {/* Div para o nome do mercado */}
+                            <h2 className={Styles.titulo_mercado}>Mercado Todo dia</h2>
+                            <p className={Styles.nome_responsavel}>Responsavel</p>
+                        </div>
                     </div>
 
-                    <div className={Styles.nome_mercado}> {/* Div para o nome do mercado */}
-                        <h2 className={Styles.titulo_mercado}>Mercado Todo dia</h2>
-                        <p className={Styles.nome_responsavel}>Responsavel</p>
+                    <div className={Styles.container_btn}> {/*Container para o btn*/}
+                        <Link to="/productregistration">
+                            <button className={Styles.btn_cds_produto}> {/*Btn para cadastrar produto*/}
+                                <div className={Styles.conteudo_btn}> {/*Conteudo do btn*/}
+
+                                    <div className={Styles.container_img_add}> {/*Container imagem add*/}
+                                        <img src={Add} alt="imagem de um mais" />
+                                    </div>
+
+
+                                    <div className={Styles.container_texto_cadastro}> {/*Texto cadastro*/}
+                                        <p className={Styles.texto_cadastro}>Cadastrar Produto</p>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </Link>
                     </div>
-                </div>
 
-                <div className={Styles.container_btn}> {/*Container para o btn*/}
-                    <button className={Styles.btn_cds_produto}> {/*Btn para cadastrar produto*/}
-                        <div className={Styles.conteudo_btn}> {/*Conteudo do btn*/}
-
-                            <div className={Styles.container_img_add}> {/*Container imagem add*/}
-                                <img src={Add} alt="imagem de um mais" />
+                    <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
+                        <div className={Styles.container_central}> {/*Container centralizado*/}
+                            <div className={Styles.container_img_nav}> {/*Container da imagem*/}
+                                <img src={Home} alt="imagem de uma casa" />
                             </div>
 
-                            <div className={Styles.container_texto_cadastro}> {/*Texto cadastro*/}
-                                <p className={Styles.texto_cadastro}>Cadastrar Produto</p>
+                            <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
+                                <p className={Styles.texto_nav}>Pagina Inicial</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
+                        <div className={Styles.container_central}> {/*Container centralizado*/}
+                            <div className={Styles.container_img_nav}> {/*Container da imagem*/}
+                                <img src={Produtos} alt="imagem de uma casa" />
                             </div>
 
-                        </div>
-                    </button>
-                </div>
-
-                <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
-                    <div className={Styles.container_central}> {/*Container centralizado*/}
-                        <div className={Styles.container_img_nav}> {/*Container da imagem*/}
-                            <img src={Home} alt="imagem de uma casa" />
-                        </div>
-
-                        <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
-                            <p className={Styles.texto_nav}>Pagina Inicial</p>
+                            <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
+                                <p className={Styles.texto_nav}>Produtos</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
-                    <div className={Styles.container_central}> {/*Container centralizado*/}
-                        <div className={Styles.container_img_nav}> {/*Container da imagem*/}
-                            <img src={Produtos} alt="imagem de uma casa" />
-                        </div>
 
-                        <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
-                            <p className={Styles.texto_nav}>Produtos</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
-                    <div className={Styles.container_central}> {/*Container centralizado*/}
-                        <div className={Styles.container_img_nav}> {/*Container da imagem*/}
-                            <img src={Add_Market} alt="imagem de uma casa" />
-                        </div>
+                    <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
+                        <div className={Styles.container_central}> {/*Container centralizado*/}
+                            <div className={Styles.container_img_nav}> {/*Container da imagem*/}
+                                <img src={Conta} alt="imagem de uma casa" />
+                            </div>
 
-                        <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
-                            <p className={Styles.texto_nav}>Novo Produto</p>
+                            <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
+                                <p className={Styles.texto_nav}>Minha conta</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
-                    <div className={Styles.container_central}> {/*Container centralizado*/}
-                        <div className={Styles.container_img_nav}> {/*Container da imagem*/}
-                            <img src={Conta} alt="imagem de uma casa" />
-                        </div>
+                    <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
+                        <Link to="/" className={Styles.container_central} >
+                            <div className={Styles.container_central}> {/*Container centralizado*/}
+                                <div className={Styles.container_img_nav}> {/*Container da imagem*/}
+                                    <img src={Sair} alt="imagem de uma casa" />
+                                </div>
 
-                        <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
-                            <p className={Styles.texto_nav}>Minha conta</p>
+                                <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
+                                    <p className={Styles.texto_nav}>Sair</p>
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+
+
+                </nav>
+
+                <main id="container">
+                    <div className={Styles.main}>
+                        <CardFunction />
+                        <CardFunction />
+                        <CardFunction />
+                        <CardFunction />
+                        <CardFunction />
+                        <div className={Styles.container_table}>
+                            <h2 className={Styles.titulo_table}>Últimas movimentações</h2>
+                            <Table
+                                classe={Styles.table}
+                            />
                         </div>
                     </div>
-                </div>
 
-                <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
-                    <div className={Styles.container_central}> {/*Container centralizado*/}
-                        <div className={Styles.container_img_nav}> {/*Container da imagem*/}
-                            <img src={Sair} alt="imagem de uma casa" />
-                        </div>
-
-                        <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
-                            <p className={Styles.texto_nav}>Sair</p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </nav>
-
-            <main id="container">
-                <div className={Styles.main}>
-                    <CardFunction />
-                    <CardFunction />
-                    <CardFunction />
-                    <CardFunction />
-                    <CardFunction />
-                    <div className={Styles.container_table}>
-                        <h2 className={Styles.titulo_table}>Últimas movimentações</h2>
-                         <Table 
-                         classe={Styles.table}
-                         /> 
-                    </div>
-                </div>
-
-            </main>
+                </main>
+            </div>
         </div>
     )
 }
