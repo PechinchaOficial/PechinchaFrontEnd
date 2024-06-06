@@ -314,6 +314,57 @@
     height: 260px;
 }
 
+@media (min-width: 1280px) and (max-width: 1850px) {
+    /* Insira aqui os estilos desejados para telas entre 1280px e 1919px */
+    .conteudo_central{
+        width: 97%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_table{
+        width: 100%;
+        height: 700px;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+
+    .container_img_form{
+        width: 380px;
+        height: 300px;
+        border-radius: 10px;
+        border: 1px solid #000;
+        margin-left: 50px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_form{
+        width: 900px;
+        height: 300px;
+        display: flex;
+        flex-direction:column;
+    }
+
+    .main{                          /*Conteudo principal*/
+        width: 100%;
+        height: 900px;
+        margin-top: 90px;
+        padding-top: 50px;
+        padding-left: 50px;
+        display: flex;
+    }
+}
 
 
 
