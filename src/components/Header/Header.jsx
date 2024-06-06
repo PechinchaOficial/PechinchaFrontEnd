@@ -99,10 +99,11 @@ function Header() {
                         <li>
                             <Link to="/recover">senha</Link>
                         </li>
-<<<<<<< HEAD
+
                         <li>
                             <Link to="/product">product</Link>
-=======
+                         </li>
+
 
                         <li>
                             <Link to="/marketproduct">mercado</Link>
@@ -110,7 +111,6 @@ function Header() {
 
                         <li>
                             <Link to="/productregistration">mercadoproduct</Link>
->>>>>>> 9ae406902ee070e0b335e7c89e63dede69310c5b
                         </li>
                     </ul>
                 </div>

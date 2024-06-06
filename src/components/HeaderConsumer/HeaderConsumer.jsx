@@ -88,6 +88,10 @@ function HeaderConsumer() {
                         <li>
                             <Link to="/listagem">Variados</Link>
                         </li>
+                        
+                        <li>
+                            <Link to="/product">product</Link>
+                        </li>
 
 
                     </ul>

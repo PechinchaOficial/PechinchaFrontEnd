@@ -17,6 +17,7 @@ import HeaderConsumer from './components/HeaderConsumer/HeaderConsumer'
 import MarketProduct from './MarketPages/MarketSystem/MarketProduct/MarketProduct'
 import ProductRegistration from './MarketPages/MarketSystem/ProductRegistration/ProductRegistration'
 
+
 function RouterApp() {
     return (
         <Router>
@@ -32,14 +33,10 @@ function RouterApp() {
                 <Route path='/marketSystem' element={<MarketSystem />}></Route>
                 <Route path='/cart' element={<Cart/>}></Route>
                 <Route path='/recover' element={<Password/>}></Route>
-<<<<<<< HEAD
                 <Route path='/product' element={<Product/>}></Route>
 
-
-=======
                 <Route path='/marketproduct' element={<MarketProduct />}></Route>
                 <Route path='/productregistration' element={<ProductRegistration />}></Route>
->>>>>>> 9ae406902ee070e0b335e7c89e63dede69310c5b
             </Routes>
             <Footer />
         </Router>
