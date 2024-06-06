@@ -114,7 +114,9 @@ function MarketSystem(){
                     <CardFunction />
                     <div className={Styles.container_table}>
                         <h2 className={Styles.titulo_table}>Últimas movimentações</h2>
-                         <Table /> 
+                         <Table 
+                         classe={Styles.table}
+                         /> 
                     </div>
                 </div>
 

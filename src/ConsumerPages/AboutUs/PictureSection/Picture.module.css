@@ -12,58 +12,60 @@
 }
 
 
-.pic{
+.pic, .equipe{
     background-color: rgb(204, 153, 76);
     width: 400px;
     height: 400px;
     clip-path: polygon(0 8%, 100% 0, 100% 93%, 0% 100%);
     border-radius: 10px;
-    
+    object-fit: cover;
 }
 
-.pic1{
+.pic1, .pechincha{
     background-color: rgb(247, 61, 5);
     width: 400px;
     height: 350px;
     clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 93%);
     border-radius: 10px;
-    
+    object-fit: cover;
 }
 
-.pic2{
-    background-color: rgb(25, 201, 148);
+.pic2, .triade{
     width: 400px;
     height: 400px;
     clip-path: polygon(0 6%, 100% 0, 100% 93%, 0 100%);
     border-radius: 10px;
-    
-    
+    object-fit: cover;
 }
 
-.pic3{
+.pic3, .meninos{
     background-color: rgb(131, 21, 158);
     width: 400px;
     height: 200px;
     clip-path: polygon(0 12%, 100% 0, 100% 93%, 0% 100%);
     border-radius: 10px;
-    
+    object-fit: cover;
+
 }
 
-.pic4{
-    background-color: rgb(202, 26, 26);
+.pic4, .professores{
     width: 400px;
-    height: 250px;
-    margin-top: -50px;
+    height: 280px;
+    margin-top: -40px;
     clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 93%);
     border-radius: 10px;
-    
+    object-fit: cover;
+
 }
 
-.pic5{
+.pic5, .full{
     background-color: rgb(23, 240, 3);
     width: 400px;
     height: 200px;
     clip-path: polygon(0 10%, 100% 0, 100% 93%, 0 100%);
     border-radius: 10px;
-    
+    object-fit: cover;
+
 }
+
+/*Edição das fotos*/

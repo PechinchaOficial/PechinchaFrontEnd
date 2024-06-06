@@ -3,6 +3,7 @@ import { useRef } from 'react'
 import CardProduto from '../../components/CardProduto/CardProduto';
 import { useState, useEffect } from 'react'
 import { register } from 'swiper/element/bundle'
+import promotion from '../../assets/data/promotionData'
 
 register();
 
@@ -31,6 +32,7 @@ function CarouselProd() {
 
         handleResize();
     }, [])
+
     return (
         <section id='container'>
             <Swiper
@@ -43,11 +45,16 @@ function CarouselProd() {
                 {/* corresponde a cada item do coarrossel */}
                 <SwiperSlide>
                     <div className={styles.carousel_prod}>
-                        <CardProduto />
-                        <CardProduto />
-                        <CardProduto />
-                        <CardProduto />
-                        <CardProduto />
+                        {promotion.map(({ id, img, name, price, dateVenc, discount, qtdUnit }) => (
+                            <CardProduto key={id}
+                                img={img}
+                                name={name}
+                                price={price}
+                                discount={discount}
+                                dateVenc={dateVenc}
+                                qtdUnit={qtdUnit}
+                            />
+                        ))}
                     </div>
                 </SwiperSlide>
 

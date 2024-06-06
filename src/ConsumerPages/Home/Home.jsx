@@ -1,5 +1,7 @@
 import styles from './Home.module.css'
-import teste from '../../assets/img/mercadodia.svg'
+import teste from '../../assets/img/pechinchaLogo.svg'
+import star from '../../assets/img/star.svg'
+import starYellow from '../../assets/img/starYellow.svg'
 import CategoryProd from '../../components/CategoryProd/CategoryProd';
 import step from '../../assets/img/etapa (1).svg'
 import React, { useRef } from 'react';
@@ -34,6 +36,17 @@ function Home() {
     const descRef = useRef();
     const titleRef = useRef();
 
+    const descRef3 = useRef();
+  
+
+
+    function step1() {
+        if (descRef.current || titleRef.current) {
+            descRef.current.innerHTML = '<p>Assim que um produto chegar a uma data próxima de vencimento, ele pode ser cadastrado em nossa plataforma pelo mercado.</p>';
+            titleRef.current.innerHTML = '  1. Como chega os produtos?';
+
+        }
+    }
 
     function alterarConteudo() {
         if (descRef.current || titleRef.current) {
@@ -43,13 +56,36 @@ function Home() {
         }
     }
 
+    function step3() {
+        if (descRef.current || titleRef3.current) {
+            descRef.current.innerHTML = '<p>É bem simples, primeiro você se cadastra na nossa plataforma, e será direcionado para página de produtos, onde poderá escolher as pechinchas desejadas, e adicionar ao carrinho. Após adicionar todos os itens desejados, você irá para a área de pagamento, e pronto, pechincha garantida!</p>';
+            titleRef.current.innerHTML = '  3. E para comprar?';
+
+        }
+    }
+
     return (
         <main className={styles.container_home}>
             {/*  Categorias dos produto*/}
             <section className={styles.hero_section}>
-                <div className={styles.container_slogan}>
+                <div className={styles.container_slogan} id='container'>
                     <img src={teste} alt="logo" className={styles.img_logo} />
+                    <h2 className={styles.slogan_subtitle}>Nós combatemos o desperdicio e ainda fazemos aquela diferença no bolso</h2>
+
+                    <div className={styles.search}>
+                        <input type="search" placeholder='Pechinchar' className={styles.search_bar} />
+                        <button className={styles.btn_bar}><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
                 </div>
+
+
+                <img src={star} alt="star" className={styles.star} />
+
+                <img src={starYellow} alt="star" className={styles.star_2} />
+
+
+
+
             </section>
 
             {/*  Categorias dos produto*/}
@@ -60,7 +96,7 @@ function Home() {
                     <p className={styles.subtitle}>Escolha uma das categorias abaixo, e economize</p>
                 </header>
 
-                <CategoryProd /> 
+                <CategoryProd />
             </section>
 
             {/* Como funciona a chegada dos produtos na plataforma*/}
@@ -73,13 +109,13 @@ function Home() {
                         <article className={styles.passos}>
 
                             <div className={styles.boxLeft}>
-                                <div className={styles.passo}>
+                                <div className={styles.passo}onClick={step1}>
                                     <span>1</span>
                                 </div>
                                 <div className={styles.passo} onClick={alterarConteudo}>
                                     <span>2</span>
                                 </div>
-                                <div className={styles.passo}>
+                                <div className={styles.passo}onClick={step3}>
                                     <span>3</span>
                                 </div>
                                 <div className={styles.passo}>

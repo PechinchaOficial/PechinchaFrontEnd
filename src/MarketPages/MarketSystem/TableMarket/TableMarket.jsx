@@ -3,10 +3,10 @@ import Btn from '../BtnMarket/BtnMarket'
 import Cancel from '../../../assets/img/Cancel.png'
 import Create from '../../../assets/img/Create.png'
 
-function TableMarket(){
+function TableMarket({classe}){
     return(
         <div class="container">
-    <table className={Styles.table}>
+    <table className={classe}>
         <thead className={Styles.cabeçalho}>
             <tr>
                 <th className={Styles.coluna}>ID</th>
