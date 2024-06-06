@@ -159,7 +159,7 @@
 
 .container_table{
     width: 95%;
-    height: 600px;
+    height: 700px;
     margin-left: 20px;
     margin-bottom: 60px;
     display: flex;
@@ -174,5 +174,6 @@
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
     border-radius: 10px;
 }
+
 
 
