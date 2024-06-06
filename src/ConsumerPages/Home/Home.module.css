@@ -46,7 +46,8 @@
     color: #fff;
     letter-spacing: 1px;
     max-width: 800px;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .strong{
@@ -78,7 +79,7 @@ color: var(--vermelho);
 
 .search {
     position: relative;
-    width: 1000px;
+    width: 900px;
     z-index: 1;
 
 }
@@ -92,7 +93,7 @@ color: var(--vermelho);
     border: 0.5px solid #00000021;
     outline: none;
     font-size: 1.5rem;
-    clip-path: polygon(1% 0, 100% 0%, 98% 100%, 0 100%);
+    border-radius: 20px;
 
 
 }
@@ -118,7 +119,7 @@ color: var(--vermelho);
     right: 0;
     cursor: pointer;
     transition: 0.5s all;
-    clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0 100%);
+   border-radius: 0px 20px 20px 0px;
 
 
 }

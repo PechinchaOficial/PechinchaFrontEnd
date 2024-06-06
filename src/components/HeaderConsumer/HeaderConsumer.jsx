@@ -60,12 +60,12 @@ function HeaderConsumer() {
                 <div className={styles.container_header} id='container'>
                     <ul className={styles.nav_link}>
                         <li>
-                            <Link className={styles.principal_link} to="/">PARA VOCÊ</Link>
+                            <Link className={styles.principal_link} to="/listagem">PARA VOCÊ</Link>
                         </li>
 
 
                         <li>
-                            <Link to="/about">Categorias</Link>
+                            <Link to="/listagem">Categorias</Link>
                         </li>
 
                         <li>
@@ -73,12 +73,12 @@ function HeaderConsumer() {
                         </li>
 
                         <li>
-                            <Link to="/homemarket">Bebibas</Link>
+                            <Link to="/listagem">Bebibas</Link>
                         </li>
 
 
                         <li>
-                            <Link to="/registerMarket">Grãos</Link>
+                            <Link to="/listagem">Grãos</Link>
                         </li>
 
                         <li>
@@ -86,7 +86,7 @@ function HeaderConsumer() {
                         </li>
 
                         <li>
-                            <Link to="/cart">Variados</Link>
+                            <Link to="/listagem">Variados</Link>
                         </li>
 
 

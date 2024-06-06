@@ -1,6 +1,7 @@
 import CardProduto from '../../../components/CardProduto/CardProduto';
 import styles from './CategoriaProduto.module.css'
 import { useRef } from 'react'
+import snacksData from '../../../assets/data/snacksData'
 
 function CategoriaProduto({ categoria }) {
 
@@ -33,17 +34,22 @@ function CategoriaProduto({ categoria }) {
             </div>
 
             <div className={styles.carousel_prod} ref={carousel}>
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
-                <CardProduto />
+                {snacksData.map(({name, id, qtdUnit, discount, price, dateVenc, img}) => (
+                    <CardProduto key={id}
+                    name={name}
+                    img={img}
+                    qtdUnit={qtdUnit}
+                    price={price}
+                    discount={discount}
+                    dateVenc={dateVenc}/>
+                )
+                
+                    
+                )}
             </div>
 
             <button className={styles.btn_carousel} onClick={handleLeftClick} id={styles.left}><i class="fa-solid fa-chevron-left" ></i></button>
-                <button className={styles.btn_carousel} onClick={handleRightClick} id={styles.right}><i class="fa-solid fa-chevron-right" ></i></button>
+            <button className={styles.btn_carousel} onClick={handleRightClick} id={styles.right}><i class="fa-solid fa-chevron-right" ></i></button>
 
 
         </section>

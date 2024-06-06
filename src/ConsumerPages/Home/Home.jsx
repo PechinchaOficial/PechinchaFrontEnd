@@ -36,11 +36,30 @@ function Home() {
     const descRef = useRef();
     const titleRef = useRef();
 
+    const descRef3 = useRef();
+  
+
+
+    function step1() {
+        if (descRef.current || titleRef.current) {
+            descRef.current.innerHTML = '<p>Assim que um produto chegar a uma data próxima de vencimento, ele pode ser cadastrado em nossa plataforma pelo mercado.</p>';
+            titleRef.current.innerHTML = '  1. Como chega os produtos?';
+
+        }
+    }
 
     function alterarConteudo() {
         if (descRef.current || titleRef.current) {
             descRef.current.innerHTML = '<p>Com o produto cadastrado, ele ficará disponível na aba de produtos, na barra de pesquisa inicial, ou em categorias no início do site.</p>';
             titleRef.current.innerHTML = '  2. Como encontrar os produtos?';
+
+        }
+    }
+
+    function step3() {
+        if (descRef.current || titleRef3.current) {
+            descRef.current.innerHTML = '<p>É bem simples, primeiro você se cadastra na nossa plataforma, e será direcionado para página de produtos, onde poderá escolher as pechinchas desejadas, e adicionar ao carrinho. Após adicionar todos os itens desejados, você irá para a área de pagamento, e pronto, pechincha garantida!</p>';
+            titleRef.current.innerHTML = '  3. E para comprar?';
 
         }
     }
@@ -51,7 +70,7 @@ function Home() {
             <section className={styles.hero_section}>
                 <div className={styles.container_slogan} id='container'>
                     <img src={teste} alt="logo" className={styles.img_logo} />
-                    <h2 className={styles.slogan_subtitle}>Nós combatemos o <strong className={styles.strong}>desperdicio</strong> e ainda fazemos aquela diferença no bolso</h2>
+                    <h2 className={styles.slogan_subtitle}>Nós combatemos o desperdicio e ainda fazemos aquela diferença no bolso</h2>
 
                     <div className={styles.search}>
                         <input type="search" placeholder='Pechinchar' className={styles.search_bar} />
@@ -90,13 +109,13 @@ function Home() {
                         <article className={styles.passos}>
 
                             <div className={styles.boxLeft}>
-                                <div className={styles.passo}>
+                                <div className={styles.passo}onClick={step1}>
                                     <span>1</span>
                                 </div>
                                 <div className={styles.passo} onClick={alterarConteudo}>
                                     <span>2</span>
                                 </div>
-                                <div className={styles.passo}>
+                                <div className={styles.passo}onClick={step3}>
                                     <span>3</span>
                                 </div>
                                 <div className={styles.passo}>

@@ -46,8 +46,13 @@ height: 100%;
 
 .header_upp {
     background-color: var(--amarelo);
-    font-weight: 500;
 }
+
+.header_upp .container_header_up ul li Link{
+    font-weight: 600;
+}
+
+
 
 .user_icon{
     height: 50px;
@@ -106,7 +111,7 @@ height: 100%;
 }
 
 .container_header_up .nav_link a {
-    font-weight: 400;
+    font-weight: 600;
 
 }
 
