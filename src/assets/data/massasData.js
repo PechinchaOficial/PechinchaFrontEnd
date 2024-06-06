@@ -1,25 +1,29 @@
-import arrozSolito from '../img/Products/arroz/solito_01-removebg-preview.png'
-import bolachaBono from '../img/Products/bolachaDoce/Bolacha_Bono_Chocolate.png'
-import bolo from '../img/Products/bolo/bolo_bauducco_01-removebg-preview.png'
-import cafeMelita from '../img/Products/cafe/cafe_melitta-2.webp'
-import leiteCondensado from '../img/Products/leiteCondensado/condensado_moca-2.webp'
+import semola from '../img/Products/massas/macarrao_semola.jpg'
+import parafuso from '../img/Products/massas/macarrao_parafuso.jpg'
+import cesare from '../img/Products/massas/macarrao_cesare.jpg'
+import capnudes from '../img/Products/massas/capnudes.jpg'
+import miojo from '../img/Products/massas/miojo.webp'
+import penne from '../img/Products/massas/macarao_penne.webp'
+import udon from '../img/Products/massas/udon.webp'
+import japa from '../img/Products/massas/macarrao_japa.webp'
+
 
 const massas = [
     {
         id: 1,
-        img: `${arrozSolito}`,
-        name: 'MASSAS',
-        price: '9,90',
-        dateVenc: '12/10/2024',
+        img: `${semola}`,
+        name: 'Macarrão Barilla',
+        price: '10,90',
+        dateVenc: '09/10/2024',
         qtdUnit: '25',
         discount: '50%'
     },
 
     {
         id: 2,
-        img: `${bolachaBono}`,
-        name: 'Bolacha Bono',
-        price: '1,90',
+        img: `${parafuso}`,
+        name: 'Macarrão Adria',
+        price: '11,50',
         dateVenc: '12/10/2024',
         qtdUnit: '27',
         discount: '50%'
@@ -27,9 +31,9 @@ const massas = [
 
     {
         id: 3,
-        img: `${bolo}`,
-        name: 'Bolinho Bauducco',
-        price: '9,90',
+        img: `${miojo}`,
+        name: 'Miojo Nissin',
+        price: '3,90',
         dateVenc: '12/10/2024',
         qtdUnit: '25',
         discount: '50%'
@@ -37,9 +41,9 @@ const massas = [
 
     {
         id: 4,
-        img: `${cafeMelita}`,
-        name: 'Café Melita',
-        price: '9,90',
+        img: `${cesare}`,
+        name: 'Macarrão Casarecce',
+        price: '5,90',
         dateVenc: '12/10/2024',
         qtdUnit: '25',
         discount: '50%'
@@ -47,9 +51,39 @@ const massas = [
 
     {
         id: 5,
-        img: `${leiteCondensado}`,
-        name: 'Leite Condensado',
+        img: `${capnudes}`,
+        name: 'Capncodles Carne',
+        price: '19,90',
+        dateVenc: '12/10/2024',
+        qtdUnit: '25',
+        discount: '50%'
+    },
+
+    {
+        id: 6,
+        img: `${udon}`,
+        name: 'Udon',
+        price: '12,50',
+        dateVenc: '12/10/2024',
+        qtdUnit: '25',
+        discount: '50%'
+    },
+
+    {
+        id: 7,
+        img: `${penne}`,
+        name: 'Macarrão Penne',
         price: '9,90',
+        dateVenc: '12/10/2024',
+        qtdUnit: '25',
+        discount: '50%'
+    },
+
+    {
+        id: 8,
+        img: `${japa}`,
+        name: 'Macarrão Japones',
+        price: '15,50',
         dateVenc: '12/10/2024',
         qtdUnit: '25',
         discount: '50%'
