@@ -18,7 +18,7 @@
     height: 400px;
     clip-path: polygon(0 8%, 100% 0, 100% 93%, 0% 100%);
     border-radius: 10px;
-    
+    object-fit: cover;
 }
 
 .pic1, .pechincha{
@@ -27,7 +27,7 @@
     height: 350px;
     clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 93%);
     border-radius: 10px;
-    
+    object-fit: cover;
 }
 
 .pic2, .triade{
@@ -35,8 +35,7 @@
     height: 400px;
     clip-path: polygon(0 6%, 100% 0, 100% 93%, 0 100%);
     border-radius: 10px;
-    
-    
+    object-fit: cover;
 }
 
 .pic3, .meninos{
@@ -45,7 +44,8 @@
     height: 200px;
     clip-path: polygon(0 12%, 100% 0, 100% 93%, 0% 100%);
     border-radius: 10px;
-    
+    object-fit: cover;
+
 }
 
 .pic4, .professores{
@@ -54,7 +54,8 @@
     margin-top: -40px;
     clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 93%);
     border-radius: 10px;
-    
+    object-fit: cover;
+
 }
 
 .pic5, .full{
@@ -63,7 +64,8 @@
     height: 200px;
     clip-path: polygon(0 10%, 100% 0, 100% 93%, 0 100%);
     border-radius: 10px;
-    
+    object-fit: cover;
+
 }
 
 /*Edição das fotos*/
