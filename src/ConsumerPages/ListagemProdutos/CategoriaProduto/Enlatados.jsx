@@ -1,7 +1,7 @@
 import CardProduto from '../../../components/CardProduto/CardProduto';
 import styles from './CategoriaProduto.module.css'
 import { useRef } from 'react'
-import enlatadosData from '../../../assets/data/snacksData'
+import enlatadosData from '../../../assets/data/enlatadosData'
 
 function Enlatados({ categoria }) {
 

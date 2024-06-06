@@ -1,7 +1,6 @@
 .background_login{
-	background-color: red;
 	width: 100%;
-	background-image: url('/src/assets/img/fundo\ mercado.png');
+	background-image: url('/src/assets/img/fundo mercado.png');
 	padding: 300px 0px 150px 0px;
 	display: flex;
 	align-items: center;
