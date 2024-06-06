@@ -10,21 +10,22 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Garante que a barra lateral tenha pelo menos a altura da viewport */
+    
 }
  
 .main{                          /*Conteudo principal*/
     width: 100%;
-    height: 100vh;
-    margin-top: 90px;
-    padding-top: 50px;
+    height: auto;
+    padding-top: 70px;
     padding-left: 50px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .div_mercado{                    /*Container da div mercado (dentro da Nav-bar)*/
     width: 100%;
     height: 100px;
-    margin-top: 140px;
+    margin-top: 60px;
     display: flex;
     align-items: center;
     flex-direction: row;

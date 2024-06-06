@@ -24,7 +24,6 @@ function RouterApp() {
     return (
         <Router>
            
-            <HeaderConsumer/>
             <Routes>
                 <Route path='/' element={<Home />}></Route>
                 <Route path='/login' element={<Login />}></Route>
