@@ -13,13 +13,13 @@
 }
 
 .infosmarket{
-    background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 230px;
+    height: 200px;
     position: relative;
     display: flex;
     padding-top: 20px;
     justify-content: space-between;
+    background-color: #fff;
 }
 
 .photomarket{

@@ -156,6 +156,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .container_actions{
@@ -205,7 +206,7 @@
     width: 340px;
     height: 45px;
     border-radius: 7px;
-    border:  0.5px solid #000;
+    border: 0.5px solid rgba(170, 170, 170, 0.61);
     font-size: 25px;
     padding-left: 10px;
     margin-right: 35px;
@@ -217,8 +218,10 @@
     margin-top: 25px;
     display: flex;
     flex-direction: row;
-    border: 1px solid gray;
+    border: 0.5px solid rgba(170, 170, 170, 0.61);
     border-radius: 10px;
+    background-color: #fff;
+
 }
 
 .container_form{
@@ -265,7 +268,7 @@
     height: 47px;
     border-radius: 10px;
     padding-left: 20px;
-    border: 1px solid #000;
+    border: 0.5px solid rgba(170, 170, 170, 0.61);
     font-size: 23px;
     margin-left: 40px;
 }
@@ -276,7 +279,7 @@
     border-radius: 10px;
     padding-left: 10px;
     font-size: 17px;
-    border: 1px solid #000;
+    border: 0.5px solid rgba(170, 170, 170, 0.61);
 }
 
 .input_number{
@@ -284,7 +287,7 @@
     height: 47px;
     border-radius: 10px;
     font-size: 20px;
-    border: 1px solid #000;
+    border: 0.5px solid rgba(170, 170, 170, 0.61);
     padding-left: 15px;
     margin-left: 20px;
 }
@@ -292,7 +295,7 @@
 .date{
     width: 100%;
     height: 47px;
-    border: 1px solid #000;
+    border: 0.5px solid rgba(170, 170, 170, 0.61);
     border-radius: 10px;
     font-size: 15px;
     padding-left: 15px;
@@ -302,7 +305,7 @@
     width: 380px;
     height: 400px;
     border-radius: 10px;
-    border: 1px solid #000;
+    border: 0.5px solid rgba(170, 170, 170, 0.61);
     margin-left: 50px;
     margin-top: 25px;
     display: flex;
@@ -331,7 +334,7 @@
         margin-top: 25px;
         display: flex;
         flex-direction: column;
-        border: 1px solid gray;
+        border: 0.5px solid rgba(170, 170, 170, 0.61);
         border-radius: 10px;
         justify-content: center;
         align-items: center;
@@ -342,7 +345,7 @@
         width: 380px;
         height: 300px;
         border-radius: 10px;
-        border: 1px solid #000;
+        border: 0.5px solid rgba(170, 170, 170, 0.61);
         margin-left: 50px;
         margin-top: 30px;
         display: flex;

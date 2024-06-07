@@ -72,34 +72,26 @@ function HeaderConsumer() {
                         </li>
 
                         <li>
-                            <Link to="/listagem">Snacks</Link>
+                            <Link to="/snacks">Snacks</Link>
                         </li>
 
                         <li>
-                            <Link to="/listagem">Bebibas</Link>
+                            <Link to="/bebidas">Bebibas</Link>
                         </li>
 
 
                         <li>
-                            <Link to="/listagem">Grãos</Link>
+                            <Link to="/graos">Grãos</Link>
                         </li>
 
                         <li>
-                            <Link to="/marketSystem">Massas</Link>
+                            <Link to="/massas">Massas</Link>
                         </li>
 
                         <li>
                             <Link to="/listagem">Variados</Link>
                         </li>
                         
-                        <li>
-                            <Link to="/product">product</Link>
-                        </li>
-
-                        <li>
-                            <Link to="/marketproductpage">pagina do mercado</Link>
-                        </li>
-
 
                     </ul>
                 </div>

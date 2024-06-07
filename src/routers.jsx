@@ -17,6 +17,12 @@ import HeaderConsumer from './components/HeaderConsumer/HeaderConsumer'
 import MarketProduct from './MarketPages/MarketSystem/MarketProduct/MarketProduct'
 import ProductRegistration from './MarketPages/MarketSystem/ProductRegistration/ProductRegistration'
 import MarketProductPage from './ConsumerPages/MarketProductPage/MarketProductPage'
+import SnacksFilter from './ConsumerPages/ListagemProdutos/FilterProducts/SnacksFilter'
+import EnlatadosFilter from './ConsumerPages/ListagemProdutos/FilterProducts/EnlatadosFilter'
+import BebidasFilter from './ConsumerPages/ListagemProdutos/FilterProducts/BebidasFilter'
+import GraosFilter from './ConsumerPages/ListagemProdutos/FilterProducts/GraosFilter'
+import MassasFilter from './ConsumerPages/ListagemProdutos/FilterProducts/MassasFilter'
+import HomeDeslogado from './ConsumerPages/Home/HomeDeslogado'
 
 
 
@@ -39,7 +45,13 @@ function RouterApp() {
                 <Route path='/marketproduct' element={<MarketProduct />}></Route>
                 <Route path='/productregistration' element={<ProductRegistration />}></Route>
                 <Route path='/marketproductpage' element={<MarketProductPage/>}></Route>
-               
+                <Route path='/snacks' element={<SnacksFilter/>}></Route>
+                <Route path='/enlatados' element={<EnlatadosFilter/>}></Route>
+                <Route path='/bebidas' element={<BebidasFilter/>}></Route>
+                <Route path='/graos' element={<GraosFilter/>}></Route>
+                <Route path='/massas' element={<MassasFilter/>}></Route>
+                <Route path='/homedeslogado' element={<HomeDeslogado/>}></Route>
+
             </Routes>
             <Footer />
         </Router>

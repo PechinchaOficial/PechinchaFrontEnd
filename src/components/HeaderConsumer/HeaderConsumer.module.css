@@ -127,7 +127,8 @@ height: 100%;
 }
 
 .container_header_up .nav_link a {
-    font-weight: 600;
+    font-weight: 500;
+    margin-left: 10px;
 
 }
 
@@ -138,6 +139,7 @@ height: 100%;
     width: 100%;
     gap: 30px;
     list-style: none;
+    font-size: 1.1rem;
 }
 
 

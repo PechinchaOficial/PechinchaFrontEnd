@@ -1,7 +1,7 @@
 .background_login{
 	width: 100%;
 	background-image: url('/src/assets/img/fundo mercado.png');
-	padding: 300px 0px 150px 0px;
+	padding: 200px 0px 150px 0px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -86,6 +86,10 @@ label{
 }
 
 .recover-password a{
+	color: var(--azul);
+}
+
+.recover-password a{
 	text-decoration: none;
 }
 
@@ -93,6 +97,10 @@ label{
 .privacy-policy{
 	text-align: center;
 	width:  90%;
+}
+
+.privacy-policy a{
+	color: var(--azul);
 }
 
 /*Banner do lado direito*/

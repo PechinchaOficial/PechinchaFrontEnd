@@ -22,9 +22,10 @@ import rateimg from '../../assets/img/altoFalante.png'
 import amigao from '../../assets/img/Market/amigao.png'
 import violeta from '../../assets/img/Market/violeta.png'
 import recoy from '../../assets/img/Market/ricoy.png'
+import Header from '../../components/Header/Header';
 
 
-function Home() {
+function HomeDeslogado() {
 
     const [slidesPerView, setSlidePerView] = useState(1)
 
@@ -74,13 +75,13 @@ function Home() {
 
     return (
         <div>
-            <HeaderConsumer />
+            <Header/>
             <main className={styles.container_home}>
                 {/*  Categorias dos produto*/}
                 <section className={styles.hero_section}>
                     <div className={styles.container_slogan} id='container'>
                         <img src={teste} alt="logo" className={styles.img_logo} />
-                        <h2 className={styles.slogan_subtitle}>Nós combatemos o desperdicio e ainda fazemos aquela diferença no bolso!</h2>
+                        <h2 className={styles.slogan_subtitle}>Nós combatemos o desperdicio e ainda fazemos aquela diferença no bolso</h2>
 
                         <div className={styles.search}>
                             <input type="search" placeholder='Pechinchar' className={styles.search_bar} />
@@ -232,7 +233,7 @@ function Home() {
                                     </div>
 
                                     <div className={styles.rate_info}>
-                                        <p>Muito boa a plataforma! Achei muito fácil de usar e intuitiva, Já estou comprando toda semana!</p>
+                                        <p>Muito boa a plataforma! Achei muito facil de usar e intuitiva, Já estou comprando toda semana!</p>
                                     </div>
 
                                     <div className={styles.stars}>
@@ -313,4 +314,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default HomeDeslogado;
