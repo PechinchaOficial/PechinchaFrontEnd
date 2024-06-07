@@ -71,7 +71,7 @@ const enlatados = [
     {
         id: 7,
         img: `${milho_ervilha}`,
-        name: 'Enlatado de milho com ervilha',
+        name: 'Enlatado de milho',
         price: '15,00',
         dateVenc: '12/10/2024',
         qtdUnit: '25',
