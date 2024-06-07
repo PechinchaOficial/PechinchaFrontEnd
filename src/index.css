@@ -94,3 +94,9 @@ body {
   background-color: var(--azul);
   color: #fff;
 }
+
+.uai{
+  position:  absolute;
+  top: 500px;
+  
+}

@@ -16,6 +16,7 @@ import CarouselProd from '../../components/CarouselProd/CarouselProd';
 // imports mercados cadastrados
 import mercadoLogo from '../../assets/img/mercadodia.svg'
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
+import rateimg from '../../assets/img/avaliacao.png'
 
 function Home() {
 
@@ -237,6 +238,10 @@ function Home() {
                                 <i class="fa-solid fa-circle-chevron-right"></i>
                             </div>
                         </div>
+                    </section>
+
+                    <section className={styles.rate_section}>
+                        <img src={rateimg} alt="Avaliação" />
                     </section>
                 </div>
             </main>
