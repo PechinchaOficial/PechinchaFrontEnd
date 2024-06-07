@@ -23,6 +23,9 @@ import BebidasFilter from './ConsumerPages/ListagemProdutos/FilterProducts/Bebid
 import GraosFilter from './ConsumerPages/ListagemProdutos/FilterProducts/GraosFilter'
 import MassasFilter from './ConsumerPages/ListagemProdutos/FilterProducts/MassasFilter'
 import HomeDeslogado from './ConsumerPages/Home/HomeDeslogado'
+import AboutUsSemLogin from './ConsumerPages/AboutUs/AboutUsSemLogin'
+import ListagemDeslogado from './ConsumerPages/ListagemProdutos/ListagemDeslogado'
+import HomeMarketDeslogado from './MarketPages/Home/HomeMarketDeslogado'
 
 
 
@@ -51,6 +54,9 @@ function RouterApp() {
                 <Route path='/graos' element={<GraosFilter/>}></Route>
                 <Route path='/massas' element={<MassasFilter/>}></Route>
                 <Route path='/homedeslogado' element={<HomeDeslogado/>}></Route>
+                <Route path='/aboutusdeslogado' element={<AboutUsSemLogin/>}></Route>
+                <Route path='/listagemdeslogado' element={<ListagemDeslogado/>}></Route>
+                <Route path='/homemarketdeslogado' element={<HomeMarketDeslogado/>}></Route>
 
             </Routes>
             <Footer />

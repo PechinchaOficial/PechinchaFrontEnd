@@ -67,20 +67,20 @@ function Header() {
                 <div className={styles.container_header} id='container'>
                     <ul className={styles.nav_link}>
                         <li>
-                            <Link to="/">Início</Link>
+                            <Link to="/homedeslogado">Início</Link>
                         </li>
 
 
                         <li>
-                            <Link to="/about">Sobre nós</Link>
+                            <Link to="/aboutusdeslogado">Sobre nós</Link>
                         </li>
 
                         <li>
-                            <Link to="/listagem">Produtos</Link>
+                            <Link to="/listagemdeslogado">Produtos</Link>
                         </li>
 
                         <li>
-                            <Link to="/homemarket">Seja Parceiro</Link>
+                            <Link to="/homemarketdeslogado">Seja Parceiro</Link>
                         </li>
 
                     </ul>
