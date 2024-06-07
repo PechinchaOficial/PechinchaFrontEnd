@@ -3,7 +3,7 @@ import Add_market from '../../../assets/img/Add_card_market.png'
 import Cesta from '../../../assets/img/Ingredients.png'
 import { Link } from 'react-router-dom';
 
-function CardFunction() {
+function CardFunction({texto}) {
     return (
 
         <Link to = "/productregistration" >
@@ -22,7 +22,7 @@ function CardFunction() {
                 </div>
 
                 <div className={Styles.container_texto_card}>
-                    <p className={Styles.texto_card}>Cadastrar Produtos</p>
+                    <p className={Styles.texto_card}>{texto}</p>
                 </div>
 
             </div>

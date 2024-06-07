@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logoHeader.svg'
 import Button from '../Button/Button'
 import SearchBar from '../SearchBar/SearchBar';
+import user from '../../assets/img/user.png'
+
+
 function HeaderConsumer() {
     return (
         <header className={styles.cabecalho}>
@@ -37,7 +40,7 @@ function HeaderConsumer() {
                     <div className={styles.nav_right}>
                         <Link to='/login'>
                             <div className={styles.user_icon}>
-
+                               <img src={user} alt="" className={styles.user} />
                             </div>
                         </Link>
 

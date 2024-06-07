@@ -52,15 +52,26 @@ height: 100%;
     font-weight: 600;
 }
 
+.user{
+    width: 100%;
+    height: 100%;
+}
 
 
 .user_icon{
     height: 50px;
     width: 50px;
     border-radius: 100%;
-    background-color: var(--azul);
     cursor: pointer;
     transition: 0.5s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_icon:hover{
+    background-color: #3d5aa9;
+    transition: all 0.3s;
 }
 
 #cart_icon{
