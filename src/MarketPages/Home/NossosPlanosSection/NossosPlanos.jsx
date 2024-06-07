@@ -14,8 +14,11 @@ function NossosPlanos() {
                         <h1 className={Styles.Txth1}> BARATINHO </h1>
                     </div>
                     <h1 className={Styles.Txt2}> MENSAL </h1>
-                    <h2 className={Styles.Valor}> <span className={Styles.Cifrao}>R$</span>19,99 </h2>
+                    <h2 className={Styles.Valor}> <span className={Styles.Cifrao}>R$</span>19,<span className={Styles.Cents}>99</span> </h2>
                     <ul className={Styles.Beneficios}>
+                        <li><h3>Beneficio um</h3></li>
+                        <li><h3>Beneficio um</h3></li>
+                        <li><h3>Beneficio um</h3></li>
                         <li><h3>Beneficio um</h3></li>
                         <li><h3>Beneficio um</h3></li>
                         <li><h3>Beneficio um</h3></li>
@@ -30,8 +33,11 @@ function NossosPlanos() {
                         <h1 className={Styles.Txth1}> BARATO </h1>
                     </div>
                     <h1 className={Styles.Txt2}> TRIMESTRAL </h1>
-                    <h2 className={Styles.Valor}> <span className={Styles.Cifrao}>R$</span>19,99 </h2>
+                    <h2 className={Styles.Valor}> <span className={Styles.Cifrao}>R$</span>19,<span className={Styles.Cents}>99</span> </h2>
                     <ul className={Styles.Beneficios}>
+                        <li><h3>Beneficio um</h3></li>
+                        <li><h3>Beneficio um</h3></li>
+                        <li><h3>Beneficio um</h3></li>
                         <li><h3>Beneficio um</h3></li>
                         <li><h3>Beneficio um</h3></li>
                         <li><h3>Beneficio um</h3></li>
@@ -46,8 +52,11 @@ function NossosPlanos() {
                         <h1 className={Styles.Txth1}> UM POUCO <br/> SALGADO </h1>
                     </div>
                     <h1 className={Styles.Txt2}> ANUAL </h1>
-                    <h2 className={Styles.Valor}> <span className={Styles.Cifrao}>R$</span>19,99 </h2>
+                    <h2 className={Styles.Valor}> <span className={Styles.Cifrao}>R$</span>19,<span className={Styles.Cents}>99</span> </h2>
                     <ul className={Styles.Beneficios}>
+                        <li><h3>Beneficio um</h3></li>
+                        <li><h3>Beneficio um</h3></li>
+                        <li><h3>Beneficio um</h3></li>
                         <li><h3>Beneficio um</h3></li>
                         <li><h3>Beneficio um</h3></li>
                         <li><h3>Beneficio um</h3></li>
