@@ -125,7 +125,8 @@ color: var(--vermelho);
 }
 
 .btn:hover {
-    background-color: rgb(44, 44, 221);
+    background-color: #a81d1b;
+    transition: all 0.3s;
 }
 
 /* Produtos e categorias */
@@ -361,6 +362,13 @@ color: var(--vermelho);
 .logo_mercado {
     height: 70px;
 }
+
+.logo_mercado_2{
+    width: 250px;
+    height: 100px;
+}
+
+
 
 .btn {
     border: none;

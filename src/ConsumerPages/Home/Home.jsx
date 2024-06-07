@@ -17,6 +17,10 @@ import CarouselProd from '../../components/CarouselProd/CarouselProd';
 import mercadoLogo from '../../assets/img/mercadodia.svg'
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 import rateimg from '../../assets/img/avaliacao.png'
+import amigao from '../../assets/img/Market/amigao.png'
+import violeta from '../../assets/img/Market/violeta.png'
+import recoy from '../../assets/img/Market/ricoy.png'
+
 
 function Home() {
 
@@ -182,22 +186,22 @@ function Home() {
                             </div>
 
                             <div className={styles.card_mercado} id={styles.marketTwo}>
-                                <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
+                                <img src={amigao} alt="Logo Mercado" className={styles.logo_mercado} />
                                 <button className={styles.btn}>
                                     Ver Promoções
                                 </button>
                             </div>
 
                             <div className={styles.card_mercado} id={styles.marketThree}>
-                                <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
+                                <img src={violeta} alt="Logo Mercado" className={styles.logo_mercado_2} />
                                 <button className={styles.btn}>
                                     Ver Promoções
                                 </button>
                             </div>
 
                             <div className={styles.card_mercado} id={styles.marketTwo}>
-                                <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
-                                <button className={styles.btn}>
+                                <img src={recoy} alt="Logo Mercado" className={styles.logo_mercado_2} />
+                                <button className={styles.btn}> 
                                     Ver Promoções
                                 </button>
                             </div>
