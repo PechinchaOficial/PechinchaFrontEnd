@@ -20,10 +20,11 @@ import rateimg from '../../assets/img/avaliacao.png'
 import amigao from '../../assets/img/Market/amigao.png'
 import violeta from '../../assets/img/Market/violeta.png'
 import recoy from '../../assets/img/Market/ricoy.png'
-
+import { useTranslation } from "react-i18next";
 
 function Home() {
-
+    const { t } = useTranslation();
+    
     const [slidesPerView, setSlidePerView] = useState(1)
 
     useEffect(() => {
@@ -100,7 +101,7 @@ function Home() {
 
                 <section className={styles.categorySection}>
                     <header className={styles.text}>
-                        <h2 className={styles.title}>Mate sua fome por uma <span className={styles.destaque}>Pechincha</span></h2>
+                        <h2 className={styles.title}>{t("slogan")} <span className={styles.destaque}>Pechincha</span></h2>
                         <p className={styles.subtitle}>Escolha uma das categorias abaixo, e economize</p>
                     </header>
 

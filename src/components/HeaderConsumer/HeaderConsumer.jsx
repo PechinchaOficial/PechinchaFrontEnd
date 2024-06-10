@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logoHeader.svg'
 import Button from '../Button/Button'
 import SearchBar from '../SearchBar/SearchBar';
+import BtnLang from '../BtnLang/BtnLang';
 function HeaderConsumer() {
     return (
         <header className={styles.cabecalho}>
@@ -20,6 +21,9 @@ function HeaderConsumer() {
 
                         <li>
                             <Link to="/homemarket">Seja Parceiro</Link>
+                        </li>
+                        <li>
+                            <BtnLang />
                         </li>
                     </ul>
                 </div>
