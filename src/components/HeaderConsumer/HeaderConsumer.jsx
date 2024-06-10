@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logoHeader.svg'
 import Button from '../Button/Button'
 import SearchBar from '../SearchBar/SearchBar';
+<<<<<<< HEAD
 import BtnLang from '../BtnLang/BtnLang';
+=======
+import user from '../../assets/img/user.png'
+
+
+>>>>>>> main
 function HeaderConsumer() {
     return (
         <header className={styles.cabecalho}>
@@ -41,7 +47,7 @@ function HeaderConsumer() {
                     <div className={styles.nav_right}>
                         <Link to='/login'>
                             <div className={styles.user_icon}>
-
+                               <img src={user} alt="" className={styles.user} />
                             </div>
                         </Link>
 
@@ -73,34 +79,26 @@ function HeaderConsumer() {
                         </li>
 
                         <li>
-                            <Link to="/listagem">Snacks</Link>
+                            <Link to="/snacks">Snacks</Link>
                         </li>
 
                         <li>
-                            <Link to="/listagem">Bebibas</Link>
+                            <Link to="/bebidas">Bebibas</Link>
                         </li>
 
 
                         <li>
-                            <Link to="/listagem">Grãos</Link>
+                            <Link to="/graos">Grãos</Link>
                         </li>
 
                         <li>
-                            <Link to="/marketSystem">Massas</Link>
+                            <Link to="/massas">Massas</Link>
                         </li>
 
                         <li>
                             <Link to="/listagem">Variados</Link>
                         </li>
                         
-                        <li>
-                            <Link to="/product">product</Link>
-                        </li>
-
-                        <li>
-                            <Link to="/marketproductpage">pagina do mercado</Link>
-                        </li>
-
 
                     </ul>
                 </div>

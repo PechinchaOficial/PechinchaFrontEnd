@@ -4,6 +4,7 @@ import CardProduto from '../../components/CardProduto/CardProduto';
 import { useState, useEffect } from 'react'
 import { register } from 'swiper/element/bundle'
 import promotion from '../../assets/data/promotionData'
+import bebidasData from '../../assets/data/bebidasData'
 
 register();
 
@@ -60,11 +61,18 @@ function CarouselProd() {
 
                 <SwiperSlide>
                     <div className={styles.carousel_prod}>
-                        <CardProduto />
-                        <CardProduto />
-                        <CardProduto />
-                        <CardProduto />
-                        <CardProduto />
+                       
+                         {bebidasData.map(({ id, img, name, price, dateVenc, discount, qtdUnit }) => (
+                            <CardProduto key={id}
+                                img={img}
+                                name={name}
+                                price={price}
+                                discount={discount}
+                                dateVenc={dateVenc}
+                                qtdUnit={qtdUnit}
+                            />
+                        ))}
+                        
                     </div>
                 </SwiperSlide>
             </Swiper>

@@ -107,11 +107,11 @@ function MarketSystem() {
 
                 <main id="container">
                     <div className={Styles.main}>
-                        <CardFunction />
-                        <CardFunction />
-                        <CardFunction />
-                        <CardFunction />
-                        <CardFunction />
+                        <CardFunction texto="Cadastrar Produtos" />
+                        <CardFunction texto="Analise de Dados" />
+                        <CardFunction texto="Suporte Online" />
+                        <CardFunction texto="Feedback Clientes" />
+                        <CardFunction texto="Promoções Personalizadas" />
                         <div className={Styles.container_table}>
                             <h2 className={Styles.titulo_table}>Últimas movimentações</h2>
                             <Table

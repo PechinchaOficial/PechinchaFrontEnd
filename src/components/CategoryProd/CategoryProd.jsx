@@ -8,26 +8,33 @@ import bebidas from '../../assets/img/bebidas.svg'
 
 
 function CategoryProd() {
-    return ( 
-            <div className={styles.container_card}>
-                <CardProduct
+    return (
+        <div className={styles.container_card}>
+            <CardProduct
                 nome='Snacks'
-                img={snacks}/>
-                <CardProduct
+                link="/snacks"
+                img={snacks} />
+            <CardProduct
                 categoria='azul'
                 nome='Enlatados'
-                img={enlatados}/>
-                <CardProduct
-                 nome='Grãos'
-                 img={graos}/>
-                <CardProduct
+                link="/enlatados"
+                img={enlatados} />
+            <CardProduct
+                nome='Grãos'
+                img={graos}
+                link="/graos"
+            />
+            <CardProduct
                 nome='Massas'
                 categoria='azul'
-                img={massas}/>
-                <CardProduct
+                img={massas}
+                link="/massas"
+            />
+            <CardProduct
                 nome='Bebidas'
-                img={bebidas}/>
-            </div>
+                link="/bebidas"
+                img={bebidas} />
+        </div>
     )
 }
 

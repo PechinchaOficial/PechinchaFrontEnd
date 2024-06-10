@@ -2,6 +2,7 @@ import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 import CategoriaProduto from '../ListagemProdutos/CategoriaProduto/CategoriaProduto';
 import Enlatados from '../ListagemProdutos/CategoriaProduto/Enlatados';
 import Styles from './Product.module.css'
+import salgadinho from '../../assets/img/salgadinho.png'
 
 function Product() {
 
@@ -14,7 +15,7 @@ function Product() {
                 <h1 className={Styles.title}>Finalize seu pedido</h1>
                 <div className={Styles.Subtitlebox}>
                     <div className={Styles.icoHome}> <img src="" /> </div>
-                    <h4 className={Styles.Subtitle}>Rua.N sei oq lá N450</h4>
+                    <h4 className={Styles.Subtitle}>Rua.Tito N450</h4>
                 </div>
 
             </article>
@@ -24,13 +25,17 @@ function Product() {
 
                     <article className={Styles.BoxLeft}>
 
-                        <div className={Styles.Box1}></div>
+                        <div className={Styles.Box1}>
+                            <img src={salgadinho} alt="" className={Styles.img_product_2} />
+                        </div>
 
                     </article>
 
                     <article className={Styles.BoxRight}>
 
-                        <div className={Styles.Box2}></div>
+                        <div className={Styles.Box2}>
+                            <img src={salgadinho} alt="" className={Styles.img_product} />
+                        </div>
                     </article>
                 </div>
 
@@ -38,8 +43,8 @@ function Product() {
                     <article className={Styles.BoxInfo}>
                         <div className={Styles.InfoLeft}>
                             <div className={Styles.BoxInfoProduct}>
-                                <h4>Salgadinho Cheetos</h4>
-                                <h5>salgadinho de milho Elma Chips</h5>
+                                <h4 className={Styles.titulo_produto}>Salgadinho Cheetos</h4>
+                                <h5 className={Styles.sub_titulo_product}>salgadinho de milho Elma Chips</h5>
                             </div>
                             <div className={Styles.DateValue}>
                                 <div className={Styles.BoxdateValue}>
@@ -61,7 +66,7 @@ function Product() {
                             </div>
                             <div className={Styles.BackValuesProduct}>
                                 <div className={Styles.Values}>
-                                    <input type="number" className={Styles.QtdBtn}/>
+                                    <input type="number" className={Styles.QtdBtn}  value="1" />
                                 </div>
                                 <div className={Styles.Values} id={Styles.None}><p> R$ 1,35 </p></div>
                                 <div className={Styles.Values} id={Styles.None}><p> R$ 1,35 </p></div>
