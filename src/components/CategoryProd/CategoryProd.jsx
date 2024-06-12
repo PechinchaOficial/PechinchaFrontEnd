@@ -5,33 +5,37 @@ import enlatados from '../../assets/img/enlatados.svg'
 import graos from '../../assets/img/graos.svg'
 import massas from '../../assets/img/massas.svg'
 import bebidas from '../../assets/img/bebidas.svg'
+import { useTranslation } from "react-i18next";
 
 
 function CategoryProd() {
+
+    const { t } = useTranslation();
+
     return (
         <div className={styles.container_card}>
             <CardProduct
-                nome='Snacks'
+                nome={t("Snack")}
                 link="/snacks"
                 img={snacks} />
             <CardProduct
                 categoria='azul'
-                nome='Enlatados'
+                nome={t("Enlatados")}
                 link="/enlatados"
                 img={enlatados} />
             <CardProduct
-                nome='Grãos'
+                nome={t("Graos")}
                 img={graos}
                 link="/graos"
             />
             <CardProduct
-                nome='Massas'
+                nome={t("Massas")}
                 categoria='azul'
                 img={massas}
                 link="/massas"
             />
             <CardProduct
-                nome='Bebidas'
+                nome={t("Bebidas")}
                 link="/bebidas"
                 img={bebidas} />
         </div>

@@ -3,13 +3,9 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logoHeader.svg'
 import Button from '../Button/Button'
 import SearchBar from '../SearchBar/SearchBar';
-<<<<<<< HEAD
 import BtnLang from '../BtnLang/BtnLang';
-=======
 import user from '../../assets/img/user.png'
 
-
->>>>>>> main
 function HeaderConsumer() {
     return (
         <header className={styles.cabecalho}>
