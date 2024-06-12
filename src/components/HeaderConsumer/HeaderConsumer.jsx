@@ -38,7 +38,7 @@ function HeaderConsumer() {
 
                     <SearchBar />
                     <div className={styles.nav_right}>
-                        <Link to='/login'>
+                        <Link to='/userprofile'>
                             <div className={styles.user_icon}>
                                <img src={user} alt="" className={styles.user} />
                             </div>

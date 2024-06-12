@@ -1,0 +1,52 @@
+.background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../../assets//img/fundo mercado.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container_choose{
+    display: flex;
+    gap: 20px;
+}
+
+.user_card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s all;
+    font-weight: 600;
+    color: var(--);
+    font-family: offer;
+    letter-spacing: 2px;
+    text-align: center;
+    gap: 20px;
+    border-bottom: 5px solid yellow;
+}
+
+
+
+
+.user_card img{
+    height: 70px;
+}
+
+.user_card:hover{
+transform: translateY(-5px);
+}
+
+#color{
+    border-bottom: 5px solid blue;
+
+}

@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     background-color: #E7E7E7;
-    height: 50px;
+    height: 40px;
     padding: 0px 30px;
     width: 100%;
 }
@@ -45,7 +45,10 @@ height: 100%;
 }
 
 .header_upp {
+    display: flex;
+    justify-content: center;
     background-color: var(--amarelo);
+    height: 30px;
 }
 
 .header_upp .container_header_up ul li Link{
@@ -139,7 +142,7 @@ height: 100%;
     width: 100%;
     gap: 30px;
     list-style: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 

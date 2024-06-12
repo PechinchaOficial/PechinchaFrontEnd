@@ -4,7 +4,6 @@
     height: auto;
     width: 100%;
     background-color: var(--background);
-    padding: 100000px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

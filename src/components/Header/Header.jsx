@@ -4,6 +4,14 @@ import logo from '../../assets/img/logoHeader.svg'
 import Button from '../Button/Button'
 import SearchBar from '../SearchBar/SearchBar';
 function Header() {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "auto"
+        });
+      };
+
     return (
         <header className={styles.cabecalho}>
             {/* <div className={styles.header_upp}>
@@ -53,8 +61,8 @@ function Header() {
                     </div>
 
                     <SearchBar />
-                    <Link to='/login'>
-                    <Button text='Entrar' color='mod' />
+                    <Link to='/userType' onClick={scrollToTop}>
+                    <Button text='Entrar' color='mod'/>
                     </Link>
                     
                 </div>
@@ -67,20 +75,20 @@ function Header() {
                 <div className={styles.container_header} id='container'>
                     <ul className={styles.nav_link}>
                         <li>
-                            <Link to="/homedeslogado">Início</Link>
+                            <Link to="/homedeslogado" onClick={scrollToTop}>Início</Link>
                         </li>
 
 
                         <li>
-                            <Link to="/aboutusdeslogado">Sobre nós</Link>
+                            <Link to="/aboutusdeslogado"onClick={scrollToTop}>Sobre nós</Link>
                         </li>
 
                         <li>
-                            <Link to="/listagemdeslogado">Produtos</Link>
+                            <Link to="/listagemdeslogado"onClick={scrollToTop}>Produtos</Link>
                         </li>
 
                         <li>
-                            <Link to="/homemarketdeslogado">Seja Parceiro</Link>
+                            <Link to="/homemarketdeslogado"onClick={scrollToTop}>Seja Parceiro</Link>
                         </li>
 
                     </ul>

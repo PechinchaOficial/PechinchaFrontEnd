@@ -26,6 +26,8 @@ import HomeDeslogado from './ConsumerPages/Home/HomeDeslogado'
 import AboutUsSemLogin from './ConsumerPages/AboutUs/AboutUsSemLogin'
 import ListagemDeslogado from './ConsumerPages/ListagemProdutos/ListagemDeslogado'
 import HomeMarketDeslogado from './MarketPages/Home/HomeMarketDeslogado'
+import UserProfile from './ConsumerPages/UserProfile/UserProfile'
+import Usertype from './ConsumerPages/UserType/UserType'
 
 
 
@@ -57,7 +59,8 @@ function RouterApp() {
                 <Route path='/aboutusdeslogado' element={<AboutUsSemLogin/>}></Route>
                 <Route path='/listagemdeslogado' element={<ListagemDeslogado/>}></Route>
                 <Route path='/homemarketdeslogado' element={<HomeMarketDeslogado/>}></Route>
-
+                <Route path='/userprofile' element={<UserProfile/>}></Route>
+                <Route path='/usertype' element={<Usertype/>}></Route>
             </Routes>
             <Footer />
         </Router>
