@@ -27,6 +27,9 @@ function HeaderConsumer() {
                         <li>
                             <BtnLang />
                         </li>
+                        <li>
+                            <Link to="/registerMarket">registerMarket</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
