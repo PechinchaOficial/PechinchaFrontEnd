@@ -59,8 +59,10 @@ function RouterApp() {
                 <Route path='/aboutusdeslogado' element={<AboutUsSemLogin/>}></Route>
                 <Route path='/listagemdeslogado' element={<ListagemDeslogado/>}></Route>
                 <Route path='/homemarketdeslogado' element={<HomeMarketDeslogado/>}></Route>
+
                 <Route path='/userprofile' element={<UserProfile/>}></Route>
                 <Route path='/usertype' element={<Usertype/>}></Route>
+
             </Routes>
             <Footer />
         </Router>

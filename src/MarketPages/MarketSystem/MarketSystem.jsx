@@ -62,6 +62,7 @@ function MarketSystem() {
                         </div>
                     </div>
 
+                    <Link to="/marketproduct">
                     <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
                         <div className={Styles.container_central}> {/*Container centralizado*/}
                             <div className={Styles.container_img_nav}> {/*Container da imagem*/}
@@ -73,6 +74,7 @@ function MarketSystem() {
                             </div>
                         </div>
                     </div>
+                    </Link>
 
 
 

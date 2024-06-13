@@ -1,12 +1,13 @@
 import Header from '../../components/Header/Header';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 import Styles from './Register.module.css'
+import { Link } from 'react-router-dom'
 
 function RegisterMarket() {
 
     return (
         <div>
-            <Header/>
+            <Header />
             <main id='container' className={Styles.ContainerForm}>
 
                 <div id='titleForm' className={Styles.cabecalho}> {/*Título e subtítulo da página*/}
@@ -95,12 +96,14 @@ function RegisterMarket() {
 
 
                     <div id='schemeBox' className={Styles.schemeBox}> {/*Box dos planos*/}
-                        <h2>Plano</h2>
+                        <h2>Barato</h2>
                         <p>Benefício 1</p>
                         <p>Benefício 2</p>
                         <p>Benefício 3</p>
-                        <p>Benefício 4</p>
-                        <button type='submit' className={Styles.Btn} >ASSINAR</button>
+                        <p>Benefício 4 </p>
+                        <Link  to='/marketsystem' className={Styles.Btn}>
+                            <button type='submit' className={Styles.Btn} >ASSINAR</button>
+                        </Link>
                     </div>
 
                 </section>
