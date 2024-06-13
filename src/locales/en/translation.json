@@ -24,6 +24,18 @@
     "Graos":"Grains",
     "Massas":"Pastas",
     "Bebidas":"Drinks",
-    "Eu queroBTN":"I want"
+    "Eu queroBTN":"I want",
+    "Preferencias":"Preferences",
+    "Editar informações":"Edit information",
+    "Segurança":"Security",
+    "Ajuda":"Help",
+    "Nome":"Name",
+    "Último nome":"Last name",
+    "Celular":"Cell phone",
+    "Cidade":"City",
+    "Estado":"state",
+    "Alterar idioma":"Change the language",
+    "Cancelar":"Cancel",
+    "Salvar":"Save"
 
 }
