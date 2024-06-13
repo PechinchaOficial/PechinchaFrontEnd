@@ -32,7 +32,6 @@
     letter-spacing: 2px;
     text-align: center;
     gap: 20px;
-    border-bottom: 5px solid yellow;
 }
 
 
@@ -47,6 +46,4 @@ transform: translateY(-5px);
 }
 
 #color{
-    border-bottom: 5px solid blue;
-
 }

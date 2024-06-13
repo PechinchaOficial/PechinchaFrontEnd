@@ -35,7 +35,7 @@ const snacks = [
         id: 3,
         img: `${oreo}`,
         name: 'Bolacha Oreo',
-        price: '15,90',
+        price: '2,90',
         dateVenc: '12/10/2024',
         qtdUnit: '25',
         discount: '50%'
@@ -44,8 +44,8 @@ const snacks = [
     {
         id: 4,
         img: `${bulacha}`,
-        name: 'Club Social Verde',
-        price: '9,90',
+        name: 'Club Social Pizza',
+        price: '2,90',
         dateVenc: '12/10/2024',
         qtdUnit: '25',
         discount: '50%'

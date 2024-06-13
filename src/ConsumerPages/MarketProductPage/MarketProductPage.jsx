@@ -27,15 +27,21 @@ function MarketProductPage(){
                         <h1>Assaí Atacadista</h1>
                         <p className={Styles.adress}>Bairro Ariston Estela Azevedo, 762</p>
                         <p className={Styles.map}>Veja no mapa</p>
+                        <div className={Styles.star}>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        </div>
                     </div>
                     <div className={Styles.product}>
                         <p>Produtos: 123</p>
                     </div>
                     <div className={Styles.datestart}>
-                        <p>anuncia desde: 20/10/2015</p>
+                        <p>anuncia desde: 20/10/2024</p>
                     </div>
                     <div className={Styles.date}>
-                        <p>anuncia desde: 20/10/2015</p>
+                        <p>Vendedor: Premium</p>
                     </div>
                 </div>
 

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logoHeader.svg'
 import Button from '../Button/Button'
 import SearchBar from '../SearchBar/SearchBar';
+import BtnLang from '../BtnLang/BtnLang';
 import user from '../../assets/img/user.png'
-
 
 function HeaderConsumer() {
     return (
@@ -24,6 +24,8 @@ function HeaderConsumer() {
                         <li>
                             <Link to="/homemarket">Seja Parceiro</Link>
                         </li>
+
+ 
                     </ul>
                 </div>
             </div>

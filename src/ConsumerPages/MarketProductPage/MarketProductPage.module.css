@@ -82,3 +82,11 @@
 .map{
     color: blue;
 }
+
+.star{
+    display: flex;
+    color: var(--amarelo);
+    font-size: 1.7rem;
+    gap: 10px;
+    margin-top: 10px;
+}

@@ -48,7 +48,7 @@ height: 100%;
     display: flex;
     justify-content: center;
     background-color: var(--amarelo);
-    height: 30px;
+    height: 40px;
 }
 
 .header_upp .container_header_up ul li Link{

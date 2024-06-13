@@ -13,7 +13,7 @@ import { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 // imports banner
 import Banner from '../../components/Banner/Banner';
-import imgBanner from '../../assets/img/banner1.svg';
+import imgBanner from '../../assets/img/banner.svg';
 import CarouselProd from '../../components/CarouselProd/CarouselProd';
 // imports mercados cadastrados
 import mercadoLogo from '../../assets/img/mercadodia.svg'
@@ -22,10 +22,11 @@ import rateimg from '../../assets/img/altoFalante.png'
 import amigao from '../../assets/img/Market/amigao.png'
 import violeta from '../../assets/img/Market/violeta.png'
 import recoy from '../../assets/img/Market/ricoy.png'
-
+import { useTranslation } from "react-i18next";
 
 function Home() {
-
+    const { t } = useTranslation();
+    
     const [slidesPerView, setSlidePerView] = useState(1)
 
     useEffect(() => {
@@ -50,24 +51,24 @@ function Home() {
 
     function step1() {
         if (descRef.current || titleRef.current) {
-            descRef.current.innerHTML = '<p>Assim que um produto chegar a uma data próxima de vencimento, ele pode ser cadastrado em nossa plataforma pelo mercado.</p>';
-            titleRef.current.innerHTML = '  1. Como chega os produtos?';
+            descRef.current.innerHTML = `${t("text01")}`;
+            titleRef.current.innerHTML =`${t("Como chega os produtos?")}`;
 
         }
     }
 
     function alterarConteudo() {
         if (descRef.current || titleRef.current) {
-            descRef.current.innerHTML = '<p>Com o produto cadastrado, ele ficará disponível na aba de produtos, na barra de pesquisa inicial, ou em categorias no início do site.</p>';
-            titleRef.current.innerHTML = '  2. Como encontrar os produtos?';
+            descRef.current.innerHTML = `${t("text02")}`;
+            titleRef.current.innerHTML = `${t("2. Como encontrar os produtos?")}`;
 
         }
     }
 
     function step3() {
         if (descRef.current || titleRef3.current) {
-            descRef.current.innerHTML = '<p>É bem simples, primeiro você se cadastra na nossa plataforma, e será direcionado para página de produtos, onde poderá escolher as pechinchas desejadas, e adicionar ao carrinho. Após adicionar todos os itens desejados, você irá para a área de pagamento, e pronto, pechincha garantida!</p>';
-            titleRef.current.innerHTML = '  3. E para comprar?';
+            descRef.current.innerHTML = `${t("text03")}`;
+            titleRef.current.innerHTML = `${t("3. E para comprar?")}`;
 
         }
     }
@@ -80,11 +81,11 @@ function Home() {
                 <section className={styles.hero_section}>
                     <div className={styles.container_slogan} id='container'>
                         <img src={teste} alt="logo" className={styles.img_logo} />
-                        <h2 className={styles.slogan_subtitle}>Nós combatemos o desperdicio e ainda fazemos aquela diferença no bolso!</h2>
+                        <h2 className={styles.slogan_subtitle}>{t("slogan01")}</h2>
 
                         <div className={styles.search}>
                             <input type="search" placeholder='Pechinchar' className={styles.search_bar} />
-                            <button className={styles.btn_bar}><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <button className={styles.btn_bar}>Buscar</button>
                         </div>
                     </div>
 
@@ -102,8 +103,8 @@ function Home() {
 
                 <section className={styles.categorySection}>
                     <header className={styles.text}>
-                        <h2 className={styles.title}>Mate sua fome por uma <span className={styles.destaque}>Pechincha</span></h2>
-                        <p className={styles.subtitle}>Escolha uma das categorias abaixo, e economize</p>
+                        <h2 className={styles.title}>{t("slogan")} <span className={styles.destaque}>Pechincha</span></h2>
+                        <p className={styles.subtitle}>{t("EscolhaCategoria")}</p>
                     </header>
 
                     <CategoryProd />
@@ -113,7 +114,7 @@ function Home() {
 
                 <section className='background'>
                     <div className={styles.comoFunciona}>
-                        <TituloFormato categoria='Como funciona?' />
+                        <TituloFormato categoria={t("Como funciona?")} />
 
                         <div className={styles.container_content}>
                             <article className={styles.passos}>
@@ -133,9 +134,9 @@ function Home() {
                                     </div>
                                 </div>
 
-                                <h2 className={styles.title_tutorial} ref={titleRef}>1. Como chega os produtos?</h2>
+                                <h2 className={styles.title_tutorial} ref={titleRef}>{t("Como chega os produtos?")}</h2>
                                 <p className={styles.desc} ref={descRef}>
-                                    Assim que um produto chegar a uma data próxima de vencimento, ele pode ser adicionado em nossa plataforma pelo mercado.
+                                {t("text01")}
                                 </p>
                             </article>
 
@@ -178,7 +179,7 @@ function Home() {
                 <div id="background">
                     <section className={styles.mercados} id='container'>
                         <TituloFormato
-                            categoria='Ja trabalham conosco' />
+                            categoria={t("Ja trabalham conosco")} />
                         <div className={styles.container_mercados}>
                             <div className={styles.card_mercado}>
                                 <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
@@ -213,7 +214,7 @@ function Home() {
 
                 <div id="background">
                     <section className={styles.section_rate} id='container'>
-                        <h2 className={styles.title} id={styles.title_rate}>O QUE ESTÃO COMENTANDO SOBRE A <span className={styles.destaque}>PECHINCHA</span></h2>
+                        <h2 className={styles.title} id={styles.title_rate}>{t("O QUE ESTÃO COMENTANDO SOBRE A")}<span className={styles.destaque}>PECHINCHA</span></h2>
                         <div className={styles.rate_section} id='container'>
 
                             <img src={rateimg} alt="Avaliação" className={styles.img_person} />
@@ -227,12 +228,12 @@ function Home() {
 
                                         <div className={styles.user_info}>
                                             <h3>Kaique Oliveira Mota</h3>
-                                            <p>Estudante</p>
+                                            <p>{t("Estudante")}</p>
                                         </div>
                                     </div>
 
                                     <div className={styles.rate_info}>
-                                        <p>Muito boa a plataforma! Achei muito fácil de usar e intuitiva, Já estou comprando toda semana!</p>
+                                        <p>{t("Comentario01")}</p>
                                     </div>
 
                                     <div className={styles.stars}>
@@ -252,13 +253,13 @@ function Home() {
                                         </div>
 
                                         <div className={styles.user_info}>
-                                            <h3>Gabriel Gallo Santos</h3>
-                                            <p>Estudante</p>
+                                            <h3>Gabriel Gallo</h3>
+                                            <p>{t("Estudante")}</p>
                                         </div>
                                     </div>
 
                                     <div className={styles.rate_info}>
-                                        <p>Depois que descobri não pare mais de comprar. Ja indiquei pra todos aqui de casa!</p>
+                                        <p>{t("Comentario02")}</p>
                                     </div>
 
                                     <div className={styles.stars}>
@@ -279,25 +280,25 @@ function Home() {
                 <div id="background">
                     <section className={styles.perguntas} id='container'>
                         <TituloFormato
-                            categoria='Perguntas frequentes' />
+                            categoria={t("TituloPerguntas")} />
                         <div className={styles.container_perguntas}>
                             <div className={styles.pergunta}>
-                                <h3>A Pechincha é um App de descontos?</h3>
+                                <h3>{t("Pergunta01")}</h3>
                                 <i class="fa-solid fa-circle-chevron-right"></i>
                             </div>
 
                             <div className={styles.pergunta}>
-                                <h3>A Pechincha tem sistema de pagamento?</h3>
+                                <h3>{t("Pergunta02")}</h3>
                                 <i class="fa-solid fa-circle-chevron-right"></i>
                             </div>
 
                             <div className={styles.pergunta}>
-                                <h3>A Pechincha faz entrega?</h3>
+                                <h3>{t("Pergunta03")}</h3>
                                 <i class="fa-solid fa-circle-chevron-right"></i>
                             </div>
 
                             <div className={styles.pergunta}>
-                                <h3>A Pechincha assegura que meu pedido não está vencido?</h3>
+                                <h3>{t("Pergunta04")}</h3>
                                 <i class="fa-solid fa-circle-chevron-right"></i>
                             </div>
 

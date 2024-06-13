@@ -4,11 +4,12 @@ import styles from './UserType.module.css'
 import userIcon from '../../assets/img/usericon.png'
 import cartIcon from '../../assets/img/carticon.png'
 import { Link } from 'react-router-dom'
+import Header from '../../components/Header/Header';
 
 function Usertype() {
     return (
         <div className={styles.container_content}>
-  
+  <Header/>
             <main className={styles.background}>
                 <TituloFormato
                     categoria="Quem está acessando?" />

@@ -2,8 +2,10 @@ import styles from './CardProduct.module.css'
 import prodImg from '../../assets/img/cheetos.png'
 import Button from '../Button/Button';
 import {Link} from 'react-router-dom'
+import { useTranslation } from "react-i18next";
 
 function CardProduct({ categoria, nome, img, link }) {
+    const { t } = useTranslation();
     return (
         <div className={styles.card_prod} id={categoria}>
             <div className={styles.img_prod} >
@@ -12,7 +14,7 @@ function CardProduct({ categoria, nome, img, link }) {
             <h2 className={styles.title_prod}>{nome}</h2>
             <Link to={link}>
             <Button
-                text="Eu quero" />
+                text={t("Eu queroBTN")} />
             </Link>
         </div>
     )

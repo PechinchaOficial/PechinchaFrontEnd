@@ -4,6 +4,7 @@ import user from '../../assets/img/user.png'
 import Button from '../../components/Button/Button';
 import brasil from '../../assets/img/brasil.png'
 import usa from '../../assets/img/usa.png'
+import BtnLang from '../../components/BtnLang/BtnLang';
 
 
 function UserProfile() {
@@ -66,16 +67,9 @@ function UserProfile() {
                         </form>
                         <section className={styles.language_section}>
                             <h3>Alterar idioma</h3>
-                            <div className={styles.container_btn}>
-                                <button className={styles.btn_lang} >
-                                    <img src={brasil} alt="Bandeira do País" className={styles.country} />
-                                </button>
-
-                                <button className={styles.btn_lang} >
-                                    <img src={usa} alt="Bandeira do País" className={styles.country} />
-                                </button>
-
-                            </div>
+                          
+                                <BtnLang/>
+                          
                         </section>
 
 

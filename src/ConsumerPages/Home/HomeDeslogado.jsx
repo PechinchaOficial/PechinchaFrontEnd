@@ -13,7 +13,7 @@ import { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 // imports banner
 import Banner from '../../components/Banner/Banner';
-import imgBanner from '../../assets/img/banner1.svg';
+import imgBanner from '../../assets/img/banner.svg';
 import CarouselProd from '../../components/CarouselProd/CarouselProd';
 // imports mercados cadastrados
 import mercadoLogo from '../../assets/img/mercadodia.svg'
@@ -81,11 +81,11 @@ function HomeDeslogado() {
                 <section className={styles.hero_section}>
                     <div className={styles.container_slogan} id='container'>
                         <img src={teste} alt="logo" className={styles.img_logo} />
-                        <h2 className={styles.slogan_subtitle}>Nós combatemos o desperdicio e ainda fazemos aquela diferença no bolso</h2>
+                        <h2 className={styles.slogan_subtitle}>Nós combatemos o desperdício e ainda fazemos aquela diferença no bolso!</h2>
 
                         <div className={styles.search}>
                             <input type="search" placeholder='Pechinchar' className={styles.search_bar} />
-                            <button className={styles.btn_bar}><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <button className={styles.btn_bar}>Buscar</button>
                         </div>
                     </div>
 
@@ -214,7 +214,7 @@ function HomeDeslogado() {
 
                 <div id="background">
                     <section className={styles.section_rate} id='container'>
-                        <h2 className={styles.title} id={styles.title_rate}>O QUE ESTÃO COMENTANDO SOBRE A <span className={styles.destaque}>PECHINCHA</span></h2>
+                        <h2 className={styles.title} id={styles.title_rate}>O QUE ESTÃO COMENTANDO SOBRE A <span className={styles.destaque}> PECHINCHA</span></h2>
                         <div className={styles.rate_section} id='container'>
 
                             <img src={rateimg} alt="Avaliação" className={styles.img_person} />

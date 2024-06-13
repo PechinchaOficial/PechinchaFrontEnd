@@ -107,19 +107,19 @@ color: var(--vermelho);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
-    width: 100px;
-    height: 70px;
+    width: 150px;
+    height: 60px;
     border: none;
     background-color: var(--vermelho);
     position: absolute;
-    top: 0px;
-    right: 0;
+    top: 5px;
+    right: 7px;
     cursor: pointer;
     transition: 0.5s all;
-   border-radius: 0px 20px 20px 0px;
+    border-radius: 10px;
 
 
 }
