@@ -1,5 +1,4 @@
-/* Fundo da página */
-.password {
+.new {
 	width: 100%;
 	background-image: url('/src/assets/img/fundo\ mercado.png');
 	padding: 100px 0px 150px 0px;
@@ -9,8 +8,7 @@
 	justify-content: center;
 }
 
-/* Corpo do forms */
-.container_password {
+.container_new {
     background-color: white;
 	width: 650px;
 	
@@ -21,21 +19,26 @@
 	border-radius: 10px;
 }
 
-.forms_recover h2 {
-	font-size: 40px;
+.forms_new h2 {
+	font-size: 35px;
 	padding-top: 40px;
 }
 
-.forms_recover {
-	font-size: 23px
+.new_p {
+    font-size: 25px;
 }
 
-.forms_password a {
+.forms_new a {
+    font-size: 20px;
+    color: var(--azul);
+}
+
+.new_forms a {
 	padding-top: 15px;
 	font-size: 20px;
 }
 
-.forms_recover {
+.forms_new {
 	width: 100%;
 	height: 700px;
 
@@ -48,11 +51,11 @@
 
 label {
 	text-align: left;
-	font-size: 20px;
-    padding-top: 50px;
+    font-size: 20px;
+    padding-top: 2px;
 }
 
-.forms_password {
+.new_forms {
     display: flex;
 	flex-direction: column;
 
@@ -62,7 +65,7 @@ label {
 	width: 90%;
 }
 
-.forms_password input{
+.new_forms input{
     width: 100%;
 	height: 55px;
 
@@ -71,10 +74,10 @@ label {
 	padding: 10px;
 }
 
-.forms_recover button {
+.forms_new button {
     margin-top: 15px;
 
-	width: 100%;
+    width: 100%;
 	height: 50px;
 	background-color: red;
 	color: white;
@@ -86,18 +89,18 @@ label {
 	border:  0px solid ;
 }
 
-.privacy_policy {
+/*.privacy_policy {
     text-align: center;
 	width:  100%;
-}
+}*/
 
-.recover_password {
+.new_password {
     padding-left: 10%;
     width: 90%;
-	font-size: 20px;
+    font-size: 20px;
 }
 
-.recover_password a{
+.new_password a{
 	color: var(--azul);
 }
 
