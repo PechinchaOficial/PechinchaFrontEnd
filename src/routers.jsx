@@ -28,6 +28,7 @@ import ListagemDeslogado from './ConsumerPages/ListagemProdutos/ListagemDeslogad
 import HomeMarketDeslogado from './MarketPages/Home/HomeMarketDeslogado'
 import UserProfile from './ConsumerPages/UserProfile/UserProfile'
 import Usertype from './ConsumerPages/UserType/UserType'
+import MarketLogin from './MarketPages/Login/Login'
 
 
 
@@ -62,6 +63,7 @@ function RouterApp() {
 
                 <Route path='/userprofile' element={<UserProfile/>}></Route>
                 <Route path='/usertype' element={<Usertype/>}></Route>
+                <Route path='/marketlogin' element={<MarketLogin/>}></Route>
 
             </Routes>
             <Footer />

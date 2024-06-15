@@ -88,3 +88,45 @@
 .btn:hover{
 background-color: rgb(44, 44, 221);
 }
+
+.login_option{
+    position: relative;
+}
+
+.option{
+    position: absolute;
+    height: 0px;
+    width: 300px;
+    background-color: var(--azul);
+    right: 0px;
+    border-radius: 10px;
+    top: 60px;
+    overflow: hidden;
+}
+
+.option  ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    transition: 0.5s all;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    gap: 15px;
+}
+
+.option ul li:hover{
+    background-color: #424bb06d;
+    border-radius: 10px;
+}
+
+.option  ul li a{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.option  ul li i{
+    font-size: 1rem;
+}

@@ -6,10 +6,18 @@ import SearchBar from '../SearchBar/SearchBar';
 import React from 'react';
 function Header() {
 
-    const btn = React.useRef();
+const option = React.useRef();
 
-    function ShowLogins(){
-        
+    function ShowLogins() {
+        option.current.style.height='120px'
+        option.current.style.transition='0.3s all'
+
+    }
+
+    function HiddenLogins() {
+        option.current.style.height='0px'
+        option.current.style.transition='0.3s all'
+
     }
 
     const scrollToTop = () => {
@@ -68,10 +76,17 @@ function Header() {
                     </div>
 
                     <SearchBar />
-                    <Link to='/userType' onClick={scrollToTop}>
-                        <button ref={btn} className={styles.btn}>Entrar<i class="fa-solid fa-angle-down"></i></button>
-
-                    </Link>
+                    <div className={styles.login_option}>
+                        <Link to='/userType' onClick={scrollToTop}>
+                            <button onMouseOver={ShowLogins} className={styles.btn}>Entrar<i class="fa-solid fa-angle-down"></i></button>
+                                <div onMouseLeave={HiddenLogins} ref={option} className={styles.option}>
+                                    <ul>
+                                       <Link to='/login'><li><i class="fa-solid fa-user"></i>Sou cliente</li></Link>
+                                       <Link><li><i class="fa-solid fa-store"></i>Sou Mercado</li></Link>
+                                    </ul>
+                                </div>
+                        </Link>
+                    </div>
 
                 </div>
 
