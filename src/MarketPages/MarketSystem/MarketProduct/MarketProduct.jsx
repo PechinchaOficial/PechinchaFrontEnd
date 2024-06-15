@@ -8,11 +8,14 @@ import Sair from '../../../assets/img/Sair.png'
 import Services from '../../../assets/img/Services.png'
 import Btn from '../BtnMarket/BtnMarket'
 import Table from '../TableMarket/TableMarket'
+import HeaderMarket from '../../../components/CardProduct/HeaderMarket/HeaderMarket'
+import { Link } from 'react-router-dom';
 
 
 function MarketSystem(){
     return(
         <div className={Styles.container}>  {/* Container pai*/}
+         <HeaderMarket />
 
             <nav className={Styles.side_bar}>  {/*Nav-bar lateral */}
 
@@ -29,21 +32,25 @@ function MarketSystem(){
                 </div>
 
                 <div className={Styles.container_btn}> {/*Container para o btn*/}
-                    <button className={Styles.btn_cds_produto}> {/*Btn para cadastrar produto*/}
-                        <div className={Styles.conteudo_btn}> {/*Conteudo do btn*/}
+                        <Link to="/productregistration">
+                            <button className={Styles.btn_cds_produto}> {/*Btn para cadastrar produto*/}
+                                <div className={Styles.conteudo_btn}> {/*Conteudo do btn*/}
 
-                            <div className={Styles.container_img_add}> {/*Container imagem add*/}
-                                <img src={Add} alt="imagem de um mais" />
-                            </div>
+                                    <div className={Styles.container_img_add}> {/*Container imagem add*/}
+                                        <img src={Add} alt="imagem de um mais" />
+                                    </div>
 
-                            <div className={Styles.container_texto_cadastro}> {/*Texto cadastro*/}
-                                <p className={Styles.texto_cadastro}>Cadastrar Produto</p>
-                            </div>
 
-                        </div>
-                    </button>
+                                    <div className={Styles.container_texto_cadastro}> {/*Texto cadastro*/}
+                                        <p className={Styles.texto_cadastro}>Cadastrar Produto</p>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </Link>
                 </div>
 
+                <Link to="/MarketSystem">
                 <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
                     <div className={Styles.container_central}> {/*Container centralizado*/}
                         <div className={Styles.container_img_nav}> {/*Container da imagem*/}
@@ -55,8 +62,11 @@ function MarketSystem(){
                         </div>
                     </div>
                 </div>
+                </Link>
 
+                <Link to="/marketproduct">
                 <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
+               
                     <div className={Styles.container_central}> {/*Container centralizado*/}
                         <div className={Styles.container_img_nav}> {/*Container da imagem*/}
                             <img src={Produtos} alt="imagem de uma casa" />
@@ -66,8 +76,10 @@ function MarketSystem(){
                             <p className={Styles.texto_nav}>Produtos</p>
                         </div>
                     </div>
+                  
                 </div>
-
+                </Link>
+              
                 <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
                     <div className={Styles.container_central}> {/*Container centralizado*/}
                         <div className={Styles.container_img_nav}> {/*Container da imagem*/}
@@ -93,15 +105,17 @@ function MarketSystem(){
                 </div>
 
                 <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
-                    <div className={Styles.container_central}> {/*Container centralizado*/}
-                        <div className={Styles.container_img_nav}> {/*Container da imagem*/}
-                            <img src={Sair} alt="imagem de uma casa" />
-                        </div>
+                        <Link to="/" className={Styles.container_central} >
+                            <div className={Styles.container_central}> {/*Container centralizado*/}
+                                <div className={Styles.container_img_nav}> {/*Container da imagem*/}
+                                    <img src={Sair} alt="imagem de uma casa" />
+                                </div>
 
-                        <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
-                            <p className={Styles.texto_nav}>Sair</p>
-                        </div>
-                    </div>
+                                <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
+                                    <p className={Styles.texto_nav}>Sair</p>
+                                </div>
+                            </div>
+                        </Link>
                 </div>
 
 

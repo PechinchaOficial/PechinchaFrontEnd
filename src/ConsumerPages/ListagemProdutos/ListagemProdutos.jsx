@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner/Banner'
 import styles from './ListagemProdutos.module.css'
-import imgBanner from '../../assets/img/banner1.svg';
+import imgBanner from '../../assets/img/banner.svg';
 import MercadosRegiao from './MercadosRegiao/MercadosRegiao';
 import CategoriaProduto from './CategoriaProduto/CategoriaProduto';
 import Graos from './CategoriaProduto/Graos';

@@ -47,7 +47,7 @@
 
 .nav_link {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     gap: 30px;
     list-style: none;
@@ -63,4 +63,28 @@
 
 .img_logo {
     height: 30px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    height: 50px;
+    width: 150px;
+    border: none;
+    background-color: var(--azul);
+    top: 0px;
+    right: 0;
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0 100%);
+    cursor: pointer;
+    transition: 0.5s all;
+
+}
+
+.btn:hover{
+background-color: rgb(44, 44, 221);
 }

@@ -3,7 +3,22 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logoHeader.svg'
 import Button from '../Button/Button'
 import SearchBar from '../SearchBar/SearchBar';
+import React from 'react';
 function Header() {
+
+    const btn = React.useRef();
+
+    function ShowLogins(){
+        
+    }
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "auto"
+        });
+    };
+
     return (
         <header className={styles.cabecalho}>
             {/* <div className={styles.header_upp}>
@@ -53,10 +68,11 @@ function Header() {
                     </div>
 
                     <SearchBar />
-                    <Link to='/login'>
-                    <Button text='Login' color='azul' />
+                    <Link to='/userType' onClick={scrollToTop}>
+                        <button ref={btn} className={styles.btn}>Entrar<i class="fa-solid fa-angle-down"></i></button>
+
                     </Link>
-                    
+
                 </div>
 
 
@@ -67,51 +83,22 @@ function Header() {
                 <div className={styles.container_header} id='container'>
                     <ul className={styles.nav_link}>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/homedeslogado" onClick={scrollToTop}>Início</Link>
                         </li>
 
 
                         <li>
-                            <Link to="/about">Sobre nós</Link>
+                            <Link to="/aboutusdeslogado" onClick={scrollToTop}>Sobre nós</Link>
                         </li>
 
                         <li>
-                            <Link to="/listagem">Produtos</Link>
+                            <Link to="/listagemdeslogado" onClick={scrollToTop}>Produtos</Link>
                         </li>
 
                         <li>
-                            <Link to="/homemarket">Seja Parceiro</Link>
+                            <Link to="/homemarketdeslogado" onClick={scrollToTop}>Seja Parceiro</Link>
                         </li>
 
-
-                        <li>
-                            <Link to="/registerMarket">Login mercado</Link>
-                        </li>
-
-                        <li>
-                            <Link to="/marketSystem">Sistema</Link>
-                        </li>
-
-                        <li>
-                            <Link to="/cart">Carrinho</Link>
-                        </li>
-
-                        <li>
-                            <Link to="/recover">senha</Link>
-                        </li>
-
-                        <li>
-                            <Link to="/product">product</Link>
-                         </li>
-
-
-                        <li>
-                            <Link to="/marketproduct">mercado</Link>
-                        </li>
-
-                        <li>
-                            <Link to="/productregistration">mercadoproduct</Link>
-                        </li>
                     </ul>
                 </div>
             </div>

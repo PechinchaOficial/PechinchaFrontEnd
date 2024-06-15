@@ -28,7 +28,7 @@
 }
 
 .img_logo {
-    height: 350px;
+    height: 320px;
     width: 100%;
     margin-right: 150px;
 }
@@ -41,35 +41,36 @@
     gap: 30px;
 }
 
-.slogan_subtitle{
+.slogan_subtitle {
     text-align: center;
     color: #fff;
     letter-spacing: 1px;
     max-width: 800px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
-.strong{
-color: var(--vermelho);
+.strong {
+    color: var(--vermelho);
 }
 
 .star {
-    height: 400px;
+    height: 350px;
     position: absolute;
     bottom: 00px;
     left: -170px;
-    top: 500px;
+    top: 450px;
 }
 
 .star_2 {
-    height: 400px;
+    height: 350px;
     position: absolute;
     bottom: 00px;
-    top: 500px;
-    right:0px;
+    top: 450px;
+    right: 0px;
 }
-.container_efeitos{
+
+.container_efeitos {
     justify-content: space-around;
     width: 100%;
     display: flex;
@@ -99,7 +100,7 @@ color: var(--vermelho);
 }
 
 
-.search_bar::placeholder{
+.search_bar::placeholder {
     font-size: 1.5rem;
 }
 
@@ -107,25 +108,26 @@ color: var(--vermelho);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
-    width: 100px;
-    height: 70px;
+    width: 150px;
+    height: 60px;
     border: none;
     background-color: var(--vermelho);
     position: absolute;
-    top: 0px;
-    right: 0;
+    top: 5px;
+    right: 7px;
     cursor: pointer;
     transition: 0.5s all;
-   border-radius: 0px 20px 20px 0px;
+    border-radius: 10px;
 
 
 }
 
 .btn:hover {
-    background-color: rgb(44, 44, 221);
+    background-color: #a81d1b;
+    transition: all 0.3s;
 }
 
 /* Produtos e categorias */
@@ -350,7 +352,7 @@ color: var(--vermelho);
     height: 320px;
     width: 330px;
     background-color: #C6DC8D;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
     box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     box-shadow: 0px 100px 6px -3px rgba(0, 0, 0, 0.1);
@@ -359,8 +361,15 @@ color: var(--vermelho);
 }
 
 .logo_mercado {
-    height: 70px;
+    height: 80px;
 }
+
+.logo_mercado_2 {
+    width: 250px;
+    height: 100px;
+}
+
+
 
 .btn {
     border: none;
@@ -430,26 +439,123 @@ color: var(--vermelho);
     opacity: 40%;
 }
 
-@media screen and (max-width: 1280px){
+.section_rate {
+    flex-direction: column;
+}
+
+#title_rate {
+    text-align: center;
+    max-width: 700px;
+    margin-top: 70px;
+}
+
+.rate_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_rate {
+    display: flex;
+    gap: 10px;
+}
+
+.img_person {
+    height: 540px;
+}
+
+.rate_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    height: 320px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+
+.rate_card:hover {
+    transform: translateY(-5px);
+}
+
+.info_user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.user_icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background-color: blue;
+}
+
+.user_icon img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.stars {
+    color: var(--amarelo);
+    font-size: 1.6rem;
 }
 
 
 
-@media screen and (max-width: 1280px){
 
-    .img_logo{
-        height: 300px;
-    }
-    .star, .star_2{
+@media screen and (max-width: 1500px){
+
+    .img_logo {
         height: 300px;
     }
 
-    .title{
+    .star,
+    .star_2 {
+        height: 300px;
+    }
+
+    .title {
         font-size: 3rem;
     }
 
-    .subtitle{
+    .subtitle {
         font-size: 1.7rem;
+    }
+
+    .search {
+        width: 800px;
+    }
+
+    .img_person {
+        height: 350px;
+    }
+
+    .card_mercado {
+        width: 290px;
 
     }
+
+    .boxLeft {
+        display: flex;
+        gap: 5px;
+    }
+    
+    .boxRight {
+        width: 400px;
+    }
+    
+    
+    .step_img {
+        height: 350px;
+    }
+  
 }

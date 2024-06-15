@@ -3,10 +3,19 @@ import { Link } from 'react-router-dom';
 
 
 function CardProduto({ img, name, price, dateVenc, qtdUnit, discount }) {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "auto"
+        });
+      };
+
+
     return (
         <div className={styles.cardproduto}>
             <Link to='/product'>
-                <div className={styles.container_img}>
+                <div className={styles.container_img} onClick={scrollToTop} >
                     <img src={img} alt="Produto" className={styles.imgprod} />
                 </div>
             </Link>
@@ -35,7 +44,7 @@ function CardProduto({ img, name, price, dateVenc, qtdUnit, discount }) {
             </div>
 
             <Link to='/cart'>
-                <button className={styles.btn}>
+                <button className={styles.btn} onClick={scrollToTop}>
                     ADICIONAR
                 </button>
             </Link>

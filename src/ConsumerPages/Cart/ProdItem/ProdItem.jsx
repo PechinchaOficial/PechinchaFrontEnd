@@ -9,7 +9,7 @@ function ProdItem() {
                     <img src={salgadinho} alt="Produto" className={styles.prod_img} />
                     <div className={styles.prod_text}>
                         <h3>Salgadinho de Milho</h3>
-                        <p>Vence 30/05/2024</p>
+                        <p>Vence 03/07/2024</p>
                     </div>
                 </div>
             </td>

@@ -14,7 +14,6 @@
     box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.1);
     transition: 0.5s all;
     flex: none; /*Faz com que o elemento nao tente se adaptar ao tamanho da div pai*/
-
 }
 
 .marketCard:hover{
@@ -57,4 +56,9 @@
 #star{
 font-size: 1.5rem;
 color: var(--amarelo);
+}
+
+a{ 
+    text-decoration: none;
+    color: black;
 }
