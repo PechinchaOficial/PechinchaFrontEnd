@@ -91,6 +91,7 @@ height: 100%;
     gap: 30px;
     font-size: 2rem;
     color: #000000ca;
+    position: relative;
 }
 
 .nav_right Link{
@@ -103,10 +104,9 @@ height: 100%;
 }
 
 .cart_icon{
-    position: relative;
     transition: 0.5s all;
     cursor: pointer;
-    opacity: 80%;
+    opacity: 100%;
 }
 
 .cart_notify{
@@ -121,9 +121,10 @@ height: 100%;
     color: #fff;
     text-align: center;
     font-size: 0.9rem;
-    right:-5px;
+    left: 20px;
     top: 0px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .container_header_up .nav_link {
@@ -154,10 +155,40 @@ height: 100%;
 }
 
 .nav_profile{
-    height: 400px;
+    height: auto;
     width: 300px;
-    background-color: #ffffff9c;
+    background-color: #ffffff;
     position: absolute;
     top: 70px;
+    right: 0px;
     border-radius: 10px;
+}
+
+.nav_profile ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.nav_profile ul li{
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.39);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    padding-left: 15px;
+    border-radius: 10px;
+
+}
+
+.nav_profile ul li a{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav_profile ul li i{
+    font-size: 1rem;
 }
