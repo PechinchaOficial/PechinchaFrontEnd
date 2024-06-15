@@ -7,16 +7,36 @@
     padding-top: 180px;
 }
 
-.side_bar ul{
+.nav_profile ul{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
     list-style: none;
+    
 }
 
-.side_bar ul li a{
+.side_bar  ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    padding-left: 15px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.side_bar ul li:hover{
+    background-color: #eaeaea6d;
+}
+
+.side_bar  ul li a{
     margin-left: 10px;
     font-weight: 500;
+    font-size: 1rem;
+}
+
+.side_bar  ul li i{
+    font-size: 1rem;
 }
 
 

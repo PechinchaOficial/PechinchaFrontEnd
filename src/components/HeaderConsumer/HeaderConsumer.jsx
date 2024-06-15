@@ -13,8 +13,12 @@ function HeaderConsumer() {
 
     const profile_option = React.useRef();
 
-    function ShowOption(){
-        profile_option.current.style.height='500px'
+    function ShowOption() {
+        profile_option.current.style.display = 'block'
+    }
+
+    function HiddenOption() {
+        profile_option.current.style.display = 'none'
     }
     const scrollToTop = () => {
         window.scrollTo({
@@ -23,7 +27,7 @@ function HeaderConsumer() {
         });
     };
 
-    
+
 
     return (
         <header className={styles.cabecalho}>
@@ -71,16 +75,16 @@ function HeaderConsumer() {
 
                         </Link>
 
-                        <Link onClick={scrollToTop}  to='/userprofile' >
+                        <Link onClick={scrollToTop} onMouseOver={ShowOption} to='/userprofile' >
                             <div className={styles.user_icon}>
-                                <img src={user} alt="" className={styles.user} />
+                                <img src={user} alt="Perfil de usuário" className={styles.user} />
                             </div>
                         </Link>
 
 
-                        <nav className={styles.nav_profile} ref={profile_option}>
+                        <nav className={styles.nav_profile} ref={profile_option} onMouseLeave={HiddenOption}>
                             <ul>
-                                <li><i class="fa-solid fa-pen"></i> <a href="#">{t("Editar informações")}</a></li>
+                                <Link to='/userprofile'><li><i class="fa-solid fa-pen"></i> <a href="#">{t("Editar informações")}</a></li></Link>
                                 <li><i class="fa-solid fa-shield-halved"></i> <a href="#">{t("Segurança")}</a></li>
                                 <li><i class="fa-solid fa-circle-question"></i><a href="#">{t("Ajuda")}</a></li>
                                 <li><i class="fa-solid fa-right-from-bracket"></i><Link to="/homedeslogado">{t("Sair")}</Link></li>

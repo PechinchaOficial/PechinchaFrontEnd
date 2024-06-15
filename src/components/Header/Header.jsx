@@ -3,14 +3,21 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logoHeader.svg'
 import Button from '../Button/Button'
 import SearchBar from '../SearchBar/SearchBar';
+import React from 'react';
 function Header() {
+
+    const btn = React.useRef();
+
+    function ShowLogins(){
+        
+    }
 
     const scrollToTop = () => {
         window.scrollTo({
-          top: 0,
-          behavior: "auto"
+            top: 0,
+            behavior: "auto"
         });
-      };
+    };
 
     return (
         <header className={styles.cabecalho}>
@@ -62,9 +69,10 @@ function Header() {
 
                     <SearchBar />
                     <Link to='/userType' onClick={scrollToTop}>
-                    <Button text='Entrar' color='mod'/>
+                        <button ref={btn} className={styles.btn}>Entrar<i class="fa-solid fa-angle-down"></i></button>
+
                     </Link>
-                    
+
                 </div>
 
 
@@ -80,15 +88,15 @@ function Header() {
 
 
                         <li>
-                            <Link to="/aboutusdeslogado"onClick={scrollToTop}>Sobre nós</Link>
+                            <Link to="/aboutusdeslogado" onClick={scrollToTop}>Sobre nós</Link>
                         </li>
 
                         <li>
-                            <Link to="/listagemdeslogado"onClick={scrollToTop}>Produtos</Link>
+                            <Link to="/listagemdeslogado" onClick={scrollToTop}>Produtos</Link>
                         </li>
 
                         <li>
-                            <Link to="/homemarketdeslogado"onClick={scrollToTop}>Seja Parceiro</Link>
+                            <Link to="/homemarketdeslogado" onClick={scrollToTop}>Seja Parceiro</Link>
                         </li>
 
                     </ul>

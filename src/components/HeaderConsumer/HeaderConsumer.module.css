@@ -162,6 +162,7 @@ height: 100%;
     top: 70px;
     right: 0px;
     border-radius: 10px;
+    display: none;
 }
 
 .nav_profile ul{
@@ -173,14 +174,18 @@ height: 100%;
 }
 
 .nav_profile ul li{
-    border-bottom: 0.5px solid rgba(128, 128, 128, 0.39);
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.129);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 60px;
     padding-left: 15px;
-    border-radius: 10px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
 
+.nav_profile ul li:hover{
+    background-color: #eaeaea6d;
 }
 
 .nav_profile ul li a{
