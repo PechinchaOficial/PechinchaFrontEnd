@@ -1,5 +1,5 @@
 /* Fundo da página */
-.password {
+.code {
 	width: 100%;
 	background-image: url('/src/assets/img/fundo\ mercado.png');
 	padding: 100px 0px 150px 0px;
@@ -10,7 +10,7 @@
 }
 
 /* Corpo do forms */
-.container_password {
+.container_code {
     background-color: white;
 	width: 650px;
 	
@@ -21,21 +21,26 @@
 	border-radius: 10px;
 }
 
-.forms_recover h2 {
-	font-size: 40px;
+.forms_code h2 {
+	font-size: 35px;
 	padding-top: 40px;
 }
 
-.forms_recover {
-	font-size: 23px
+.code_p {
+    font-size: 25px;
 }
 
-.forms_password a {
+.forms_code a {
+    font-size: 20px;
+    color: var(--azul);
+}
+
+.code_forms a {
 	padding-top: 15px;
 	font-size: 20px;
 }
 
-.forms_recover {
+.forms_code {
 	width: 100%;
 	height: 700px;
 
@@ -48,11 +53,11 @@
 
 label {
 	text-align: left;
-	font-size: 20px;
+    font-size: 20px;
     padding-top: 50px;
 }
 
-.forms_password {
+.code_forms {
     display: flex;
 	flex-direction: column;
 
@@ -62,7 +67,7 @@ label {
 	width: 90%;
 }
 
-.forms_password input{
+.code_forms input{
     width: 100%;
 	height: 55px;
 
@@ -71,10 +76,10 @@ label {
 	padding: 10px;
 }
 
-.forms_recover button {
+.forms_code button {
     margin-top: 15px;
 
-	width: 100%;
+    width: 100%;
 	height: 50px;
 	background-color: red;
 	color: white;
@@ -86,18 +91,18 @@ label {
 	border:  0px solid ;
 }
 
-.privacy_policy {
+/*.privacy_policy {
     text-align: center;
 	width:  100%;
-}
+}*/
 
-.recover_password {
+.code_password {
     padding-left: 10%;
     width: 90%;
-	font-size: 20px;
+    font-size: 20px;
 }
 
-.recover_password a{
+.code_password a{
 	color: var(--azul);
 }
 

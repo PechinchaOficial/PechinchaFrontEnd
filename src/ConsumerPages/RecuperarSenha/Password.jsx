@@ -14,7 +14,7 @@ function Password () {
                                 <label htmlFor="">E-mail</label>
                                 <input type="email"  placeholder='Digite seu Email' className={Styles.email} />
 
-                                <button>ENVIAR</button>
+                               <Link to="/Code"><button>ENVIAR</button></Link>
 
                                 <p className={Styles.recover_password}>Já possui cadastro? <Link to="/login">Entre aqui</Link></p>
 
