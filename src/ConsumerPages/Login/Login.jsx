@@ -39,9 +39,11 @@ function Login() {
                     <p>Clique abaixo caso ainda não tenha uma conta e aproveite de todas as funções</p>
 
                     <a href="">
-                        <button>
+                        <Link to="/registerclient">
+                            <button>
                             CADASTRAR
-                        </button>
+                            </button>
+                        </Link>
                     </a>
                 </div>
             </section>
