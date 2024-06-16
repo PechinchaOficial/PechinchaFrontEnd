@@ -1,0 +1,74 @@
+.Background {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+}
+.Hero {
+    position: relative;
+    height: 710px;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Banner {
+    position: relative;
+    height: 339px;
+    width: 1047px;
+}
+.Bannerz {
+    height: 100%;
+    width: 100%;
+}
+.BodySect {
+    position: relative;
+
+    height: 200px;
+    width: 100%;
+    margin-top: -170px;
+}
+.Backtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.516);
+}
+.BackBtns {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Btn{
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.4s all;
+}
+.Btn:hover {
+    transform: translateY(-3px);
+}
+
+#RegisterBtn {
+    background-color: var(--azul);
+    color: var(--background);
+}
+#KnowMoreBtn {
+    background-color: var(--background);
+    color: var(--azul);
+    border: 1px solid var(--azul);
+}

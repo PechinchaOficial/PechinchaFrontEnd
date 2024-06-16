@@ -1,0 +1,29 @@
+.header_market{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    background-color:#BEBEBE;
+    align-items: center;
+    padding: 30px;
+    position: fixed;
+}
+
+.icon_user{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: var(--azul);
+}
+
+.img_logo{
+    cursor: pointer;
+    height: 35px;
+}
+
+.container_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}

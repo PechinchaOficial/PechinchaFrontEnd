@@ -1,5 +1,6 @@
 import styles from './Footer.module.css'
 import logo from '../../assets/img/logo.svg'
+import {Link} from 'react-router-dom'
 
 function Footer() {
     return (
@@ -43,7 +44,7 @@ function Footer() {
                         <li className={styles.footer_item}><a href="#">Faça parte</a></li>
                         <li className={styles.footer_item}><a href="#">Login</a></li>
                         <li className={styles.footer_item}><a href="#">Nossos Planos</a></li>
-                        <li className={styles.footer_item}><a href="#">Parcerias</a></li>
+                        <li className={styles.footer_item}><Link to="/homedeslogado">Parcerias</Link></li>
                     </ul>
                 </div>
             </div>

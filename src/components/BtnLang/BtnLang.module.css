@@ -1,0 +1,53 @@
+.container_btn{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: var(--btn);
+    padding: 0px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.4s all;
+}
+
+.btn:hover{
+    background-color: var(--btn_hover);
+    transform: translateY(-3px);
+}
+
+#btn_cancel{
+    background-color: transparent;
+    border: 1px solid var(--btn);
+    color: var(--btn);
+}
+
+.btn_lang{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.language_section{
+    margin-top: 20px;
+}
+
+.btn_lang{
+    border: none;
+    cursor: pointer;
+}
+
+.country{
+    height: 100%;
+    width: 100%;
+}

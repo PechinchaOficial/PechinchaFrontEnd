@@ -1,10 +1,9 @@
 .Background {
-    margin-top: 0px;
+    margin-top: -200px;
     position: relative;
     height: auto;
     width: 100%;
     background-color: var(--background);
-    padding: 100px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -17,16 +16,21 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 100px;
+    margin-left: 5%;
 }
 .Title {
-    font-size: 2rem;
+    font-family: offer;
+    font-size: 3rem;
+    letter-spacing: 5px;
 }
-.Text {
-    font-size: 1.5rem;
+.Text { 
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 1.8rem;
 }
 .Btn {
     height: 40px;
-    width: 150px;
+    width: 200px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -35,39 +39,34 @@
     font-weight: 600;
     font-size: 1rem;
     box-shadow: 11px 12px 7px -3px rgba(0,0,0,0.1);
+    transition: 0.4s all;
+}
+.Btn:hover {
+    transform: translateY(-3px);
 }
 .BoxRight {
-    width: 500px;
+    width: 600px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 100px;
 }
 .Box {
-    width: 40%;
+    width: 48%;
     height: 200px;
     background-color: var(--azul);
     margin-top:  40%;
     
 }
-@media screen and (max-width: 1000px) {
-    .Background {
-        align-items: center;
-        justify-content: center;
-    }
-    .BoxLeft {
-        align-items: center;
-        text-align: center;
-    }
-}
 
 #Box1 {
-clip-path:
-polygon(0 8%, 100% 0, 100% 90%, 0 100%);
-border-radius: 8px;
-border-top-left-radius: 28px;
-border-bottom-right-radius: 28px;
-height: 250px;
+    clip-path:
+    polygon(0 8%, 100% 0, 100% 90%, 0 100%);
+    border-radius: 8px;
+    border-top-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    height: 250px;
 }
 
 #Box2 {
@@ -76,8 +75,8 @@ height: 250px;
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
     height: 400px;
-    }
-  #Box3 {
+}
+#Box3 {
     clip-path:
     polygon(0 7%, 100% 0, 100% 93%, 0 100%);
         border-radius: 8px;
@@ -93,4 +92,32 @@ height: 250px;
             border-bottom-left-radius: 28px;
             height: 250px;
             margin-top: -35px;
+        }
+
+        .img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+        /*------------------------------ Responsivo notebook ----------------------------*/
+
+
+        @media screen and (max-width: 1000px) {
+            .Background {
+                align-items: center;
+                justify-content: center;
             }
+            .BoxLeft {
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+
+        /*------------------------------Responsivo Celular --------------------------*/
+
+
+        

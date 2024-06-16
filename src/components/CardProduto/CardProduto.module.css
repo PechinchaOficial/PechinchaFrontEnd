@@ -11,8 +11,19 @@
     padding: 10px;
 }
 
+.container_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .imgprod{
     height: 230px;
+    transition: 0.5s all
+}
+
+.imgprod:hover{
+    transform: translateY(-5px);
 }
 
 .info_prod{

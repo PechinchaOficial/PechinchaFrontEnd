@@ -1,0 +1,13 @@
+
+
+.prod_list{
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+}
+
+.container_card{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}

@@ -14,12 +14,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 100px;
 }
 .BackgroundText {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #f1f1f1;
     background-color: var(--azul);
-    height: 100px;
+    height: 80px;
     width: 30%;
     text-align: center;
     clip-path: polygon(0 0, 100% 0, 94% 96%, 6% 95%);
@@ -41,14 +42,19 @@
     margin-top: 5%;
 }
 .Box {
-    width: 30%;
-    height: 700px;
+    width: 450px;
+    height: 600px;
     background-color: var(--amarelo);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     display: flex;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    font-family: offer;
+    margin-bottom: 100px;
+
 }
 .BoxRed {
     width: 100%;
@@ -58,9 +64,13 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    clip-path: polygon(0 34%, 100% 35%, 100% 55%, 48% 69%, 0 54%);
+    clip-path: polygon(0 29%, 100% 29%, 100% 59%, 49% 68%, 0 59%);
     margin-top: -35%;
     color: white;
+    text-align: center;
+}
+.Txth1 {
+    margin-top: -5%;
 }
 .Txt2 {
     color: black;
@@ -78,16 +88,36 @@
     background-color: var(--azul);
     text-decoration: none;
     border: none;
-    width: 70%;
-    height: 10%;
+    width: 300px;
+    height: 8%;
     font-size: 1.8rem;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+.Btn:hover {
+    transform: translateY(-3px);
 }
 .Cifrao {
     font-size: 2rem;
 }
 .Beneficios {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 5%;
+    font-family: Poppins;
+    letter-spacing: 1px;
+}
+.Cents{
+    position: absolute;
+    font-size: 2.5rem;
+}
+@media screen and (min-width: 1000) {
+    .Conteiner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center
+        
+    }
 }

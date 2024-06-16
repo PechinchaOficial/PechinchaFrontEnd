@@ -1,0 +1,109 @@
+.new {
+	width: 100%;
+	background-image: url('/src/assets/img/fundo\ mercado.png');
+	padding: 100px 0px 150px 0px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container_new {
+    background-color: white;
+	width: 650px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 10px;
+}
+
+.forms_new h2 {
+	font-size: 35px;
+	padding-top: 40px;
+}
+
+.new_p {
+    font-size: 25px;
+}
+
+.forms_new a {
+    font-size: 20px;
+    color: var(--azul);
+}
+
+.new_forms a {
+	padding-top: 15px;
+	font-size: 20px;
+}
+
+.forms_new {
+	width: 100%;
+	height: 700px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+label {
+	text-align: left;
+    font-size: 20px;
+    padding-top: 2px;
+}
+
+.new_forms {
+    display: flex;
+	flex-direction: column;
+
+	padding-top: 40px;
+	gap: 20px;	
+	height: 500px;
+	width: 90%;
+}
+
+.new_forms input{
+    width: 100%;
+	height: 55px;
+
+	border: 0.2px solid grey;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.forms_new button {
+    margin-top: 15px;
+
+    width: 100%;
+	height: 50px;
+	background-color: red;
+	color: white;
+
+	font-size: 22px;
+	font-weight: bold;
+
+	border-radius:  10px;
+	border:  0px solid ;
+}
+
+/*.privacy_policy {
+    text-align: center;
+	width:  100%;
+}*/
+
+.new_password {
+    padding-left: 10%;
+    width: 90%;
+    font-size: 20px;
+}
+
+.new_password a{
+	color: var(--azul);
+}
+
+.email{
+	font-size: 20px;
+}

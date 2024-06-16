@@ -1,22 +1,33 @@
 .missao{
     display: flex;
-    margin-top: 150px; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .imagem_missao{
     width: 400px;
     height: 400px;
-    margin-right: 30px;
     
 }
 
 .texto_missao{
-    background-color: rgb(87, 68, 68);
+    background-color: rgb(255, 255, 255);
     width: 600px;
     height: 400px;
     margin-left: 30px;
     clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0 89%);
     border-radius: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.24);
+
+    .text{
+        font-size: 1.6rem;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+    }
     
 }
 
@@ -25,4 +36,16 @@
     width: 600px;
     height: 120px;
     border-radius: 20px 20px 0px 0px;
+
+    h1{
+        text-align: center;
+        padding-top: 40px;
+        padding-right: 20px;
+        font-size: 2.5rem;
+        color: white;
+    }
+}
+
+.word{
+    color: #343BCC;
 }

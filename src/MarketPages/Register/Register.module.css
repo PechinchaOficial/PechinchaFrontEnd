@@ -1,8 +1,96 @@
 .ContainerForm {
     width: 100%;
     height: 100vh;
-    background-color: blue;
-    margin-top: 200px;
+    margin: 500px;
     display: flex;
     flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 100%;
+}
+.Subtitle {
+    color: rgba(0, 0, 0, 0.466);
+}
+.attention {
+    color: var(--azul);
+}
+.toSpaceBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.formBox {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 6px 13px 10px -3px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.schemeBox {
+    background-color: white;
+    padding: 30px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 6px 13px 10px -3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.schemeBox p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.46);
+}
+
+.toSpaceInput {
+    display: flex;
+    gap: 50px;
+}
+
+.InputBox{
+    width: 100%;
+}
+
+.InputBox input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: .5rem;
+    outline: none;
+    border: 0.5px solid rgb(99, 99, 99);
+}
+
+.InputBox label{
+    font-size: 1rem;
+}
+.Btn {
+    background-color: var(--btn);
+    width: 100%;
+    height: 20%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.Btn:hover {
+    background-color: #43bf75;
+}
+.Inputs {
+    width: 1000px;
 }

@@ -3,5 +3,5 @@
 .prod_list{
     display: flex;
     flex-direction: column;
-    padding-top: 120px;
+    padding-top: 180px;
 }

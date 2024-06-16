@@ -1,7 +1,9 @@
 import styles from './MercadosRegiao.module.css'
 import mercadoLogo from '../../../assets/img/mercadodia.svg'
-import MercadoCard from '../MercadoCard/MercadoCard';
+import MercadoCard from '../MercadoCard/MercadoCard'
 import { useRef } from 'react'
+import marketData from '../../../assets/data/marketData'
+import HeaderConsumer from '../../../components/HeaderConsumer/HeaderConsumer'
 
 function MercadosRegiao() {
 
@@ -28,17 +30,14 @@ function MercadosRegiao() {
             </div>
             <div className={styles.container_carousel}>
                 <div className={styles.carousel_prod} id='container' ref={carousel}>
-                    <MercadoCard
-                        logo={mercadoLogo} />
-                    <MercadoCard
-                        logo={mercadoLogo} />
-                    <MercadoCard
-                        logo={mercadoLogo} />
-                    <MercadoCard
-                        logo={mercadoLogo} />
 
-                    <MercadoCard
-                        logo={mercadoLogo} />
+            {marketData.map(({img, name, andress, rate}) =>(
+                <MercadoCard 
+                name={name}
+                img={img}
+                andress={andress}
+                rate={rate}/>
+            ))}
 
                 </div>
 
