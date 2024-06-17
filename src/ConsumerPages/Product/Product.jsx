@@ -66,7 +66,7 @@ function Product() {
                             </div>
                             <div className={Styles.BackValuesProduct}>
                                 <div className={Styles.Values}>
-                                    <input type="number" className={Styles.QtdBtn}  value="1" />
+                                    <input type="number" placeholder='1' className={Styles.QtdBtn}  />
                                 </div>
                                 <div className={Styles.Values} id={Styles.None}><p> R$ 1,35 </p></div>
                                 <div className={Styles.Values} id={Styles.None}><p> R$ 1,35 </p></div>

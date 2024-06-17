@@ -146,9 +146,8 @@ function Home() {
                                     // controla quantos slides por foto quero que apareça
                                     slidesPerView={slidesPerView}
                                     // define se é clicavel ou não
-                                    pagination={{ clickable: true }}
 
-                                    navigation>
+                                   >
 
                                     <SwiperSlide>
                                         <img src={step} alt="Banner Promocional" className={styles.step_img} />

@@ -1,7 +1,9 @@
 .search{
     position: relative;
-    width: 50%;
+    width: 100%;
 }
+
+
 
 
 .search_bar{
@@ -36,4 +38,10 @@
 
 .btn:hover{
 background-color: rgb(44, 44, 221);
+}
+
+@media screen and (max-width: 925px) {
+    .search{
+        width: 100%;
+    }
 }

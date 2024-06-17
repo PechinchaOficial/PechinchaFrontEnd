@@ -1,6 +1,7 @@
 import styles from './HeaderConsumer.module.css'
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logoHeader.svg'
+import logoPocket from '../../assets/img/logo_minimalist.svg'
 import Button from '../Button/Button'
 import SearchBar from '../SearchBar/SearchBar';
 import BtnLang from '../BtnLang/BtnLang';
@@ -12,6 +13,16 @@ function HeaderConsumer() {
     const { t } = useTranslation();
 
     const profile_option = React.useRef();
+    const mobile = React.useRef();
+
+    function CloseMobile() {
+        mobile.current.style.width = '0px'
+        mobile.current.style.transition = '0.5s all'
+    }
+
+    function ShowMobile() {
+        mobile.current.style.width = '300px'
+    }
 
     function ShowOption() {
         profile_option.current.style.display = 'block'
@@ -30,6 +41,7 @@ function HeaderConsumer() {
 
 
     return (
+
         <header className={styles.cabecalho}>
             <div className={styles.header_upp}>
                 <div className={styles.container_header_up} id='container'>
@@ -60,7 +72,9 @@ function HeaderConsumer() {
                         </Link>
                     </div>
 
-                    <SearchBar />
+                   <div className={styles.search_desktop}>
+                   <SearchBar />
+                   </div>
                     <div className={styles.nav_right}>
 
 
@@ -75,11 +89,13 @@ function HeaderConsumer() {
 
                         </Link>
 
-                        <Link onClick={scrollToTop} onMouseOver={ShowOption} to='/userprofile' >
+                        <Link onClick={scrollToTop} onMouseOver={ShowOption} to='/userprofile' className={styles.icons_user} >
                             <div className={styles.user_icon}>
                                 <img src={user} alt="Perfil de usuário" className={styles.user} />
                             </div>
+
                         </Link>
+                        <i id={styles.open_menu} onClick={ShowMobile} class="fa-solid fa-bars"></i>
 
 
                         <nav className={styles.nav_profile} ref={profile_option} onMouseLeave={HiddenOption}>
@@ -96,6 +112,10 @@ function HeaderConsumer() {
                 </div>
 
 
+            </div>
+
+            <div className={styles.search_mobile}>
+                <SearchBar />
             </div>
 
             <div className={styles.header_down}>
@@ -135,7 +155,39 @@ function HeaderConsumer() {
                     </ul>
                 </div>
             </div>
+
+            <div ref={mobile} className={styles.header_mobile}>
+                <div className={styles.container_close}>
+
+                    <div className={styles.logo}>
+                        <Link onClick={scrollToTop} to="/">
+                            <img src={logoPocket} alt="Logo" className={styles.img_logo} />
+                        </Link>
+                    </div>
+                    <i onClick={CloseMobile} class="fa-solid fa-xmark" id={styles.close} ></i>
+                </div>
+                <nav className={styles.nav_mobile}>
+                    <ul>
+                        <li>
+                            <Link onClick={scrollToTop} to="/">Início</Link>
+                        </li>
+
+
+                        <li>
+                            <Link onClick={scrollToTop} to="/about">Sobre nós</Link>
+                        </li>
+
+                        <li>
+                            <Link onClick={scrollToTop} to="/homemarket">Seja Parceiro</Link>
+                        </li>
+
+
+                    </ul>
+                </nav>
+            </div>
         </header>
+
+
     )
 }
 
