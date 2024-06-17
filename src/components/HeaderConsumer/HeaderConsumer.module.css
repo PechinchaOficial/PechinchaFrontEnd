@@ -294,6 +294,10 @@
     flex-direction: column;
 }
 
+.icon_mobile {
+    display: block;
+}
+
 .header_up{
     background-color: var(--amarelo);
     height: 60px;
