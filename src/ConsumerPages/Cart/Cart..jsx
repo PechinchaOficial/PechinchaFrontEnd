@@ -44,9 +44,12 @@ function Cart() {
                                     <span className={styles.price}>R$ 4,80</span>
                                 </div>
 
+                                <Link to='/checkoutpage'>
                                 <button className={styles.btn}>
                                     IR PARA O PAGAMENTO
                                 </button>
+                                </Link>
+
                             </aside>
                         </div>
                     </section>
