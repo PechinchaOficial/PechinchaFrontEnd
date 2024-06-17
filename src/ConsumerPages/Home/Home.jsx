@@ -26,7 +26,7 @@ import { useTranslation } from "react-i18next";
 
 function Home() {
     const { t } = useTranslation();
-    
+
     const [slidesPerView, setSlidePerView] = useState(1)
 
     useEffect(() => {
@@ -52,7 +52,7 @@ function Home() {
     function step1() {
         if (descRef.current || titleRef.current) {
             descRef.current.innerHTML = `${t("text01")}`;
-            titleRef.current.innerHTML =`${t("Como chega os produtos?")}`;
+            titleRef.current.innerHTML = `${t("Como chega os produtos?")}`;
 
         }
     }
@@ -93,10 +93,6 @@ function Home() {
                     <img src={star} alt="star" className={styles.star} />
 
                     <img src={starYellow} alt="star" className={styles.star_2} />
-
-
-
-
                 </section>
 
                 {/*  Categorias dos produto*/}
@@ -136,7 +132,7 @@ function Home() {
 
                                 <h2 className={styles.title_tutorial} ref={titleRef}>{t("Como chega os produtos?")}</h2>
                                 <p className={styles.desc} ref={descRef}>
-                                {t("text01")}
+                                    {t("text01")}
                                 </p>
                             </article>
 
@@ -145,9 +141,9 @@ function Home() {
                                 <Swiper
                                     // controla quantos slides por foto quero que apareça
                                     slidesPerView={slidesPerView}
-                                    // define se é clicavel ou não
+                                // define se é clicavel ou não
 
-                                   >
+                                >
 
                                     <SwiperSlide>
                                         <img src={step} alt="Banner Promocional" className={styles.step_img} />

@@ -8,10 +8,11 @@ import BtnLang from '../BtnLang/BtnLang';
 import user from '../../assets/img/user.png'
 import { useTranslation } from "react-i18next";
 import React from 'react';
+import open from '../../assets/img/open.svg'
+import close from '../../assets/img/close.svg'
 
 function HeaderConsumer() {
     const { t } = useTranslation();
-
     const profile_option = React.useRef();
     const mobile = React.useRef();
 
@@ -38,11 +39,10 @@ function HeaderConsumer() {
         });
     };
 
-
-
     return (
 
         <header className={styles.cabecalho}>
+            {/* Header superior */}
             <div className={styles.header_upp}>
                 <div className={styles.container_header_up} id='container'>
                     <ul className={styles.nav_link}>
@@ -63,6 +63,9 @@ function HeaderConsumer() {
                     </ul>
                 </div>
             </div>
+
+            {/* Header central */}
+
             <div className={styles.header_up}>
 
                 <div className={styles.container_header} id='container'>
@@ -72,19 +75,16 @@ function HeaderConsumer() {
                         </Link>
                     </div>
 
-                   <div className={styles.search_desktop}>
-                   <SearchBar />
-                   </div>
+                    <div className={styles.search_desktop}>
+                        <SearchBar />
+                    </div>
                     <div className={styles.nav_right}>
-
-
                         <Link onClick={scrollToTop} to='/cart'>
                             <div className={styles.cart_icon}>
                                 <div className={styles.cart_notify}>
                                     <span>1</span>
                                 </div>
                                 <i class="fa-solid fa-cart-shopping" id={styles.cart_icon}></i>
-
                             </div>
 
                         </Link>
@@ -95,7 +95,7 @@ function HeaderConsumer() {
                             </div>
 
                         </Link>
-                        <i id={styles.open_menu} onClick={ShowMobile} class="fa-solid fa-bars"></i>
+                        <img onClick={ShowMobile} src={open} alt="Botão para fechar" className={styles.icon_mobile} />
 
 
                         <nav className={styles.nav_profile} ref={profile_option} onMouseLeave={HiddenOption}>
@@ -110,13 +110,13 @@ function HeaderConsumer() {
                     </div>
 
                 </div>
-
-
             </div>
 
             <div className={styles.search_mobile}>
                 <SearchBar />
             </div>
+
+            {/* Header inferior */}
 
             <div className={styles.header_down}>
                 <div className={styles.container_header} id='container'>
@@ -156,6 +156,8 @@ function HeaderConsumer() {
                 </div>
             </div>
 
+            {/* Header mobile */}
+
             <div ref={mobile} className={styles.header_mobile}>
                 <div className={styles.container_close}>
 
@@ -164,14 +166,15 @@ function HeaderConsumer() {
                             <img src={logoPocket} alt="Logo" className={styles.img_logo} />
                         </Link>
                     </div>
-                    <i onClick={CloseMobile} class="fa-solid fa-xmark" id={styles.close} ></i>
+
+                    <img onClick={CloseMobile} src={close} alt="Botão para fechar" className={styles.icon_mobile} />
+
                 </div>
                 <nav className={styles.nav_mobile}>
                     <ul>
                         <li>
                             <Link onClick={scrollToTop} to="/">Início</Link>
                         </li>
-
 
                         <li>
                             <Link onClick={scrollToTop} to="/about">Sobre nós</Link>
@@ -181,13 +184,10 @@ function HeaderConsumer() {
                             <Link onClick={scrollToTop} to="/homemarket">Seja Parceiro</Link>
                         </li>
 
-
                     </ul>
                 </nav>
             </div>
         </header>
-
-
     )
 }
 
