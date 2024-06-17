@@ -28,6 +28,14 @@
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.267);
 }
 
+.image{
+    width: 200px;
+    height: 200px;
+    margin-left: 45px;
+    position: absolute;
+    top: 133rem;
+}
+
 .luane{
     width: 270px;
     height: 270px;
@@ -39,8 +47,15 @@
     height: 200px;
     margin-left: 40px;
     position: absolute;
-    top: -50px;
-  
+    top: 161.2rem;
+}
+
+.image2{
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+    position: absolute;
+    top: 189.2rem;
 }
 
 .name{
