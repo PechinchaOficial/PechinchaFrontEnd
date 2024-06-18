@@ -45,6 +45,11 @@ function HeaderConsumer() {
             {/* Header superior */}
             <div className={styles.header_upp}>
                 <div className={styles.container_header_up} id='container'>
+                    <div className={styles.logo}>
+                        <Link onClick={scrollToTop} to="/">
+                            <img src={logoPocket} alt="Logo" className={styles.logo_pocket} />
+                        </Link>
+                    </div>
                     <ul className={styles.nav_link}>
                         <li>
                             <Link onClick={scrollToTop} to="/">Início</Link>
@@ -75,6 +80,8 @@ function HeaderConsumer() {
                         </Link>
                     </div>
 
+
+
                     <div className={styles.search_desktop}>
                         <SearchBar />
                     </div>
@@ -104,7 +111,6 @@ function HeaderConsumer() {
                                 <li><i class="fa-solid fa-shield-halved"></i> <a href="#">{t("Segurança")}</a></li>
                                 <li><i class="fa-solid fa-circle-question"></i><a href="#">{t("Ajuda")}</a></li>
                                 <li><i class="fa-solid fa-right-from-bracket"></i><Link to="/homedeslogado">{t("Sair")}</Link></li>
-
                             </ul>
                         </nav>
                     </div>
@@ -182,6 +188,10 @@ function HeaderConsumer() {
 
                         <li>
                             <Link onClick={scrollToTop} to="/homemarket">Seja Parceiro</Link>
+                        </li>
+
+                        <li>
+                            <Link onClick={scrollToTop} to="/homemarket">Produtos</Link>
                         </li>
 
                     </ul>

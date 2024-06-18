@@ -567,14 +567,15 @@
 
 
     .slogan_subtitle {
-        display: none;
+        font-size: 1rem;
     }
 
     .img_logo {
         height: 70%;
-        width: 90%;
+        width: 100%;
         margin-right: 40px;
     }
+
 
     .btn_bar {
         display: none;
@@ -590,7 +591,7 @@
     }
 
     .hero_section {
-        padding: 150px 0px 0px 0px;
+        padding: 180px 0px 10px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -607,6 +608,7 @@
         overflow-x: auto;
         flex-wrap: nowrap;
     }
+
 }
 
 /* Tablet response */

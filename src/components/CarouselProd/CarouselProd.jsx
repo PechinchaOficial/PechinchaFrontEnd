@@ -27,7 +27,7 @@ function CarouselProd() {
             if (window.innerWidth > 720) {
                 setSlidePerView(1);
             } else {
-                setSlidePerView(2);
+                setSlidePerView(1);
             }
         }
 
