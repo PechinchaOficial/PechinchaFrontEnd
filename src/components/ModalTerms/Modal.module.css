@@ -1,0 +1,53 @@
+.Modal {
+    position: absolute;
+    height: 550px;
+    width: 550px;
+    background-color: var(--background);
+    top: 200px;
+    left: 700px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 6px 18px 15px 16px rgba(0,0,0,0.1);
+    border-radius: 10px;
+
+} .Headermodal {
+    height: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px black solid ;
+}
+.bodytextmodal {
+    height: 50%;
+    width: 80%;
+    display: flex;
+    text-align: justify;
+    overflow: auto;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.btnmodal {
+    background-color: var(--btn);
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+.btnmodal a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.btnmodal:hover {
+    background-color: var(--btn_hover);
+
+}
