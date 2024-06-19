@@ -23,7 +23,7 @@ function Banner({ bannerimg }) {
             if(window.innerWidth > 720){
                 setSlidePerView(1);
             }else{
-                setSlidePerView(2);
+                setSlidePerView(1);
             }
         }
 
@@ -41,7 +41,7 @@ function Banner({ bannerimg }) {
                 pagination={{clickable: true}}
                 autoplay
                 navigation
-               
+    
             >
 
                 {/* corresponde a cada item do coarrossel */}

@@ -6,8 +6,9 @@
     color: #fff;
     border-radius: 10px;
     clip-path: polygon(0 0, 100% 0, 94% 96%, 6% 95%);
-    padding: 20px 40px;
+    padding: 20px 80px;
     margin: 70px 50px;
+    text-align: center;
 
 }
 
@@ -17,4 +18,10 @@
     font-size: 2.5rem;
     letter-spacing: 5px;
     font-weight: 100;
+}
+
+@media screen and (max-width: 925px) {
+.title h2{
+    font-size: 1.5rem;
+}
 }
