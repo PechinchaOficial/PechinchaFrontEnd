@@ -17,7 +17,7 @@ function Team() {
             <div className={Styles.pics}>
                 <div className={Styles.square}>
                     <div className={Styles.image}>
-                        <img className={Styles.luane} src={Luane} />
+                        <img className={Styles.luane} src={Luane} />  {/*Classe luane da uma altura largura e espaçamento estre as divs*/}
                     </div>
                     <div className={Styles.name}>
                         <h3 className={Styles.title}>Luane Moura</h3>
