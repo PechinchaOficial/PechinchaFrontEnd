@@ -28,9 +28,12 @@
 }
 
 .img_logo {
-    height: 10%;
-    width: 70%;
+    width: 65%;
     margin-right: 150px;
+}
+
+#logo_responsive {
+    display: none;
 }
 
 .container_slogan {
@@ -80,7 +83,7 @@
 
 .search {
     position: relative;
-    width: 70%;
+    width: 60%;
     z-index: 1;
 
 }
@@ -94,9 +97,7 @@
     border: 0.5px solid #00000021;
     outline: none;
     font-size: 1.5rem;
-    border-radius: 20px;
-
-
+    border-radius: 40px;
 }
 
 
@@ -111,7 +112,7 @@
     font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
-    width: 150px;
+    width: 100px;
     height: 60px;
     border: none;
     background-color: var(--vermelho);
@@ -120,9 +121,11 @@
     right: 7px;
     cursor: pointer;
     transition: 0.5s all;
-    border-radius: 10px;
+    border-radius: 40px;
+}
 
-
+.btn_bar:hover {
+    background-color: #af2e2c;
 }
 
 .btn:hover {
@@ -350,7 +353,7 @@
     gap: 60px;
     align-items: center;
     height: 320px;
-    width: 330px;
+    width: 500px;
     background-color: #C6DC8D;
     clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
     box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1);
@@ -526,7 +529,6 @@
     .container_rate {
         justify-content: center;
         align-items: center;
-
         display: flex;
         justify-content: flex-start;
         width: 100%;
@@ -535,7 +537,7 @@
 
     }
 
-    .rate_card{
+    .rate_card {
         flex: none;
     }
 
@@ -565,24 +567,23 @@
         font-size: 2rem;
     }
 
-
     .slogan_subtitle {
-        font-size: 1rem;
+        display: none;
     }
 
     .img_logo {
-        height: 70%;
-        width: 100%;
-        margin-right: 40px;
-    }
-
-
-    .btn_bar {
         display: none;
     }
 
-    .search_bar {
-        display: none;
+
+    #logo_responsive {
+        display: block;
+        margin-left: 160px;
+        width: 80%;
+    }
+
+    .search {
+        width: 85%;
     }
 
     .star,
@@ -609,10 +610,54 @@
         flex-wrap: nowrap;
     }
 
-    .categorySection{
+    .categorySection {
         border-radius: 20px 20px 0px 0px;
         padding: 20px;
 
+    }
+
+    .search {
+        height: 100px;
+    }
+
+    .search_bar {
+        height: 55px;
+    }
+
+    .search_bar::placeholder {
+        font-size: 1.3rem;
+    }
+
+    .btn_bar {
+        height: 50px;
+        width: 80px;
+        border-radius: 20px;
+        top: 3px;
+    }
+
+    .container_perguntas{
+        width: 100%;
+    }
+
+    .pergunta h3{
+        font-size: 1rem;
+    }
+
+    .card_mercado{
+        height: 250px;
+        width: 400px;
+    }
+    
+    .logo_mercado{
+        height: 40px;
+    }
+
+    .btn{
+        font-size: 1rem;
+    }
+
+    #marketThree{
+        width: 500px;
     }
 }
 

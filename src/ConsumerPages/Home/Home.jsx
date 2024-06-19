@@ -1,5 +1,7 @@
 import styles from './Home.module.css'
 import teste from '../../assets/img/pechinchaLogo.svg'
+import logosimple from '../../assets/img/logo_simple.svg'
+
 import star from '../../assets/img/star.svg'
 import starYellow from '../../assets/img/starYellow.svg'
 import CategoryProd from '../../components/CategoryProd/CategoryProd';
@@ -81,11 +83,13 @@ function Home() {
                 <section className={styles.hero_section}>
                     <div className={styles.container_slogan} id='container'>
                         <img src={teste} alt="logo" className={styles.img_logo} />
+                        <img src={logosimple} alt="logo" className={styles.img_logo} id={styles.logo_responsive}/>
+
                         <h2 className={styles.slogan_subtitle}>{t("slogan01")}</h2>
 
                         <div className={styles.search}>
                             <input type="search" placeholder='Pechinchar' className={styles.search_bar} />
-                            <button className={styles.btn_bar}>Buscar</button>
+                            <button className={styles.btn_bar}><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </div>
 

@@ -41,7 +41,7 @@ function Banner({ bannerimg }) {
                 pagination={{clickable: true}}
                 autoplay
                 navigation
-               
+    
             >
 
                 {/* corresponde a cada item do coarrossel */}

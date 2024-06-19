@@ -9,7 +9,7 @@ import user from '../../assets/img/user.png'
 import { useTranslation } from "react-i18next";
 import React from 'react';
 import open from '../../assets/img/open.svg'
-import close from '../../assets/img/close.svg'
+import close from '../../assets/img/close.jpg'
 
 function HeaderConsumer() {
     const { t } = useTranslation();
@@ -100,7 +100,6 @@ function HeaderConsumer() {
                             <div className={styles.user_icon}>
                                 <img src={user} alt="Perfil de usuário" className={styles.user} />
                             </div>
-
                         </Link>
                         <img onClick={ShowMobile} src={open} alt="Botão para fechar" className={styles.icon_mobile} />
 
@@ -168,30 +167,35 @@ function HeaderConsumer() {
                 <div className={styles.container_close}>
 
                     <div className={styles.logo}>
-                        <Link onClick={scrollToTop} to="/">
-                            <img src={logoPocket} alt="Logo" className={styles.img_logo} />
+
+                        <Link onClick={scrollToTop} onMouseOver={ShowOption} to='/userprofile' className={styles.icons_uer} >
+                            <div className={styles.user_icon}>
+                                <img src={user} alt="Perfil de usuário" className={styles.user} />
+                            </div>
                         </Link>
                     </div>
 
-                    <img onClick={CloseMobile} src={close} alt="Botão para fechar" className={styles.icon_mobile} />
+                    
+                        <img onClick={CloseMobile} src={close} alt="Botão para fechar" className={styles.icon_mobile} />
+                    
 
                 </div>
                 <nav className={styles.nav_mobile}>
                     <ul>
                         <li>
-                            <Link onClick={scrollToTop} to="/">Início</Link>
+                            <i class="fa-solid fa-house"></i><Link onClick={scrollToTop} to="/">Início</Link>
                         </li>
 
                         <li>
-                            <Link onClick={scrollToTop} to="/about">Sobre nós</Link>
+                            <i class="fa-solid fa-people-group"></i><Link onClick={scrollToTop} to="/about">Sobre nós</Link>
                         </li>
 
                         <li>
-                            <Link onClick={scrollToTop} to="/homemarket">Seja Parceiro</Link>
+                            <i class="fa-solid fa-store"></i> <Link onClick={scrollToTop} to="/homemarket">Seja Parceiro</Link>
                         </li>
 
                         <li>
-                            <Link onClick={scrollToTop} to="/homemarket">Produtos</Link>
+                            <i class="fa-solid fa-list"></i> <Link onClick={scrollToTop} to="/homemarket">Produtos</Link>
                         </li>
 
                     </ul>
