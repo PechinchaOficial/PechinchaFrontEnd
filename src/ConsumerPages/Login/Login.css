@@ -131,6 +131,9 @@ label{
 
 }
 
+.text-banner p{
+	font-size:  40px;
+}
 .banner-login p{
 		font-size:  23px;
 		text-align: center;
@@ -158,4 +161,94 @@ label{
 	background-color: white;
 	color: black;
 
+}
+/* Responsivo TABLET's */
+
+/*Responsivo IPAD, IPAD mini, */
+
+@media screen and (max-width: 769px) and (max-height: 1025px){
+	.container-login{
+		width:  90%; 
+		gap:  15px;
+		 
+	}
+
+	.Title-login{
+		font-size: 22px;
+
+	}
+
+	.SubTitle-login{
+		font-size: 15px;
+
+	}
+
+	.forms-login{
+		gap:  15px;
+	}
+
+	.privacy-policy{
+		font-size:  15px;
+	}
+
+	.recover-password{
+		font-size: 15px;
+	}
+
+	.title-banner-login{
+		font-size: 35px;
+	}
+
+	.banner-login{
+		gap:  30px;
+	}
+}
+
+/* NEXUS 7*/
+
+@media screen and (max-width: 600px) and (max-height: 960px){
+	.container-login{
+		width:  90%; 
+		gap:  32px;
+		 
+	}
+
+	.Title-login{
+		font-size: 18px;
+
+	}
+
+	.SubTitle-login{
+		font-size:  14px;
+		margin-bottom: 18px;
+	}
+
+	.forms-login{
+		gap:  16px;
+	}
+
+	.forms-login input{
+		height:  40px;
+	}
+	.forms-login label{
+		font-size:  17px;
+	}
+
+	.privacy-policy{
+		font-size:  13px;
+	}
+
+	.recover-password{
+		font-size: 15px;
+	}
+
+	.title-banner-login{
+		font-size: 30px;
+	}
+	.banner-login{
+		gap:  35px;
+	}
+	.banner-login button{
+		width:  170px;
+	}
 }
