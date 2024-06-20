@@ -6,11 +6,15 @@ import brasil from '../../assets/img/brasil.png'
 import usa from '../../assets/img/usa.png'
 import BtnLang from '../../components/BtnLang/BtnLang';
 import { useTranslation } from "react-i18next";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import Modal from '../../components/ModalTerms/Modal'
 
 function UserProfile() {
-    const { t } = useTranslation();
-
+    //API translate const
+    const { t } = useTranslation();  
+    // Modal const
+    const [openModal, setOpenModal] = useState(false)
 
     return (
         <div className={styles.container_profile}>
@@ -73,20 +77,22 @@ function UserProfile() {
                         </form>
                         <section className={styles.language_section}>
                             <h3>{t("Alterar idioma")}</h3>
-                          
-                                <BtnLang/>
-                          
+
+                            <BtnLang />
+
                         </section>
 
 
                         <div className={styles.container_btn}>
-                            <button className={styles.btn} id={styles.btn_cancel}>
+                            <button className={styles.btn} id={styles.btn_cancel} onClick={() => setOpenModal(true)}>
                                 {t("Cancelar")}
                             </button>
 
-                            <Link to="/homedeslogado"><button className={styles.btn}>{t("Salvar")}</button></Link>
+                            <Link to="/homedeslogado"><button className={styles.btn} >{t("Salvar")}</button></Link>
 
                         </div>
+                             <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}/>
+
                     </section>
 
 

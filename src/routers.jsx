@@ -32,6 +32,7 @@ import UserProfile from './ConsumerPages/UserProfile/UserProfile'
 import Usertype from './ConsumerPages/UserType/UserType'
 import MarketLogin from './MarketPages/Login/Login'
 import RegisterClient from './ConsumerPages/RegisterClient/RegisterClient'
+import CheckoutPage from './ConsumerPages/CheckoutPage/CheckoutPage'
 
 
 
@@ -71,6 +72,7 @@ function RouterApp() {
                 <Route path='/usertype' element={<Usertype/>}></Route>
                 <Route path='/marketlogin' element={<MarketLogin/>}></Route>
                 <Route path='/registerclient' element={<RegisterClient/>}></Route>
+                <Route path='/checkoutpage' element={<CheckoutPage />}></Route>
 
             </Routes>
             <Footer />

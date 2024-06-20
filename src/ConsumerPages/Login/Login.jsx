@@ -6,17 +6,17 @@ function Login() {
         <main className=' background_login' >
             <section className='container-login'>
                 <div className='forms-register'>
-                    <h2>Entre com a sua conta</h2>
-                    <h3>Preencha todos os campos</h3>
+                    <h2 className='Title-login'>Entre com a sua conta</h2>
+                    <h3 className='SubTitle-login'>Preencha todos os campos</h3>
 
                     <form action="" className='forms-login'>
-                        <label htmlFor="">Email</label>
+                        <label htmlFor="" className='Label-login'>Email</label>
                         <input type="text" placeholder='Digite seu Email' />
 
-                        <label htmlFor="">Senha</label>
+                        <label htmlFor="" className='Label-login'>Senha</label>
                         <input type="text" placeholder='Digite sua senha' />
 
-                        <label htmlFor="">Confirmar sua senha</label>
+                        <label htmlFor="" className='Label-login'>Confirmar sua senha</label>
                         <input type="text" placeholder='Digite sua senha' />
 
                         <p className='recover-password'>Esqueceu sua senha? <Link to="/recover">Recupere aqui</Link></p>
@@ -36,12 +36,12 @@ function Login() {
                     <h2 className='title-banner-login'>
                         Bem vindo de volta!
                     </h2>
-                    <p>Clique abaixo caso ainda não tenha uma conta e aproveite de todas as funções</p>
+                    <p className='text-banner'>Clique abaixo caso ainda não tenha uma conta e aproveite de todas as funções</p>
 
                     <a href="">
                         <Link to="/registerclient">
                             <button>
-                            CADASTRAR
+                                CADASTRAR
                             </button>
                         </Link>
                     </a>
