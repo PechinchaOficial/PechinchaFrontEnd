@@ -118,21 +118,10 @@ function HeaderConsumer() {
                         </li>
 
                         <li>
-                            <Link onClick={scrollToTop} to="/bebidas">Sobre nós</Link>
+                            <Link onClick={scrollToTop} to="/about">Sobre nós</Link>
                         </li>
 
 
-                        <li>
-                            <Link onClick={scrollToTop} to="/graos">Grãos</Link>
-                        </li>
-
-                        <li>
-                            <Link onClick={scrollToTop} to="/massas">Massas</Link>
-                        </li>
-
-                        <li>
-                            <Link onClick={scrollToTop} to="/listagem">Variados</Link>
-                        </li>
 
 
                     </ul>

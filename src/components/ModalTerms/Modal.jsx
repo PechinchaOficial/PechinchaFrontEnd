@@ -1,10 +1,12 @@
 import Styles from "./Modal.module.css"
+import { Link } from "react-router-dom";
 
 function Modal({isOpen, setModalOpen}) {
         if (isOpen) {
     return(
 
-        <article className={Styles.Modal}>
+<div className={Styles.test}>
+            <article className={Styles.Modal}>
         <header className={Styles.Headermodal}>
             <h1>Termos e condições de uso</h1>
         </header>
@@ -55,8 +57,9 @@ function Modal({isOpen, setModalOpen}) {
         <div className={Styles.input}>
             <input type="checkbox" className={Styles.Concordo} /> <p>li e concordo com os termos de uso.</p>
         </div>
-        <button className={Styles.btnmodal} onClick={setModalOpen}> <a href="#"> Aceito </a></button>
+        <Link to='/listagem'><button className={Styles.btnmodal} onClick={setModalOpen}> <a href="#"> Aceito </a></button></Link>
     </article>
+</div>
     ) 
 
 }

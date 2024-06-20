@@ -123,7 +123,7 @@ function MarketSystem({ imagem, classe }) {
                                 <div className={Styles.container_form}>
 
                                     <form action="" method="get">
-                                        <p className={Styles.titulo_input}>zme</p>
+                                        <p className={Styles.titulo_input}>Nome</p>
                                         <input type="text" placeholder='Digite o nome do produto' className={Styles.input_long} />
                                         <p className={Styles.titulo_input}>Descrição</p>
                                         <input type="text" placeholder='Digite a descrição do produto' className={Styles.input_long} />
