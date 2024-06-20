@@ -109,6 +109,7 @@
     opacity: 100%;
 }
 
+
 .cart_icon {
     transition: 0.5s all;
     cursor: pointer;
@@ -301,6 +302,10 @@
     display: none;
 }
 
+.userway_buttons_wrapper{
+    display: none;
+}
+
 
 /* Smartphone response */
 
@@ -308,6 +313,7 @@
 
     .icon_mobile {
         display: block;
+        z-index: 999;;
     }
 
     .header_down {
@@ -336,7 +342,12 @@
 
     .header_up{
         justify-content: space-between;
+        background-color: var(--amarelo);
         padding: 7px;
+    }
+
+    .header_upp{
+        display: none;
     }
     
     .header_upp .nav_link{

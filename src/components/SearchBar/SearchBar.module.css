@@ -1,4 +1,4 @@
-.search{
+.search {
     position: relative;
     width: 100%;
 }
@@ -6,7 +6,7 @@
 
 
 
-.search_bar{
+.search_bar {
     border: none;
     height: 50px;
     width: 100%;
@@ -14,9 +14,11 @@
     border: 0.5px solid #00000021;
     outline: none;
     clip-path: polygon(2% 0, 100% 0%, 98% 100%, 0 100%);
+    font-size: 1.5rem;
 }
 
-.btn{
+
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,12 +38,75 @@
 
 }
 
-.btn:hover{
-background-color: rgb(44, 44, 221);
+.btn:hover {
+    background-color: rgb(44, 44, 221);
 }
 
+.results {
+    height: auto;
+    max-height: 450px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    overflow: auto;
+    border-radius: 10px;
+    display: none;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    
+}
+
+.img img {
+    height: 120px;
+    object-fit: cover;
+}
+
+.results ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    height: auto;
+    border-bottom: 0.5px solid rgba(190, 190, 190, 0.253);
+    padding: 20px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.btn_buy{
+    width: 100%;
+    border: none;
+    background-color: var(--btn);
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.info_prod{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
 @media screen and (max-width: 925px) {
-    .search{
+    .search {
         width: 100%;
     }
 }

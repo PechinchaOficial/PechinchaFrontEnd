@@ -64,17 +64,19 @@ function MarketSystem({ imagem, classe }) {
                             </div></Link>
                     </div>
 
-                    <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
-                        <div className={Styles.container_central}> {/*Container centralizado*/}
-                            <div className={Styles.container_img_nav}> {/*Container da imagem*/}
-                                <img src={Produtos} alt="imagem de uma casa" />
-                            </div>
+                    <Link to='/marketproduct'>
+                        <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
+                            <div className={Styles.container_central}> {/*Container centralizado*/}
+                                <div className={Styles.container_img_nav}> {/*Container da imagem*/}
+                                    <img src={Produtos} alt="imagem de uma casa" />
+                                </div>
 
-                            <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
-                                <p className={Styles.texto_nav}>Produtos</p>
+                                <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
+                                    <p className={Styles.texto_nav}>Produtos</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
 
 
 
@@ -121,7 +123,7 @@ function MarketSystem({ imagem, classe }) {
                                 <div className={Styles.container_form}>
 
                                     <form action="" method="get">
-                                        <p className={Styles.titulo_input}>Nome</p>
+                                        <p className={Styles.titulo_input}>zme</p>
                                         <input type="text" placeholder='Digite o nome do produto' className={Styles.input_long} />
                                         <p className={Styles.titulo_input}>Descrição</p>
                                         <input type="text" placeholder='Digite a descrição do produto' className={Styles.input_long} />

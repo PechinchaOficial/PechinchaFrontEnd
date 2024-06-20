@@ -23,6 +23,8 @@ import amigao from '../../assets/img/Market/amigao.png'
 import violeta from '../../assets/img/Market/violeta.png'
 import recoy from '../../assets/img/Market/ricoy.png'
 import Header from '../../components/Header/Header';
+import logosimple from '../../assets/img/logo_base.svg';
+
 
 
 function HomeDeslogado() {
@@ -75,17 +77,24 @@ function HomeDeslogado() {
 
     return (
         <div>
-            <Header/>
+            <Header />
             <main className={styles.container_home}>
                 {/*  Categorias dos produto*/}
                 <section className={styles.hero_section}>
                     <div className={styles.container_slogan} id='container'>
-                        <img src={teste} alt="logo" className={styles.img_logo} />
+                        <div className={styles.img_temp}>
+                            <img src={teste} alt="logo" className={styles.img_logo} id={styles.logo_responsive} />
+                       
+                        <img src={logosimple} alt="logo" className={styles.img_logo2} />
+                        <h1>A grana apertou?</h1>
+                        <h2>Pechincha Chegou!</h2>
+
+                        </div>
                         <h2 className={styles.slogan_subtitle}>Nós combatemos o desperdício e ainda fazemos aquela diferença no bolso!</h2>
 
                         <div className={styles.search}>
                             <input type="search" placeholder='Pechinchar' className={styles.search_bar} />
-                            <button className={styles.btn_bar}>Buscar</button>
+                            <button className={styles.btn_bar}><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </div>
 

@@ -19,7 +19,7 @@ function CardProduto({ img, name, price, dateVenc, qtdUnit, discount }) {
                     <img src={img} alt="Produto" className={styles.imgprod} />
                 </div>
             </Link>
-            <h1 className={styles.prodNome}>{name}</h1>
+            <h2 className={styles.prodNome}>{name}</h2>
             <div className={styles.prod_info}>
                 <span className={styles.info_prod}>
                     Data: até {dateVenc}

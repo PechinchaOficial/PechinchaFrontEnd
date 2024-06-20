@@ -80,17 +80,7 @@ function MarketSystem(){
                 </div>
                 </Link>
               
-                <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
-                    <div className={Styles.container_central}> {/*Container centralizado*/}
-                        <div className={Styles.container_img_nav}> {/*Container da imagem*/}
-                            <img src={Add_Market} alt="imagem de uma casa" />
-                        </div>
 
-                        <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
-                            <p className={Styles.texto_nav}>Novo Produto</p>
-                        </div>
-                    </div>
-                </div>
 
                 <div className={Styles.div_nav}>  {/*Div Nav-bar*/}
                     <div className={Styles.container_central}> {/*Container centralizado*/}
