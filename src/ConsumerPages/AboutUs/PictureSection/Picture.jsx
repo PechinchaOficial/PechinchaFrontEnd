@@ -24,7 +24,8 @@ function Picture() {
                     <div className={Styles.pic3}>
                         <img className={Styles.meninos} src={Meninos} />
                     </div>
-                    <div className={Styles.pic4}>
+                    <div c0
+                    lassName={Styles.pic4}>
                         <img className={Styles.professores} src={Professores} />
                     </div>
                     <div className={Styles.pic5}>
