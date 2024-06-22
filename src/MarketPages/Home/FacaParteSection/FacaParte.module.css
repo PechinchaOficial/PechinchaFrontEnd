@@ -25,7 +25,7 @@
     letter-spacing: 5px;
 }
 .Text { 
-    color: rgba(0, 0, 0, 0.548);
+    color: rgb(0, 0, 0);
     font-size: 1.8rem;
 }
 .Btn {
@@ -43,7 +43,10 @@
 }
 .Btn:hover {
     transform: translateY(-3px);
+    background-color: #3b518e;
 }
+
+
 .BoxRight {
     width: 600px;
     display: flex;
@@ -59,6 +62,7 @@
     margin-top:  40%;
     
 }
+
 
 #Box1 {
     clip-path:

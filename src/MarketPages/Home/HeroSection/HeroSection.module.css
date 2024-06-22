@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    color: rgba(0, 0, 0, 0.516);
+    color: rgb(0, 0, 0);
 }
 .BackBtns {
     height: 100px;
@@ -49,6 +49,7 @@
     align-items: center;
     gap: 10px;
 }
+
 .Btn{
     width: 20%;
     padding: 10px;
@@ -61,14 +62,25 @@
 }
 .Btn:hover {
     transform: translateY(-3px);
+
 }
 
 #RegisterBtn {
     background-color: var(--azul);
     color: var(--background);
 }
+
+#RegisterBtn:hover {
+    background-color: #3b518e;
+}
+
 #KnowMoreBtn {
     background-color: var(--background);
     color: var(--azul);
     border: 1px solid var(--azul);
+}
+
+#KnowMoreBtn:hover {
+    background-color: var(--azul);
+    color: white;
 }
