@@ -170,7 +170,6 @@ label{
 	.container-login{
 		width:  90%; 
 		gap:  15px;
-		 
 	}
 
 	.Title-login{
@@ -180,7 +179,7 @@ label{
 
 	.SubTitle-login{
 		font-size: 15px;
-
+		margin-bottom: 10px;
 	}
 
 	.forms-login{
@@ -208,14 +207,13 @@ label{
 
 @media screen and (max-width: 600px) and (max-height: 960px){
 	.container-login{
-		width:  90%; 
+		width:  95%; 
 		gap:  32px;
 		 
 	}
 
 	.Title-login{
-		font-size: 18px;
-
+		font-size: 22px;
 	}
 
 	.SubTitle-login{
@@ -250,5 +248,255 @@ label{
 	}
 	.banner-login button{
 		width:  170px;
+	}
+}
+
+/*IPAD PRO Horizontal */
+@media screen and (min-width: 1024px) and (min-height: 1366px){
+	.container-login{
+		width:  90%; 
+		gap:  32px;
+		 
+	}
+
+	.Title-login{
+		font-size: 35px;
+
+	}
+
+	.SubTitle-login{
+		font-size:  20px;
+		margin-bottom: 18px;
+	}
+
+	.forms-login{
+		gap:  16px;
+	}
+
+	.forms-login input{
+		height:  58px;
+	}
+	.forms-login label{
+		font-size:  20px;
+	}
+
+	.privacy-policy{
+		font-size:  15px;
+	}
+
+	.recover-password{
+		font-size: 18px;
+	}
+
+	.title-banner-login{
+		font-size: 30px;
+	}
+	.banner-login{
+		gap:  35px;
+	}
+	.banner-login button{
+		width:  170px;
+	}
+}
+
+/*Fim do Responsivo de TABLET*/
+
+/*Inicio do Responsivo de CELULAR*/
+
+/*Iphone 15 pro*/
+@media screen and (max-width: 393px) and (max-height:  852px){
+	.container-login{
+		width:  95%; 
+		gap:  10px;
+	}
+
+	.Title-login{
+		font-size: 28px;
+	}
+
+	.SubTitle-login{
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.forms-register{
+		width: 100%;
+		
+	}
+	.forms-login{
+		gap:  15px;
+	}
+
+	.privacy-policy{
+		font-size:  15px;
+	}
+
+	.recover-password{
+		font-size: 15px;
+	}
+
+	.title-banner-login{
+		font-size: 35px;
+	}
+
+	.banner-login{
+		display: none;
+	}
+}
+
+/*Iphone 15 pro  max*/
+@media screen and (max-width:  430px) and (max-height:  932px){
+	.container-login{
+		width:  95%; 
+		gap:  10px;
+	}
+
+	.Title-login{
+		font-size: 28px;
+	}
+
+	.SubTitle-login{
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.forms-register{
+		width: 100%;
+		
+	}
+	.forms-login{
+		gap:  15px;
+	}
+
+	.privacy-policy{
+		font-size:  15px;
+	}
+
+	.recover-password{
+		font-size: 15px;
+	}
+
+	.title-banner-login{
+		font-size: 35px;
+	}
+
+	.banner-login{
+		display: none;
+	}
+}
+
+/*Pixel 7a*/
+
+@media screen and (max-width: 427px) and (max-height:  950px){
+	.container-login{
+		width:  95%; 
+		gap:  10px;
+	}
+
+	.Title-login{
+		font-size: 28px;
+	}
+
+	.SubTitle-login{
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.forms-register{
+		width: 100%;
+	}
+	.forms-login{
+		gap:  15px;
+	}
+
+	.privacy-policy{
+		font-size:  15px;
+	}
+
+	.recover-password{
+		font-size: 15px;
+	}
+
+	.title-banner-login{
+		font-size: 35px;
+	}
+
+	.banner-login{
+		display: none;
+	}
+}
+/*Pixel 6 Pro*/
+@media screen and (max-width: 480px) and (max-height:  1040px){
+	.container-login{
+		width:  95%; 
+		gap:  10px;
+	}
+
+	.Title-login{
+		font-size: 28px;
+	}
+
+	.SubTitle-login{
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.forms-register{
+		width: 100%;
+		
+	}
+	.forms-login{
+		gap:  15px;
+	}
+
+	.privacy-policy{
+		font-size:  15px;
+	}
+
+	.recover-password{
+		font-size: 15px;
+	}
+
+	.title-banner-login{
+		font-size: 35px;
+	}
+
+	.banner-login{
+		display: none;
+	}
+}
+
+/*Galaxy TAB 7*/
+@media screen and (max-width: 526px) and (max-height:  842px){
+	.container-login{
+		width:  95%; 
+		gap:  10px;
+	}
+
+	.Title-login{
+		font-size: 28px;
+	}
+
+	.SubTitle-login{
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.forms-register{
+		width: 100%;		
+	}
+	.forms-login{
+		gap:  15px;
+	}
+
+	.privacy-policy{
+		font-size:  15px;
+	}
+
+	.recover-password{
+		font-size: 15px;
+	}
+
+	.title-banner-login{
+		font-size: 35px;
+	}
+
+	.banner-login{
+		display: none;
 	}
 }
