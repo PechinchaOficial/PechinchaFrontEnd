@@ -31,6 +31,9 @@ function Login() {
                         <p className='recover-password'>Esqueceu sua senha? <Link to="/recover">Recupere aqui</Link></p>
 
                         <Link to='/listagem'><button >ENTRAR</button></Link>
+                        <Link to="/registerclient">
+                            <button className='register-client'>CADASTRAR</button>
+                        </Link>
                         
                         <p className='privacy-policy'>Ao continuar com o acesso você concorda com a nossa <a href="#">política de privacidade</a></p>
                     </form>
@@ -40,11 +43,10 @@ function Login() {
                     <h2 className='title-banner-login'>Bem vindo de volta!</h2>
                     <p className='text-banner'>Clique abaixo caso ainda não tenha uma conta e aproveite de todas as funções</p>
 
-                    <a href="">
+                    
                         <Link to="/registerclient">
                             <button>CADASTRAR</button>
                         </Link>
-                    </a>
                 </div>
 
             </section>
