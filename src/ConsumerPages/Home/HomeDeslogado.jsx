@@ -24,6 +24,7 @@ import violeta from '../../assets/img/Market/violeta.png'
 import recoy from '../../assets/img/Market/ricoy.png'
 import Header from '../../components/Header/Header';
 import logosimple from '../../assets/img/logo_base.svg';
+import bannerc from '../../assets/img/bannerc.png'
 
 
 
@@ -180,7 +181,7 @@ function HomeDeslogado() {
 
                 <section className="background">
                     <div className={styles.container_promotion} id="container">   {/* Container */}
-                        <Banner bannerimg={imgBanner} /> {/* Banner de promoções */}
+                    <Banner bannerimg={imgBanner} bannerc={bannerc} /> {/* Banner de promoções */}
                         <CarouselProd />    {/* Carrossel de produtos */}
                     </div>
                 </section>
