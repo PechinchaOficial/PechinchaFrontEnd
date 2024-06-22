@@ -220,11 +220,12 @@
     font-family: offer !important;
     font-size: 2.5rem;
     letter-spacing: 5px;
-
 }
 
 .passo:hover {
     transform: translateY(-3px);
+    background-color:  var(--azul);
+    color: #FFF;
 }
 
 

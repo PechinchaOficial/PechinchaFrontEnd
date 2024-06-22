@@ -18,7 +18,8 @@ function Parcerias() {
                     <div className={Styles.Box} id={Styles.Box3}><img className={Styles.img} src={Atacadao} alt="Atacadão empresa parceira do Pechincha" /></div>
                     <div className={Styles.Box} id={Styles.Box4}><img className={Styles.img} src={Casabahia} alt="Casas Bahia empresa parceira do Pechincha" /></div>
                     <div className={Styles.Box} id={Styles.Box5}><img className={Styles.img} src={Ayumi} alt="Ayumi empresa parceira do Pechincha" /></div>
-                </article></div>
+                </article>
+            </div>
         </section>
 
     )
