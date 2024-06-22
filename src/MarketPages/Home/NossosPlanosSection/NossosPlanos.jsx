@@ -21,8 +21,7 @@ function NossosPlanos() {
                         <li><h3>Promoções Personalizadas</h3></li>
                         <li><h3>Alcance padrão</h3></li>
                     </ul>
-
-
+                   
                     <button className={Styles.Btn}> SELECIONAR </button>
                     
                 </div>

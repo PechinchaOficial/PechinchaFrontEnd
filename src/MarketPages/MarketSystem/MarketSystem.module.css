@@ -185,5 +185,19 @@ a{
     text-decoration: none;
 }
 
+@media screen and (max-width: 420px) {
+    
+    .side_bar{                         /*Nav-bar lateral*/
+       display: none;
+    }
 
+    .container_table{
+        width: 95%;
+        height: 700px;
+        margin-left: 20px;
+        margin-bottom: 220px;
+        display: flex;
+        flex-direction: column;
+    }
+}
 

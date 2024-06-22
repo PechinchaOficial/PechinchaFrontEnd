@@ -90,7 +90,7 @@ function Team() {
                         <img className={Styles.luane} src={Sora} />
                     </div>
                     <div className={Styles.name}>
-                        <h3 className={Styles.title}>Gabriel Sora</h3>
+                        <h3 className={Styles.title}>Gabriel Alves</h3>
                         <p>Banco de dados</p>
                         <p>Desenvolvedor Back-End</p>
                     </div>

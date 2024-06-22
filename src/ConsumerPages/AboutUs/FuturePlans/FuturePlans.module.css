@@ -16,6 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: offer;
+    letter-spacing: 5px
 }
 .Title {
     margin-bottom: 30px;
@@ -48,12 +50,16 @@
     background-color: var(--azul);
     display: flex;
     justify-content: center;
+    font-family: offer;
+    letter-spacing: 5px;
     
 }
 .TitleInovacao h1 {
     margin-top: 5%;
     font-size: 2.5rem;
     color: white;
+    font-family: offer;
+    letter-spacing: 5px
 }
 .Text{
     font-size: 1.5rem;
@@ -122,6 +128,8 @@
     align-items: center;
     color: black;
     margin-left: -60%;
+    font-family: offer;
+    letter-spacing: 5px
 }
 .BoxtextApp {
     width: 75%;
@@ -151,6 +159,8 @@
     justify-content: center;
     align-items: center;
     color: white;
+    font-family: offer;
+    letter-spacing: 5px
 }
 .Backtxt {
     height: 50%;
@@ -190,6 +200,8 @@
     align-items: center;
     color: white;
     margin-left: 5%;
+    font-family: offer;
+    letter-spacing: 5px
 }
 .BoxIMG {
     height: 100%;

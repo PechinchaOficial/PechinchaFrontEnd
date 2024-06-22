@@ -9,7 +9,7 @@ function Parcerias() {
                     <h1>Parcerias</h1>
                 </article>
                 <article className={Styles.BoxDown}>
-                <SliderLogo />
+                    <SliderLogo />
                 </article>
             </div>
         </section>

@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    color: rgba(0, 0, 0, 0.516);
+    color: #000;
 }
 .BackBtns {
     height: 100px;
@@ -67,8 +67,20 @@
     background-color: var(--azul);
     color: var(--background);
 }
+
+#RegisterBtn:hover{
+    background-color: #3c579e;
+    transition:all 0.4s;
+}
+
 #KnowMoreBtn {
     background-color: var(--background);
     color: var(--azul);
     border: 1px solid var(--azul);
+}
+
+#KnowMoreBtn:hover{
+    background-color:#577fe6 ;
+    color: #FFF;
+    transition:all 0.4s;
 }

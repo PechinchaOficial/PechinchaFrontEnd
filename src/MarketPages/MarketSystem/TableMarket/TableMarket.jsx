@@ -5,7 +5,7 @@ import Create from '../../../assets/img/Create.png'
 
 function TableMarket({classe}){
     return(
-        <div class="container">
+        <div className={Styles.container}>
     <table className={classe}>
         <thead className={Styles.cabeçalho}>
             <tr>

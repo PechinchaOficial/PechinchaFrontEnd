@@ -1,13 +1,17 @@
-
-
-.prod_list{
+.prod_list {
     display: flex;
     flex-direction: column;
-    padding-top: 180px;
+padding: 200px 10px 10px 0px;}
+
+
+.header_filter {
+    width: 100%;
 }
 
-.container_card{
+.container_prod {
     display: flex;
-    width: 100%;
     gap: 10px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
 }

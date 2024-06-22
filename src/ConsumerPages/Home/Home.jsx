@@ -78,7 +78,7 @@ function Home() {
     return (
         <div>
             <HeaderConsumer />
-            <main className={styles.container_home}>
+            <main className={styles.container_home} >
                 {/*  Categorias dos produto*/}
                 <section className={styles.hero_section}>
                     <div className={styles.container_slogan} id='container'>

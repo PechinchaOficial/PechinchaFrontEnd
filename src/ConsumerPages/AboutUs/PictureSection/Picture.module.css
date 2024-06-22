@@ -17,7 +17,6 @@
 
 
 .pic, .equipe{
-    background-color: rgb(204, 153, 76);
     width: 400px;
     height: 400px;
     clip-path: polygon(0 8%, 100% 0, 100% 93%, 0% 100%);
@@ -26,7 +25,6 @@
 }
 
 .pic1, .pechincha{
-    background-color: rgb(247, 61, 5);
     width: 400px;
     height: 350px;
     clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 93%);
@@ -43,7 +41,6 @@
 }
 
 .pic3, .meninos{
-    background-color: rgb(131, 21, 158);
     width: 400px;
     height: 200px;
     clip-path: polygon(0 12%, 100% 0, 100% 93%, 0% 100%);
@@ -63,7 +60,6 @@
 }
 
 .pic5, .full{
-    background-color: rgb(23, 240, 3);
     width: 400px;
     height: 200px;
     clip-path: polygon(0 10%, 100% 0, 100% 93%, 0 100%);

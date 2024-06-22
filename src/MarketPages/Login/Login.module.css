@@ -90,6 +90,10 @@ label {
 	border:  0px solid ;
 }
 
+.btn{
+	cursor: pointer;
+}
+
 /*.privacy_policy {
     text-align: center;
 	width:  100%;
