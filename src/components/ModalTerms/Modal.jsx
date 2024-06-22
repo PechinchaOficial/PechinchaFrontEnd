@@ -1,10 +1,12 @@
 import Styles from "./Modal.module.css"
+import { Link } from "react-router-dom";
 
 function Modal({isOpen, setModalOpen}) {
         if (isOpen) {
     return(
 
-        <article className={Styles.Modal}>
+<div className={Styles.test}>
+            <article className={Styles.Modal}>
         <header className={Styles.Headermodal}>
             <h1>Termos e condições de uso</h1>
         </header>
@@ -48,6 +50,7 @@ function Modal({isOpen, setModalOpen}) {
 
             Você concorda em indenizar e isentar [Nosso Site], seus diretores, funcionários e agentes, de qualquer reivindicação, perda, responsabilidade, demanda ou despesa (incluindo honorários advocatícios) decorrente do seu uso do Site ou violação destes Termos.
             <br />
+            
             10. Rescisão
 
             Podemos, a nosso critério exclusivo, encerrar ou suspender seu acesso ao Site sem aviso prévio por conduta que considerarmos violadora destes Termos ou prejudicial a outros usuários do Site ou a nossos interesses.
@@ -55,8 +58,9 @@ function Modal({isOpen, setModalOpen}) {
         <div className={Styles.input}>
             <input type="checkbox" className={Styles.Concordo} /> <p>li e concordo com os termos de uso.</p>
         </div>
-        <button className={Styles.btnmodal} onClick={setModalOpen}> <a href="#"> Aceito </a></button>
+        <Link to='/listagem'><button className={Styles.btnmodal} onClick={setModalOpen}> <a href="#"> Aceito </a></button></Link>
     </article>
+</div>
     ) 
 
 }

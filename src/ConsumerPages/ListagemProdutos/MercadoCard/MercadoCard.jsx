@@ -5,8 +5,15 @@ import styles from './MercadoCard.module.css'
 
 
  function MercadoCard({ img,name,  rate, andress }) {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "auto"
+        });
+    };
     return (
-        <Link to="/marketproductpage">
+        <Link to="/marketproductpage" onClick={scrollToTop}>
             <div className={styles.marketCard}>
             <div className={styles.container_img}>
                   <img src={img} alt="Logo Mercado" className={styles.img} /> 

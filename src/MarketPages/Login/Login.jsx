@@ -1,7 +1,12 @@
 import Styles from './Login.module.css'
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logoHeader.svg'
-
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "auto"
+    });
+};
 function MarketLogin() {
     return (
         <main className={Styles.new} >
@@ -23,7 +28,7 @@ function MarketLogin() {
                         <label htmlFor="">Senha</label>
                         <input type="password" placeholder='Digite sua senha' className={Styles.email} />
 
-                        <Link to="/Login" ><button>ENVIAR</button></Link>
+                        <Link to="/marketsystem" ><button onClick={scrollToTop}>ENTRAR</button></Link>
 
                         <p className={Styles.new_password}>Esqueceu sua senha? <Link to="/recover">Recupere aqui</Link></p>
                         <p className={Styles.new_password}>Não possui cadastro? <Link to="/registermarket">Clique aqui</Link></p>

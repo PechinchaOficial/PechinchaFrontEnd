@@ -1,6 +1,6 @@
 .container {
 	position: relative;
-	top: 50%;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
     width: 100%;
@@ -28,9 +28,8 @@
 }
 
 .cabeçalho .coluna{
-    background-color: #FFF;     
+    background-color: #FFF;    
 }
-
 
 
 /*container bts*/
@@ -103,4 +102,13 @@
     width: 27px;
     height: 24px;
     margin-left: 10px;
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        overflow: auto;
+        width: 100%;
+        top: 35%;
+	    left: 50%;
+    }
 }
