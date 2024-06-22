@@ -48,6 +48,7 @@ function Modal({isOpen, setModalOpen}) {
 
             Você concorda em indenizar e isentar [Nosso Site], seus diretores, funcionários e agentes, de qualquer reivindicação, perda, responsabilidade, demanda ou despesa (incluindo honorários advocatícios) decorrente do seu uso do Site ou violação destes Termos.
             <br />
+            
             10. Rescisão
 
             Podemos, a nosso critério exclusivo, encerrar ou suspender seu acesso ao Site sem aviso prévio por conduta que considerarmos violadora destes Termos ou prejudicial a outros usuários do Site ou a nossos interesses.

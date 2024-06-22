@@ -299,8 +299,11 @@
 
  .uwy.userway_p1 .userway_buttons_wrapper {
     display: none;
+    
 }
-
+.color:hover {
+    color: rgba(0, 0, 0, 0.563);
+}
 
 /* Smartphone response */
 

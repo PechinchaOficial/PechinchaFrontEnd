@@ -52,16 +52,16 @@ function HeaderConsumer() {
                     </div>
                     <ul className={styles.nav_link}>
                         <li>
-                            <Link onClick={scrollToTop} to="/">Início</Link>
+                            <Link className={styles.color} onClick={scrollToTop} to="/">Início</Link>
                         </li>
 
 
                         <li>
-                            <Link onClick={scrollToTop} to="/about">Sobre nós</Link>
+                            <Link className={styles.color} onClick={scrollToTop} to="/about">Sobre nós</Link>
                         </li>
 
                         <li>
-                            <Link onClick={scrollToTop} to="/homemarket">Seja Parceiro</Link>
+                            <Link className={styles.color} onClick={scrollToTop} to="/homemarket">Seja Parceiro</Link>
                         </li>
 
 
@@ -132,28 +132,28 @@ function HeaderConsumer() {
 
 
                         <li>
-                            <Link onClick={scrollToTop} to="/listagem">Categorias</Link>
+                            <Link className={styles.color} onClick={scrollToTop} to="/listagem">Categorias</Link>
                         </li>
 
                         <li>
-                            <Link onClick={scrollToTop} to="/snacks">Snacks</Link>
+                            <Link className={styles.color} onClick={scrollToTop} to="/snacks">Snacks</Link>
                         </li>
 
                         <li>
-                            <Link onClick={scrollToTop} to="/bebidas">Bebibas</Link>
+                            <Link className={styles.color} onClick={scrollToTop} to="/bebidas">Bebibas</Link>
                         </li>
 
 
                         <li>
-                            <Link onClick={scrollToTop} to="/graos">Grãos</Link>
+                            <Link className={styles.color} onClick={scrollToTop} to="/graos">Grãos</Link>
                         </li>
 
                         <li>
-                            <Link onClick={scrollToTop} to="/massas">Massas</Link>
+                            <Link className={styles.color} onClick={scrollToTop} to="/massas">Massas</Link>
                         </li>
 
                         <li>
-                            <Link onClick={scrollToTop} to="/listagem">Variados</Link>
+                            <Link className={styles.color} onClick={scrollToTop} to="/listagem">Variados</Link>
                         </li>
 
 
