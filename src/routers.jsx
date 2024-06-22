@@ -30,6 +30,10 @@ import ListagemDeslogado from './ConsumerPages/ListagemProdutos/ListagemDeslogad
 import HomeMarketDeslogado from './MarketPages/Home/HomeMarketDeslogado'
 import UserProfile from './ConsumerPages/UserProfile/UserProfile'
 import Usertype from './ConsumerPages/UserType/UserType'
+import MarketLogin from './MarketPages/Login/Login'
+import RegisterClient from './ConsumerPages/RegisterClient/RegisterClient'
+import CheckoutPage from './ConsumerPages/CheckoutPage/CheckoutPage'
+import FilterProducts from './ConsumerPages/ListagemProdutos/FilterProducts/FilterProducts'
 
 
 
@@ -38,7 +42,7 @@ function RouterApp() {
         <Router>
            
             <Routes>
-                <Route path='/' element={<Home />}></Route>
+                <Route path='/' element={<HomeDeslogado />}></Route>
                 <Route path='/login' element={<Login />}></Route>
                 <Route path='/listagem' element={<ListagemProdutos />}></Route>
                 <Route path='/homemarket' element={<HomeMarket />}></Route>
@@ -60,13 +64,17 @@ function RouterApp() {
                 <Route path='/bebidas' element={<BebidasFilter/>}></Route>
                 <Route path='/graos' element={<GraosFilter/>}></Route>
                 <Route path='/massas' element={<MassasFilter/>}></Route>
-                <Route path='/homedeslogado' element={<HomeDeslogado/>}></Route>
+                <Route path='/home' element={<Home/>}></Route>
                 <Route path='/aboutusdeslogado' element={<AboutUsSemLogin/>}></Route>
                 <Route path='/listagemdeslogado' element={<ListagemDeslogado/>}></Route>
                 <Route path='/homemarketdeslogado' element={<HomeMarketDeslogado/>}></Route>
 
                 <Route path='/userprofile' element={<UserProfile/>}></Route>
                 <Route path='/usertype' element={<Usertype/>}></Route>
+                <Route path='/marketlogin' element={<MarketLogin/>}></Route>
+                <Route path='/registerclient' element={<RegisterClient/>}></Route>
+                <Route path='/checkoutpage' element={<CheckoutPage />}></Route>
+                <Route path='/filterProdcuts' element={<FilterProducts />}></Route>
 
             </Routes>
             <Footer />

@@ -37,10 +37,17 @@
 .image{
     width: 200px;
     height: 200px;
+    margin-left: 45px;
+    position: absolute;
+    top: -60px;
+}
+
+.image2{
+    width: 200px;
+    height: 200px;
     margin-left: 40px;
     position: absolute;
-    top: -50px;
-  
+    top: 189.2rem;
 }
 
 .name{

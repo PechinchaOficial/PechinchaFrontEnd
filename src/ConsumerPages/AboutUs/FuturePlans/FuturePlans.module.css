@@ -1,0 +1,221 @@
+.Background {
+    height: 100%;
+    width: 100%;
+    background-color: var(--background);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.BoxTitle {
+    height: 150px;
+    width: 100%;
+    background-image: url('../../../assets/img/Group.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: offer;
+    letter-spacing: 5px
+}
+.Title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+.Conteiner {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Inovacao {
+    position: relative;
+    height: 90%;
+    width: 40%;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 4%, 100% 96%, 0% 100%);
+    border-radius: 10px;
+    border-bottom-right-radius: 28px;
+    border-top-right-radius: 28px;
+    box-shadow: 7px 15px 14px 8px rgba(0,0,0,0.1);
+}
+.TitleInovacao {
+    clip-path: polygon(0 0, 100% 0, 100% 29%, 0 26%);
+    height: 100%;
+    width: 100%;
+    background-color: var(--azul);
+    display: flex;
+    justify-content: center;
+    font-family: offer;
+    letter-spacing: 5px;
+    
+}
+.TitleInovacao h1 {
+    margin-top: 5%;
+    font-size: 2.5rem;
+    color: white;
+    font-family: offer;
+    letter-spacing: 5px
+}
+.Text{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.Boxtext {
+    margin-top: -45%;
+    width: 60%;
+    margin-left: 20%;
+}
+.Difere {
+    color: var(--vermelho);
+}
+.BoxRight {
+    height: 100%;
+    width: 30%;
+    margin-left: 10%;
+}
+.ImgSacola {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+.img {
+    width: 90%;
+    height: 100%;
+}
+.App {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.BoxLeft {
+    height: 100%;
+    width: 50%;
+}
+.Boximages {
+    position: relative;
+    height: 50%;
+    width: 50%;
+    margin-left: 15%;
+}
+.Boximages img {
+    position: absolute;
+    width: 200%;
+    height: 220%;
+    z-index: 1;
+    margin-top: -10%;
+    
+}
+.BoxRight {
+    height: 100%;
+    width: 50%;
+}
+.Boxtitle {
+    margin-top: 8%;
+    height: 150px;
+    width: 130%;
+    background-color: var(--amarelo);
+    clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 93%);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-left: -60%;
+    font-family: offer;
+    letter-spacing: 5px
+}
+.BoxtextApp {
+    width: 75%;
+    font-size: 1.5rem;
+    margin-left: -15%;
+}
+.Crm {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+}
+.left {
+    height: 100%;
+    width: 50%;
+}
+.Backtitle {
+    margin-top: 8%;
+    height: 150px;
+    width: 100%;
+    background-color: var(--vermelho);
+    margin-left: 17.3%;
+    clip-path: polygon(0 0, 100% 9%, 100% 91%, 0 100%);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: offer;
+    letter-spacing: 5px
+}
+.Backtxt {
+    height: 50%;
+    width: 65%;
+    margin-left: 30%;
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+.right {
+    height: 100%;
+    width: 50%;
+}
+.Boximage {
+    height: 90%;
+    width: 90%;
+}
+.Boximage img {
+    height: 100%;
+    width: 100%;
+}
+.ServicoEntrega {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+}
+.BoxTitlEntrega {
+    margin-top: 8%;
+    height: 150px;
+    width: 85%;
+    background-color: var(--azul);
+    clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 93%);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 5%;
+    font-family: offer;
+    letter-spacing: 5px
+}
+.BoxIMG {
+    height: 100%;
+    width: 100%;
+    margin-left: 13.5%;
+}
+.BoxIMG img {
+    height: 100%;
+    width: 100%;
+}
+.Backtxtentrega {
+    height: 50%;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 1.5rem;
+    margin-top: 2%;
+}

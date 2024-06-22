@@ -20,4 +20,6 @@
 
 .btn:hover{
     transform: translateY(-3px);
+    background-color:  rgb(70, 167, 70);
+    transition: all 0.4s;
 }

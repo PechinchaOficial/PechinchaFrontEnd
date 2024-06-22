@@ -1,17 +1,20 @@
 import styles from './Footer.module.css'
 import logo from '../../assets/img/logo.svg'
-import {Link} from 'react-router-dom'
+import instagram from '../../assets/img/instagram.svg'
+import linkedin from '../../assets/img/linkedin.svg'
+import tiktok from '../../assets/img/tik-tok.svg'
+
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
         <footer className={styles.footer}>
+            <div className={styles.footer_content}>
+                <img src={logo} alt="Logo" className={styles.logo} />
 
+            </div>
             <div className={styles.footer_content}>
 
-                <div className={styles.logo_footer}>
-                    <img src={logo} alt="Logo" className={styles.logo} />
-                        <button className={styles.btn}>CONHECER</button>
-                </div>
                 <div className={styles.footer_item}>
                     <h3 className={styles.title}> Institucional</h3>
                     <ul className={styles.footer_link}>
@@ -47,7 +50,23 @@ function Footer() {
                         <li className={styles.footer_item}><Link to="/homedeslogado">Parcerias</Link></li>
                     </ul>
                 </div>
+
+                <div className={styles.social}>
+                <h2 className={styles.title}>Redes Sociais</h2>
+                <div className={styles.social_icons}>
+                    <img src={tiktok} className={styles.icon} alt="Tik tok" />
+                    <img src={instagram} className={styles.icon} alt="Instagram" />
+                    <img src={linkedin} className={styles.icon} alt="LinkedIn" />
+                </div>
+                </div>
+
             </div>
+
+            <div className={styles.copyright}>
+                <h2>Copyright ©️ 2024, Pechincha</h2>
+            </div>
+
+
         </footer>
     )
 }

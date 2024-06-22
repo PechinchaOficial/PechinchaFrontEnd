@@ -72,6 +72,10 @@ body {
   padding: 10px;
 }
 
+section{
+  padding: 10px;
+}
+
 #container{
   display: flex;
   align-items: center;

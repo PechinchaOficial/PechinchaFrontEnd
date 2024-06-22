@@ -11,3 +11,10 @@
     overflow-x: auto;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 925px) {
+    .container_card{
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}

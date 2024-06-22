@@ -1,5 +1,6 @@
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 import Styles from './AboutUs.module.css'
+import FuturePlans from './FuturePlans/FuturePlans';
 import Mission from './MissionSection/Mission';
 import Picture from './PictureSection/Picture';
 import Team from './TeamSection/Team';
@@ -14,6 +15,7 @@ function AboutUs() {
             <Who />
             <Mission />
             <Team />
+            <FuturePlans />
         </main>
 
     )

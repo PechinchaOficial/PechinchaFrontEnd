@@ -1,0 +1,30 @@
+#banner{
+    width: 70rem;
+    margin-left: -300px;
+    border-radius: 0px 40px 40px 0px;
+}
+
+#form{
+    flex-direction: row;
+ 
+}
+
+#boxtext{
+    margin-left: 80px;
+    margin-right: -200px;
+    width: 50rem;
+}
+
+.create{
+    margin-left: 80px;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.fill{
+    margin-left: 50px;
+    font-size: 25px;
+    margin-top: -15px;
+    color: rgba(0, 0, 0, 0.459);
+}
+

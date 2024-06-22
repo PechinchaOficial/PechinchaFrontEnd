@@ -28,9 +28,12 @@
 }
 
 .img_logo {
-    height: 320px;
-    width: 100%;
+    width: 65%;
     margin-right: 150px;
+}
+
+#logo_responsive {
+    display: none;
 }
 
 .container_slogan {
@@ -80,7 +83,7 @@
 
 .search {
     position: relative;
-    width: 900px;
+    width: 60%;
     z-index: 1;
 
 }
@@ -94,9 +97,7 @@
     border: 0.5px solid #00000021;
     outline: none;
     font-size: 1.5rem;
-    border-radius: 20px;
-
-
+    border-radius: 40px;
 }
 
 
@@ -111,7 +112,7 @@
     font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
-    width: 150px;
+    width: 100px;
     height: 60px;
     border: none;
     background-color: var(--vermelho);
@@ -120,9 +121,11 @@
     right: 7px;
     cursor: pointer;
     transition: 0.5s all;
-    border-radius: 10px;
+    border-radius: 40px;
+}
 
-
+.btn_bar:hover {
+    background-color: #af2e2c;
 }
 
 .btn:hover {
@@ -217,11 +220,12 @@
     font-family: offer !important;
     font-size: 2.5rem;
     letter-spacing: 5px;
-
 }
 
 .passo:hover {
     transform: translateY(-3px);
+    background-color:  var(--azul);
+    color: #FFF;
 }
 
 
@@ -350,7 +354,7 @@
     gap: 60px;
     align-items: center;
     height: 320px;
-    width: 330px;
+    width: 300px;
     background-color: #C6DC8D;
     clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
     box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1);
@@ -443,6 +447,8 @@
     flex-direction: column;
 }
 
+
+
 #title_rate {
     text-align: center;
     max-width: 700px;
@@ -458,6 +464,7 @@
 .container_rate {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .img_person {
@@ -509,53 +516,214 @@
     font-size: 1.6rem;
 }
 
+.img_temp{
+    position: relative;
+}
+.img_temp h1{
+color: #fff;
+font-size: 3.3rem;
+position: absolute;
+top: 45px;
+left: 250px;
+}
 
+.img_temp h2{
+    color: var(--vermelho);
+font-size: 4rem;
+position: absolute;
+top: 180px;
+left: 220px;
+font-family: offer;
+letter-spacing: 7px;
+}
 
+.img_logo2{
+    margin-left: 30px;
+    height: 300px;
+}
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 925px) {
+
+    .star,
+    .star_2 {
+        height: 200px;
+    }
+
+    .img_person {
+        display: none;
+    }
+
+    .container_rate {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+
+    }
+
+    .rate_card {
+        flex: none;
+    }
+
+    .step_img {
+        height: 100px;
+    }
+
+    .boxRight {
+        display: none;
+    }
+
+    .passos {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container_content {
+        padding: 20px 10px 50px 10px;
+    }
+
+    .desc {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .slogan_subtitle {
+        display: none;
+    }
 
     .img_logo {
-        height: 300px;
+        display: none;
+    }
+
+
+    #logo_responsive {
+        display: block;
+        margin-left: 160px;
+        width: 80%;
+    }
+
+    .search {
+        width: 85%;
     }
 
     .star,
     .star_2 {
-        height: 300px;
+        display: none;
     }
 
-    .title {
-        font-size: 3rem;
+    .hero_section {
+        padding: 180px 0px 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .subtitle {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
+    }
+
+    .container_mercados {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .categorySection {
+        border-radius: 20px 20px 0px 0px;
+        padding: 20px;
+
     }
 
     .search {
-        width: 800px;
+        height: 100px;
     }
 
-    .img_person {
-        height: 350px;
+    .search_bar {
+        height: 55px;
     }
 
-    .card_mercado {
-        width: 290px;
-
+    .search_bar::placeholder {
+        font-size: 1.3rem;
     }
 
-    .boxLeft {
-        display: flex;
-        gap: 5px;
+    .btn_bar {
+        height: 50px;
+        width: 80px;
+        border-radius: 20px;
+        top: 3px;
     }
-    
-    .boxRight {
+
+    .container_perguntas{
+        width: 100%;
+    }
+
+    .pergunta h3{
+        font-size: 1rem;
+    }
+
+    .card_mercado{
+        height: 250px;
         width: 400px;
     }
     
-    
-    .step_img {
-        height: 350px;
+    .logo_mercado{
+        height: 40px;
     }
-  
+
+    .btn{
+        font-size: 1rem;
+    }
+
+    #marketThree{
+        width: 500px;
+    }
+}
+
+/* Tablet response */
+
+@media screen and (min-width : 926px) {
+    @media screen and (max-width: 1300px) {
+
+        .star,
+        .star_2 {
+            height: 200px;
+        }
+
+        .img_person {
+            display: none;
+        }
+
+        .step_img {
+            height: 400px;
+        }
+
+        .container_content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            padding: 50px 0px;
+        }
+
+        .passos {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .boxRight {
+            width: 500px;
+
+        }
+
+    }
 }

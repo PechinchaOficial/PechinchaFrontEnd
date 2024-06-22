@@ -8,11 +8,11 @@
     background-color: var(--amarelo);
     border-radius: 5px;
     color: var(--vermelho);
-    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1);
     flex: none;
 }
 
-.img_prod{
+.img_prod {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,21 +27,34 @@
 
 
 
-.title_prod{
+.title_prod {
     font-size: 2rem;
     font-family: offer;
     font-size: 2.5rem;
     letter-spacing: 5px;
 }
 
-@media screen and (max-width: 1500px){
-.card_prod{
-    height: 300px;
-    width: 240px;
+@media screen and (max-width: 925px) {
+    .card_prod{
+        height: 260px;
+    }
+
+    .img_prod{
+        height: 150px;
+    }
 }
 
-.img_prod{
-    height: 150px;
-}
+@media screen and (min-width: 926px) {
 
+    @media screen and (max-width: 1500px) {
+        .card_prod {
+            height: 300px;
+            width: 240px;
+        }
+
+        .img_prod {
+            height: 150px;
+        }
+
+    }
 }

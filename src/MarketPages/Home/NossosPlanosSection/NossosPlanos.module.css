@@ -98,6 +98,10 @@
 }
 .Btn:hover {
     transform: translateY(-3px);
+    background-color: #3b518e;
+    
+    background-color: #395191;
+    transition: all 0.4s;
 }
 .Cifrao {
     font-size: 2rem;
