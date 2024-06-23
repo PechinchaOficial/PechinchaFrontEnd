@@ -28,22 +28,22 @@ function MercadosRegiao() {
                 <i class="fa-solid fa-store"></i>
                 <h2>Mercados na região</h2>
             </div>
-            <div className={styles.container_carousel}>
-                <div className={styles.carousel_prod} id='container' ref={carousel}>
 
-            {marketData.map(({img, name, andress, rate}) =>(
-                <MercadoCard 
-                name={name}
-                img={img}
-                andress={andress}
-                rate={rate}/>
-            ))}
+            <div className={styles.carousel_prod} id='container' ref={carousel}>
 
-                </div>
+                {marketData.map(({ img, name, andress, rate }) => (
+                    <MercadoCard
+                        name={name}
+                        img={img}
+                        andress={andress}
+                        rate={rate} />
+                ))}
 
-                <button className={styles.btn_carousel} onClick={handleLeftClick} id={styles.left}><i class="fa-solid fa-chevron-left" ></i></button>
-                <button className={styles.btn_carousel} onClick={handleRightClick} id={styles.right}><i class="fa-solid fa-chevron-right" ></i></button>
             </div>
+
+            <button className={styles.btn_carousel} onClick={handleLeftClick} id={styles.left}><i class="fa-solid fa-chevron-left" ></i></button>
+            <button className={styles.btn_carousel} onClick={handleRightClick} id={styles.right}><i class="fa-solid fa-chevron-right" ></i></button>
+
 
 
 

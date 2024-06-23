@@ -1,4 +1,4 @@
-.marketCard{
+.marketCard {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,20 +9,21 @@
     width: 365px;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
-    cursor: pointer;  
+    cursor: pointer;
     border: 0.5px solid #00000021;
-    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
     transition: 0.5s all;
-    flex: none; /*Faz com que o elemento nao tente se adaptar ao tamanho da div pai*/
+    flex: none;
+    /*Faz com que o elemento nao tente se adaptar ao tamanho da div pai*/
 }
 
-.marketCard:hover{
+.marketCard:hover {
     transform: translateY(-4px);
 }
 
 
 
-.container_img{
+.container_img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,35 +31,65 @@
     height: 100%;
 }
 
-.img{
+.img {
     height: 100px;
     object-fit: cover;
-    
+
 }
 
-.mercado_info{
+.mercado_info {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-  
+
 }
 
-.title_card{
+.title_card {
     font-size: 1.3rem;
     margin: 0;
 }
-.info{
+
+.info {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-#star{
-font-size: 1.5rem;
-color: var(--amarelo);
+#star {
+    font-size: 1.5rem;
+    color: var(--amarelo);
 }
 
-a{ 
+a {
     text-decoration: none;
     color: black;
+}
+
+
+@media screen and (max-width: 925px) {
+
+    .marketCard {
+        width: 220px;
+        height: 200px;
+    }
+
+    #star {
+        font-size: 1rem;
+    }
+
+    .img {
+        height: 60px;
+        object-fit: cover;
+    }
+
+    .title_card {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+}
+
+/* Tablet response */
+
+@media screen and (min-width : 926px) {
+    @media screen and (max-width: 1300px) {}
 }

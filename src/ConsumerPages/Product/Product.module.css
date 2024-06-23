@@ -248,3 +248,35 @@
     padding: 20px;
     padding-left: 30px;
 }
+
+/* Mobile responsive */
+
+@media screen and (max-width: 925px) {
+
+    .table_titles {
+        display: none;
+    }
+    
+    
+    .item {
+        border-top: 5px solid black;
+    }
+    
+    .item td {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+}
+
+/* Tablet responsive */
+
+@media screen and (min-width : 926px) {
+
+    @media screen and (max-width: 1300px) {
+
+
+}
+}

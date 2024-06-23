@@ -1,7 +1,7 @@
 .categoria_produto{
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    padding-top: 20px;
     position: relative;
 }
 
@@ -28,7 +28,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 30px;
 }
 
 .carousel_prod{
@@ -96,4 +95,31 @@
     right: -55px;
 }
 
+.btn_show_more{
+    padding: 15px 20px;
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--azul);
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.btn_show_more:hover{
+    background-color: var(--azul);
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 1870px) {
+    #left{
+        left: 0px;
+    }
+
+    #right{
+        right: 0px;
+    }
+}
 

@@ -8,6 +8,7 @@ import Bebidas from './CategoriaProduto/Bebidas';
 import Enlatados from './CategoriaProduto/Enlatados';
 import Massas from './CategoriaProduto/Massas';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
+import bannerc from '../../assets/img/bannerc.png'
 
 function ListagemProdutos() {
 
@@ -16,7 +17,7 @@ function ListagemProdutos() {
         <div>
             <HeaderConsumer/>
         <main className={styles.prod_list}>
-                <Banner bannerimg={imgBanner} />
+                <Banner bannerimg={imgBanner} bannerc={bannerc} />
                 <MercadosRegiao />
                 <CategoriaProduto categoria='Snacks' />
                 <Graos categoria='Grãos'/>

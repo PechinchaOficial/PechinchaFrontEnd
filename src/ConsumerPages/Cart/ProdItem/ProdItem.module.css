@@ -1,5 +1,3 @@
-
-
 .prod_item {
     display: flex;
     justify-content: space-between;
@@ -21,7 +19,7 @@
     font-weight: 500;
 }
 
-.container_qtd{
+.container_qtd {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -51,4 +49,37 @@
     cursor: pointer;
     font-size: 1.3rem;
     margin: 0 auto;
+}
+
+
+/* Mobile responsive */
+
+@media screen and (max-width: 925px) {
+
+    .table_titles {
+        display: none;
+    }
+    
+    
+    .item {
+        border-top: 5px solid black;
+    }
+    
+    .item td {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+}
+
+/* Tablet responsive */
+
+@media screen and (min-width : 926px) {
+
+    @media screen and (max-width: 1300px) {
+
+
+}
 }

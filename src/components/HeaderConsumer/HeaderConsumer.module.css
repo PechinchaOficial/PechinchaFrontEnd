@@ -28,6 +28,7 @@
     width: 100%;
 }
 
+
 .nav_link a {
     text-decoration: none;
     font-weight: 600;
@@ -301,6 +302,7 @@
  .uwy.userway_p1 .userway_buttons_wrapper {
     display: none;
     
+<<<<<<< HEAD
 }
 .color:hover {
     color: rgba(0, 0, 0, 0.563);
@@ -310,7 +312,17 @@
 
 .userway_buttons_wrapper{
     display: none;
+=======
+>>>>>>> f6f756c62a149d72de0d1207a850c0b448f70b6c
 }
+.color:hover {
+    color: rgba(0, 0, 0, 0.563);
+}
+
+.userway_buttons_wrapper{
+    display: none;
+}
+
 
 >>>>>>> 907011bbb7271e2d0cf2ea568c382c3149d6421c
 

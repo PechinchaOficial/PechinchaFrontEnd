@@ -41,9 +41,10 @@
     font-size: 2rem;
 
     color: rgb(0, 0, 0);
-    color: #000;
 
+ 
 }
+
 .BackBtns {
     height: 100px;
     width: 100%;
@@ -73,11 +74,6 @@
     color: var(--background);
 }
 
-
-#RegisterBtn:hover {
-    background-color: #3b518e;
-}
-
 #RegisterBtn:hover{
     background-color: #3c579e;
     transition:all 0.4s;
@@ -95,8 +91,10 @@
     color: white;
 }
 
+
 #KnowMoreBtn:hover{
     background-color:#577fe6 ;
     color: #FFF;
     transition:all 0.4s;
+
 }

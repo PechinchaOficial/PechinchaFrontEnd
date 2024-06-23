@@ -3,7 +3,7 @@ import salgadinho from '../../../assets/img/salgadinho.svg'
 
 function ProdItem() {
     return (
-        <tr>
+        <tr className={styles.item}>
             <td >
                 <div className={styles.prod_info}>
                     <img src={salgadinho} alt="Produto" className={styles.prod_img} />

@@ -110,7 +110,7 @@ function MarketSystem() {
                 <main id="container">
                     <div className={Styles.main}>
                         <CardFunction texto="Cadastrar Produtos" />
-                        <CardFunction texto="Analise de Dados" />
+                        <CardFunction texto="Análise de Dados" />
                         <CardFunction texto="Suporte Online" />
                         <CardFunction texto="Feedback Clientes" />
                         <CardFunction texto="Promoções Personalizadas" />

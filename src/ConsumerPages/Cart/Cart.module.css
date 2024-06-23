@@ -42,7 +42,10 @@
     margin-top: 20px;
 }
 
-.prod_list {
+/* CSS tabela */
+
+.table_prod {
+    width: 100%;
     height: auto;
     width: 70%;
     background-color: #fff;
@@ -50,19 +53,16 @@
     border: 0.5px solid #00000021;
 }
 
-/* CSS tabela */
-
-.table_prod{
-    width: 100%;
-}
-.table_prod th, .table_prod td {
+.table_prod th,
+.table_prod td {
     border-bottom: 0.5px solid #00000021;
     padding: 15px;
 }
-.table_prod td{
-  text-align: center;
-  align-items: center;
-  padding: 15px;
+
+.table_prod td {
+    text-align: center;
+    align-items: center;
+    padding: 15px;
 
 }
 
@@ -107,4 +107,61 @@
 .btn:hover {
     background-color: var(--btn_hover);
 
+}
+
+
+@media screen and (max-width: 925px) {
+
+    .container_cart {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cart_container{
+        padding-top: 0px;
+    }
+
+    
+    .cart{
+        width: 100%;
+        padding-top: 120px;
+    }
+    .table_prod{
+        width: 100%;
+    }
+
+    .table_titles{
+        display: none;
+    }
+
+
+}
+
+/* Tablet response */
+
+@media screen and (min-width : 926px) {
+
+    @media screen and (max-width: 1300px) {
+
+        .container_cart {
+            align-items: center;
+            width: 100%;
+            padding-top: 0px;
+        }
+    
+        .cart_container{
+            padding-top: 0px;
+            width: 100%;
+        }
+
+        .table_prod{
+            width: 100%;
+        }
+
+        .cart{
+            width: 100%;
+            padding-top: 120px;
+        }
+    }
 }

@@ -40,7 +40,6 @@ function CarouselProd() {
                 // controla quantos slides por foto quero que apareça
                 slidesPerView={slidesPerView}
                 // define se é clicavel ou não
-                pagination={{ clickable: true }}
                 navigation>
 
                 {/* corresponde a cada item do coarrossel */}

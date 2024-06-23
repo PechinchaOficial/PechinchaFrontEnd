@@ -5,3 +5,21 @@
     flex-direction: column;
     padding-top: 180px;
 }
+
+
+@media screen and (max-width: 925px) {
+
+.prod_list{
+    padding-top: 100px;
+}
+}
+
+/* Tablet response */
+
+@media screen and (min-width : 926px) {
+    @media screen and (max-width: 1300px) {
+
+ 
+
+    }
+}
