@@ -77,20 +77,20 @@
     color: #000;
 }
 
-<<<<<<< HEAD
+ 
 @media screen and (max-width: 380px) {
-=======
+}
 @media screen and (max-width: 925px) {
->>>>>>> f6f756c62a149d72de0d1207a850c0b448f70b6c
+ 
     .total {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-<<<<<<< HEAD
+ 
         width: 355px;
-=======
+ 
         width: 100%;
->>>>>>> f6f756c62a149d72de0d1207a850c0b448f70b6c
+ 
         height: 400px;
         background-color: #FFF;
         border: 0.5px solid #00000021;
@@ -99,8 +99,8 @@
         padding-top: 0;
         padding-bottom: 0;
     }
-<<<<<<< HEAD
-=======
+ 
+ 
 }
 
 @media screen and (min-width : 926px) {
@@ -109,5 +109,5 @@
 
 
     }
->>>>>>> f6f756c62a149d72de0d1207a850c0b448f70b6c
+ 
 }

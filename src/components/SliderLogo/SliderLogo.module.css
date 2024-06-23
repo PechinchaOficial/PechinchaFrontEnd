@@ -1,25 +1,26 @@
   
   .container {
     overflow: hidden;
+}
     .slider {
       animation: slidein 30s linear infinite;
       white-space: nowrap;
       display: inline-block;
       text-align: center;
       .logos {
-<<<<<<< HEAD
+
         width: 100%;
         display: inline-block;
         margin: 0px 100px;
         .fab {
           width: calc(100% / 5);
-=======
+
         width: 80%;
         display: inline-block;
         margin: 0px 110px;
         .fab {
           width: calc(80% / 5);
->>>>>>> f6f756c62a149d72de0d1207a850c0b448f70b6c
+
           animation: fade-in 0.5s 
             cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
             width: 15%;

@@ -23,11 +23,10 @@ import amigao from '../../assets/img/Market/amigao.png'
 import violeta from '../../assets/img/Market/violeta.png'
 import recoy from '../../assets/img/Market/ricoy.png'
 import Header from '../../components/Header/Header';
-import logosimple from '../../assets/img/logo_base.svg';
-<<<<<<< HEAD
-=======
+import logosimple from '../../assets/img/logo_base.svg'; 
+ 
 import bannerc from '../../assets/img/bannerc.png'
->>>>>>> f6f756c62a149d72de0d1207a850c0b448f70b6c
+ 
 
 
 
