@@ -1,4 +1,3 @@
-import '../Login/Login.css';
 import Styles from './RegisterClient.module.css'
 import React from 'react';
 import { Link } from 'react-router-dom'
@@ -8,45 +7,53 @@ function RegisterClient (){
     return(
 
         <main className='background_login'>
-            <section className='container-login'> 
-               <div className='forms-register' id={Styles.form}>
-                    
-                    <div className='banner-login' id={Styles.banner}>
-                        <h2 className='title-banner-login'>
-                            Veio pechinchar?
-                        </h2>
-                        <p>Caso ja tenha uma conta clique abaixo 
-                            e tenha acesso a todos recursos</p>
+            <section  className={Styles.container_register_client}> 
 
-                        <a href="">
-                            <Link to="/login">
-                                <button>
-                                Entrar
-                                </button>
-                            </Link>
-                        </a>
-                    </div>
-                    <form action="" className='forms-login' id={Styles.boxtext}>
-                            <h2 className={Styles.create}>Crie a sua conta</h2>
-                            <h3 className={Styles.fill}>Preencha todos os campos</h3>
+            <div className={Styles.banner_register}>
 
-                            <label htmlFor="">Nome</label>
-                            <input type="text" placeholder='Digite seu nome' />
+            <h2 className={Styles.title_banner_register}>Bem vindo de volta!</h2>
+            <p className={Styles.text_banner_register}>Clique abaixo caso ainda não tenha uma conta e aproveite de todas as funções</p>
 
-                            <label htmlFor="">Email</label>
-                            <input type="text" placeholder='Digite seu email' />
+            <Link to="/registerclient">
+                <button>ENTRAR</button>
+            </Link>
+            
+            </div>
 
-                            <label htmlFor="">Senha</label>
-                            <input type="text" placeholder='Digite sua senha' />
+            <div className={Styles.forms_register_client}>
+                
+                    <form action="" className={Styles.forms_register}>
+                        <h2 className={Styles.title_register}>Crie sua conta</h2>
+                        <h3 className={Styles.sub_title_register}>Preencha todos os campos</h3>
 
-                            <label htmlFor="">Confirmar senha</label>
-                            <input type="text" placeholder='Digite sua senha' />
+                        <label htmlFor="">Nome</label>
+                        <input type="text" placeholder='Digite seu nome' />
 
-                        
+                        <label htmlFor="">E-mail</label>
+                        <input type="email" placeholder='Digite seu E-mail' />
 
-                            <p className='privacy-policy'>Ao continuar com o acesso você concorda com a nossa <a href="#">politica de privacidade</a></p>
+                        <label htmlFor="">Senha</label>
+                        <input type="password" placeholder='Digite sua senha'/>
+
+                        <label htmlFor="">Confirmar Senha</label>
+                        <input type="password" placeholder='Confirme sua senha'/>
+
+                        <Link to='/listagem'>
+                         <button>
+                            CADASTRAR
+                        </button> 
+                        </Link>
+
+                        <Link to="/login">
+                            <button className={Styles.register_client_button}>Entrar</button>
+                        </Link>
+
+                        <p className={Styles.polici_privacy}>Ao continuar com o acesso você concorda com a nossa<a href="#"> politica de privacidade</a></p>
                     </form>
-               </div>
+            </div>
+
+           
+
             </section>
 
         </main>

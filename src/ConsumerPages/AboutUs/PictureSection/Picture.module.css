@@ -22,7 +22,7 @@
     clip-path: polygon(0 8%, 100% 0, 100% 93%, 0% 100%);
     border-radius: 10px;
     object-fit: cover;
-}
+}  /* foto com os lideres sentado */
 
 .pic1, .pechincha{
     width: 400px;
@@ -69,3 +69,29 @@
 }
 
 /*Edição das fotos*/
+
+/* Responsivo celular */
+
+@media screen and (max-width: 925px) {
+    .pic, .equipe, .pic2, .triade, .pic3, .full, .pic5, .meninos{
+        display: none;
+        clip-path: none;
+    }
+
+    .pic1, .pechincha{
+        height: 300px;
+        width: 380px;
+        margin-top: -120px;
+        margin-left: -5px;
+    }
+
+    .pic4, .professores{
+        height: 300px;
+        width: 380px;
+        margin-top: -120px;
+        margin-left: -5px;
+    }
+}
+
+
+

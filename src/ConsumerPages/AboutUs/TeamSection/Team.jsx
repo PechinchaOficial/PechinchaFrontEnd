@@ -15,7 +15,7 @@ function Team() {
         <section className={Styles.team_section} id='container'>
             <TituloFormato categoria='Nossa equipe' />
             <div className={Styles.pics}>
-                <div className={Styles.square}>
+                <div className={Styles.square}> 
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Luane} />  {/*Classe luane da uma altura largura e espaçamento estre as divs*/}
                     </div>

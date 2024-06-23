@@ -1,8 +1,19 @@
   
   .container {
     overflow: hidden;
+<<<<<<< HEAD
   }
   
+=======
+    -webkit-mask: linear-gradient(
+      270deg,
+      transparent,
+      white 20%,
+      white 90%,
+      transparent
+  );
+  mask: linear-gradient(270deg, transparent, white 20%, white 90%, transparent);
+>>>>>>> bfbc6e98dd84bddc08947d6a5064531bde57a8fb
     .slider {
       animation: slidein 30s linear infinite;
       white-space: nowrap;
@@ -48,3 +59,8 @@
       opacity: 1;
     }
   }
+
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    
+}
