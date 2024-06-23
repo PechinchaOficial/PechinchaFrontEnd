@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     font-family: offer;
-    letter-spacing: 5px
+    letter-spacing: 5px;
 }
 .Title {
     margin-bottom: 30px;
@@ -201,7 +201,7 @@
     color: white;
     margin-left: 5%;
     font-family: offer;
-    letter-spacing: 5px
+    letter-spacing: 5px;
 }
 .BoxIMG {
     height: 100%;
@@ -219,3 +219,17 @@
     font-size: 1.5rem;
     margin-top: 2%;
 }
+
+/* Responsivo celular */
+@media screen and (max-width: 925px) {
+    .Title{
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        margin-top: 12px;
+        margin-right: 10px;
+    }
+
+    .BoxTitle{
+        margin-top: -100px;
+    }
+ }
