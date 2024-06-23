@@ -14,7 +14,7 @@ function FuturePlans() {
             <section className={Styles.Conteiner}>
                 <div className={Styles.Inovacao}>
                     <header className={Styles.TitleInovacao}>
-                        <h1>INOVAÇAO</h1>
+                        <h1>INOVAÇÃO</h1>
                     </header>
                     <div className={Styles.Boxtext}>
                         <p className={Styles.Text}> Que tal colocarmos no nosso carrinho <span className={Styles.Difere}>futuras novidades?</span>

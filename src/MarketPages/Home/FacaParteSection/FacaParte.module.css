@@ -121,5 +121,19 @@
 
         /*------------------------------Responsivo Celular --------------------------*/
 
-
+        @media (Max-width:1190px) {
+            .BoxRight {
+                display: none;
+            }
+            .Btn {
+                width: 200px;
+                height: 80px;
+            }
+            .BoxLeft {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
         

@@ -1,0 +1,161 @@
+.Container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.Hero {
+    background-image: url('../../../../assets/img/FundoHero.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15%;
+}
+.TittleBoxBlue {
+    font-size: 3rem;
+    color: white;
+    margin-top: 2%;
+}
+.TittleBoxYellow {
+    font-size: 4.5rem;
+    color: #112D81;
+    margin-top: -3%;
+    font-family: offer;
+}
+
+@media (Max-width: 1200px) {
+    .Hero {
+        gap: 12%;
+    }
+}
+@media (Max-width: 967px) {
+    .TittleBoxBlue {
+        font-size: 2.5rem;
+        color: white;
+        margin-top: 2%;
+    }
+    .TittleBoxYellow {
+        font-size: 4rem;
+        color: #112D81;
+        margin-top: -3%;
+    }
+}
+@media (Max-width: 862px) {
+    .TittleBoxBlue {
+        font-size: 2.4rem;
+        color: white;
+        margin-top: 2%;
+    }
+    .TittleBoxYellow {
+        font-size: 3.5rem;
+        color: #112D81;
+        margin-top: -3%;
+    }
+}
+@media (Max-width: 755px) {
+    .TittleBoxBlue {
+        font-size: 2rem;
+        color: white;
+        margin-top: 2%;
+    }
+    .TittleBoxYellow {
+        font-size: 3rem;
+        color: #112D81;
+        margin-top: -3%;
+    }
+}
+@media (Max-width:  668px) {
+    .TittleBoxBlue {
+        font-size: 1.5rem;
+        color: white;
+        margin-top: 2%;
+    }
+    .TittleBoxYellow {
+        font-size: 2.5rem;
+        color: #112D81;
+        margin-top: -3%;
+    }
+}
+@media (Max-width:  563px) {
+    .Hero {
+        gap: 8%;
+    }
+    .TittleBoxBlue {
+        font-size: 1.3rem;
+        color: white;
+        margin-top: 2%;
+    }
+    .TittleBoxYellow {
+        font-size: 2.2rem;
+        color: #112D81;
+        margin-top: -3%;
+    }
+}
+@media (Max-width:  453px) {
+    .Hero {
+        gap: 6%;
+    }
+    .TittleBoxBlue {
+        font-size: 1.2rem;
+        color: white;
+        margin-top: 2%;
+    }
+    .TittleBoxYellow {
+        font-size: 2rem;
+        color: #112D81;
+        margin-top: -3%;
+    }
+}
+@media (Max-width:  415px) {
+    .Hero {
+        gap: 6%;
+    }
+    .TittleBoxBlue {
+        font-size: 1rem;
+        color: white;
+        margin-top: 2%;
+    }
+    .TittleBoxYellow {
+        font-size: 1.8rem;
+        color: #112D81;
+        margin-top: -3%;
+    }
+}
+@media (Max-width: 361px) {
+    .Hero {
+        gap: 6%;
+    }
+    .TittleBoxBlue {
+        font-size: 1rem;
+        color: white;
+        margin-top: 2%;
+    }
+    .TittleBoxYellow {
+        font-size: 1.5rem;
+        color: #112D81;
+        margin-top: -3%;
+    }
+}
+@media (Max-width: 319px) {
+    .Hero {
+        gap: 6%;
+    }
+    .TittleBoxBlue {
+        font-size: 0.8rem;
+        color: white;
+        margin-top: 2%;
+    }
+    .TittleBoxYellow {
+        font-size: 1.2rem;
+        color: #112D81;
+        margin-top: -3%;
+    }
+}

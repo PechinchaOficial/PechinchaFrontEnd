@@ -156,7 +156,6 @@ function HeaderConsumer() {
                             <Link onClick={scrollToTop} to="/listagem">Variados</Link>
                         </li>
 
-
                     </ul>
                 </div>
             </div>
