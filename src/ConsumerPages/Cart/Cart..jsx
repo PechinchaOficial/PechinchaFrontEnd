@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import ProdItem from './ProdItem/ProdItem';
 import Enlatados from '../ListagemProdutos/CategoriaProduto/Enlatados';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
+import CardCheckout from '../../components/CardCheckout/CardCheckout';
 
 function Cart() {
     return (
@@ -19,11 +20,11 @@ function Cart() {
 
                         <div className={styles.container_cart}>
 
-                            <div className={styles.prod_list}>
+                           
 
                                 <table className={styles.table_prod}>
                                     <thead className={styles.table_head}>
-                                        <tr>
+                                        <tr className={styles.table_titles}>
                                             <th></th>
                                             <th>Preço</th>
                                             <th>Quantidade</th>
@@ -36,21 +37,9 @@ function Cart() {
                                     <ProdItem />
                                     <ProdItem />
                                 </table>
-                            </div>
+                           
 
-                            <aside className={styles.total}>
-                                <div className={styles.total_info}>
-                                    <h4>Total:</h4>
-                                    <span className={styles.price}>R$ 4,80</span>
-                                </div>
-
-                                <Link to='/checkoutpage'>
-                                <button className={styles.btn}>
-                                    IR PARA O PAGAMENTO
-                                </button>
-                                </Link>
-
-                            </aside>
+                            <CardCheckout />
                         </div>
                     </section>
                 </div>

@@ -14,7 +14,7 @@
     position: relative;
 }
 
-.btn{
+.btn {
     height: 100px;
     width: 100px;
 }
@@ -27,7 +27,6 @@
     padding: 0px 30px;
     width: 100%;
 }
-
 
 .nav_link a {
     text-decoration: none;
@@ -66,7 +65,6 @@
     width: 100%;
     height: 100%;
 }
-
 
 .user_icon {
     height: 50px;
@@ -110,7 +108,6 @@
     opacity: 100%;
 }
 
-
 .cart_icon {
     transition: 0.5s all;
     cursor: pointer;
@@ -143,9 +140,7 @@
 .container_header_up .nav_link a {
     font-weight: 500;
     margin-left: 10px;
-
 }
-
 
 .nav_link {
     display: flex;
@@ -156,12 +151,11 @@
     font-size: 1rem;
 }
 
-
 .img_logo {
     height: 30px;
 }
 
-.icon_mobile{
+.icon_mobile {
     opacity: 70%;
     cursor: pointer;
     display: none;
@@ -184,7 +178,6 @@
     flex-direction: column;
     justify-content: center;
     list-style: none;
-
 }
 
 .nav_profile ul li {
@@ -238,7 +231,7 @@
     cursor: pointer;
 }
 
-.btn_close{
+.btn_close {
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -269,7 +262,6 @@
     font-size: 1rem;
 }
 
-
 .container_close {
     display: flex;
     justify-content: space-between;
@@ -277,49 +269,34 @@
     padding: 20px;
 }
 
-
-
 .my_account a {
     font-weight: 400;
 }
 
-.search_mobile{
+.search_mobile {
     display: none;
     height: auto;
     background-color: #fff;
     padding: 5px;
 }
 
-.search_desktop{
+.search_desktop {
     width: 60%;
 }
 
-.logo_pocket{
+.logo_pocket {
     display: none;
     height: 30px;
 }
 
- .uwy.userway_p1 .userway_buttons_wrapper {
-    display: none;
-    
-}
 .color:hover {
     color: rgba(0, 0, 0, 0.563);
 }
 
-.userway_buttons_wrapper{
-    display: none;
-}
-
-
-
-/* Smartphone response */
-
 @media screen and (max-width: 925px) {
-
     .icon_mobile {
         display: block;
-        z-index: 999;;
+        z-index: 999;
     }
 
     .header_down {
@@ -330,59 +307,65 @@
         display: none;
     }
 
-    .cart_icon{
+    .cart_icon {
         display: none;
     }
 
-    .logo_img{
+    .logo_img {
         display: none;
     }
 
-    .logo_pocket{
+    .logo_pocket {
         display: block;
     }
     
-    .img_logo{
+    .img_logo {
         display: none;
     }
 
-    .header_up{
+    .header_up {
         justify-content: space-between;
         background-color: var(--amarelo);
         padding: 7px;
     }
 
-    .header_upp{
+    .header_upp {
         display: none;
     }
     
-    .header_upp .nav_link{
+    .header_upp .nav_link {
         display: none;
     }
 
-.search_desktop{
-    width: 90%;
-}
-
-}
-
-/* Tablet response */
-
-@media screen and (min-width : 926px) {
-
-    @media screen and (max-width: 1300px) {
-
-        .icon_mobile {
-            display: block;
-        }
-
-        .header_down {
-            display: none;
-        }
-
-        .icons_user {
-            display: none;
-        }
-
+    .search_desktop {
+        width: 90%;
     }
+}
+
+@media screen and (min-width: 926px) and (max-width: 1300px) {
+    .icon_mobile {
+        display: block;
+    }
+
+    .header_down {
+        display: none;
+    }
+
+    .icons_user {
+        display: none;
+    }
+}
+
+.nav_link {
+    list-style: none;
+    display: flex;
+}
+
+.principal_link, .color {
+    color: initial; /* Cor padrão dos links */
+    text-decoration: none;
+}
+
+.selected {
+    color: rgb(48, 48, 233); /* Cor quando o link está selecionado */
 }
