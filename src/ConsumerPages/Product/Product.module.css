@@ -1,11 +1,10 @@
 .Background {
     width: 1000px;
-    height: 1000px;
-    background-color: var(--background);
+    height: 1200px;
+    /* background-color: var(--background); */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
 }
 
 .Boxtext {
@@ -84,13 +83,13 @@
 }
 
 .img_product{
-    width: 150px;
-    height: 150px;
+    width: 80%;
+    height: 80%;
 }
 
 .img_product_2{
-    width: 100px;
-    height: 100px;
+    width: 80%;
+    height: 80%;
 }
 
 .BackInfo {
@@ -273,10 +272,156 @@
 
 /* Tablet responsive */
 
-@media screen and (min-width : 926px) {
-
-    @media screen and (max-width: 1300px) {
-
-
+@media (max-width: 1100px ) {
+    .ProductsInfo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Box1 {
+        height: 80%;
+        width: 80%;
+    }
+    .Box2 {
+        height: 90%;
+        width: 90%;
+    }
+    .BoxInfo {
+        height: 200px;
+    }
+    .titulo_produto {
+        font-size: 1rem;
+    }
+    .sub_titulo_product {
+        margin-top: -8%;
+        font-size: 0.8rem;
+    }
+    .Date {
+        font-size: 0.8rem;
+    }
+    .BoxTextProduct h1{
+        font-size: 1rem;
+    }
 }
+
+@media (max-width: 870px ) {
+    .BoxInfo {
+        height: 200px;
+    }
+    .titulo_produto {
+        font-size: 1rem;
+    }
+    .sub_titulo_product {
+        margin-top: -8%;
+        font-size: 0.8rem;
+    }
+    .Date {
+        font-size: 0.8rem;
+    }
+    .BoxTextProduct h1{
+        font-size: 0.9rem;
+    }
+    .Values {
+        font-size: 0.8rem;
+    }
+    .Desc {
+        width: 200px;
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+    .Value {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 738px ) {
+    .BoxInfo {
+        height: 200px;
+    }
+    .titulo_produto {
+        font-size: 1rem;
+    }
+    .sub_titulo_product {
+        margin-top: -8%;
+        font-size: 0.7rem;
+    }
+    .Date {
+        font-size: 0.8rem;
+    }
+    .BoxTextProduct h1{
+        font-size: 0.7rem;
+    }
+    .Values {
+        font-size: 0.7rem;
+    }
+    .Desc {
+        width: 200px;
+        font-size: 0.5rem;
+        padding: 5px;
+    }
+    .Value {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 638px ) {
+
+    .titulo_produto {
+        font-size: 1rem;
+    }
+    .sub_titulo_product {
+        margin-top: -8%;
+        font-size: 0.7rem;
+    }
+    .Date {
+        font-size: 0.8rem;
+    }
+    .BoxTextProduct h1{
+        font-size: 0.7rem;
+    }
+    .Values {
+        font-size: 0.7rem;
+    }
+    .Desc {
+        width: 200px;
+        font-size: 0.5rem;
+        padding: 5px;
+        margin-left: 100%;
+    }
+    .Value {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 460px ) {
+    .BoxInfo {
+        height: 200px;
+        width: 200px;
+    }
+    .titulo_produto {
+        font-size: 0.8rem;
+    }
+    .sub_titulo_product {
+        margin-top: -8%;
+        font-size: 0.6rem;
+    }
+    .Date {
+        font-size: 0.4rem;
+    }
+    .BoxTextProduct h1{
+        font-size: 0.41rem;
+    }
+    .Values {
+        font-size: 0.5rem;
+    }
+    .Desc {
+        width: 100px;
+        height: 30px;
+        font-size: 0.3rem;
+        padding: 5px;
+        margin-left: 100%;
+    }
+    .Value {
+        font-size: 0.5rem;
+    }
+    .Btn {
+        font-size: 0.5rem;
+    }
 }

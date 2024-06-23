@@ -5,11 +5,11 @@ import ProaIcon from '../../assets/img/ProaIcon.png'
 import AtacadaoIcon from '../../assets/img/AtacadaoIcon.png'
 import CasasIcon from '../../assets/img/CasasIcon.png'
 import AyumiIcon from '../../assets/img/AyumiIcon.png'
-<<<<<<< HEAD
-=======
+
+
 import Extra from '../../assets/img/extra.png'
 import Violeta from '../../assets/img/violeta.png'
->>>>>>> f6f756c62a149d72de0d1207a850c0b448f70b6c
+
 
 
 

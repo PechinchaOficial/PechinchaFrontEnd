@@ -1,4 +1,7 @@
 import Styles from './NossosPlanos.module.css'
+import StarRed from '../../../assets/img/StarRed.png'
+import StarBlue from '../../../assets/img/StarBlue.png'
+
 
 function NossosPlanos() {
     return (
@@ -9,7 +12,7 @@ function NossosPlanos() {
                 </div>
             </article>
             <article className={Styles.Conteiner}>
-            <div className={Styles.Box}>
+                <div className={Styles.Box}>
                     <div className={Styles.BoxRed}>
                         <h1 className={Styles.Txth1}> BARATINHO </h1>
                     </div>
@@ -21,9 +24,10 @@ function NossosPlanos() {
                         <li><h3>Promoções Personalizadas</h3></li>
                         <li><h3>Alcance padrão</h3></li>
                     </ul>
-                   
+
                     <button className={Styles.Btn}> SELECIONAR </button>
-                    
+
+                    <img src={StarBlue} alt='' className={Styles.ImgBlue}/>
                 </div>
                 <div className={Styles.Box}>
                     <div className={Styles.BoxRed}>
@@ -41,7 +45,7 @@ function NossosPlanos() {
 
 
                     <button className={Styles.Btn}> SELECIONAR </button>
-                    
+
                 </div>
                 <div className={Styles.Box}>
                     <div className={Styles.BoxRed}>
@@ -57,10 +61,10 @@ function NossosPlanos() {
                         <li><h3>Feedback de Clientes</h3></li>
                         <li><h3>Recomendações de Produtos</h3></li>
                     </ul>
+                        <img src={StarRed} alt='' className={Styles.Img}/>
 
 
                     <button className={Styles.Btn}> SELECIONAR </button>
-                    
                 </div>
             </article>
         </section>
