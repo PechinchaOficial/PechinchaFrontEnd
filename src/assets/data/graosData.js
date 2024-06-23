@@ -35,7 +35,7 @@ const graos = [
             name: 'feijaoMs',
             price: '1,90',
             img: `${arroz}`,
-            name: 'Solito Tipo 1',
+            name: 'Solito Tradicional',
             price: '25,90',
             dateVenc: '12/10/2024',
             qtdUnit: '20',
@@ -55,7 +55,7 @@ const graos = [
         {
             id: 1,
             img: `${solito}`,
-            name: 'Solito Profissional',
+            name: 'Solito Food Service',
             price: '30,00',
             dateVenc: '21/10/2024',
             qtdUnit: '12',
@@ -66,7 +66,7 @@ const graos = [
         {
             id: 1,
             img: `${tipo}`,
-            name: 'Solito Tipo 2',
+            name: 'Solito Integral',
             price: '29,00',
             dateVenc: '27/12/2024',
             qtdUnit: '27',
