@@ -34,6 +34,9 @@ function SearchBar() {
     return (
         <div className={styles.search}>
 
+
+           
+
             <input type="search" placeholder='Busque na sua região' className={styles.search_bar} value={search} onChange={(e) => setSearch(e.target.value)}  onClick={ShowResults}/>
             <button className={styles.btn} ><i class="fa-solid fa-magnifying-glass"></i></button> 
             <div className={styles.results} ref={results}  onMouseLeave={HiddenResults}>
