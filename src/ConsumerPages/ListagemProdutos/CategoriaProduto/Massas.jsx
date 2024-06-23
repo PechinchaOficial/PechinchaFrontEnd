@@ -27,10 +27,9 @@ function Massas({ categoria }) {
                     <h2>{categoria}</h2>
                 </div>
 
-                <div className={styles.filtro}>
-                    <h2>Ordenar por <span className={styles.filtro_atual}>Mais relevantes</span> </h2>
-                    <i class="fa-solid fa-angle-down" id={styles.arrow}></i>
-                </div>
+                <button className={styles.btn_show_more}>
+    MOSTRAR MAIS
+</button>
             </div>
 
             <div className={styles.carousel_prod} ref={carousel}>

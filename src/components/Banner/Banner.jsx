@@ -1,6 +1,7 @@
 import styles from './Banner.module.css'
 import {useState, useEffect} from 'react'
 import { register } from 'swiper/element/bundle'
+import Bannerp from '../../assets/img/bannerdois.png'
 
 register();
 
@@ -12,7 +13,7 @@ import 'swiper/css/autoplay';
 
 import { Swiper, SwiperSlide} from 'swiper/react';
 
-function Banner({ bannerimg }) {
+function Banner({ bannerimg, bannerc }) {
     
 
     const [slidesPerView, setSlidePerView] = useState(1)
@@ -38,7 +39,6 @@ function Banner({ bannerimg }) {
             // controla quantos slides por foto quero que apareça
                 slidesPerView={slidesPerView}
                 // define se é clicavel ou não
-                pagination={{clickable: true}}
                 autoplay
                 navigation
     
@@ -46,7 +46,7 @@ function Banner({ bannerimg }) {
 
                 {/* corresponde a cada item do coarrossel */}
                 <SwiperSlide>
-                    <img src={bannerimg} alt="Banner Promocional" className={styles.img_banner} />
+                    <img src={bannerc} alt="Banner Promocional" className={styles.img_banner} />
                 </SwiperSlide>
 
                 <SwiperSlide>

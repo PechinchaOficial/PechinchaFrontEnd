@@ -15,7 +15,7 @@ function MarketLogin() {
 
                 <div className={Styles.logo}>
                     <img src={logo} alt="" />
-                </div>
+                </div> 
 
                 <div className={Styles.forms_new} id='forms-code' >
                     <h2>Área do mercado</h2>
@@ -23,7 +23,7 @@ function MarketLogin() {
 
                     <form action='' className={Styles.new_forms} id='code-forms' >
                         <label htmlFor="">E-mail</label>
-                        <input type="password" placeholder='Digite seu Email' className={Styles.email} />
+                        <input type="email" placeholder='Digite seu Email' className={Styles.email} />
 
                         <label htmlFor="">Senha</label>
                         <input type="password" placeholder='Digite sua senha' className={Styles.email} />

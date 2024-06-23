@@ -25,6 +25,7 @@ import amigao from '../../assets/img/Market/amigao.png'
 import violeta from '../../assets/img/Market/violeta.png'
 import recoy from '../../assets/img/Market/ricoy.png'
 import { useTranslation } from "react-i18next";
+import bannerc from '../../assets/img/bannerc.png' 
 
 function Home() {
     const { t } = useTranslation();
@@ -170,7 +171,7 @@ function Home() {
 
                 <section className="background">
                     <div className={styles.container_promotion} id="container">   {/* Container */}
-                        <Banner bannerimg={imgBanner} /> {/* Banner de promoções */}
+                        <Banner bannerimg={imgBanner} bannerc={bannerc} /> {/* Banner de promoções */}
                         <CarouselProd />    {/* Carrossel de produtos */}
                     </div>
                 </section>

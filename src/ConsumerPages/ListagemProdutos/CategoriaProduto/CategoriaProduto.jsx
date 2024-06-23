@@ -27,24 +27,23 @@ function CategoriaProduto({ categoria }) {
                     <h2>{categoria}</h2>
                 </div>
 
-                <div className={styles.filtro}>
-                    <h2>Ordenar por <span className={styles.filtro_atual}>Mais relevantes</span> </h2>
-                    <i class="fa-solid fa-angle-down" id={styles.arrow}></i>
-                </div>
+                <button className={styles.btn_show_more}>
+                    MOSTRAR MAIS
+                </button>
             </div>
 
             <div className={styles.carousel_prod} ref={carousel}>
-                {snacksData.map(({name, id, qtdUnit, discount, price, dateVenc, img}) => (
+                {snacksData.map(({ name, id, qtdUnit, discount, price, dateVenc, img }) => (
                     <CardProduto key={id}
-                    name={name}
-                    img={img}
-                    qtdUnit={qtdUnit}
-                    price={price}
-                    discount={discount}
-                    dateVenc={dateVenc}/>
+                        name={name}
+                        img={img}
+                        qtdUnit={qtdUnit}
+                        price={price}
+                        discount={discount}
+                        dateVenc={dateVenc} />
                 )
-                
-                    
+
+
                 )}
             </div>
 
