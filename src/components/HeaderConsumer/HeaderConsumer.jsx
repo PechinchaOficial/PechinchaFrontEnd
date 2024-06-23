@@ -195,7 +195,7 @@ function HeaderConsumer() {
                         </li>
 
                         <li>
-                            <i class="fa-solid fa-list"></i> <Link onClick={scrollToTop} to="/homemarket">Produtos</Link>
+                            <i class="fa-solid fa-list"></i> <Link onClick={scrollToTop} to="/listagem">Produtos</Link>
                         </li>
 
                     </ul>
