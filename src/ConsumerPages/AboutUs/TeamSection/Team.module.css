@@ -61,3 +61,11 @@
 .title{
     font-size: 25px;
 }
+
+/* Responsivo celular */
+
+@media screen and (max-width: 925px) {
+    
+}
+
+
