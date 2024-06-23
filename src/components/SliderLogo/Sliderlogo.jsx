@@ -1,3 +1,4 @@
+
 import React from 'react'; // Certifique-se de importar React
 import Styles from './SliderLogo.module.css';
 import MotiroIcon from '../../assets/img/MotiroIcon.png';
@@ -7,8 +8,6 @@ import AtacadaoIcon from '../../assets/img/AtacadaoIcon.png';
 import CasasIcon from '../../assets/img/CasasIcon.png';
 import AyumiIcon from '../../assets/img/AyumiIcon.png';
 
-import Extra from '../../assets/img/extra.png';
-import Violeta from '../../assets/img/violeta.png';
 
 function SliderLogo() {
   return (
