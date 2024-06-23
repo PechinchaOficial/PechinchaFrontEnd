@@ -28,6 +28,7 @@
     width: 100%;
 }
 
+
 .nav_link a {
     text-decoration: none;
     font-weight: 600;
@@ -305,14 +306,12 @@
 .color:hover {
     color: rgba(0, 0, 0, 0.563);
 }
-<<<<<<< HEAD
-=======
 
 .userway_buttons_wrapper{
     display: none;
 }
 
->>>>>>> 907011bbb7271e2d0cf2ea568c382c3149d6421c
+
 
 /* Smartphone response */
 
