@@ -15,7 +15,11 @@
 	justify-content: center;
 }
 
-/*Estilizando o fomrulario de Login*/
+
+
+
+
+/*Estilizando o formulario de Login*/
 .forms-register{
 	background-color:  white;
 	width: 50%;
@@ -25,14 +29,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
-	
-
 }
 
 label{
 	font-size: 25px;
-	
 }
 
 .forms-login{
@@ -42,10 +42,7 @@ label{
 
 	height:  500px;
 	width:  90%;
-	
-
 }
-
 
 /*Estilizando os input*/
 .forms-login input{
@@ -56,6 +53,7 @@ label{
 	border-radius: 10px;
 
 	padding: 10px;
+	font-size: 18px;
 }
 
 ::-webkit-input-placeholder{
@@ -106,6 +104,12 @@ label{
 	color: var(--azul);
 }
 
+
+
+
+
+
+
 /*Banner do lado direito*/
 .banner-login{
 	
@@ -131,7 +135,6 @@ label{
 	color: white;
 	font-size:  40px;
 	text-align: center;
-
 }
 
 .text-banner p{
@@ -165,10 +168,14 @@ label{
 	color: black;
 
 }
+
+
+
+
+
 /* Responsivo TABLET's */
 
 /*Responsivo IPAD, IPAD mini, */
-
 @media screen and (max-width: 769px) and (max-height: 1025px){
 	.container-login{
 		width:  90%; 
@@ -207,7 +214,6 @@ label{
 }
 
 /* NEXUS 7*/
-
 @media screen and (max-width: 600px) and (max-height: 960px){
 	.container-login{
 		width:  95%; 
@@ -394,7 +400,6 @@ label{
 }
 
 /*Pixel 7a*/
-
 @media screen and (max-width: 427px) and (max-height:  950px){
 	.container-login{
 		width:  95%; 
@@ -437,6 +442,7 @@ label{
 		display: block;
 	}
 }
+
 /*Pixel 6 Pro*/
 @media screen and (max-width: 480px) and (max-height:  1040px){
 	.container-login{
