@@ -34,14 +34,16 @@ function MarketProductPage(){
                         <i class="fa-solid fa-star"></i>
                         </div>
                     </div>
-                    <div className={Styles.product}>
-                        <p>Produtos: 123</p>
-                    </div>
-                    <div className={Styles.datestart}>
-                        <p>anuncia desde: 20/10/2024</p>
-                    </div>
-                    <div className={Styles.date}>
-                        <p>Vendedor: Premium</p>
+                    <div className={Styles.camps}>
+                        <div className={Styles.product}>
+                            <p>Produtos: 123</p>
+                        </div>
+                        <div className={Styles.datestart}>
+                            <p>anuncia desde: 20/10/2024</p>
+                        </div>
+                        <div className={Styles.date}>
+                            <p>Vendedor: Premium</p>
+                        </div>
                     </div>
                 </div>
 

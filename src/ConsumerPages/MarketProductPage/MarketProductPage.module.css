@@ -90,3 +90,65 @@
     gap: 10px;
     margin-top: 10px;
 }
+
+/* Responsivo celular */
+@media screen and (max-width: 925px) {
+
+   .bannermarket{
+    width: 100%;
+    height: 200px;
+   }
+
+   .photomarket{
+    margin-top: 80px;
+    width: 210px;
+    height: 120px;
+    margin-left: 20px;
+   }
+
+   .assai{
+    width: 130px;
+    height: 100px;
+    margin-top: 8px;
+    margin-left: 40px;
+   }
+
+   .namemarket{
+    margin-left: 80px;
+    margin-top: 50px;
+
+        h1{
+            font-size: 1.3rem;
+        }
+   }
+
+   .infosmarket{
+    flex-direction: column;
+    font-size: 0.5rem;
+    height: 220px;
+   }
+
+   .adress{
+    font-size: 0.8rem;
+   }
+
+   .map{
+    font-size: 0.8rem;
+   }
+
+   .star{
+    font-size: 1rem;
+   }
+
+   .product, .datestart, .date{
+    font-size: 0.8rem;
+   }
+
+   .camps{
+    height: 60px;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+   }
+ }
+ 
