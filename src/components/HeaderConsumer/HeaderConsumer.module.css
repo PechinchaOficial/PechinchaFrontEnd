@@ -302,20 +302,9 @@
  .uwy.userway_p1 .userway_buttons_wrapper {
     display: none;
     
-<<<<<<< HEAD
 
 }
-.color:hover {
-    color: rgba(0, 0, 0, 0.563);
-}
 
-
-.userway_buttons_wrapper{
-    display: none;
-
-=======
->>>>>>> main
-}
 .color:hover {
     color: rgba(0, 0, 0, 0.563);
 }
@@ -324,11 +313,6 @@
     display: none;
 }
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> main
 
 /* Smartphone response */
 
@@ -336,7 +320,7 @@
 
     .icon_mobile {
         display: block;
-        z-index: 999;;
+        z-index: 999;
     }
 
     .header_down {

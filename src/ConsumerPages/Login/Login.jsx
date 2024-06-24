@@ -30,23 +30,15 @@ function Login() {
                         <input type="text" placeholder='Digite sua senha' />
 
                         <p className='recover-password'>Esqueceu sua senha? <Link to="/recover">Recupere aqui</Link></p>
-<<<<<<< HEAD
- 
-                        <Link to='/listagem'><button >ENTRAR</button>
-                        </Link>
- 
-=======
 
->>>>>>> main
+
+
                         <Link to='/listagem'><button >ENTRAR</button></Link>
                         <Link to="/registerclient">
                             <button className='register-client'>CADASTRAR</button>
                         </Link>
                         
-<<<<<<< HEAD
- 
-=======
->>>>>>> main
+
                         <p className='privacy-policy'>Ao continuar com o acesso você concorda com a nossa <a href="#">política de privacidade</a></p>
                     </form>
                 </div>
