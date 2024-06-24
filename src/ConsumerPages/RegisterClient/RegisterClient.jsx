@@ -4,6 +4,22 @@ import { Link } from 'react-router-dom'
 
 
 function RegisterClient (){
+
+    const [usuario, setUsuario] = useState({
+        nome_usuario: '',
+        cpf_usuario: '',
+        senha_usuario: '',
+        email_usuario: '',
+        genero_usuario: '',
+        data_nasc_usuario: '',
+        data_registro_usuario: '',
+        plano_usuario: '',
+        permissao_usuario: '',
+        endereco_usuario: '',
+        foto_perfil_usuario: ''
+      });
+
+      
     return(
 
         <main className='background_login'>

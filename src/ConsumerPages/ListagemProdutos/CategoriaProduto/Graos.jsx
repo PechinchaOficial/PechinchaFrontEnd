@@ -2,6 +2,8 @@ import CardProduto from '../../../components/CardProduto/CardProduto';
 import styles from './CategoriaProduto.module.css'
 import { useRef } from 'react'
 import graosData from '../../../assets/data/graosData'
+import { useEffect, useState } from 'react';
+import { GetProduto } from '../../../services/ProdutoService';
 
 function Graos({ categoria }) {
 
@@ -18,6 +20,21 @@ function Graos({ categoria }) {
 
     }
 
+
+    const [products, setproducts] = useState([]);
+
+    useEffect(() => {
+        FetchProducts()
+    }, [])
+
+    const FetchProducts = async () => {
+        try {
+            const response = await GetProduto();
+            setproducts(response.data)
+        } catch (error) {
+            console.error("Erro ao buscar produtos", error);
+        }
+    };
 
     return (
         <section className={styles.categoria_produto} id='container'>
