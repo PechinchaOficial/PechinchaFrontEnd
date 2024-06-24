@@ -92,7 +92,7 @@
 }
 
 /* Responsivo celular */
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 674px) {
 
    .bannermarket{
     width: 100%;
@@ -211,7 +211,6 @@
             margin-top: 15px;
             margin-left: 50px;
             width: 82%;
-            background-color: aqua;
         }
  }
 
