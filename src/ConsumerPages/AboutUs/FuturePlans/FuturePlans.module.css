@@ -337,7 +337,90 @@
         margin-left: 30px;
      }
 
-      /* final plano de entrega*/
+      /* final plano de entrega*/ 
+ }
 
-   
+ /* Responsivo celular */
+@media screen and (max-width: 674px) {
+
+  }
+ 
+ 
+ 
+/*Responsivo tablet*/ 
+ @media screen and (max-width : 724px) {
+    .Boximages img{
+        height: 280px;
+        width: 280px;
+        margin-left: 5px;
+    }
+
+
+    .BoxRight{
+        margin-top: 250px;
+        width: 100%;
+    }
+
+
+    .BoxtextApp{
+        font-size: 1rem;
+        width: 80%;
+       text-align: center;
+       margin-top: -150px;
+       margin-left: 30px;
+    }
+
+    /* começo plano de crm*/
+
+     .Boximage{
+        height: 190px;
+        width: 270px;
+        position: absolute;
+        z-index: 1;
+        left: -5px;
+        top: 390rem;
+     }
+
+     .Backtxt{
+        font-size: 1rem;
+        margin-top: -150px;
+        margin-left: 250px;
+        width: 60%;
+        text-align: center;
+        
+     }
+
+     /* começo plano de entrega*/
+
+     .BoxIMG{
+        height: 180px;
+        margin-left: 10px;
+        position: absolute;
+        width: 250px;
+        top: 405rem;
+     }
+
+
+     .Backtxtentrega{
+        margin-top: -410px;
+        font-size: 1rem;
+        text-align: center;
+        width: 50%;
+        margin-left: 250px;
+     }
+
+    
+ }
+ 
+ @media screen and (max-width : 1169px) {
+     @media screen and (min-width: 820px) {
+ 
+     }
+ }
+ 
+ /*Responsivo notebook*/
+ @media screen and (max-width : 1356px) {
+     @media screen and (min-width: 1170px) {
+ 
+     }
  }
