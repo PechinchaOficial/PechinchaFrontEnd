@@ -24,7 +24,13 @@
     gap: 50px;
     width: 100%;
 }
-
+.Background {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 12%;
+    justify-content: space-around;
+}
 .formBox {
     background-color: white;
     padding: 30px;
@@ -32,13 +38,23 @@
     margin-top: 15px;
     box-shadow: 6px 13px 10px -3px rgba(0,0,0,0.1);
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
 }
 
 .schemeBox {
     background-color: white;
     padding: 30px;
-    height: 300px;
-    width: 300px;
+    height: 50%;
+    width: 35%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -93,4 +109,32 @@
 }
 .Inputs {
     width: 1000px;
+}
+@media (max-width: 1001px) {
+    .formBox {
+        flex-direction: column;
+        height: 1000px;
+        overflow-y: auto;
+    }
+    .Forms {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        
+    }
+    .toSpaceInput {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .Background {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .schemeBox {
+        width: 80%;
+        height: 50%;
+    }
 }

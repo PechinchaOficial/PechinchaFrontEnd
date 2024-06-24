@@ -25,8 +25,7 @@
     letter-spacing: 5px;
 }
 .Text { 
-
-    color: rgb(0, 0, 0);
+    color: #000;
     font-size: 1.8rem;
 }
 .Btn {
@@ -44,13 +43,9 @@
 }
 .Btn:hover {
     transform: translateY(-3px);
-    background-color: #3b518e;
-
     background-color: #3c569c;
     transition: all 0.4s;
 }
-
-
 .BoxRight {
     width: 600px;
     display: flex;
@@ -66,7 +61,6 @@
     margin-top:  40%;
     
 }
-
 
 #Box1 {
     clip-path:
@@ -127,5 +121,19 @@
 
         /*------------------------------Responsivo Celular --------------------------*/
 
-
+        @media (Max-width:1190px) {
+            .BoxRight {
+                display: none;
+            }
+            .Btn {
+                width: 200px;
+                height: 80px;
+            }
+            .BoxLeft {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
         

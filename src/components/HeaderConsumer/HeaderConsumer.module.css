@@ -302,6 +302,7 @@
  .uwy.userway_p1 .userway_buttons_wrapper {
     display: none;
     
+<<<<<<< HEAD
 
 }
 .color:hover {
@@ -312,6 +313,8 @@
 .userway_buttons_wrapper{
     display: none;
 
+=======
+>>>>>>> main
 }
 .color:hover {
     color: rgba(0, 0, 0, 0.563);
@@ -322,7 +325,10 @@
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 
 /* Smartphone response */
 

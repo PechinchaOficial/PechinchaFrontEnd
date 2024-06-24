@@ -77,20 +77,12 @@
     color: #000;
 }
 
- 
-@media screen and (max-width: 380px) {
-}
 @media screen and (max-width: 925px) {
- 
     .total {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
- 
-        width: 355px;
- 
         width: 100%;
- 
         height: 400px;
         background-color: #FFF;
         border: 0.5px solid #00000021;
@@ -99,15 +91,12 @@
         padding-top: 0;
         padding-bottom: 0;
     }
- 
- 
 }
 
 @media screen and (min-width : 926px) {
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1300px){
 
 
-    }
- 
+}
 }

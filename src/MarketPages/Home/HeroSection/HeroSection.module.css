@@ -39,12 +39,9 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-
-    color: rgb(0, 0, 0);
-
- 
+    color: #000;
+    text-align: center;
 }
-
 .BackBtns {
     height: 100px;
     width: 100%;
@@ -53,7 +50,6 @@
     align-items: center;
     gap: 10px;
 }
-
 .Btn{
     width: 20%;
     padding: 10px;
@@ -66,7 +62,6 @@
 }
 .Btn:hover {
     transform: translateY(-3px);
-
 }
 
 #RegisterBtn {
@@ -85,16 +80,54 @@
     border: 1px solid var(--azul);
 }
 
-
-#KnowMoreBtn:hover {
-    background-color: var(--azul);
-    color: white;
-}
-
-
 #KnowMoreBtn:hover{
     background-color:#577fe6 ;
     color: #FFF;
     transition:all 0.4s;
+}
 
+@media (Max-width: 1200px) {
+    .Btn{
+        width: 30%;
+    }
+}
+@media (Max-width: 844px) {
+    .Backtext p{
+        margin-top: -15%;
+        font-size: 1.6rem;
+    }
+    .Btn{
+        width: 40%;
+    }
+}
+@media (Max-width: 607px) {
+    .Backtext p{
+        margin-top: -20%;
+        font-size: 1.6rem;
+    }
+    .Btn{
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+@media (Max-width: 500px) {
+    .Backtext p{
+        margin-top: -26%;
+        font-size: 1.2rem;
+    }
+    .Btn{
+        width: 50%;
+        font-size: 0.8rem;
+        height: 70%;
+    }
+}
+@media (Max-width: 359px) {
+    .Backtext p{
+        margin-top: -40%;
+        font-size: 1rem;
+    }
+    .Btn{
+        width: 50%;
+        font-size: 0.8rem;
+    }
 }

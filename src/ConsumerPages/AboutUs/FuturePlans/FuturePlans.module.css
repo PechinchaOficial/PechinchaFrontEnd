@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     font-family: offer;
-    letter-spacing: 5px
+    letter-spacing: 5px;
 }
 .Title {
     margin-bottom: 30px;
@@ -55,7 +55,7 @@
     
 }
 .TitleInovacao h1 {
-    margin-top: 5%;
+    margin-top: 7%;
     font-size: 2.5rem;
     color: white;
     font-family: offer;
@@ -201,7 +201,7 @@
     color: white;
     margin-left: 5%;
     font-family: offer;
-    letter-spacing: 5px
+    letter-spacing: 5px;
 }
 .BoxIMG {
     height: 100%;
@@ -219,3 +219,125 @@
     font-size: 1.5rem;
     margin-top: 2%;
 }
+
+/* Responsivo celular */
+@media screen and (max-width: 925px) {
+    .Title{
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        margin-top: 12px;
+        margin-right: 10px;
+    }
+
+    .BoxTitle{
+        margin-top: -100px;
+    }
+
+    /* começo do quadrado de inovação*/    
+    .TitleInovacao h1{
+        font-size: 3rem;
+    }
+
+    .Boxtext{
+        margin-top: -220px;
+        width: 90%;
+        margin-left: 15px;
+    }
+
+    .Text{
+        font-size: 1.3rem;
+    }
+    .Inovacao{
+        width: 100%;
+        height: 380px;
+    }
+
+    /* final do quadrado de inovação*/   
+
+    /* começo plano de celular*/
+
+    .Boximages img{
+        height: 300px;
+        width: 320px;
+        margin-left: 5px;
+    }
+
+    .BoxLeft{
+        height: 100px;
+    }
+
+    .BoxRight{
+        margin-top: 320px;
+        width: 100%;
+    }
+
+    .Boxtitle{
+       display: none;
+    }
+
+    .BoxtextApp{
+        font-size: 1.3rem;
+        width: 100%;
+       margin-right: 130px;
+       text-align: center;
+    }
+
+    /* final plano de celular*/
+
+     /* começo plano de crm*/
+
+     .Backtitle{
+        display: none;
+     }
+
+     .Boximage{
+        height: 200px;
+        width: 300px;
+        position: absolute;
+        z-index: 1;
+        left: 40px;
+        top: 410rem;
+     }
+
+     .Backtxt{
+        font-size: 1.3rem;
+        margin-top: 300px;
+        width: 100%;
+        text-align: center;
+        margin-right: 80px;
+        
+     }
+
+     .left{
+        width: 100%;
+        margin-left: -40px;
+     }
+
+     /* final plano de crm*/
+
+     /* começo plano de entrega*/
+
+     .BoxIMG{
+        height: 200px;
+        margin-left: 40px;
+        position: absolute;
+        width: 300px;
+     }
+
+     .BoxTitlEntrega{
+        display: none;
+     }
+
+     .Backtxtentrega{
+        margin-top: 220px;
+        padding-bottom: 200px;
+        font-size: 1.3rem;
+        text-align: center;
+        width: 300px;
+        margin-left: 30px;
+     }
+
+      /* final plano de entrega*/
+
+   
+ }

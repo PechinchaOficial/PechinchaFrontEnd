@@ -49,3 +49,31 @@
 .word{
     color: #343BCC;
 }
+
+/* Responsivo celular */
+@media screen and (max-width: 925px) {
+
+   
+
+   .imagem_missao{
+    display: none;
+   }
+
+   .texto_missao{
+    height: 350px;
+    width: 100%;
+    margin-left: -5px;
+
+        .text{
+            font-size: 1.2rem;
+        }
+   }
+
+   .titulo_missao{
+    width: 100%;
+
+        h1{
+            font-size: 2rem;
+        }
+   }
+}

@@ -42,6 +42,7 @@
     margin-top: 5%;
 }
 .Box {
+    position: relative;
     width: 450px;
     height: 600px;
     background-color: var(--amarelo);
@@ -98,8 +99,6 @@
 }
 .Btn:hover {
     transform: translateY(-3px);
-
-    background-color: #3b518e;
     background-color: #395191;
     transition: all 0.4s;
 }
@@ -116,6 +115,16 @@
     position: absolute;
     font-size: 2.5rem;
 }
+.Img {
+    position: absolute;
+    bottom: -75px;
+    right: -75px;
+}
+.ImgBlue {
+    position: absolute;
+    top: -120px;
+    left: -68px;
+}
 @media screen and (min-width: 1000) {
     .Conteiner {
         display: flex;
@@ -123,5 +132,40 @@
         flex-wrap: wrap;
         justify-content: center
         
+    }
+}
+@media (Max-width:1190px) {
+    .BackgroundText {
+        width: 300px;
+        font-size: 1.2rem;
+        height: 80px;
+    }
+    .Box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Valor{
+        font-size: 4rem;
+    }
+    .Beneficios {
+        font-size: 1.1rem;
+        margin-left: 8%;
+    }
+    .Btn {
+        font-size: 1.5rem;
+        width: 65%;
+    }
+}
+
+@media (Max-width:500px) {
+    .Btn {
+        font-size: 1rem;
+        width: 65%;
+        height: 50px;
+        margin-bottom: 2%;
+    }
+    .ImgBlue {
+        top: -70px;
     }
 }

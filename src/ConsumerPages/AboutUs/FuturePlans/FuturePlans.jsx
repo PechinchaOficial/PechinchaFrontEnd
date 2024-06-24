@@ -14,7 +14,7 @@ function FuturePlans() {
             <section className={Styles.Conteiner}>
                 <div className={Styles.Inovacao}>
                     <header className={Styles.TitleInovacao}>
-                        <h1>INOVAÇAO</h1>
+                        <h1>INOVAÇÃO</h1>
                     </header>
                     <div className={Styles.Boxtext}>
                         <p className={Styles.Text}> Que tal colocarmos no nosso carrinho <span className={Styles.Difere}>futuras novidades?</span>
@@ -25,7 +25,7 @@ function FuturePlans() {
             <section className={Styles.App}>
                 <article className={Styles.BoxLeft}>
                     <div className={Styles.Boximages}>
-                        <img src={Celular} alt="" />
+                        <img src={Celular} alt="Foto de um celular" />
                     </div>
                 </article>
                 <article className={Styles.BoxRight}>
@@ -48,14 +48,14 @@ function FuturePlans() {
                 </article>
                 <article className={Styles.right}>
                     <div className={Styles.Boximage}>
-                        <img src={Notebook} alt="" />
+                        <img src={Notebook} alt="imagem notebook" />
                     </div>
                 </article>
             </section>
             <section className={Styles.ServicoEntrega}>
                 <article className={Styles.Leftbox}>
                     <div className={Styles.BoxIMG}>
-                        <img src={Entregador} alt="" />
+                        <img src={Entregador} alt="imagem entregador" />
                     </div>
                 </article>
                 <article className={Styles.Rightbox}>

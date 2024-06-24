@@ -1,30 +1,144 @@
-#banner{
-    width: 70rem;
-    margin-left: -300px;
-    border-radius: 0px 40px 40px 0px;
+.container_register_client{
+    background-color: white;
+    width:  1200px;
+    height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Estilizando o Banner*/
+.banner_register{
+    height: 600px;
+	width: 50%;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap:  35px;
+
+	background-image: url('/src/assets/img/fundo_banner_login.png') ;
+	background-size: cover; /* A imagem cobrirá todo o fundo */
+    background-repeat: no-repeat; /* A imagem não se repetirá */
+    background-position: center center; /* A imagem ficará centralizada */
+
+	border-top-right-radius:  40px;
+	border-bottom-right-radius:  40px;
 }
 
-#form{
-    flex-direction: row;
- 
+.title_banner_register{
+    color: white;
+	font-size:  40px;
+	text-align: center;
+}
+.text_banner_register{
+    font-size:  20px;
+    text-align: center;
+}
+/*Estilizando o botao do banner*/
+.banner_register button{
+    background-color:  transparent;
+	width:  250px;
+	height:  50px;
+	
+	border-radius: 10px;
+
+
+	color: white;
+	border:  0.5px solid white;
+
+	font-size: 20px;
+
+	transition: all 0.4s;
+}
+.banner_register button:hover{
+    background-color: white;
+	color: black;
+
 }
 
-#boxtext{
-    margin-left: 80px;
-    margin-right: -200px;
-    width: 50rem;
-}
 
-.create{
-    margin-left: 80px;
-    font-size: 35px;
-    color: rgba(0, 0, 0, 0.644);
-}
 
-.fill{
-    margin-left: 50px;
+
+
+
+
+
+
+
+/*Estilizando o Formulario*/
+.forms_register_client{
+    background-color:  white;
+	width: 50%;
+	height: 600px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.title_register{ 
+    font-size: 40px;
+    text-align: center;
+
+}
+.sub_title_register{
     font-size: 25px;
-    margin-top: -15px;
-    color: rgba(0, 0, 0, 0.459);
+    text-align: center;
+    color: grey;
+    font-weight:  normal;
+}
+label{
+	font-size: 22px;
+}
+.forms_register{
+    display: flex;
+	flex-direction: column;
+	gap:  3px;
+
+	height:  auto;
+	width:  90%;
 }
 
+/*Estilizando os input*/
+.forms_register input{
+    width: 100%;
+	height: 45px;
+
+	border: 0.2px solid grey;
+	border-radius: 10px;
+
+	padding: 10px;
+
+    font-size:  18px;
+}
+::-webkit-input-placeholder{
+	font-size:  18px;
+}
+
+.forms_register button{
+    margin-top: 15px;
+	width: 100%;
+	height: 60px;
+	background-color: var(--vermelho);
+	color: white;
+	cursor: pointer;
+
+	font-size: 22px;
+	font-weight: bold;
+
+	border-radius:  10px;
+	border:  0px solid ;
+}
+.register_client_button{
+    display: none;
+}
+
+.polici_privacy{
+    text-align: center;
+	width:  90%;
+}
+.polici_privacy a{
+    color: var(--azul);
+}
