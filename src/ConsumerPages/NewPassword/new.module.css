@@ -107,3 +107,20 @@ label {
 .email{
 	font-size: 20px;
 }
+
+
+/*-------------RESPONSIVO----------------*/
+
+/*Iphone 14 Pro*/
+@media screen and (max-width:390px) and (max-height: 840px){
+	.container_new{
+		width: 350px;
+	}
+}
+
+/*Iphone 14 pro max*/
+@media screen and (max-width:450px) and (max-height:  940px){
+	.container_new{
+		width: 357px;
+	}
+}

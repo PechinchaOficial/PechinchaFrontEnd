@@ -27,10 +27,10 @@ function RegisterClient (){
 
             <div className={Styles.banner_register}>
 
-            <h2 className={Styles.title_banner_register}>Bem vindo de volta!</h2>
-            <p className={Styles.text_banner_register}>Clique abaixo caso ainda não tenha uma conta e aproveite de todas as funções</p>
+            <h2 className={Styles.title_banner_register}>Veio Pechinchar?</h2>
+            <p className={Styles.text_banner_register}>Caso já tenha uma conta clique abaixo e tenha acesso a todos os recursos</p>
 
-            <Link to="/registerclient">
+            <Link to="/login">
                 <button>ENTRAR</button>
             </Link>
             
@@ -61,7 +61,7 @@ function RegisterClient (){
                         </Link>
 
                         <Link to="/login">
-                            <button className={Styles.register_client_button}>Entrar</button>
+                            <button className={Styles.register_client_button}>ENTRAR</button>
                         </Link>
 
                         <p className={Styles.polici_privacy}>Ao continuar com o acesso você concorda com a nossa<a href="#"> politica de privacidade</a></p>
