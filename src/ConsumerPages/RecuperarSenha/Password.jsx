@@ -8,7 +8,7 @@ function Password () {
              <section className={Styles.container_password} id='container-password' >
                   <div  className={Styles.forms_recover} id='forms-recover' >
                         <h2>Recuperar senha</h2>
-                        <a>Digite seu email para enviarmos um <br /> código de segurança</a>
+                        <a>Digite seu email para enviarmos um <br /> código de seguranç</a>
 
                             <form action='' className={Styles.forms_password} id='forms-password' >
                                 <label htmlFor="">E-mail</label>
