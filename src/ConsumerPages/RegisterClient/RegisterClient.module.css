@@ -35,6 +35,7 @@
 .text_banner_register{
     font-size:  20px;
     text-align: center;
+	color: white;
 }
 /*Estilizando o botao do banner*/
 .banner_register button{
@@ -141,4 +142,160 @@ label{
 }
 .polici_privacy a{
     color: var(--azul);
+}
+
+
+
+
+/* Responsivo TABLET's */
+
+/*Responsivo IPAD, IPAD mini, */
+@media screen and (max-width: 769px) and (max-height: 1025px){
+	.container_register_client{
+		height: 750px;
+		width:  95%;
+	}
+	.banner_register{
+		height:  720px;
+	}
+	.title_banner_register{
+		font-size:  35px;
+	}
+	.text_banner_register{
+		font-size:  20px;
+		font-weight: normal;
+	}
+	.banner_register button{
+		width:  180px;
+	}
+}
+
+/* NEXUS 7*/
+@media screen and (max-width: 600px) and (max-height: 960px){
+	.container_register_client{
+		height: 750px;
+		width:  95%;
+	}
+	.banner_register{
+		height:  720px;
+	}
+	.banner_register button{
+		width:  180px;
+	}
+	.title_banner_register{
+		font-size:  35px;
+	}
+	.text_banner_register{
+		font-size:  20px;
+		font-weight: normal;
+	}
+}
+
+/*IPAD PRO Horizontal */
+@media screen and (min-width: 1024px) and (min-height: 1366px){
+	.container_register_client{
+		height: 750px;
+		width:  95%;
+	}
+	.banner_register{
+		height:  720px;
+	}.banner_register button{
+		width:  180px;
+	}
+	.title_banner_register{
+		font-size:  35px;
+	}
+	.text_banner_register{
+		font-size:  20px;
+		font-weight: normal;
+	}
+}
+
+/*Fim do Responsivo de TABLET*/
+
+/*Inicio do Responsivo de CELULAR*/
+
+/*Iphone 15 pro*/
+@media screen and (max-width: 393px) and (max-height:  852px){
+	.container_register_client{
+		height: 780px;
+		width:  95%;
+	}
+	.banner_register{
+		display: none;
+	}
+	.forms_register_client{
+		width: 100%;
+	}
+	.register_client_button{
+		display: block;
+	}
+}
+
+/*Iphone 15 pro  max*/
+@media screen and (max-width:  430px) and (max-height:  932px){
+	.container_register_client{
+		height: 780px;
+		width:  95%;
+	}
+	.banner_register{
+		display: none;
+	}
+	.forms_register_client{
+		width: 100%;
+	}
+	.register_client_button{
+		display: block;
+	}
+}
+
+/*Pixel 7a*/
+@media screen and (max-width: 427px) and (max-height:  950px){
+	.container_register_client{
+		height: 780px;
+		width:  95%;
+	}
+	.banner_register{
+		display: none;
+	}
+	.forms_register_client{
+		width: 100%;
+	}
+	.register_client_button{
+		display: block;
+	}
+}
+
+/*Pixel 6 Pro*/
+@media screen and (max-width: 480px) and (max-height:  1040px){
+	.container_register_client{
+		height: 780px;
+		width:  95%;
+	}
+	.banner_register{
+		display: none;
+	}
+	.forms_register_client{
+		width: 100%;
+	}
+	.register_client_button{
+		display: block;
+	}
+}
+
+/*Galaxy TAB 7*/
+@media screen and (max-width: 526px) and (max-height:  842px){
+	.container_register_client{
+		height: 780px;
+		width:  95%;
+	}
+	.banner_register{
+		display: none;
+	}
+	.forms_register_client{
+		width: 100%;
+	}
+	.register_client_button{
+		display: block;
+	}
 }

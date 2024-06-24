@@ -30,7 +30,12 @@
 	justify-content: center;
 	align-items: center;
 }
-
+.Title-login{
+	font-size:  40px;
+}
+.SubTitle-login{
+	font-size: 30px;
+}
 label{
 	font-size: 25px;
 }
@@ -184,7 +189,7 @@ label{
 
 	.Title-login{
 		font-size: 22px;
-
+		text-align: center;
 	}
 
 	.SubTitle-login{
@@ -230,7 +235,7 @@ label{
 	}
 
 	.forms-login{
-		gap:  16px;
+		gap:  10px;
 	}
 
 	.forms-login input{
@@ -241,7 +246,7 @@ label{
 	}
 
 	.privacy-policy{
-		font-size:  13px;
+		font-size:  15px;
 	}
 
 	.recover-password{
@@ -453,6 +458,7 @@ label{
 
 	.Title-login{
 		font-size: 28px;
+		
 	}
 
 	.SubTitle-login{
