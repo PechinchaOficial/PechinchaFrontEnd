@@ -92,7 +92,7 @@
 }
 
 /* Responsivo celular */
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 624px) {
 
    .bannermarket{
     width: 100%;
