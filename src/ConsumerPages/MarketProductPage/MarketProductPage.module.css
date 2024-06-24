@@ -164,18 +164,17 @@
             margin-top: 80px;
             width: 280px;
             height: 180px;
-            margin-left: 70px;
+            margin-left: -10px;
         }
         
         .assai{
             width: 180px;
             height: 150px;
             margin-top: 8px;
-            margin-left: 45px;
         }
         
         .namemarket{
-            margin-left: 150px;
+            margin-left: 70px;
             margin-top: 100px;
         
                 h1{
@@ -209,8 +208,10 @@
             height: 50px;
             display: flex;
             margin-top: 15px;
-            margin-left: 50px;
-            width: 82%;
+            margin-left: 20px;
+            width: 95%;
+            justify-content: space-between;
+            gap: 10px;
         }
  }
 
