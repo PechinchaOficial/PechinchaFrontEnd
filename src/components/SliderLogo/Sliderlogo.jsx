@@ -1,4 +1,3 @@
-
 import React from 'react'; // Certifique-se de importar React
 import Styles from './SliderLogo.module.css';
 import MotiroIcon from '../../assets/img/MotiroIcon.png';
@@ -38,4 +37,4 @@ function SliderLogo() {
   );
 }
 
-export default SliderLogo;
+export default SliderLogo;
