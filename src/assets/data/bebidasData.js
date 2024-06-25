@@ -13,8 +13,8 @@ import cafe_pilao_2 from '../img/Products/cafe/cafe_pilao-2.webp'
 const bebidas = [
     {
         id: 1,
-        img: `${cafe_melitta}`,
-        name: 'Café Melitta',
+        img: 'https://m.media-amazon.com/images/I/71rBEHnIkXL.jpg',
+        name: 'ARROZ ADICIONADO AGORA',
         price: '12,90',
         dateVenc: '12/10/2024',
         qtdUnit: '15',

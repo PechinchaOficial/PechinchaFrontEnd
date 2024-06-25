@@ -214,7 +214,7 @@
 
 .container_table{
     width: 100%;
-    height: 460px;
+    height: 550px;
     margin-top: 25px;
     display: flex;
     flex-direction: row;
@@ -314,8 +314,97 @@
 }
 
 .container_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 260px;
     height: 260px;
+}
+
+.container_img img{
+    height: 250px;
+}
+
+.btn{
+    padding: 15px 45px;
+    background-color: var(--btn);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.btn:hover{
+    background-color: var(--btn_hover);
+
+}
+
+/* teste */
+
+.results {
+    height: auto;
+    max-height: 450px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    overflow: auto;
+    border-radius: 10px;
+    display: none;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    
+}
+
+.img img {
+    height: 120px;
+    object-fit: cover;
+}
+
+.results ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    height: auto;
+    border-bottom: 0.5px solid rgba(190, 190, 190, 0.384);
+    padding: 20px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.btn_buy{
+    width: 100%;
+    border: none;
+    background-color: var(--btn);
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.info_prod{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 @media (min-width: 1280px) and (max-width: 1850px) {
