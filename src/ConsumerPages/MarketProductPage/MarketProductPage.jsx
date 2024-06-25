@@ -10,57 +10,57 @@ import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer'
 
 
 
-function MarketProductPage(){
+function MarketProductPage() {
     return (
-        
+
         <div>
-            <HeaderConsumer/>
-        <main>
-            <section className={Styles.marketpage} id='container'>
-                <div className={Styles.bannermarket}>
-                </div>
-                <div className={Styles.infosmarket}>
-                    <div className={Styles.photomarket}>
-                        <img className={Styles.assai} src={assai} alt="Mercado logo" />
+            <HeaderConsumer />
+            <main>
+                <section className={Styles.marketpage} id='container'>
+                    <div className={Styles.bannermarket}>
                     </div>
-                    <div className={Styles.namemarket}>
-                        <h1>Assaí Atacadista</h1>
-                        <p className={Styles.adress}>Bairro Ariston Estela Azevedo, 762</p>
-                        <p className={Styles.map}>Veja no mapa</p>
-                        <div className={Styles.star}>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                    <div className={Styles.infosmarket}>
+                        <div className={Styles.photomarket}>
+                            <img className={Styles.assai} src={assai} alt="Mercado logo" />
+                        </div>
+                        <div className={Styles.namemarket}>
+                            <h1>Assaí Atacadista</h1>
+                            <p className={Styles.adress}>Bairro Ariston Estela Azevedo, 762</p>
+                            <p className={Styles.map}>Veja no mapa</p>
+                            <div className={Styles.star}>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div className={Styles.camps}>
+                            <div className={Styles.product}>
+                                <p>Produtos: 123</p>
+                            </div>
+                            <div className={Styles.datestart}>
+                                <p>anuncia desde: 20/10/2024</p>
+                            </div>
+                            <div className={Styles.date}>
+                                <p>Vendedor: Premium</p>
+                            </div>
                         </div>
                     </div>
-                    <div className={Styles.camps}>
-                        <div className={Styles.product}>
-                            <p>Produtos: 123</p>
-                        </div>
-                        <div className={Styles.datestart}>
-                            <p>anuncia desde: 20/10/2024</p>
-                        </div>
-                        <div className={Styles.date}>
-                            <p>Vendedor: Premium</p>
-                        </div>
-                    </div>
-                </div>
 
-            </section>
-            <div className={Styles.containerproduct} id='container'>
-                <CategoryProd/>
-                <CategoriaProduto categoria='Snacks' />
-                <Graos categoria='Grãos'/>
-                <Bebidas categoria="Bebidas"/>  
-                <Enlatados categoria="Enlatados"/>
-                <Massas categoria="Massas"/>
-            </div>
-        </main>
-       </div>
-    
+                </section>
+                <div className={Styles.containerproduct} id='container'>
+                    <CategoryProd />
+                    <CategoriaProduto categoria='Snacks' />
+                    <Graos categoria='Grãos' />
+                    <Bebidas categoria="Bebidas" />
+                    <Enlatados categoria="Enlatados" />
+                    <Massas categoria="Massas" />
+                </div>
+            </main>
+        </div>
 
-      
+
+
 
     )
 }

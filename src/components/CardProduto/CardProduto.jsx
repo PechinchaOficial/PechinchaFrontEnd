@@ -14,11 +14,11 @@ function CardProduto({ img, name, price, dateVenc, qtdUnit, discount }) {
 
     return (
         <div className={styles.cardproduto}>
-            <Link to='/product'>
+            
                 <div className={styles.container_img} onClick={scrollToTop} >
                     <img src={img} alt="Produto" className={styles.imgprod} />
                 </div>
-            </Link>
+           
             <h2 className={styles.prodNome}>{name}</h2>
             <div className={styles.prod_info}>
                 <span className={styles.info_prod}>

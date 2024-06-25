@@ -9,7 +9,7 @@ import Header from '../../components/Header/Header';
 function Usertype() {
     return (
         <div className={styles.container_content}>
-  <Header/>
+            <Header />
             <main className={styles.background}>
                 <TituloFormato
                     categoria="Quem está acessando?" />

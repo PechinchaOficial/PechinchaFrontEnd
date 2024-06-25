@@ -84,12 +84,20 @@
     background-color: red;
 }
 
-@media screen and (max-width: 1870px) {
-    #left{
-        left: 0px;
-    }
-
-    #right{
-        right: 0px;
-    }
+@media screen and (max) {
+    
 }
+
+@media screen and(min-width: 926px) {
+    @media screen and (max-width: 1870px) {
+        #left{
+            left: 0px;
+        }
+    
+        #right{
+            right: 0px;
+        }
+    }
+    
+}
+

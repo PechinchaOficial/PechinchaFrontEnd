@@ -15,9 +15,44 @@
 	justify-content: center;
 }
 
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    10% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.welcome-popup {
+    position: fixed;
+    top: 0px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: slideDown 3s ease-in-out;
+}
 
 
 
+
+#error{
+	color: var(--vermelho);
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
 
 /*Estilizando o formulario de Login*/
 .forms-register{
@@ -31,10 +66,11 @@
 	align-items: center;
 }
 .Title-login{
-	font-size:  40px;
+	font-size:  2rem;
 }
 .SubTitle-login{
-	font-size: 30px;
+	font-size: 1.3rem;
+	font-weight: 500;
 }
 label{
 	font-size: 25px;

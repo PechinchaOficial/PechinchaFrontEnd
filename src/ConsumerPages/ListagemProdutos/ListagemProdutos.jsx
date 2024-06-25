@@ -12,19 +12,19 @@ import bannerc from '../../assets/img/bannerc.png'
 
 function ListagemProdutos() {
 
-    
+
     return (
         <div>
-            <HeaderConsumer/>
-        <main className={styles.prod_list}>
+            <HeaderConsumer />
+            <main className={styles.prod_list}>
                 <Banner bannerimg={imgBanner} bannerc={bannerc} />
                 <MercadosRegiao />
                 <CategoriaProduto categoria='Snacks' />
-                <Graos categoria='Grãos'/>
-                <Bebidas categoria="Bebidas"/>  
-                <Enlatados categoria="Enlatados"/>
-                <Massas categoria="Massas"/>
-        </main>
+                <Graos categoria='Grãos' />
+                <Bebidas categoria="Bebidas" />
+                <Enlatados categoria="Enlatados" />
+                <Massas categoria="Massas" />
+            </main>
         </div>
 
     )
