@@ -1,7 +1,7 @@
 import Styles from './CardCheckout.module.css'
 import { Link } from 'react-router-dom'
 
-function CardCheckout() {
+function CardCheckout({url}) {
     return (
         <div className={Styles.total}>
             <h2 className={Styles.container_titulo}>Resumo da compra</h2>
@@ -28,7 +28,7 @@ function CardCheckout() {
                 </div>
             </div>
 
-            <Link to='/checkoutpage'>
+            <Link to={url}>
                 <button className={Styles.btn}>
                     FINALIZAR PAGAMENTO
                 </button></Link>

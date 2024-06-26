@@ -49,7 +49,9 @@ function CheckoutPage(){
 
                             </div>
 
-                            <Card />
+                           
+                            <Card
+                            url='/readyproduct'/>
 
                         </div>
                     </section>

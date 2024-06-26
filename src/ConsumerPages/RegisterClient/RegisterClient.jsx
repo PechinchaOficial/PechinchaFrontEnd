@@ -1,23 +1,23 @@
 import Styles from './RegisterClient.module.css'
-import React from 'react';
+import React  from 'react';
 import { Link } from 'react-router-dom'
 
 
 function RegisterClient (){
 
-    const [usuario, setUsuario] = useState({
-        nome_usuario: '',
-        cpf_usuario: '',
-        senha_usuario: '',
-        email_usuario: '',
-        genero_usuario: '',
-        data_nasc_usuario: '',
-        data_registro_usuario: '',
-        plano_usuario: '',
-        permissao_usuario: '',
-        endereco_usuario: '',
-        foto_perfil_usuario: ''
-      });
+    // const [usuario, setUsuario] = useState({
+    //     nome_usuario: '',
+    //     cpf_usuario: '',
+    //     senha_usuario: '',
+    //     email_usuario: '',
+    //     genero_usuario: '',
+    //     data_nasc_usuario: '',
+    //     data_registro_usuario: '',
+    //     plano_usuario: '',
+    //     permissao_usuario: '',
+    //     endereco_usuario: '',
+    //     foto_perfil_usuario: ''
+    //   });
 
       
     return(

@@ -33,6 +33,8 @@ import MarketLogin from './MarketPages/Login/Login';
 import RegisterClient from './ConsumerPages/RegisterClient/RegisterClient';
 import CheckoutPage from './ConsumerPages/CheckoutPage/CheckoutPage';
 import FilterProducts from './ConsumerPages/ListagemProdutos/FilterProducts/FilterProducts';
+import ProductForm from './MarketPages/MarketSystem/ProductRegistration/RegisterTest';
+import ReadyProduct from './ConsumerPages/ReadyProduct/ReadyProduct';
 
 function RouterApp() {
     return (
@@ -73,6 +75,9 @@ function RouterApp() {
                 <Route path='/registerclient' element={<RegisterClient />} />
                 <Route path='/checkoutpage' element={<CheckoutPage />} />
                 <Route path='/filterProdcuts' element={<FilterProducts />} />
+                <Route path='/registerteste' element={<ProductForm />} />
+                <Route path='/readyProduct' element={<ReadyProduct />} />
+
             </Routes>
             <Footer />
         </Router>

@@ -39,7 +39,8 @@ function Cart() {
                                 </table>
                            
 
-                            <CardCheckout />
+                            <CardCheckout 
+                            url='/checkoutpage'/>
                         </div>
                     </section>
                 </div>
