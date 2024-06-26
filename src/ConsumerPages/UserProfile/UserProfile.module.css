@@ -179,3 +179,16 @@
     height: 100%;
     width: 100%;
 }
+
+/*Inicio do responsivo*/
+/*Tablet*/
+
+/**/
+@media screen and (max-width : 1240px)and (max-height:1366px) {
+    @media screen and (min-width: 778px) and (min-height: 1024px){
+    
+        .input_item input{
+            width: 100%;
+        }
+    }
+}
