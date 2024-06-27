@@ -108,20 +108,20 @@ function MarketSystem() {
                 </nav>
 
                 <main id="container">
-                    <div className={Styles.main}>
+                    <div className={Styles.main}>                       {/*Chamando os card de função*/}
                         <CardFunction texto="Cadastrar Produtos" />
                         <CardFunction texto="Análise de Dados" />
                         <CardFunction texto="Suporte Online" />
                         <CardFunction texto="Feedback Clientes" />
                         <CardFunction texto="Promoções Personalizadas" />
-                        <div className={Styles.container_table}>
-                            <h2 className={Styles.titulo_table}>Últimas movimentações</h2>
+
+                        <div className={Styles.container_table}>       {/*Container da tabela*/}
+                            <h2 className={Styles.titulo_table}>Últimas movimentações</h2>   {/*Chamando o componente tabela*/}
                             <Table
-                                classe={Styles.table}
+                                classe={Styles.table}              
                             />
                         </div>
                     </div>
-
                 </main>
             </div>
         </div>

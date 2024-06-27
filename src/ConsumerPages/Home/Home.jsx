@@ -214,7 +214,7 @@ function Home() {
 
                 <div id="background">
                     <section className={styles.section_rate} id='container'>
-                        <h2 className={styles.title} id={styles.title_rate}>{t("O QUE ESTÃO COMENTANDO SOBRE A")}<span className={styles.destaque}>PECHINCHA</span></h2>
+                        <h2 className={styles.title} id={styles.title_rate}>{t("O QUE ESTÃO COMENTANDO SOBRE A")}<span className={styles.destaque}> PECHINCHA</span></h2>
                         <div className={styles.rate_section} id='container'>
 
                             <img src={rateimg} alt="Avaliação" className={styles.img_person} />

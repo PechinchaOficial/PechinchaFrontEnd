@@ -8,7 +8,7 @@ function TableMarket({classe}){
         <div className={Styles.container}>
     <table className={classe}>
         <thead className={Styles.cabeçalho}>
-            <tr>
+            <tr>                                                       {/*Nomes das colunas */}
                 <th className={Styles.coluna}>ID</th>
                 <th className={Styles.coluna}>Nome</th>
                 <th className={Styles.coluna}>Descrição</th>
@@ -21,41 +21,41 @@ function TableMarket({classe}){
             <tr>
                 <td className={Styles.atributo}>#000</td>
                 <td className={Styles.atributo}>Arroz Camil</td>
-                <td className={Styles.atributo}>Arroz Especial para Risoto Camil 1Kg</td>
+                <td className={Styles.atributo}>Arroz Especial para Risoto Camil 1Kg</td>           {/*Conteudo da tabela*/}
                 <td className={Styles.atributo}>04/07/2024</td>
 				<td className={Styles.atributo}>Snack</td>
 				<td className={Styles.atributo}> <div className={Styles.container_bts}>
-                    <Btn imagem={Create} texto="Editar" classe={Styles.edite}container={Styles.container_img_1} /> <Btn imagem={Cancel} texto="Excluir" classe={Styles.delete}container={Styles.container_img_2}/>
+                    <Btn imagem={Create} texto="Editar" classe={Styles.edite}container={Styles.container_img_1} /> <Btn imagem={Cancel} texto="Excluir" classe={Styles.delete}container={Styles.container_img_2}/> {/*Chamando os bts de editar e excluir*/}
                 </div></td>
             </tr>
             <tr>
                 <td className={Styles.atributo}>#000</td>
                 <td className={Styles.atributo}>Feijão Camil</td>
-                <td className={Styles.atributo}>Feijão Carioca Tipo 1 Camil 1kg</td>
+                <td className={Styles.atributo}>Feijão Carioca Tipo 1 Camil 1kg</td>    {/*Conteudo da tabela*/}
                 <td className={Styles.atributo}>04/07/2024</td>
 				<td className={Styles.atributo}>Snack</td>
 				<td className={Styles.atributo}><div className={Styles.container_bts}>
-                    <Btn imagem={Create} texto="Editar" classe={Styles.edite}container={Styles.container_img_1} /> <Btn imagem={Cancel} texto="Excluir" classe={Styles.delete}container={Styles.container_img_2}/>
+                    <Btn imagem={Create} texto="Editar" classe={Styles.edite}container={Styles.container_img_1} /> <Btn imagem={Cancel} texto="Excluir" classe={Styles.delete}container={Styles.container_img_2}/> {/*Chamando os bts de editar e excluir*/}
                 </div></td>
             </tr>
             <tr>
                 <td className={Styles.atributo}>#000</td>
-                <td className={Styles.atributo}>Salgadinho Cheetos</td>
+                <td className={Styles.atributo}>Salgadinho Cheetos</td>  {/*Conteudo da tabela*/}
                 <td className={Styles.atributo}>Salgadinho de Milho Onda Requeijão Elma Chips 	Cheetos  75g</td>
                 <td className={Styles.atributo}>04/07/2024</td>
 				<td className={Styles.atributo}>Snack</td>
-				<td className={Styles.atributo}><div className={Styles.container_bts}>
-                    <Btn imagem={Create} texto="Editar" classe={Styles.edite}container={Styles.container_img_1} /> <Btn imagem={Cancel} texto="Excluir" classe={Styles.delete}container={Styles.container_img_2}/>
+				<td className={Styles.atributo}><div className={Styles.container_bts}> 
+                    <Btn imagem={Create} texto="Editar" classe={Styles.edite}container={Styles.container_img_1} /> <Btn imagem={Cancel} texto="Excluir" classe={Styles.delete}container={Styles.container_img_2}/>{/*Chamando os bts de editar e excluir*/}
                 </div></td>
             </tr>
             <tr>
                 <td className={Styles.atributo}>#000</td>
                 <td className={Styles.atributo}>Torrada Bauducco</td>
-                <td className={Styles.atributo}>Torrada Tradicional Bauducco 142g</td>
+                <td className={Styles.atributo}>Torrada Tradicional Bauducco 142g</td>  {/*Conteudo da tabela*/}
                 <td className={Styles.atributo}>04/07/2024</td>
 				<td className={Styles.atributo}>Snack</td>
 				<td className={Styles.atributo}><div className={Styles.container_bts}>
-                    <Btn imagem={Create} texto="Editar" classe={Styles.edite}container={Styles.container_img_1} /> <Btn imagem={Cancel} texto="Excluir" classe={Styles.delete}container={Styles.container_img_2}/>
+                    <Btn imagem={Create} texto="Editar" classe={Styles.edite}container={Styles.container_img_1} /> <Btn imagem={Cancel} texto="Excluir" classe={Styles.delete}container={Styles.container_img_2}/> {/*Chamando os bts de editar e excluir*/}
                 </div></td>
             </tr>
         </tbody>

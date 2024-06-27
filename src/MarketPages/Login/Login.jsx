@@ -23,12 +23,12 @@ function MarketLogin() {
 
                     <form action='' className={Styles.new_forms} id='code-forms' >
                         <label htmlFor="">E-mail</label>
-                        <input type="email" placeholder='Digite seu Email' className={Styles.email} />
+                        <input type="email" placeholder='Digite seu Email' className={Styles.email} />  {/*Input para o email do mercado*/}
 
                         <label htmlFor="">Senha</label>
-                        <input type="password" placeholder='Digite sua senha' className={Styles.email} />
+                        <input type="password" placeholder='Digite sua senha' className={Styles.email} /> {/*Input para a senha do mercado*/}
 
-                        <Link to="/marketsystem" ><button onClick={scrollToTop}>ENTRAR</button></Link>
+                        <Link to="/marketsystem" ><button onClick={scrollToTop}>ENTRAR</button></Link> {/*Btn para entrar no sistema do mercado*/}
 
                         <p className={Styles.new_password}>Esqueceu sua senha? <Link to="/recover">Recupere aqui</Link></p>
                         <p className={Styles.new_password}>Não possui cadastro? <Link to="/registermarket">Clique aqui</Link></p>

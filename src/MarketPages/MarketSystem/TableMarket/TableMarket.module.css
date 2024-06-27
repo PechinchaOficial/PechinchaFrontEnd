@@ -102,8 +102,10 @@
     width: 27px;
     height: 24px;
     margin-left: 10px;
-}
+}                                                 /*Estilo dos bts*/
 
+
+/*Responsivo*/
 @media screen and (max-width: 420px) {
     .container {
         overflow: auto;
