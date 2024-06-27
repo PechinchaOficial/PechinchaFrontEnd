@@ -224,7 +224,7 @@
 
 .passo:hover {
     transform: translateY(-3px);
-    background-color:  var(--azul);
+    background-color: var(--azul);
     color: #FFF;
 }
 
@@ -516,169 +516,203 @@
     font-size: 1.6rem;
 }
 
-.img_temp{
+.img_temp {
     position: relative;
 }
-.img_temp h1{
-color: #fff;
-font-size: 3.3rem;
-position: absolute;
-top: 45px;
-left: 250px;
+
+.img_temp h1 {
+    color: #fff;
+    font-size: 3.3rem;
+    position: absolute;
+    top: 45px;
+    left: 250px;
 }
 
-.img_temp h2{
+.img_temp h2 {
     color: var(--vermelho);
-font-size: 4rem;
-position: absolute;
-top: 180px;
-left: 220px;
-font-family: offer;
-letter-spacing: 7px;
+    font-size: 4rem;
+    position: absolute;
+    top: 180px;
+    left: 220px;
+    font-family: offer;
+    letter-spacing: 7px;
 }
 
-.img_logo2{
+.img_logo2 {
     margin-left: 30px;
     height: 300px;
 }
 
-@media screen and (max-width: 925px) {
-
-    .star,
-    .star_2 {
-        height: 200px;
-    }
-
-    .img_person {
-        display: none;
-    }
-
-    .container_rate {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-
-    }
-
-    .rate_card {
-        flex: none;
-    }
-
-    .step_img {
-        height: 100px;
-    }
-
-    .boxRight {
-        display: none;
-    }
-
-    .passos {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .container_content {
-        padding: 20px 10px 50px 10px;
-    }
-
-    .desc {
-        padding: 10px;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-
-    .slogan_subtitle {
-        display: none;
-    }
-
-    .img_logo {
-        display: none;
-    }
+.container_slogan {
+    display: flex;
+}
 
 
-    .search {
-        width: 85%;
-    }
 
-    .star,
-    .star_2 {
-        display: none;
-    }
-
-    .hero_section {
-        padding: 180px 0px 10px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .subtitle {
-        font-size: 1.4rem;
-    }
-
-    .container_mercados {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-    }
-
-    .categorySection {
-        border-radius: 20px 20px 0px 0px;
-        padding: 20px;
-
-    }
-
-    .search {
-        height: 100px;
-    }
-
-    .search_bar {
-        height: 55px;
-    }
-
-    .search_bar::placeholder {
-        font-size: 1.3rem;
-    }
-
-    .btn_bar {
-        height: 50px;
-        width: 80px;
-        border-radius: 20px;
-        top: 3px;
-    }
-
-    .container_perguntas{
-        width: 100%;
-    }
-
-    .pergunta h3{
-        font-size: 1rem;
-    }
-
-    .card_mercado{
-        height: 250px;
-        width: 400px;
-    }
     
-    .logo_mercado{
-        height: 40px;
-    }
 
-    .btn{
-        font-size: 1rem;
-    }
 
-    #marketThree{
-        width: 500px;
+@media screen and (min-width: 732px) {
+    @media screen and (max-width: 925px) {
+
+        .star,
+        .star_2 {
+            height: 200px;
+        }
+    
+        .img_person {
+            display: none;
+        }
+    
+        .container_rate {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+    
+        }
+    
+        .rate_card {
+            flex: none;
+        }
+    
+        .step_img {
+            height: 100px;
+        }
+    
+        .boxRight {
+            display: none;
+        }
+    
+        .passos {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .container_content {
+            padding: 20px 10px 50px 10px;
+        }
+    
+        .desc {
+            padding: 10px;
+        }
+    
+        .title {
+            font-size: 2rem;
+        }
+    
+        .slogan_subtitle {
+            display: none;
+        }
+    
+        .img_logo {
+            display: none;
+        }
+    
+        .img_logo2 {
+            width: 700px;
+        }
+    
+        .img_logo2 {
+            display: flex;
+        }
+    
+        .container_slogan h1 {
+            font-size: 3rem;
+            margin-top: 10px;
+            top: 60px;
+            right: 30px;
+            margin-left: -70px;
+        }
+    
+        .container_slogan h2{
+            font-size: 3rem;
+            margin-left: -70px;
+    
+        }
+    
+    
+        .search {
+            width: 85%;
+        }
+    
+        .star,
+        .star_2 {
+            display: none;
+        }
+    
+        .hero_section {
+            padding: 180px 0px 10px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .subtitle {
+            font-size: 1.4rem;
+        }
+    
+        .container_mercados {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+        }
+    
+        .categorySection {
+            border-radius: 20px 20px 0px 0px;
+            padding: 20px;
+    
+        }
+    
+        .search {
+            height: 100px;
+        }
+    
+        .search_bar {
+            height: 55px;
+        }
+    
+        .search_bar::placeholder {
+            font-size: 1.3rem;
+        }
+    
+        .btn_bar {
+            height: 50px;
+            width: 80px;
+            border-radius: 20px;
+            top: 3px;
+        }
+    
+        .container_perguntas {
+            width: 100%;
+        }
+    
+        .pergunta h3 {
+            font-size: 1rem;
+        }
+    
+        .card_mercado {
+            height: 250px;
+            width: 400px;
+        }
+    
+        .logo_mercado {
+            height: 40px;
+        }
+    
+        .btn {
+            font-size: 1rem;
+        }
+    
+        #marketThree {
+            width: 500px;
+        }
     }
 }
 

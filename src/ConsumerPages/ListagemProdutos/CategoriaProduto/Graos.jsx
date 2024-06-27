@@ -3,8 +3,8 @@ import CardProduto from '../../../components/CardProduto/CardProduto';
 import styles from './CategoriaProduto.module.css';
 import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
 import { GetProduto } from '../../../services/ProdutoService';
-
-function Graos({ categoria }) {
+import localData from '../../../assets/data/localData'
+function Graos({ categoria, category }) {
     const carousel = useRef(null);
     const [products, setProducts] = useState([]);
 
@@ -18,49 +18,64 @@ function Graos({ categoria }) {
             setProducts(response.data.content);
         } catch (error) {
             console.error("Erro ao buscar produtos", error);
-        }
-    };
+            // Carregando dados localmente
+            setTimeout(() => {
+                setProducts(localData);
+            }, 1000);
+            console.error('Erro ao buscar produtos localmente:', error);
+        
+    }
+};
 
-    const handleLeftClick = (e) => {
-        e.preventDefault();
-        carousel.current.scrollLeft -= carousel.current.offsetWidth;
-    };
+const handleLeftClick = (e) => {
+    e.preventDefault();
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+};
 
-    const handleRightClick = (e) => {
-        e.preventDefault();
-        carousel.current.scrollLeft += carousel.current.offsetWidth;
-    };
+const handleRightClick = (e) => {
+    e.preventDefault();
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
+};
 
-    return (
-        <section className={styles.categoria_produto} id='container'>
-            <div className={styles.title}>
-                <div className={styles.categoria}>
-                    <i className="fa-solid fa-store"></i>
-                    <h2>{categoria}</h2>
-                </div>
+// Filtrar os produtos que contêm a palavra "Leite" no nome
+const filteredProducts = products.filter((produto) =>
+    produto.nome.toLowerCase().includes(category.toLowerCase())
+);
 
+
+return (
+    <section className={styles.categoria_produto} id='container'>
+        <div className={styles.title}>
+            <div className={styles.categoria}>
+                <i className="fa-solid fa-store"></i>
+                <h2>{categoria}</h2>
+            </div>
+
+            <Link to='/filterproducts'>
                 <button className={styles.btn_show_more}>
                     MOSTRAR MAIS
                 </button>
-            </div>
+            </Link>
+        </div>
 
-            <div className={styles.carousel_prod} ref={carousel}>
-                {products.map(({ id, nome, datavalidade, preco, desconto }) => (
-                    <Link key={id} to={`/produto/${id}`} className={styles.productLink}>
-                        <CardProduto
-                            name={nome}
-                            dateVenc={datavalidade}
-                            price={preco}
-                            discount={desconto}
-                        />
-                    </Link>
-                ))}
-            </div>
+        <div className={styles.carousel_prod} ref={carousel}>
+            {filteredProducts.map(({ id, nome, datavalidade, preco, desconto, fotoproduto }) => (
+                <Link key={id} to={`/produto/${id}`} className={styles.productLink}>
+                    <CardProduto
+                        name={nome}
+                        dateVenc={datavalidade}
+                        price={preco}
+                        discount={desconto}
+                        img={fotoproduto}
+                    />
+                </Link>
+            ))}
+        </div>
 
-            <button className={styles.btn_carousel} onClick={handleLeftClick} id={styles.left}><i className="fa-solid fa-chevron-left"></i></button>
-            <button className={styles.btn_carousel} onClick={handleRightClick} id={styles.right}><i className="fa-solid fa-chevron-right"></i></button>
-        </section>
-    );
+        <button className={styles.btn_carousel} onClick={handleLeftClick} id={styles.left}><i className="fa-solid fa-chevron-left"></i></button>
+        <button className={styles.btn_carousel} onClick={handleRightClick} id={styles.right}><i className="fa-solid fa-chevron-right"></i></button>
+    </section>
+);
 }
 
 export default Graos;

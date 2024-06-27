@@ -1,9 +1,10 @@
+import React, { useEffect, useState } from 'react';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 import CategoriaProduto from '../ListagemProdutos/CategoriaProduto/CategoriaProduto';
 import Styles from './Product.module.css';
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 import { GetProdutoById } from '../../services/ProdutoService'; // Supondo que você tenha um serviço para obter detalhes do produto
+import localData from '../../assets/data/localData';
 
 function Product() {
     const { id } = useParams();
@@ -20,6 +21,7 @@ function Product() {
             setProduto(response.data); // Define os detalhes do produto no estado local
         } catch (error) {
             console.error("Erro ao buscar produto", error);
+            setProduto(localData); // Carrega dados locais em caso de erro
         }
     };
 
@@ -42,12 +44,12 @@ function Product() {
                     <div className={Styles.BackProducts}>
                         <article className={Styles.BoxLeft}>
                             <div className={Styles.Box1}>
-                                <img src={produto.imagem} alt="imagem do produto" className={Styles.img_product_2} />
+                                <img src={produto.fotoproduto} alt="imagem do produto" className={Styles.img_product_2} />
                             </div>
                         </article>
                         <article className={Styles.BoxRight}>
                             <div className={Styles.Box2}>
-                                <img src={produto.imagem} alt="imagem do produto" className={Styles.img_product} />
+                                <img src={produto.fotoproduto} alt="imagem do produto" className={Styles.img_product} />
                             </div>
                         </article>
                     </div>
@@ -61,7 +63,7 @@ function Product() {
                                 <div className={Styles.DateValue}>
                                     <div className={Styles.BoxdateValue}>
                                         <h4 className={Styles.Date}> Vence: {produto.datavalidade} </h4>
-                                        <h2 className={Styles.Value}>R$ {produto.preco.toFixed(2)} </h2>
+                                        <h2 className={Styles.Value}>R$ {produto.preco} </h2>
                                     </div>
                                     <div className={Styles.BoxDesc}>
                                         <div className={Styles.Desc}>
@@ -90,7 +92,7 @@ function Product() {
                         </article>
                     </div>
                 </article>
-                <CategoriaProduto categoria="Produtos relacionados" />
+                {produto && <CategoriaProduto categoria="Produtos relacionados" />}
             </main>
         </div>
     );

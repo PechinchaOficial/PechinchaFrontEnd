@@ -23,8 +23,8 @@ const bebidas = [
 
     {
         id: 2,
-        img: `${leite_ninho_2}`,
-        name: 'Leite Ninho',
+        img: `https://static.clubeextra.com.br/img/uploads/1/641/23681641.jpg`,
+        name: 'Cheetos',
         price: '7,50',
         dateVenc: '2/9/2024',
         qtdUnit: '27',
@@ -33,8 +33,8 @@ const bebidas = [
 
     {
         id: 3,
-        img: `${leite_piracanjuba}`,
-        name: 'Leite Piracanjuba',
+        img: `https://io.convertiez.com.br/m/superpaguemenos/shop/products/images/33256/medium/milho-verde-quero-lata-170g_90062.png`,
+        name: 'Milho',
         price: '9,90',
         dateVenc: '1/1/2025',
         qtdUnit: '25',
@@ -53,8 +53,8 @@ const bebidas = [
 
     {
         id: 5,
-        img: `${cafeMelita}`,
-        name: 'Café Melita',
+        img: `https://andinacocacola.vtexassets.com/arquivos/ids/157688/114439_COCA-%E2%80%93-DVNecUva290ml.jpg?v=638404186424630000`,
+        name: 'Suco',
         price: '9,90',
         dateVenc: '17/11/2024',
         qtdUnit: '25',
@@ -63,8 +63,8 @@ const bebidas = [
 
     {
         id: 6,
-        img: `${suco_laranja}`,
-        name: 'Suco de laranja Ades',
+        img: `https://mezzani.com.br/wp-content/uploads/2019/04/tagliatelle-500g_mezzani-01.jpg}`,
+        name: 'Macarrão mezzani',
         price: '12,90',
         dateVenc: '06/07/2024',
         qtdUnit: '8',

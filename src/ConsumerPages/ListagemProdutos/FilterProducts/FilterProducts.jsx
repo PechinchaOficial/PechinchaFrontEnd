@@ -10,17 +10,35 @@ import Graos from '../CategoriaProduto/Graos';
 import { Link } from 'react-router-dom';
 import Produtos from '../../../assets/data/bebidasData';
 import React from 'react';
+import { useState, useEffect } from 'react';
+import { GetProduto } from '../../../services/ProdutoService';
+import localData from '../../../assets/data/localData'
 
 function FilterProducts() {
-    const [search, setSearch] = React.useState('');
-    console.log(search);
+    const [products, setProducts] = useState([]);
 
-    const searchLowerCase = search.toLowerCase()
+    useEffect(() => {
+        fetchProducts();
+    }, []);
 
-    const products = Produtos.filter((produto) => produto.name.toLocaleLowerCase().includes(searchLowerCase)
+    const fetchProducts = async () => {
+        try {
+            const response = await GetProduto();
+            setProducts(response.data.content);
+        } catch (error) {
+            setTimeout(() => {
+                console.error("Erro ao buscar produtos", error);
+                setProducts(localData)
+            }, 1000)
+        }
+    };
 
-        // || produto.preco.toLocaleLowerCase().includes(searchLowerCase)  também filtro por preco ou qualquer coisa que eu quiser
-    )
+
+    // Filtrar os produtos que contêm a palavra "Leite" no nome
+
+
+
+
 
     return (
         <div>
@@ -29,22 +47,21 @@ function FilterProducts() {
 
                 <header className={styles.header_filter}>
                     <Link to='/listagem'> <i class="fa-solid fa-angle-left"></i> Continuar comprando</Link>
-                    <h2 className={styles.title}>Resultados da pesquisa</h2>
-                    <input type="search"
-                        value={search}
-                        onChange={(e) => setSearch(e.target.value)} />
+                    <h2 className={styles.title}>Todos os produtos</h2>
+
                 </header>
 
                 <div className={styles.container_prod}>
 
-                    {products.map(({ name, id, qtdUnit, discount, price, dateVenc, img }) => (
-                        <CardProduto key={name}
-                            name={name}
-                            img={img}
-                            qtdUnit={qtdUnit}
-                            price={price}
-                            discount={discount}
-                            dateVenc={dateVenc} />
+                    {products.map(({ id, nome, datavalidade, preco, desconto, fotoproduto }) => (
+                        <Link key={id} to={`/produto/${id}`} className={styles.productLink}>
+                            <CardProduto key={nome}
+                                name={nome}
+                                dateVenc={datavalidade}
+                                price={preco}
+                                discount={desconto}
+                                img={fotoproduto} />
+                        </Link>
                     )
                     )}
 
