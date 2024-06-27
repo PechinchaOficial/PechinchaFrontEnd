@@ -100,12 +100,14 @@
     gap: 10px;
     justify-content: space-between;
     flex-wrap: wrap;
+  
 }
 
 .input_item{
     display: flex;
     flex-direction: column;
     width: 100%;
+ 
 }
 
 .input_item label{
@@ -120,6 +122,7 @@
 	border-radius: 5px;
 	padding: 10px;
     outline: none;
+
 }
 
 #flex{
@@ -179,3 +182,52 @@
     height: 100%;
     width: 100%;
 }
+
+/*Inicio do responsivo*/
+/*Tablet*/
+
+/*IPAD, IPAD mini, IPAD PRO, Nexus 10*/
+@media screen and (max-width: 1240px) and (max-height: 1366px) {
+    #flex {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 601px) and (min-height: 961px) {
+    #flex {
+        width: 100%;
+    }
+    
+}
+
+/*Nexus 7*/
+@media screen and (max-width: 600px) and (max-height: 960px) {
+    #flex {
+        width: 100%;
+    }
+    .side_bar h3{
+        display: none;
+    }
+    .side_bar{
+        width: 10%;
+    }
+    .side_bar ul li a{
+        display: none;
+    }
+}
+
+/*note 3, galaxy S20, Note 20, */
+@media screen and (max-width: 374px){
+    .side_bar{
+        display: none;
+    }
+    .user_content h2{
+        font-size: 21px;
+    }
+}
+
+
+
+/**/
+
