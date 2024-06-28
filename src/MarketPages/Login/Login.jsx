@@ -11,16 +11,21 @@ function MarketLogin() {
     return (
         <main className={Styles.new} >
 
-            <section className={Styles.container_new} id='container-code' >
+{/* Container branco da tela de login do mercado */}
+            <section className={Styles.container_new} id='container-code' > 
 
+{/* Div com a logo da pechincha dentro dela */}
                 <div className={Styles.logo}>
                     <img src={logo} alt="" />
                 </div> 
 
+{/* Titulos do formulario */}
                 <div className={Styles.forms_new} id='forms-code' >
                     <h2>Área do mercado</h2>
                     <p className={Styles.new_p}>Faça seu login para continuar</p>
 
+
+{/* Inicio dos formularios */}
                     <form action='' className={Styles.new_forms} id='code-forms' >
                         <label htmlFor="">E-mail</label>
                         <input type="email" placeholder='Digite seu Email' className={Styles.email} />  {/*Input para o email do mercado*/}
@@ -28,6 +33,7 @@ function MarketLogin() {
                         <label htmlFor="">Senha</label>
                         <input type="password" placeholder='Digite sua senha' className={Styles.email} /> {/*Input para a senha do mercado*/}
 
+{/* Botao com o link que da acesso ao mercado com seu sistema */}
                         <Link to="/marketsystem" ><button onClick={scrollToTop}>ENTRAR</button></Link> {/*Btn para entrar no sistema do mercado*/}
 
                         <p className={Styles.new_password}>Esqueceu sua senha? <Link to="/recover">Recupere aqui</Link></p>
@@ -36,7 +42,7 @@ function MarketLogin() {
                         
 
                     </form>
-
+{/* Fim do formulario */}
                 </div>
 
             </section>

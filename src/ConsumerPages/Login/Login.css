@@ -172,6 +172,7 @@ label{
 	border-bottom-left-radius:  40px;
 }
 
+/*Titulo do banner lateral*/
 .title-banner-login{
 	color: white;
 	font-size:  40px;
@@ -300,7 +301,7 @@ label{
 	}
 }
 
-/*IPAD PRO Horizontal */
+/*IPAD PRO, virado na horizontal */
 @media screen and (min-width: 1024px) and (min-height: 1366px){
 	.container-login{
 		width:  90%; 
