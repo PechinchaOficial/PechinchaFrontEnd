@@ -23,11 +23,14 @@ function RegisterClient (){
     return(
 
         <main className='background_login'>
+
+{/* Banner na lateral do formulario do cliente  */}
+
             <section  className={Styles.container_register_client}> 
 
             <div className={Styles.banner_register}>
 
-            <h2 className={Styles.title_banner_register}>Veio Pechinchar?</h2>
+            <h2 className={Styles.title_banner_register}>Veio Pechinchar ?</h2>
             <p className={Styles.text_banner_register}>Caso já tenha uma conta clique abaixo e tenha acesso a todos os recursos</p>
 
             <Link to="/login">
@@ -37,35 +40,41 @@ function RegisterClient (){
             </div>
 
             <div className={Styles.forms_register_client}>
-                
+             
+              {/* Inicio de Formulario de cadastro do cliente */}
+
                     <form action="" className={Styles.forms_register}>
                         <h2 className={Styles.title_register}>Crie sua conta</h2>
                         <h3 className={Styles.sub_title_register}>Preencha todos os campos</h3>
 
                         <label htmlFor="">Nome</label>
-                        <input type="text" placeholder='Digite seu nome' />
+                        <input type="text" placeholder='Digite seu nome' />{/*Input com o nome do usuario */}
 
                         <label htmlFor="">E-mail</label>
-                        <input type="email" placeholder='Digite seu E-mail' />
+                        <input type="email" placeholder='Digite seu E-mail' />{/*Input com o email do usuario */}
 
                         <label htmlFor="">Senha</label>
-                        <input type="password" placeholder='Digite sua senha'/>
+                        <input type="password" placeholder='Digite sua senha'/>{/*Input com a senha do usuario*/}
 
                         <label htmlFor="">Confirmar Senha</label>
-                        <input type="password" placeholder='Confirme sua senha'/>
+                        <input type="password" placeholder='Confirme sua senha'/>{/*Input para confirmar a senha do usario*/}
 
+{/* botão que leva para a pagina de cadastro do cliente */}
                         <Link to='/listagem'>
                          <button>
                             CADASTRAR
                         </button> 
                         </Link>
 
+            {/* Botão que faz o login do usuario */}
                         <Link to="/login">
                             <button className={Styles.register_client_button}>ENTRAR</button>
                         </Link>
 
                         <p className={Styles.polici_privacy}>Ao continuar com o acesso você concorda com a nossa<a href="#"> politica de privacidade</a></p>
                     </form>
+
+                    {/* Fim do formulario */}
             </div>
 
            

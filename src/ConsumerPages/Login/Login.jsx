@@ -51,17 +51,23 @@ function Login() {
                     {welcomeMessage}
                 </div>
             )}
-            <section className='container-login'>
+
+       {/*Div Container do formulario de login */}
+            <section className='container-login'>  
                 <div className='forms-register'>
+
+                    {/* Titulos do formulario de login */}
                     <h2 className='Title-login'>Entre com a sua conta</h2>
                     <h3 className='SubTitle-login'>Preencha todos os campos</h3>
 
+
+                    {/* inicio do formulario de login */}
                     <form onSubmit={handleLogin} className='forms-login'>
                         <label className='Label-login'>Email</label>
-                        <input value={login} onChange={(e) => setLogin(e.target.value)} type="text" placeholder='Digite seu Email' />
+                        <input value={login} onChange={(e) => setLogin(e.target.value)} type="text" placeholder='Digite seu Email' /> {/*Input com o email do usuario */}
 
                         <label className='Label-login'>Senha</label>
-                        <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} placeholder='Digite sua senha' />
+                        <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} placeholder='Digite sua senha' />{/*Input com a senha do usuario */}
 
                         {error && <p className='error-message' id='error'>{error}</p>} {/* Mostrar mensagem de erro se houver */}
 
@@ -69,13 +75,18 @@ function Login() {
 
                         <button type='submit'>ENTRAR</button>
                         <Link to="/registerclient">
-                            <button type='button' className='register-client'>CADASTRAR</button>
+                            <button type='button' className='register-client'>CADASTRAR</button>                                                        
+                                {/*Botao de cadastro, esse botao so aparece quando a tela    está responsiva para celular, mas para computador está com um display none */}
                         </Link>
 
                         <p className='privacy-policy'>Ao continuar com o acesso você concorda com a nossa <a href="#">política de privacidade</a></p>
                     </form>
+                    {/* Fim do formulario de login */}
+
                 </div>
 
+                
+                {/* Banner lateral da tela de login do usuario */}
                 <div className='banner-login'>
                     <h2 className='title-banner-login'>Bem vindo de volta!</h2>
                     <p className='text-banner'>Clique abaixo caso ainda não tenha uma conta e aproveite de todas as funções</p>

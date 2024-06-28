@@ -7,6 +7,9 @@
     align-items: center;
     justify-content: center;
 }
+
+
+
 /*Estilizando o Banner*/
 .banner_register{
     height: 600px;
@@ -26,7 +29,7 @@
 	border-top-right-radius:  40px;
 	border-bottom-right-radius:  40px;
 }
-
+/*Titulo do Bannner*/
 .title_banner_register{
     color: white;
 	font-size:  40px;
@@ -37,6 +40,7 @@
     text-align: center;
 	color: white;
 }
+
 /*Estilizando o botao do banner*/
 .banner_register button{
     background-color:  transparent;
@@ -79,11 +83,15 @@
 	justify-content: center;
 	align-items: center;
 }
+
+/*Titulo do Formulario de registro*/
 .title_register{ 
     font-size: 40px;
     text-align: center;
 
 }
+
+/*Subtitulo do formulario de registro*/
 .sub_title_register{
     font-size: 25px;
     text-align: center;
@@ -102,6 +110,7 @@ label{
 	width:  90%;
 }
 
+
 /*Estilizando os input*/
 .forms_register input{
     width: 100%;
@@ -118,6 +127,7 @@ label{
 	font-size:  18px;
 }
 
+/*Estilizando o botão do formulario*/
 .forms_register button{
     margin-top: 15px;
 	width: 100%;
