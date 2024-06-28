@@ -28,7 +28,6 @@ import AboutUsSemLogin from './ConsumerPages/AboutUs/AboutUsSemLogin';
 import ListagemDeslogado from './ConsumerPages/ListagemProdutos/ListagemDeslogado';
 import HomeMarketDeslogado from './MarketPages/Home/HomeMarketDeslogado';
 import UserProfile from './ConsumerPages/UserProfile/UserProfile';
-import Usertype from './ConsumerPages/UserType/UserType';
 import MarketLogin from './MarketPages/Login/Login';
 import RegisterClient from './ConsumerPages/RegisterClient/RegisterClient';
 import CheckoutPage from './ConsumerPages/CheckoutPage/CheckoutPage';
@@ -71,9 +70,8 @@ function RouterApp() {
                 <Route path='/homemarketdeslogado' element={<HomeMarketDeslogado />} />
 
                 <Route path='/userprofile' element={<UserProfile />} />
-                <Route path='/usertype' element={<Usertype />} />
                 <Route path='/marketlogin' element={<MarketLogin />} />
-                <Route path='/registerclient' element={<RegisterClient />} />
+                <Route path='/rclientegister' element={<RegisterClient />} />
                 <Route path='/checkoutpage' element={<CheckoutPage />} />
                 <Route path='/filterProducts' element={<FilterProducts />} />
                 <Route path='/registerteste' element={<UserForm />} />
