@@ -347,8 +347,8 @@
 
 .results {
     height: auto;
-    max-height: 450px;
-    width: 40%;
+    max-height: 250px;
+    width: 30%;
     background-color: #fff;
     position: absolute;
     overflow: auto;
@@ -357,11 +357,15 @@
     z-index: 2;
 }
 
+.prod_data h2{
+font-size: 1rem;
+}
+
 .img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 100px;
     height: 100%;
     
 }
@@ -377,11 +381,12 @@
     gap: 20px;
     list-style: none;
     height: auto;
-    border-bottom: 0.5px solid rgba(190, 190, 190, 0.384);
+    border: 0.5px solid rgba(219, 219, 219, 0.48);
     padding: 20px;
     cursor: pointer;
     align-items: center;
-    background-color: #f3f3f3;
+    background-color: #fff;
+    border-radius: 0px 10px 10px 10px;
 }
 
 .btn_buy{

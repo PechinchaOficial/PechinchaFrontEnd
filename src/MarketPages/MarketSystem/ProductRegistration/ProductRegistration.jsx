@@ -53,6 +53,7 @@ function MarketSystem({ imagem, classe }) {
         preco: '',
         desconto: '',
         datavalidade: '',
+        fotoproduto: '',
         datacadastro: new Date().toISOString().split('T')[0]
     });
 
@@ -191,6 +192,19 @@ function MarketSystem({ imagem, classe }) {
                                             }}
                                             onClick={ShowResults}
                                         />
+{/* 
+                                        <input
+                                            type="text"
+                                            name="fotoproduto"
+                                            placeholder="imagem"
+                                            className={Styles.input_long}
+                                            value={produto.fotoproduto}
+                                            onChange={(e) => {
+                                                handleChange(e);
+                                                setSearch(e.target.value);
+                                            }}
+                                            onClick={ShowResults}
+                                        /> */}
                                         <div className={Styles.results} ref={results} onMouseLeave={HiddenResults}>
                                             <ul>
                                                 {filteredProducts.map(({ name, id, dateVenc, img }) => (
@@ -203,11 +217,7 @@ function MarketSystem({ imagem, classe }) {
                                                                 <h2>{name}</h2>
                                                                 <p>Validade: {dateVenc}</p>
                                                             </div>
-                                                            <Link to='/cart'>
-                                                                <button className={Styles.btn_buy} onClick={scrollToTop}>
-                                                                    ADICIONAR
-                                                                </button>
-                                                            </Link>
+
                                                         </div>
                                                     </li>
                                                 ))}
@@ -226,10 +236,14 @@ function MarketSystem({ imagem, classe }) {
                                         <input
                                             className={Styles.input_long}
                                             type="text"
-                                            name="imagem"
+                                           name="fotoproduto"
                                             placeholder="img"
-                                            value={imgUrl}
+                                            value={produto.fotoproduto = imgUrl}
                                             readOnly
+                                            onChange={(e) => {
+                                                handleChange(e);
+                                                setSearch(e.target.value);
+                                            }}
                                         />
                                         <div className={Styles.inputs}>
                                             <div className={Styles.input}>
