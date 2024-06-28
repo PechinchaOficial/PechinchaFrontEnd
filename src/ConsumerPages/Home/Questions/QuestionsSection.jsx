@@ -1,42 +1,70 @@
-import TituloFormato from '../../../components/TituloFormato/TituloFormato'
-import styles from './QuestionsSection.module.css'
+import React, { useRef } from 'react';
+import styles from './QuestionsSection.module.css';
 
-function Perguntas(){
-    return(
-        <div id="background">
-        <section className={styles.perguntas} id='container'>
-            <TituloFormato
-            categoria='Perguntas frequentes'/>
-            <div className={styles.container_perguntas}>
-                <div className={styles.pergunta}>
-                    <h3>A Pechincha é um App de descontos?</h3>
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </div>
+const Pergunta = ({ perguntaTexto, respostaTexto }) => {
+  const perguntaRef = useRef(null);
+  const arrowRightRef = useRef(null);
+  const arrowDownRef = useRef(null);
 
-                <div className={styles.pergunta}>
-                    <h3>A Pechincha é um App de descontos?</h3>
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </div>
+  const ShowAnswer = () => {
+    perguntaRef.current.style.height = '200px';
+    perguntaRef.current.style.transition = '0.5s all';
+    arrowRightRef.current.style.display = 'none';
+    arrowDownRef.current.style.display = 'block';
+  };
 
-                <div className={styles.pergunta}>
-                    <h3>A Pechincha é um App de descontos?</h3>
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </div>
+  const HiddenAnswer = () => {
+    perguntaRef.current.style.height = '60px';
+    perguntaRef.current.style.transition = '0.5s all';
+    arrowRightRef.current.style.display = 'block';
+    arrowDownRef.current.style.display = 'none';
+  };
 
-                <div className={styles.pergunta}>
-                    <h3>A Pechincha é um App de descontos?</h3>
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </div>
-                
+  return (
+    <div className={styles.pergunta} ref={perguntaRef}>
+      <div className={styles.container_pergunta}>
+        <h3>{perguntaTexto}</h3>
+        <i
+          onClick={ShowAnswer}
+          ref={arrowRightRef}
+          className="fa-solid fa-circle-chevron-right"
+          id={styles.right}
+        ></i>
+        <i
+          onClick={HiddenAnswer}
+          ref={arrowDownRef}
+          className="fa-solid fa-circle-chevron-down"
+          id={styles.arrow_down}
+        ></i>
+      </div>
+      <div className={styles.resposta}>
+        <p>{respostaTexto}</p>
+      </div>
+    </div>
+  );
+};
 
-                <div className={styles.pergunta}>
-                    <h3>A Pechincha é um App de descontos?</h3>
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </div>
-            </div>
-        </section>
-        </div>
-    )
-}
+const ContainerPerguntas = () => {
+  return (
+    <div className={styles.container_perguntas}>
+      <Pergunta
+        perguntaTexto="A Pechincha é um App de descontos?"
+        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+      />
+      <Pergunta
+        perguntaTexto="A Pechincha tem sistema de pagamento?"
+        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+      />
+      <Pergunta
+        perguntaTexto="A Pechincha faz entrega?"
+        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+      />
+      <Pergunta
+        perguntaTexto="A Pechincha assegura que meu pedido não está vencido?"
+        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+      />
+    </div>
+  );
+};
 
-export default Perguntas
+export default ContainerPerguntas;

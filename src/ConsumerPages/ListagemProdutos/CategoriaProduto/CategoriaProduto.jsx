@@ -21,7 +21,7 @@ function Graos({ categoria, category }) {
             // Carregando dados localmente
             setTimeout(() => {
                 setProducts(localData);
-            }, 1000);
+            }, 0);
             console.error('Erro ao buscar produtos localmente:', error);
         
     }

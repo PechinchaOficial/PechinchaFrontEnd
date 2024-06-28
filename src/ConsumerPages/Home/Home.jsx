@@ -25,7 +25,8 @@ import amigao from '../../assets/img/Market/amigao.png'
 import violeta from '../../assets/img/Market/violeta.png'
 import recoy from '../../assets/img/Market/ricoy.png'
 import { useTranslation } from "react-i18next";
-import bannerc from '../../assets/img/bannerc.png' 
+import bannerc from '../../assets/img/bannerc.png'
+import ContainerPerguntas from './Questions/QuestionsSection'
 
 function Home() {
     const { t } = useTranslation();
@@ -47,8 +48,25 @@ function Home() {
 
     const descRef = useRef();
     const titleRef = useRef();
-
+    const pergunta = useRef();
     const descRef3 = useRef();
+    const arrow_down = useRef();
+    const arrow_right = useRef();
+
+
+    function ShowAnswer() {
+        pergunta.current.style.height = 'auto';
+        arrow_right.current.style.display = 'none';
+        arrow_down.current.style.display = 'block';
+    }
+
+
+    function HiddenAnswer() {
+        pergunta.current.style.height = '60px';
+        pergunta.current.style.transition = '0.5s all';
+        arrow_right.current.style.display = 'block';
+        arrow_down.current.style.display = 'none';
+    }
 
 
 
@@ -84,7 +102,7 @@ function Home() {
                 <section className={styles.hero_section}>
                     <div className={styles.container_slogan} id='container'>
                         <img src={teste} alt="logo" className={styles.img_logo} />
-                        <img src={logosimple} alt="logo" className={styles.img_logo} id={styles.logo_responsive}/>
+                        <img src={logosimple} alt="logo" className={styles.img_logo} id={styles.logo_responsive} />
 
                         <h2 className={styles.slogan_subtitle}>{t("slogan01")}</h2>
 
@@ -281,35 +299,14 @@ function Home() {
                     <section className={styles.perguntas} id='container'>
                         <TituloFormato
                             categoria={t("TituloPerguntas")} />
-                        <div className={styles.container_perguntas}>
-                            <div className={styles.pergunta}>
-                                <h3>{t("Pergunta01")}</h3>
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                            </div>
-
-                            <div className={styles.pergunta}>
-                                <h3>{t("Pergunta02")}</h3>
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                            </div>
-
-                            <div className={styles.pergunta}>
-                                <h3>{t("Pergunta03")}</h3>
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                            </div>
-
-                            <div className={styles.pergunta}>
-                                <h3>{t("Pergunta04")}</h3>
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                            </div>
-
-
-
-                        </div>
+                        <ContainerPerguntas />
                     </section>
 
 
                 </div>
             </main>
+
+            
         </div>
     )
 }

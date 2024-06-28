@@ -10,16 +10,15 @@ import Enlatados from '../CategoriaProduto/Enlatados';
 
 
 function EnlatadosFilter() {
-
+    const enlatados = 'enlatado'
     return (
         <div>
             <HeaderConsumer />
             <main className={styles.prod_list}>
 
-               <div className={styles.container_prod} id='container'>
-                    <Enlatados categoria="Enlatados"/>
-               </div>
-                    
+                <div className={styles.container_prod} id='container'>
+                    <CategoriaProduto categoria='Massas' category={massas} />
+                </div>
             </main>
         </div>
 

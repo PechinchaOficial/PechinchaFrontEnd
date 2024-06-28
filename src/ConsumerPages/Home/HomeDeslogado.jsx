@@ -24,10 +24,11 @@ import violeta from '../../assets/img/Market/violeta.png'
 import recoy from '../../assets/img/Market/ricoy.png'
 import Header from '../../components/Header/Header';
 
-import logosimple from '../../assets/img/logo_base.svg'; 
- 
+import logosimple from '../../assets/img/logo_base.svg';
+
 import bannerc from '../../assets/img/bannerc.png'
- 
+import ContainerPerguntas from './Questions/QuestionsSection';
+
 
 
 
@@ -88,10 +89,10 @@ function HomeDeslogado() {
                     <div className={styles.container_slogan} id='container'>
                         <div className={styles.img_temp}>
                             <img src={teste} alt="logo" className={styles.img_logo} id={styles.logo_responsive} />
-                       
-                        <img src={logosimple} alt="logo" className={styles.img_logo2} />
-                        <h1>A grana apertou?</h1>
-                        <h2>Pechincha Chegou!</h2>
+
+                            <img src={logosimple} alt="logo" className={styles.img_logo2} />
+                            <h1>A grana apertou?</h1>
+                            <h2>Pechincha Chegou!</h2>
 
                         </div>
                         <h2 className={styles.slogan_subtitle}>Nós combatemos o desperdício e ainda fazemos aquela diferença no bolso!</h2>
@@ -184,7 +185,7 @@ function HomeDeslogado() {
 
                 <section className="background">
                     <div className={styles.container_promotion} id="container">   {/* Container */}
-                    <Banner bannerimg={imgBanner} bannerc={bannerc} /> {/* Banner de promoções */}
+                        <Banner bannerimg={imgBanner} bannerc={bannerc} /> {/* Banner de promoções */}
                         <CarouselProd />    {/* Carrossel de produtos */}
                     </div>
                 </section>
@@ -294,30 +295,7 @@ function HomeDeslogado() {
                     <section className={styles.perguntas} id='container'>
                         <TituloFormato
                             categoria='Perguntas frequentes' />
-                        <div className={styles.container_perguntas}>
-                            <div className={styles.pergunta}>
-                                <h3>A Pechincha é um App de descontos?</h3>
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                            </div>
-
-                            <div className={styles.pergunta}>
-                                <h3>A Pechincha tem sistema de pagamento?</h3>
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                            </div>
-
-                            <div className={styles.pergunta}>
-                                <h3>A Pechincha faz entrega?</h3>
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                            </div>
-
-                            <div className={styles.pergunta}>
-                                <h3>A Pechincha assegura que meu pedido não está vencido?</h3>
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                            </div>
-
-
-
-                        </div>
+                        <ContainerPerguntas/>
                     </section>
 
 

@@ -33,12 +33,7 @@ function FilterProducts() {
         }
     };
 
-
     // Filtrar os produtos que contêm a palavra "Leite" no nome
-
-
-
-
 
     return (
         <div>

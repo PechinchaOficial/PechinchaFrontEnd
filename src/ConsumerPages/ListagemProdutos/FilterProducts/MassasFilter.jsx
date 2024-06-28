@@ -11,14 +11,18 @@ import Massas from '../CategoriaProduto/Massas';
 
 
 function MassasFilter() {
-
+    const categoriaDinamica = 'Grão'
+    const bebidas = 'Bebida'
+    const massas = 'Massa'
+    const enlatados = 'enlatado'
+    const snacks = 'Snack'
     return (
         <div>
             <HeaderConsumer />
             <main className={styles.prod_list}>
 
                <div className={styles.container_prod} id='container'>
-                    <Massas categoria=" Massas"/>
+                <CategoriaProduto categoria='Massas' category={massas} />
                </div>
                     
             </main>
