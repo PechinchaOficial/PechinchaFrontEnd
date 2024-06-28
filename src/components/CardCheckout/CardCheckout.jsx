@@ -1,7 +1,7 @@
 import Styles from './CardCheckout.module.css'
 import { Link } from 'react-router-dom'
 
-function CardCheckout({url}) {
+function CardCheckout({ url }) {
     return (
         <div className={Styles.total}>
             <h2 className={Styles.container_titulo}>Resumo da compra</h2>

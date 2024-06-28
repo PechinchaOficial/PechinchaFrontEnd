@@ -6,7 +6,6 @@ import elo from '../../assets/img/elo.png'
 import pix from '../../assets/img/pix.png'
 import master from '../../assets/img/MasterCard.png'
 import american from '../../assets/img/american_express.png'
-import Card from '../../components/CardCheckout/CardCheckout'
 
 
 function CheckoutPage(){
@@ -65,4 +64,4 @@ function CheckoutPage(){
     )
 }
 
-export default CheckoutPage
+export default CheckoutPage;

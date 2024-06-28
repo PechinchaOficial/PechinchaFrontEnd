@@ -1,6 +1,7 @@
 import Styles from './NossosPlanos.module.css'
 import StarRed from '../../../assets/img/StarRed.png'
 import StarBlue from '../../../assets/img/StarBlue.png'
+import { Link } from 'react-router-dom'
 
 
 function NossosPlanos() {
@@ -25,9 +26,13 @@ function NossosPlanos() {
                         <li><h3>Alcance padrão</h3></li>
                     </ul>
 
-                    <button className={Styles.Btn}> SELECIONAR </button>
+                    <button className={Styles.Btn}>
+                        <Link to='/registerMarket' className={Styles.BtnLK}>
+                            SELECIONAR
+                        </Link>
+                    </button>
 
-                    <img src={StarBlue} alt='' className={Styles.ImgBlue}/>
+                    <img src={StarBlue} alt='' className={Styles.ImgBlue} />
                 </div>
                 <div className={Styles.Box}>
                     <div className={Styles.BoxRed}>
@@ -43,8 +48,11 @@ function NossosPlanos() {
                         <li><h3>Alcance mediano</h3></li>
                     </ul>
 
-
-                    <button className={Styles.Btn}> SELECIONAR </button>
+                    <button className={Styles.Btn}>
+                        <Link to='/registerMarket' className={Styles.BtnLK}>
+                            SELECIONAR
+                        </Link>
+                    </button>
 
                 </div>
                 <div className={Styles.Box}>
@@ -61,10 +69,14 @@ function NossosPlanos() {
                         <li><h3>Feedback de Clientes</h3></li>
                         <li><h3>Recomendações de Produtos</h3></li>
                     </ul>
-                        <img src={StarRed} alt='' className={Styles.Img}/>
+                    <img src={StarRed} alt='' className={Styles.Img} />
 
 
-                    <button className={Styles.Btn}> SELECIONAR </button>
+                    <button className={Styles.Btn}>
+                        <Link to='/registerMarket' className={Styles.BtnLK}>
+                            SELECIONAR
+                        </Link>
+                    </button>
                 </div>
             </article>
         </section>
