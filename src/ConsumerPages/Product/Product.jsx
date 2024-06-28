@@ -16,8 +16,8 @@ function Product() {
         fetchProduto(); 
     }, [id]);
 
-    const fetchProduto = async () => {
-        try {
+    const fetchProduto = async () => {                        // Chamdando o back
+        try {           
             console.log("Fetching product with ID:", id);
             const response = await GetProdutoById(id);
             console.log("API response:", response.data);
@@ -47,10 +47,10 @@ function Product() {
                     <div className={Styles.BackProducts}>
                         <article className={Styles.BoxLeft}>
                             <div className={Styles.Box1}>
-                                {produto ? (
+                                {produto ? (   // Imagem vai variar dependendo do produto que vc selecionar
                                     <img src={produto.fotoproduto} alt="imagem do produto" className={Styles.img_product_2} />
                                 ) : (
-                                    <Skeleton height={100} width={100} />
+                                    <Skeleton height={100} width={100} />   
                                 )}
                             </div>
                         </article>

@@ -11,7 +11,7 @@ function New () {
                         <p className={Styles.new_p}>Preecha os campos</p>
 
                             <form action='' className={Styles.new_forms} id='code-forms' >
-                                <label htmlFor="">Nova senha</label>
+                                <label htmlFor="">Nova senha</label> {/* Formulario de criação de senha */}
                                 <input type="password"  placeholder='Digite sua nova senha' className={Styles.email} />
 
                                 <label htmlFor="">Confirme a senha</label>
@@ -22,9 +22,7 @@ function New () {
                                 <p className={Styles.new_password}>Já possui cadastro? <Link to="/recover">Entre aqui</Link></p>
 
                             </form>
-
                     </div>
-
             </section>
         </main>
     )
