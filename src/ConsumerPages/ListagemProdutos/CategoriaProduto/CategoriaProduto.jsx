@@ -21,7 +21,6 @@ function Graos({ categoria, category }) {
             const response = await GetProduto();
             setTimeout(()=>{
                 setProducts(response.data.content);
-                setIsLoading(false);
             }, 1000)
   
         } catch (error) {

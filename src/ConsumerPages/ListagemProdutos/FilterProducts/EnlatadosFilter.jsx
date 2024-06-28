@@ -1,14 +1,9 @@
-import Banner from '../../../components/Banner/Banner'
 import styles from './Filter.module.css'
-import imgBanner from '../../../assets/img/banner1.svg';
-import MercadosRegiao from '../MercadosRegiao/MercadosRegiao';
-import CategoriaProduto from '../CategoriaProduto/CategoriaProduto';
 import HeaderConsumer from '../../../components/HeaderConsumer/HeaderConsumer';
-import snacksData from '../../../assets/data/snacksData'
 import CardProduto from '../../../components/CardProduto/CardProduto';
-import Graos from '../CategoriaProduto/Graos';
 import { Link } from 'react-router-dom';
-import Produtos from '../../../assets/data/bebidasData';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { GetProduto } from '../../../services/ProdutoService';
@@ -16,7 +11,7 @@ import localData from '../../../assets/data/localData'
 
 function FilterProducts() {
     const [products, setProducts] = useState([]);
-
+    const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
         fetchProducts();
     }, []);
@@ -26,16 +21,33 @@ function FilterProducts() {
             const response = await GetProduto();
             setProducts(response.data.content);
         } catch (error) {
+            console.error("Erro ao buscar produtos", error);
             setTimeout(() => {
-                console.error("Erro ao buscar produtos", error);
-                setProducts(localData)
-            }, 1000)
+                setProducts(localData);
+                setIsLoading(false);
+            }, 1000);
+        }
+    };
+
+    const truncateString = (str, maxLength) => {
+        if (str.length > maxLength) {
+            return str.substring(0, maxLength) + '...';
+        } else {
+            return str;
         }
     };
 
     const filteredProducts = products.filter((produto) =>
         produto.nome.toLowerCase().includes('enlatado')
     );
+
+    
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "auto"
+        });
+    };
 
     // Filtrar os produtos que contêm a palavra "Leite" no nome
 
@@ -51,18 +63,73 @@ function FilterProducts() {
                 </header>
 
                 <div className={styles.container_prod}>
-
-                    {filteredProducts.map(({ id, nome, datavalidade, preco, desconto, fotoproduto }) => (
+                    
+                {isLoading ? (
+                    Array.from({ length: 5 }).map((_, index) => (
+                        <div key={index} className={styles.cardproduto}>
+                            <div className={styles.container_img}>
+                                <Skeleton height={200} width={200} />
+                            </div>
+                            <h2 className={styles.prodNome}>
+                                <Skeleton width={150} />
+                            </h2>
+                            <div className={styles.prod_info}>
+                                <span className={styles.info_prod}>
+                                    <Skeleton width={100} />
+                                </span>
+                                <span className={styles.info_prod}>
+                                    <Skeleton width={100} />
+                                </span>
+                            </div>
+                            <div className={styles.valores}>
+                                <span className={styles.preco}>
+                                    <Skeleton width={50} />
+                                </span>
+                                <div className={styles.desconto}>
+                                    <Skeleton width={70} height={70} />
+                                </div>
+                            </div>
+                            <button className={styles.btn}>
+                                <Skeleton width={270}  height={50}/>
+                            </button>
+                        </div>
+                    ))
+                ) : (
+                    filteredProducts.map(({ id, nome, datavalidade, preco, desconto, fotoproduto }) => (
                         <Link key={id} to={`/produto/${id}`} className={styles.productLink}>
-                            <CardProduto key={nome}
-                                name={nome}
-                                dateVenc={datavalidade}
-                                price={preco}
-                                discount={desconto}
-                                img={fotoproduto} />
+                            <div className={styles.cardproduto}>
+                                <div className={styles.container_img} onClick={scrollToTop}>
+                                    <img src={fotoproduto} alt="Produto" className={styles.imgprod} />
+                                </div>
+                                <h2 className={styles.prodNome}>{truncateString(nome, 15)}</h2>
+                                <div className={styles.prod_info}>
+                                    <span className={styles.info_prod}>
+                                        Data: até {datavalidade}
+                                    </span>
+                                    <span className={styles.info_prod}>
+                                        10 Unidades restantes
+                                    </span>
+                                </div>
+                                <div className={styles.valores}>
+                                    <span className={styles.preco}>
+                                        R$ {preco}
+                                    </span>
+                                    <div className={styles.desconto}>
+                                        <span className={styles.porcentagem}>
+                                            -{desconto}
+                                        </span>
+                                    </div>
+                                </div>
+                                <Link to='/cart'>
+                                    <button className={styles.btn} onClick={scrollToTop}>
+                                        ADICIONAR
+                                    </button>
+                                </Link>
+                            </div>
                         </Link>
-                    )
-                    )}
+                    ))
+                )}
+                    
 
                 </div>
 
