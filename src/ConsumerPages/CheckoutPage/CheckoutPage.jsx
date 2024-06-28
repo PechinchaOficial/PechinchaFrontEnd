@@ -25,7 +25,7 @@ function CheckoutPage(){
 
                             <div className={styles.container_pagamento}>
                                 
-                                <div className={styles.btn_compra}>
+                                <div className={styles.btn_compra}>             {/*Btn de compra com cartao*/}
                                     <div className={styles.container_texto}>
                                         <h2 className={styles.texto_compra}>Cartão</h2>
                                     </div>
@@ -39,7 +39,7 @@ function CheckoutPage(){
 
                                 <div className={styles.btn_compra}>
                                     <div className={styles.container_texto}>
-                                        <h2 className={styles.texto_compra}>PIX</h2>
+                                        <h2 className={styles.texto_compra}>PIX</h2> {/*Btn de compra com pix*/}
                                     </div>
                                     <div className={styles.container_img_2}>
                                         <img src={pix} alt="" />

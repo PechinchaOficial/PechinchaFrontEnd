@@ -11,7 +11,7 @@ function Code () {
                         <p className={Styles.code_p} >Não recebeu? <Link to="/recover">Enviar novamente</Link></p>
 
                             <form action='' className={Styles.code_forms} id='code-forms' >
-                                <label htmlFor="">Código de segurança</label>
+                                <label htmlFor="">Código de segurança</label> {/* Formulario de codigo de segurança */}
                                 <input type="text"  placeholder='Digite o código que foi enviado' className={Styles.email} />
 
                               <Link to="/New"><button>CONFIRMAR</button></Link> 
