@@ -18,12 +18,12 @@ function Footer() {
                 <div className={styles.footer_item}>
                     <h3 className={styles.title}> Institucional</h3>
                     <ul className={styles.footer_link}>
-                        <li className={styles.footer_item}><a href="#">Política de privacidade</a></li>
-                        <li className={styles.footer_item}><a href="#">Política de privacidade</a></li>
-                        <li className={styles.footer_item}><a href="#">Onde estamos</a></li>
-                        <li className={styles.footer_item}><a href="#">Como funciona?</a></li>
-                        <li className={styles.footer_item}><a href="#">Trabalhe conosco</a></li>
-                        <li className={styles.footer_item}><a href="#">Acessibilidade</a></li>
+                        <li className={styles.footer_item}><Link to="/">Política de privacidade</Link></li>
+                        <li className={styles.footer_item}><Link to="/about">Quem somos</Link></li>
+                        <li className={styles.footer_item}><Link to="/about">Onde estamos</Link></li>
+                        <li className={styles.footer_item}><Link to="/">Como funciona?</Link></li>
+                        <li className={styles.footer_item}><Link to="/">Trabalhe conosco</Link></li>
+                        <li className={styles.footer_item}><Link to="/">Acessibilidade</Link></li>
 
 
                     </ul>
@@ -32,11 +32,11 @@ function Footer() {
                 <div className={styles.footer_item}>
                     <h3 className={styles.title}> Sou Cliente</h3>
                     <ul className={styles.footer_link}>
-                        <li className={styles.footer_item}><a href="#">Cadastre-se</a></li>
-                        <li className={styles.footer_item}><a href="#">Login</a></li>
-                        <li className={styles.footer_item}><a href="#">Nossos produtos</a></li>
-                        <li className={styles.footer_item}><a href="#">Mercados na região</a></li>
-                        <li className={styles.footer_item}><a href="#">Categorias</a></li>
+                        <li className={styles.footer_item}><Link to="/registerclient">Cadastre-se</Link></li>
+                        <li className={styles.footer_item}><Link to="/login">Login</Link></li>
+                        <li className={styles.footer_item}><Link to="/listagem">Nossos produtos</Link></li>
+                        <li className={styles.footer_item}><Link to="/listagem">Mercados na região</Link></li>
+                        <li className={styles.footer_item}><Link to="/">Categorias</Link></li>
 
                     </ul>
                 </div>
@@ -44,19 +44,19 @@ function Footer() {
                 <div className={styles.footer_item}>
                     <h3 className={styles.title}> Sou Mercado</h3>
                     <ul className={styles.footer_link}>
-                        <li className={styles.footer_item}><a href="#">Faça parte</a></li>
-                        <li className={styles.footer_item}><a href="#">Login</a></li>
-                        <li className={styles.footer_item}><a href="#">Nossos Planos</a></li>
-                        <li className={styles.footer_item}><Link to="/homedeslogado">Parcerias</Link></li>
+                        <li className={styles.footer_item}><Link to="/registermarket">Faça parte</Link></li>
+                        <li className={styles.footer_item}><Link to="/marketlogin">Login</Link></li>
+                        <li className={styles.footer_item}><Link to="/homemarketdeslogado">Nossos Planos</Link></li>
+                        <li className={styles.footer_item}><Link to="/homemarket">Parcerias</Link></li>
                     </ul>
                 </div>
 
                 <div className={styles.social}>
                 <h2 className={styles.title}>Redes Sociais</h2>
                 <div className={styles.social_icons}>
-                    <img src={tiktok} className={styles.icon} alt="Tik tok" />
-                    <img src={instagram} className={styles.icon} alt="Instagram" />
-                    <img src={linkedin} className={styles.icon} alt="LinkedIn" />
+                    <a href="https://www.tiktok.com/@pechinchaoficial" target="_blank" rel="external"><img src={tiktok} className={styles.icon} alt="Tik tok" /></a>
+                    <a href="https://www.instagram.com/ospechincha.ofc/"  target="_blank" rel="external"><img src={instagram} className={styles.icon} alt="Instagram" /></a>
+                    <a href="https://www.linkedin.com/company/pechincha/" target="_blank" rel="external"><img src={linkedin} className={styles.icon} alt="Linkedin" /></a>
                 </div>
                 </div>
 
