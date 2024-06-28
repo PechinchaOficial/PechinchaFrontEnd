@@ -46,7 +46,7 @@ function FilterProducts() {
 
                 <header className={styles.header_filter}>
                     <Link to='/listagem'> <i class="fa-solid fa-angle-left"></i> Continuar comprando</Link>
-                    <h2 className={styles.title}>Todos os produtos</h2>
+                    <h2 className={styles.title}>Snacks</h2>
 
                 </header>
 

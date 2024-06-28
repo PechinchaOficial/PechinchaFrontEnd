@@ -7,28 +7,69 @@ import HeaderConsumer from '../../../components/HeaderConsumer/HeaderConsumer';
 import snacksData from '../../../assets/data/snacksData'
 import CardProduto from '../../../components/CardProduto/CardProduto';
 import Graos from '../CategoriaProduto/Graos';
-import Massas from '../CategoriaProduto/Massas';
+import { Link } from 'react-router-dom';
+import Produtos from '../../../assets/data/bebidasData';
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { GetProduto } from '../../../services/ProdutoService';
+import localData from '../../../assets/data/localData'
 
+function FilterProducts() {
+    const [products, setProducts] = useState([]);
 
-function MassasFilter() {
-    const categoriaDinamica = 'Grão'
-    const bebidas = 'Bebida'
-    const massas = 'Massa'
-    const enlatados = 'enlatado'
-    const snacks = 'Snack'
+    useEffect(() => {
+        fetchProducts();
+    }, []);
+
+    const fetchProducts = async () => {
+        try {
+            const response = await GetProduto();
+            setProducts(response.data.content);
+        } catch (error) {
+            setTimeout(() => {
+                console.error("Erro ao buscar produtos", error);
+                setProducts(localData)
+            }, 1000)
+        }
+    };
+
+    const filteredProducts = products.filter((produto) =>
+        produto.nome.toLowerCase().includes('massa')
+    );
+
+    // Filtrar os produtos que contêm a palavra "Leite" no nome
+
     return (
         <div>
             <HeaderConsumer />
-            <main className={styles.prod_list}>
+            <main className={styles.prod_list} id='container'>
 
-               <div className={styles.container_prod} id='container'>
-                <CategoriaProduto categoria='Massas' category={massas} />
-               </div>
-                    
+                <header className={styles.header_filter}>
+                    <Link to='/listagem'> <i class="fa-solid fa-angle-left"></i> Continuar comprando</Link>
+                    <h2 className={styles.title}>Massas</h2>
+
+                </header>
+
+                <div className={styles.container_prod}>
+
+                    {filteredProducts.map(({ id, nome, datavalidade, preco, desconto, fotoproduto }) => (
+                        <Link key={id} to={`/produto/${id}`} className={styles.productLink}>
+                            <CardProduto key={nome}
+                                name={nome}
+                                dateVenc={datavalidade}
+                                price={preco}
+                                discount={desconto}
+                                img={fotoproduto} />
+                        </Link>
+                    )
+                    )}
+
+                </div>
+
             </main>
         </div>
 
     )
 }
 
-export default MassasFilter
+export default FilterProducts

@@ -1,11 +1,8 @@
-.teste{
-    height: 500px;
-    background-color: blue;
-}
-
 .container_content{
     padding-top: 180px;
 }
+
+ /* Nav-bar */
 
 .nav_profile ul{
     display: flex;

@@ -165,7 +165,7 @@
 
 .container_table{
     width: 95%;
-    height: 700px;
+    height: auto;
     margin-left: 20px;
     margin-bottom: 60px;
     display: flex;

@@ -39,6 +39,10 @@
     border-radius: 100%;
 }
 
+#input_hidden{
+    display: none;
+}
+
 .nome_mercado{
     width: 75%;
     height: 100px;
@@ -214,7 +218,7 @@
 
 .container_table{
     width: 100%;
-    height: 550px;
+    height: 440px;
     margin-top: 25px;
     display: flex;
     flex-direction: row;

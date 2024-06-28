@@ -1,5 +1,5 @@
 import styles from './SearchBar.module.css'
-import Produtos from '../../assets/data/bebidasData';
+import Produtos from '../../assets/data/localData';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ function SearchBar() {
 
     const searchLowerCase = search.toLowerCase()
 
-    const products = Produtos.filter((produto) => produto.name.toLocaleLowerCase().includes(searchLowerCase)
+    const products = Produtos.filter((produto) => produto.nome.toLocaleLowerCase().includes(searchLowerCase)
     )
 
     return (
@@ -38,18 +38,18 @@ function SearchBar() {
             <button className={styles.btn} ><i class="fa-solid fa-magnifying-glass"></i></button> 
             <div className={styles.results} ref={results}  onMouseLeave={HiddenResults}>
                 <ul>
-                    {products.map(({ name, id, qtdUnit, discount, price, dateVenc, img }) => (
+                    {products.map(({  id, nome, datavalidade, preco, desconto, fotoproduto }) => (
                         <li>
                             <div className={styles.img}>
-                                <img src={img} alt="Imagem do produto" />
+                                <img src={fotoproduto} alt="Imagem do produto" />
                             </div>
 
                             <div className={styles.info_prod}>
                                 <div className={styles.prod_data}>
-                                    <h2>{name}</h2>
-                                    <p>Validade: {dateVenc}</p>
-                                    <p>{qtdUnit} Unidades restantes</p>
-                                    <span className={styles.price}>R${price}</span>
+                                    <h2>{nome}</h2>
+                                    <p>Validade: {datavalidade}</p>
+                                    <p> Unidades restantes</p>
+                                    <span className={styles.price}>R${preco}</span>
 
                                 </div>
                                 <Link to='/cart'>

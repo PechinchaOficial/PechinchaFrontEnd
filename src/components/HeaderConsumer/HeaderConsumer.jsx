@@ -153,7 +153,7 @@ function HeaderConsumer() {
                         </li>
 
                         <li>
-                            <Link onClick={scrollToTop} to="/listagem">Variados</Link>
+                            <Link onClick={scrollToTop} to="/enlatados">Enlatados</Link>
                         </li>
 
                     </ul>

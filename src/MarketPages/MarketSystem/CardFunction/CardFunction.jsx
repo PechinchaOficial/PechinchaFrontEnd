@@ -21,8 +21,8 @@ function CardFunction({texto}) {
 
                 </div>
 
-                <div className={Styles.container_texto_card}>
-                    <p className={Styles.texto_card}>{texto}</p>
+                <div className={Styles.container_texto_card}>  {/*Container do texto do card*/}
+                    <p className={Styles.texto_card}>{texto}</p> {/*props do texto*/}
                 </div>
 
             </div>

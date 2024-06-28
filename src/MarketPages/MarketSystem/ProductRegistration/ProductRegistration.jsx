@@ -9,7 +9,7 @@ import Sair from '../../../assets/img/Sair.png';
 import Services from '../../../assets/img/Services.png';
 import salgadinho from '../../../assets/img/salgadinho.png';
 import HeaderMarket from '../../../components/CardProduct/HeaderMarket/HeaderMarket';
-import Products from '../../../assets/data/bebidasData'; // Substitua pelo caminho correto dos dados de produtos
+import Products from '../../../assets/data/localData'; // Substitua pelo caminho correto dos dados de produtos
 import { CreateProduto } from '../../../services/ProdutoService'; // Verifique se o caminho do serviço está correto
 import Btn from '../BtnMarket/BtnMarket';
 
@@ -38,12 +38,12 @@ function MarketSystem({ imagem, classe }) {
 
     const searchLowerCase = search.toLowerCase();
     const filteredProducts = Products.filter((produto) =>
-        produto.name.toLowerCase().includes(searchLowerCase)
+        produto.nome.toLowerCase().includes(searchLowerCase)
     );
 
-    const handleProductClick = (name, img) => {
-        setSearch(name);
-        setImgUrl(img);
+    const handleProductClick = (nome, fotoproduto) => {
+        setSearch(nome);
+        setImgUrl(fotoproduto);
         HiddenResults();
     };
 
@@ -207,15 +207,15 @@ function MarketSystem({ imagem, classe }) {
                                         /> */}
                                         <div className={Styles.results} ref={results} onMouseLeave={HiddenResults}>
                                             <ul>
-                                                {filteredProducts.map(({ name, id, dateVenc, img }) => (
-                                                    <li key={id} onClick={() => handleProductClick(name, img)}>
+                                                {filteredProducts.map(({ nome, id, datavalidade, fotoproduto }) => (
+                                                    <li key={id} onClick={() => handleProductClick(nome, fotoproduto)}>
                                                         <div className={Styles.img}>
-                                                            <img src={img} alt="Imagem do produto" />
+                                                            <img src={fotoproduto} alt="Imagem do produto" />
                                                         </div>
                                                         <div className={Styles.info_prod}>
                                                             <div className={Styles.prod_data}>
-                                                                <h2>{name}</h2>
-                                                                <p>Validade: {dateVenc}</p>
+                                                                <h2>{nome}</h2>
+                                                                <p>Validade: {datavalidade}</p>
                                                             </div>
 
                                                         </div>
@@ -232,9 +232,9 @@ function MarketSystem({ imagem, classe }) {
                                             value={produto.descricao}
                                             onChange={handleChange}
                                         />
-                                        <p className={Styles.titulo_input}>Imagem</p>
+                                        <p className={Styles.titulo_input} id={Styles.input_hidden}>Imagem</p>
                                         <input
-                                            className={Styles.input_long}
+                                            className={Styles.input_long} id={Styles.input_hidden}
                                             type="text"
                                            name="fotoproduto"
                                             placeholder="img"

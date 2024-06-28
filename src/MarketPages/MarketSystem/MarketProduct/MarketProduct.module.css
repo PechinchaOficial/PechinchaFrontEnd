@@ -163,13 +163,7 @@
     font-weight: 500;
 }
 
-.conteudo_central{
-    width: 97%;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .container_actions{
     width: 100%;
@@ -224,11 +218,7 @@
     margin-right: 35px;
 }
 
-.container_table{
-    width: 95%;
-    height: 465px;
-    margin-top: 25px;
-}
+
 
 .table {
 	width: 100%;

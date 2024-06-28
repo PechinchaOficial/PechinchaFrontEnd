@@ -1,19 +1,14 @@
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 import styles from './UserProfile.module.css'
-import user from '../../assets/img/user.png'
-import Button from '../../components/Button/Button';
-import brasil from '../../assets/img/brasil.png'
-import usa from '../../assets/img/usa.png'
 import BtnLang from '../../components/BtnLang/BtnLang';
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import Modal from '../../components/ModalTerms/Modal'
 
 function UserProfile() {
-    //API translate const
-    const { t } = useTranslation();  
-    // Modal const
+    //API translate const                          // Chamdando a API de tradução
+    const { t } = useTranslation();                     
+    // Modal const                                 // Função para abrir o modal
     const [openModal, setOpenModal] = useState(false)
 
     return (
@@ -33,21 +28,18 @@ function UserProfile() {
 
                 <main className={styles.user_content}>
                     <section className={styles.container_user}>
-                        <div className={styles.header_section}>
+                        <div className={styles.header_section}>             {/*Editar informações*/}
                             <h2>{t("Editar informações")}</h2>
-                            {/* <div className={styles.user_icon}>
-                                <img src={user} alt="" className={styles.user} />
-                            </div> */}
                         </div>
 
                         <form action="#" className={styles.form_info}>
                             <div className={styles.input_group}>
-                                <div className={styles.input_item} id={styles.flex}>
+                                <div className={styles.input_item} id={styles.flex}>         {/*Campo nome*/}
                                     <label htmlFor="">{t("Nome")}</label>
                                     <input type="text" value="Kaique" />
                                 </div>
 
-                                <div className={styles.input_item} id={styles.flex}>
+                                <div className={styles.input_item} id={styles.flex}>           {/*Campo ultimo nome*/}
                                     <label htmlFor="">{t("Último nome")}</label>
                                     <input type="text" value="Oliveira" />
                                 </div>
@@ -55,30 +47,30 @@ function UserProfile() {
 
                                 <div className={styles.input_item}>
                                     <label htmlFor="">E-mail</label>
-                                    <input type="text" value="kaiqueoliveira@gmail.com" />
+                                    <input type="text" value="kaiqueoliveira@gmail.com" />     {/*Campo email*/}
                                 </div>
 
                                 <div className={styles.input_item}>
-                                    <label htmlFor="">{t("Celular")}</label>
-                                    <input type="text" value="(11) 98763-9871" />
+                                    <label htmlFor="">{t("Celular")}</label>  
+                                    <input type="text" value="(11) 98763-9871" />                {/*Campo numero de telefone*/}
                                 </div>
 
                                 <div className={styles.input_item} id={styles.flex}>
-                                    <label htmlFor="">{t("Cidade")}</label>
+                                    <label htmlFor="">{t("Cidade")}</label>                  {/*Campo Cidade*/}
                                     <input type="text" value="Carapicuiba" />
                                 </div>
 
                                 <div className={styles.input_item} id={styles.flex}>
                                     <label htmlFor="">{t("Estado")}</label>
-                                    <input type="text" value="São Paulo " />
+                                    <input type="text" value="São Paulo " />             {/*Campo Estado*/}
                                 </div>
 
                             </div>
                         </form>
-                        <section className={styles.language_section}>
+                        <section className={styles.language_section}>     {/*Section para alterar idiomas*/}
                             <h3>{t("Alterar idioma")}</h3>
 
-                            <BtnLang />
+                            <BtnLang />         {/*Bts das linguas*/}
 
                         </section>
 
@@ -91,16 +83,9 @@ function UserProfile() {
                             <Link to="/homedeslogado"><button className={styles.btn} >{t("Salvar")}</button></Link>
 
                         </div>
-
                     </section>
-
-
                 </main>
-
-
             </div>
-
-
         </div>
     )
 }
