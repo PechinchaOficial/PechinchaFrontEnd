@@ -2,12 +2,16 @@ import styles from './ReadyProduct.module.css'
 import { Link } from 'react-router-dom'
 import Enlatados from '../ListagemProdutos/CategoriaProduto/Enlatados';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
+import TrailResgistration from '../../components/TrailRegistrationMarket/TrailRegistration';
 
 function ReadyProduct() {
     return (
         <div>
             < HeaderConsumer />
             <main className={styles.cart_container} >
+                <div className={styles.BoxTrail}>
+                    <TrailResgistration Cicle={styles.Cicle} Cicle1={styles.Cicle} Cicle2={styles.Cicle} Fase={styles.Fase} Divider1={styles.Divider1} Divider2={styles.Divider1} />
+                </div>
                 <div className={styles.card_container} id='container'>
                     <section className={styles.cart}>
 

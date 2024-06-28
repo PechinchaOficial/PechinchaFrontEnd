@@ -1,0 +1,58 @@
+
+.Container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    flex-direction: row;
+}
+.Fase {
+    position: relative;
+    height: 60%;
+    width: 8%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8%;
+    text-align: center;
+    margin-top: 3%;
+}
+.Cicle {
+    position: relative;
+    height: 50%;
+    width: 50%;
+    background-color: var(--azul);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.Cicle1 {
+    position: relative;
+    height: 50%;
+    width: 50%;
+    background-color: var(--background);
+    border: 4px solid var(--azul);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--azul);
+}
+.Divider {
+    position: relative;
+    height: 10px;
+    width: 28%;
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 20px;
+}
+.Divider1 {
+    position: relative;
+    height: 10px;
+    width: 28%;
+    background-color: var(--azul);
+    border-radius: 20px;
+}
