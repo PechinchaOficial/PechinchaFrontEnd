@@ -11,6 +11,13 @@ import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer'
 
 
 function MarketProductPage() {
+
+    const categoriaDinamica = 'Grão'
+    const bebidas = 'Bebida'
+    const massas = 'Massa'
+    const enlatados = 'enlatado'
+    const snacks = 'snack'
+
     return (
 
         <div>
@@ -50,11 +57,11 @@ function MarketProductPage() {
                 </section>
                 <div className={Styles.containerproduct} id='container'>
                     <CategoryProd />
-                    <CategoriaProduto categoria='Snacks' />
-                    <Graos categoria='Grãos' />
-                    <Bebidas categoria="Bebidas" />
-                    <Enlatados categoria="Enlatados" />
-                    <Massas categoria="Massas" />
+                <CategoriaProduto categoria='Snacks' category={snacks} />
+                <CategoriaProduto categoria='Bebida' category={bebidas} />
+                <CategoriaProduto categoria='Grãos' category={categoriaDinamica} />
+                <CategoriaProduto categoria='Massas' category={massas} />
+                <CategoriaProduto categoria='Enlatad    os' category={enlatados} />
                 </div>
             </main>
         </div>

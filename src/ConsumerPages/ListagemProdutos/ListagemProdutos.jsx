@@ -12,7 +12,7 @@ function ListagemProdutos() {
     const bebidas = 'Bebida'
     const massas = 'Massa'
     const enlatados = 'enlatado'
-    const snacks = 'Snack'
+    const snacks = 'snack'
 
 
     return (
@@ -25,7 +25,7 @@ function ListagemProdutos() {
                 <CategoriaProduto categoria='Bebida' category={bebidas} />
                 <CategoriaProduto categoria='Grãos' category={categoriaDinamica} />
                 <CategoriaProduto categoria='Massas' category={massas} />
-                <CategoriaProduto categoria='Enlatados' category={enlatados} />
+                <CategoriaProduto categoria='Enlatad    os' category={enlatados} />
             </main>
         </div>
 
