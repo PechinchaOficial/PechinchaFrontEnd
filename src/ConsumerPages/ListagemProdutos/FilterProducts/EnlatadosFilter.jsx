@@ -19,7 +19,10 @@ function FilterProducts() {
     const fetchProducts = async () => {
         try {
             const response = await GetProduto();
-            setProducts(response.data.content);
+            setTimeout(() => {
+                setProducts(response.data.content);
+                setIsLoading(false); // Adicione isso aqui para parar o carregamento após sucesso
+            }, 1000);
         } catch (error) {
             console.error("Erro ao buscar produtos", error);
             setTimeout(() => {

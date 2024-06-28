@@ -19,16 +19,16 @@ function Graos({ categoria, category }) {
     const fetchProducts = async () => {
         try {
             const response = await GetProduto();
-            setTimeout(()=>{
+            setTimeout(() => {
                 setProducts(response.data.content);
-            }, 1000)
-  
+                setIsLoading(false); // Adicione isso aqui para parar o carregamento após sucesso
+            }, 1000);
         } catch (error) {
             console.error("Erro ao buscar produtos", error);
             setTimeout(() => {
                 setProducts(localData);
                 setIsLoading(false);
-            }, 1000);
+            }, 100);
         }
     };
 
@@ -103,7 +103,7 @@ function Graos({ categoria, category }) {
                                 </div>
                             </div>
                             <button className={styles.btn}>
-                                <Skeleton width={270}  height={50}/>
+                                <Skeleton width={270} height={50} />
                             </button>
                         </div>
                     ))

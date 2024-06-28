@@ -25,7 +25,7 @@ function ListagemProdutos() {
                 <CategoriaProduto categoria='Bebida' category={bebidas} />
                 <CategoriaProduto categoria='Grãos' category={categoriaDinamica} />
                 <CategoriaProduto categoria='Massas' category={massas} />
-                <CategoriaProduto categoria='Enlatad    os' category={enlatados} />
+                <CategoriaProduto categoria='Enlatados' category={enlatados} />
             </main>
         </div>
 
