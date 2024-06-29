@@ -117,23 +117,20 @@
 
 
 @media screen and (max-width:393px) {
-
-
+    
     .logo {
         padding-left: 35%;
     }
-        
+            
     .footer_content {
         flex-direction: column;
-        align-items: center;
     }
-    
+        
     .footer_item {
-        text-align: center;
+        float: left;
+
     }
     
-
-
 }
 
 @media screen and (max-width:480px) {
@@ -149,7 +146,7 @@
    }
    
    .footer_item {
-       text-align: center;
+       float: left;
    }
    
    .title {
