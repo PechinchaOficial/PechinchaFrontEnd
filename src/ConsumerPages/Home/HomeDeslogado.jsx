@@ -32,7 +32,6 @@ import ContainerPerguntas from './Questions/QuestionsSection';
 import Bannerverde from '../../assets/img/bannerverde.png'
 import Bannerjunina from '../../assets/img/bannerjunina.png'
 
-
 function HomeDeslogado() {
 
     const [slidesPerView, setSlidePerView] = useState(1)
@@ -108,10 +107,6 @@ function HomeDeslogado() {
                     <img src={star} alt="star" className={styles.star} />
 
                     <img src={starYellow} alt="star" className={styles.star_2} />
-
-
-
-
                 </section>
 
                 {/*  Categorias dos produto*/}
