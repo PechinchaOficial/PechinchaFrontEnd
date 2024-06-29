@@ -5,7 +5,7 @@ function ProdItem() {
     return (
         <tr className={styles.item}>
             <td >
-                <div className={styles.prod_info}>
+                <div className={styles.prod_info}> {/*Props para produto*/}
                     <img src={salgadinho} alt="Produto" className={styles.prod_img} />
                     <div className={styles.prod_text}>
                         <h3>Salgadinho de Milho</h3>

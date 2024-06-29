@@ -19,10 +19,7 @@ function Cart() {
                         </header>
 
                         <div className={styles.container_cart}>
-
-                           
-
-                                <table className={styles.table_prod}>
+                                <table className={styles.table_prod}> {/*Tabela de produtos*/}
                                     <thead className={styles.table_head}>
                                         <tr className={styles.table_titles}>
                                             <th></th>
