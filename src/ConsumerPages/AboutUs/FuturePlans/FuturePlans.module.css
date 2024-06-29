@@ -30,14 +30,11 @@
     height: 500px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .Inovacao {
-    position: relative;
     height: 90%;
     width: 40%;
     background-color: white;
@@ -68,20 +65,24 @@
     letter-spacing: 5px
 }
 
-.Text{
-    font-size: 1.5rem;
-    text-align: center;
+
+.Boxtext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.Boxtext {
-    margin-top: -45%;
-    width: 60%;
-    margin-left: 20%;
+.Text {
+    margin-top: -55%;
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 70%;
 }
 
 .Difere {
     color: var(--vermelho);
 }
+
 .BoxRight {
     height: 100%;
     width: 30%;
@@ -105,27 +106,14 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
-.BoxLeft {
+
+.cellphone {
+    width: 120%;
     height: 100%;
-    width: 50%;
-}
-
-.Boximages {
-    position: relative;
-    height: 50%;
-    width: 50%;
-    margin-left: 15%;
-}
-
-.Boximages img {
-    position: absolute;
-    width: 200%;
-    height: 220%;
-    z-index: 1;
     margin-top: -10%;
-    
 }
 
 .BoxRight {
@@ -136,7 +124,7 @@
 .Boxtitle {
     margin-top: 8%;
     height: 150px;
-    width: 130%;
+    width: 100%;
     background-color: var(--amarelo);
     clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 93%);
     font-size: 2.5rem;
@@ -144,7 +132,7 @@
     justify-content: center;
     align-items: center;
     color: black;
-    margin-left: -60%;
+    margin-left: -15%;
     font-family: offer;
     letter-spacing: 5px
 }
@@ -152,7 +140,6 @@
 .BoxtextApp {
     width: 75%;
     font-size: 1.5rem;
-    margin-left: -15%;
 }
 
 .Crm {
@@ -171,7 +158,7 @@
 .Backtitle {
     margin-top: 8%;
     height: 150px;
-    width: 100%;
+    width: 90%;
     background-color: var(--vermelho);
     margin-left: 17.3%;
     clip-path: polygon(0 0, 100% 9%, 100% 91%, 0 100%);
@@ -184,7 +171,7 @@
     letter-spacing: 5px
 }
 
-.Backtxt {
+.ptext1 {
     height: 50%;
     width: 65%;
     margin-left: 30%;
@@ -192,17 +179,7 @@
     margin-top: 2%;
 }
 
-.right {
-    height: 100%;
-    width: 50%;
-}
-
-.Boximage {
-    height: 90%;
-    width: 90%;
-}
-
-.Boximage img {
+.laptop {
     height: 100%;
     width: 100%;
 }
@@ -218,7 +195,7 @@
 .BoxTitlEntrega {
     margin-top: 8%;
     height: 150px;
-    width: 85%;
+    width: 80%;
     background-color: var(--azul);
     clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 93%);
     font-size: 2.5rem;
@@ -231,213 +208,149 @@
     letter-spacing: 5px;
 }
 
-.BoxIMG {
-    height: 100%;
-    width: 100%;
-    margin-left: 13.5%;
-}
 
-.BoxIMG img {
+
+.ifood {
     height: 100%;
     width: 100%;
+    margin-left: 60px;
 }
 
 .Backtxtentrega {
     height: 50%;
     width: 60%;
-    margin-left: 20%;
+    margin-left: 15%;
     font-size: 1.5rem;
     margin-top: 2%;
 }
 
 /* Responsivo celular */
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 625px) {
+    .Conteiner{
+        width: 100%;
+    }
+
+    .Inovacao{
+        width: 100%;
+    }
+    
     .Title{
-        font-size: 1.4rem;
-        letter-spacing: 1px;
-        margin-top: 12px;
-        margin-right: 10px;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        margin-right: 20px;
     }
 
-    .BoxTitle{
-        margin-top: -100px;
-    }
-
-    /* começo do quadrado de inovação*/    
     .TitleInovacao h1{
         font-size: 3rem;
     }
 
-    .Boxtext{
-        margin-top: -220px;
-        width: 90%;
-        margin-left: 15px;
-    }
-
     .Text{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        margin-top: -50px;
+        max-width: 80%;
     }
+
+    .Boxtext{
+        margin-top: -45%;
+    }
+
     .Inovacao{
-        width: 100%;
-        height: 380px;
+        height: 70%;
     }
 
-    /* final do quadrado de inovação*/   
+    /*aplicativo*/
 
-    /* começo plano de celular*/
-
-    .Boximages img{
-        height: 300px;
-        width: 320px;
-        margin-left: 5px;
+    .App{
+        flex-direction: column;
     }
 
-    .BoxLeft{
-        height: 100px;
-    }
+    .cellphone{
+        width: 80%;
+        height: 100%;
+        margin-left: 15%;
 
-    .BoxRight{
-        margin-top: 320px;
-        width: 100%;
     }
 
     .Boxtitle{
-       display: none;
+        display: none;
+    }
+
+    .ptext{
+        font-size: 1rem;
+        max-width: 80%;
+        text-align: center;
     }
 
     .BoxtextApp{
-        font-size: 1.3rem;
-        width: 100%;
-       margin-right: 130px;
-       text-align: center;
+        width: 100%
     }
 
-    /* final plano de celular*/
-
-     /* começo plano de crm*/
-
-     .Backtitle{
-        display: none;
-     }
-
-     .Boximage{
-        height: 200px;
-        width: 300px;
-        position: absolute;
-        z-index: 1;
-        left: 40px;
-        top: 410rem;
-     }
-
-     .Backtxt{
-        font-size: 1.3rem;
-        margin-top: 300px;
+    .BoxRight{
         width: 100%;
-        text-align: center;
-        margin-right: 80px;
-        
-     }
+    }
 
-     .left{
-        width: 100%;
-        margin-left: -40px;
-     }
+    /*final app*/
 
-     /* final plano de crm*/
+    /* crm*/
 
-     /* começo plano de entrega*/
 
-     .BoxIMG{
-        height: 200px;
-        margin-left: 40px;
-        position: absolute;
-        width: 300px;
-     }
-
-     .BoxTitlEntrega{
+    .Backtitle{
         display: none;
-     }
+    }
 
-     .Backtxtentrega{
-        margin-top: 220px;
-        padding-bottom: 200px;
-        font-size: 1.3rem;
+    .Crm{
+        flex-direction: column;
+    }
+
+    .ptext1{
+        font-size: 1rem;
+        max-width: 80%;
         text-align: center;
-        width: 300px;
-        margin-left: 30px;
-     }
+        margin-left: 15%;
+    }
 
-      /* final plano de entrega*/ 
+    .left{
+        width: 100%;
+    }
+
+    /*final crm */
+
+    /*entrega*/
+    .BoxTitlEntrega{
+        display: none;
+    }
+
+    .ptext2{
+        font-size: 1rem;
+        max-width: 80%;
+        text-align: center;
+        margin-left: -5%;
+    }
+    
+    .ifood{
+        width: 70%;
+    }
+
+    .ServicoEntrega{
+        flex-direction: column;
+    }
+
+    .Backtxtentrega{
+        width: 100%;
+    }
+
+    /*final entrags*/
  }
 
  /* Responsivo celular */
-@media screen and (max-width: 674px) {
 
-  }
  
  
  
 /*Responsivo tablet*/ 
- @media screen and (max-width : 724px) {
-    .Boximages img{
-        height: 280px;
-        width: 280px;
-        margin-left: 5px;
-    }
-
-
-    .BoxRight{
-        margin-top: 250px;
-        width: 100%;
-    }
-
-
-    .BoxtextApp{
-        font-size: 1rem;
-        width: 80%;
-       text-align: center;
-       margin-top: -150px;
-       margin-left: 30px;
-    }
-
-    /* começo plano de crm*/
-
-     .Boximage{
-        height: 190px;
-        width: 270px;
-        position: absolute;
-        z-index: 1;
-        left: -5px;
-        top: 390rem;
-     }
-
-     .Backtxt{
-        font-size: 1rem;
-        margin-top: -150px;
-        margin-left: 250px;
-        width: 60%;
-        text-align: center;
-        
-     }
-
-     /* começo plano de entrega*/
-
-     .BoxIMG{
-        height: 180px;
-        margin-left: 10px;
-        position: absolute;
-        width: 250px;
-        top: 405rem;
-     }
-
-
-     .Backtxtentrega{
-        margin-top: -410px;
-        font-size: 1rem;
-        text-align: center;
-        width: 50%;
-        margin-left: 250px;
-     }
+ @media screen and (max-width : 926px) and (min-width: 926) {
+    
 
     
  }
