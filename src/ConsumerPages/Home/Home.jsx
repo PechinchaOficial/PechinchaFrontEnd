@@ -1,7 +1,7 @@
 // Importando estilos e recursos necessários
 import styles from './Home.module.css';
 import teste from '../../assets/img/pechinchaLogo.svg';
-import logosimple from '../../assets/img/logo_simple.svg';
+import logosimple from '../../assets/img/logo_base.svg';
 import star from '../../assets/img/star.svg';
 import starYellow from '../../assets/img/starYellow.svg';
 import CategoryProd from '../../components/CategoryProd/CategoryProd';
@@ -10,13 +10,16 @@ import step2 from '../../assets/img/step22.svg';
 import kaique from '../../assets/img/kaiqueAvalia.jpg';
 import React, { useRef } from 'react';
 import TituloFormato from '../../components/TituloFormato/TituloFormato';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useLayoutEffect } from 'react';
 // Importando componentes do Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Importando banner e carrossel
+// Importando banner, carrossel e animações
 import Banner from '../../components/Banner/Banner';
 import imgBanner from '../../assets/img/banner.svg';
 import CarouselProd from '../../components/CarouselProd/CarouselProd';
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 // Importando logos de mercados cadastrados
 import mercadoLogo from '../../assets/img/mercadodia.svg';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
@@ -30,6 +33,48 @@ import ContainerPerguntas from './Questions/QuestionsSection';
 
 // Definindo o componente principal Home
 function Home() {
+
+
+    // Efeito de animação ao rolar ao rolar a página
+    const el = useRef();
+    const tl = useRef();
+
+    useLayoutEffect(() => {
+
+
+        gsap.registerPlugin(ScrollTrigger)
+        const ctx = gsap.context(() => {
+            tl.current = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#item",
+                    markers: true,
+                    start: "top 500px",
+                    end: "bottom 700px "
+                }
+            })
+                .fromTo(`.${styles.passos}`,
+                    {
+                        x: -700,
+                        opacity: 0,
+                    }, {
+                    x: 0,
+                    opacity: 1,
+                })
+
+                .fromTo(`.${styles.boxRight}`,
+                    {
+                        x: 700,
+                        opacity: 0,
+                    }, {
+                    x: 0,
+                    opacity: 1,
+                })
+        }, el)
+
+
+    }, []);
+
+
     const { t } = useTranslation();  // Usando a tradução
 
     const [slidesPerView, setSlidePerView] = useState(1);  // Estado para controlar a quantidade de slides visíveis
@@ -85,10 +130,14 @@ function Home() {
                 {/*  Categorias dos produto*/}
                 <section className={styles.hero_section}>
                     <div className={styles.container_slogan} id='container'>
-                        <img src={teste} alt="logo" className={styles.img_logo} />
-                        <img src={logosimple} alt="logo" className={styles.img_logo} id={styles.logo_responsive} />
+                        <div className={styles.img_temp}>
 
-                        <h2 className={styles.slogan_subtitle}>{t("slogan01")}</h2>
+                            <img src={logosimple} alt="logo" className={styles.img_logo2} />
+                            <h1>A grana apertou?</h1>
+                            <h2>Pechincha Chegou!</h2>
+
+                        </div>
+                        <h2 className={styles.slogan_subtitle}>Nós combatemos o desperdício e ainda fazemos aquela diferença no bolso!</h2>
 
                         <div className={styles.search}>
                             <input type="search" placeholder='Pechinchar' className={styles.search_bar} />
@@ -115,14 +164,14 @@ function Home() {
 
                 {/* Como funciona a chegada dos produtos na plataforma*/}
 
-                <section className='background'>
-                    <div className={styles.comoFunciona}>
+                <section className='background' >
+                    <div className={styles.comoFunciona} >
                         <TituloFormato categoria={t("Como funciona?")} />
 
-                        <div className={styles.container_content}>
+                        <div className={styles.container_content} ref={el}>
                             <article className={styles.passos}>
 
-                                <div className={styles.boxLeft}>
+                                <div className={styles.boxLeft} >
                                     <div className={styles.passo} onClick={step1}>
                                         <span>1</span>
                                     </div>
@@ -143,7 +192,7 @@ function Home() {
                                 </p>
                             </article>
 
-                            <div className={styles.boxRight}>
+                            <div className={styles.boxRight} id='item'>
 
                                 <Swiper
                                     // controla quantos slides por foto quero que apareça
