@@ -35,6 +35,8 @@ function CardProduct({ categoria, nome, img, link, delay }) {
             </Link>
         </div>
     )
+
+
 }
 
 export default CardProduct;

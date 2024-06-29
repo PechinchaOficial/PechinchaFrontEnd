@@ -16,6 +16,7 @@ function CategoryProd() {
 
     return (
         <div className={styles.container_card}>
+
             <CardProduct 
                 nome={t("Snack")}
                 link="/snacks"
@@ -45,6 +46,7 @@ function CategoryProd() {
                 link="/bebidas"
                 img={bebidas} 
                 delay='500'/>
+
         </div>
     )
 }
