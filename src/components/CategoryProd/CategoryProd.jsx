@@ -19,50 +19,10 @@ function CategoryProd() {
     ];
 
     return (
-<<<<<<< HEAD
-// Contêiner principal que envolve todos os cartões de produto
-<div className={styles.container_card}>
-    {/* Cartão de produto para Snacks */}
-    <CardProduct
-        nome={t("Snack")}
-        link="/snacks"
-        img={snacks} 
-    />
-    {/* Cartão de produto para Enlatados, com categoria azul */}
-    <CardProduct
-        categoria='azul'
-        nome={t("Enlatados")}
-        link="/enlatados"
-        img={enlatados} 
-    />
-    {/* Cartão de produto para Grãos */}
-    <CardProduct
-        nome={t("Graos")}
-        img={graos}
-        link="/graos"
-    />
-    {/* Cartão de produto para Massas, com categoria azul */}
-    <CardProduct
-        nome={t("Massas")}
-        categoria='azul'
-        img={massas}
-        link="/massas"
-    />
-    {/* Cartão de produto para Bebidas */}
-    <CardProduct
-        nome={t("Bebidas")}
-        link="/bebidas"
-        img={bebidas} 
-    />
-</div>
-
-    )
-=======
         <div className={styles.container_card}>
             {products.map((product, index) => (
                 <CardProduct
                     key={index}
-                    index={index}
                     nome={product.nome}
                     link={product.link}
                     img={product.img}
@@ -71,7 +31,6 @@ function CategoryProd() {
             ))}
         </div>
     );
->>>>>>> 388118c9ebf2ba8a350e522779f49385daf5ace0
 }
 
 export default CategoryProd;

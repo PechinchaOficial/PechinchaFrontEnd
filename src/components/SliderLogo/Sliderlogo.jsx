@@ -53,6 +53,6 @@ function SliderLogo() {
       </div>
     </div>
   );
-  
+}
 
-export default SliderLogo;
+export default SliderLogo

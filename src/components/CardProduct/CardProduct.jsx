@@ -26,7 +26,7 @@ function CardProduct({ categoria, nome, img, link, index }) {
 
     }, [index]);
 
-<<<<<<< HEAD
+
 // Função que rola a janela para o topo
 const scrollToTop = () => {
     window.scrollTo({
@@ -54,30 +54,6 @@ return (
     </div>
 );
 
-=======
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "auto",
-        });
-    };
-
-    const { t } = useTranslation();
-
-    return (
-        <div ref={el} className={styles.cardContainer}>
-            <div className={styles.card_prod} id={categoria}>
-                <div className={styles.img_prod}>
-                    <img src={img} alt="Imagem categoria" className={styles.prodImg} />
-                </div>
-                <h2 className={styles.title_prod}>{nome}</h2>
-                <Link to={link} onClick={scrollToTop}>
-                    <Button text={t("Eu queroBTN")} />
-                </Link>
-            </div>
-        </div>
-    );
->>>>>>> 388118c9ebf2ba8a350e522779f49385daf5ace0
 }
 
 export default CardProduct;
