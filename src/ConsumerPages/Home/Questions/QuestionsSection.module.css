@@ -24,9 +24,9 @@
     margin-top: 30px;
 }
 
-#arrow_right{
+/* #arrow_right{
 
-}
+} */
 
 #arrow_down{
     display: none;
@@ -49,7 +49,7 @@
     font-size: 2.6rem;
     opacity: 30%;
     cursor: pointer;
-    transition: 0.5s all;
+    transition: 0.15s all;
 }
 
 .pergunta i:hover {
