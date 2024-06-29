@@ -49,19 +49,19 @@ const ContainerPerguntas = () => {
     <div className={styles.container_perguntas}>
       <Pergunta
         perguntaTexto="A Pechincha é um App de descontos?"
-        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+        respostaTexto="A Pechincha é uma plataforma para divulgar descontos de forma que os consumidores economizem e os mercados possam evitar o desperdicios e prejuizo."
       />
       <Pergunta
         perguntaTexto="A Pechincha tem sistema de pagamento?"
-        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+        respostaTexto="A Pechincha tem como plano futuro implementar um sistema de pagamento para que você consumidor possa comprar direto da plataforma."
       />
       <Pergunta
         perguntaTexto="A Pechincha faz entrega?"
-        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+        respostaTexto="Ainda não fazemos entrega mas futuramente isso sera possivel, para que os consumidores possam aproveitar essas ofertas imperdiveis do conforto da sua casa."
       />
       <Pergunta
         perguntaTexto="A Pechincha assegura que meu pedido não está vencido?"
-        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+        respostaTexto="Sim, a Pechincha conta com um sistema de exclusão automatico dos produtos vencidos da plataforma de forma que nenhum usuario nunca compre um produto vencido."
       />
     </div>
   );

@@ -29,7 +29,8 @@ import logosimple from '../../assets/img/logo_base.svg';
 import bannerc from '../../assets/img/bannerc.png'
 import ContainerPerguntas from './Questions/QuestionsSection';
 
-
+import Bannerverde from '../../assets/img/bannerverde.png'
+import Bannerjunina from '../../assets/img/bannerjunina.png'
 
 
 function HomeDeslogado() {
@@ -160,9 +161,9 @@ function HomeDeslogado() {
                                     // controla quantos slides por foto quero que apareça
                                     slidesPerView={slidesPerView}
                                     // define se é clicavel ou não
-                                    pagination={{ clickable: true }}
+                                   
 
-                                    navigation>
+                                    >
 
                                     <SwiperSlide>
                                         <img src={step} alt="Banner Promocional" className={styles.step_img} />
@@ -185,7 +186,7 @@ function HomeDeslogado() {
 
                 <section className="background">
                     <div className={styles.container_promotion} id="container">   {/* Container */}
-                        <Banner bannerimg={imgBanner} bannerc={bannerc} /> {/* Banner de promoções */}
+                    <Banner bannerimg={imgBanner} bannerc={bannerc} bannerverde={Bannerverde} bannerjunino={Bannerjunina} /> {/* Banner de promoções */}
                         <CarouselProd />    {/* Carrossel de produtos */}
                     </div>
                 </section>

@@ -13,7 +13,7 @@ import 'swiper/css/autoplay';
 
 import { Swiper, SwiperSlide} from 'swiper/react';
 
-function Banner({ bannerimg, bannerc }) {
+function Banner({ bannerimg, bannerc , bannerverde, bannerjunino}) {
     
 
     const [slidesPerView, setSlidePerView] = useState(1)
@@ -51,6 +51,16 @@ function Banner({ bannerimg, bannerc }) {
 
                 <SwiperSlide>
                     <img src={bannerimg} alt="Banner Promocional" className={styles.img_banner} />
+                </SwiperSlide>
+
+                
+                <SwiperSlide>
+                    <img src={bannerverde} alt="Banner Promocional" className={styles.img_banner} />
+                </SwiperSlide>
+
+                
+                <SwiperSlide>
+                    <img src={bannerjunino} alt="Banner Promocional" className={styles.img_banner} />
                 </SwiperSlide>
             </Swiper>
         </div>

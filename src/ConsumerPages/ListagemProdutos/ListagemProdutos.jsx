@@ -5,6 +5,8 @@ import MercadosRegiao from './MercadosRegiao/MercadosRegiao';
 import CategoriaProduto from './CategoriaProduto/CategoriaProduto';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 import bannerc from '../../assets/img/bannerc.png'
+import Bannerverde from '../../assets/img/bannerverde.png'
+import Bannerjunina from '../../assets/img/bannerjunina.png'
 
 function ListagemProdutos() {
 
@@ -19,7 +21,7 @@ function ListagemProdutos() {
         <div>
             <HeaderConsumer />
             <main className={styles.prod_list}>
-                <Banner bannerimg={imgBanner} bannerc={bannerc} />
+            <Banner bannerimg={imgBanner} bannerc={bannerc} bannerverde={Bannerverde} bannerjunino={Bannerjunina} /> {/* Banner de promoções */}
                 <MercadosRegiao />
                 <CategoriaProduto categoria='Snacks' category={snacks} />
                 <CategoriaProduto categoria='Bebida' category={bebidas} />
