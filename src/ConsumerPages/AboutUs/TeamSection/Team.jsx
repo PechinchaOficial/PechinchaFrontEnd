@@ -15,6 +15,7 @@ function Team() {
         <section className={Styles.team_section} id='container'>
             <TituloFormato categoria='Nossa equipe' />
             <div className={Styles.pics}>
+                
                 <div className={Styles.square}> 
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Luane} />  {/*Classe luane da uma altura largura e espaçamento estre as divs*/}
@@ -26,6 +27,8 @@ function Team() {
                         <p>Desenvolvedora Front-End</p>
                     </div>
                 </div>
+                
+
                 <div className={Styles.square}>
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Jessica} />
@@ -35,8 +38,9 @@ function Team() {
                         <p>Product Owner</p>
                         <p>Desenvolvedora Full Stack</p>
                     </div>
-
                 </div>
+
+
                 <div className={Styles.square}>
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Pablo} />
@@ -47,6 +51,8 @@ function Team() {
                         <p>Desenvolvedor Full Stack</p>
                     </div>
                 </div>
+
+
                 <div className={Styles.square}>
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Kaique} />
@@ -57,6 +63,8 @@ function Team() {
                         <p>Desenvolvedor Front-End</p>
                     </div>
                 </div>
+
+
                 <div className={Styles.square}>
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Gallo} />
@@ -67,6 +75,8 @@ function Team() {
                         <p>Desenvolvedor Full Stack</p>
                     </div>
                 </div>
+
+
                 <div className={Styles.square}>
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Cesar} />
@@ -76,6 +86,8 @@ function Team() {
                         <p>Desenvolvedor Full Stack</p>
                     </div>
                 </div>
+
+
                 <div className={Styles.square}>
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Juan} />
@@ -85,6 +97,8 @@ function Team() {
                         <p>Desenvolvedor Full Stack</p>
                     </div>
                 </div>
+
+
                 <div className={Styles.square}>
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Sora} />
@@ -95,6 +109,8 @@ function Team() {
                         <p>Desenvolvedor Back-End</p>
                     </div>
                 </div>
+
+
             </div>
         </section>
 

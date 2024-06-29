@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/usuario"
+const API_URL = "http://localhost:8080/usuario/cadastro"
 
 export const GetUsuarios = () => axios.get(API_URL)
 export const GetUsuarioById = (id) => axios.get(`${API_URL}/${id}`)
