@@ -97,7 +97,7 @@ function Product() {
                                     <div className={Styles.BoxDesc}>
                                         <div className={Styles.Desc}>
                                             {produto ? (
-                                                <h1>-{produto.desconto}%</h1>
+                                                <h1>-{produto.desconto}</h1>
                                             ) : (
                                                 <Skeleton height={70} width={80} />
                                             )}
