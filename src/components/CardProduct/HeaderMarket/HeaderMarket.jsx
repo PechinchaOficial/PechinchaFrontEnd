@@ -2,14 +2,20 @@ import styles from './HeaderMarket.module.css'
 import logo from '../../../assets/img/marketLogo.svg'
 function HeaderMarket() {
     return (
-        <header className={styles.header_market}>
-            <img src={logo} alt="Logo" className={styles.img_logo} />
+// Define o componente de cabeçalho
+<header className={styles.header_market}>
+    {/* Exibe o logo da marca */}
+    <img src={logo} alt="Logo" className={styles.img_logo} />
 
-            <div className={styles.container_icon}>
-                <h4>Olá, Mercado TodoDia</h4>
-                <div className={styles.icon_user}></div>
-            </div>
-        </header>
+    {/* Contêiner para o ícone e saudação do usuário */}
+    <div className={styles.container_icon}>
+        {/* Saudação ao usuário */}
+        <h4>Olá, Mercado TodoDia</h4>
+        {/* Ícone do usuário */}
+        <div className={styles.icon_user}></div>
+    </div>
+</header>
+
     )
 }
 
