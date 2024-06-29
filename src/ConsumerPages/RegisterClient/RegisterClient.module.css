@@ -1,7 +1,7 @@
 .container_register_client{
     background-color: white;
     width:  1200px;
-    height: 620px;
+    height: 700px;
 
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
 
 /*Estilizando o Banner*/
 .banner_register{
-    height: 600px;
+    height: 100%;
 	width: 50%;
 
 	align-items: center;
@@ -26,8 +26,6 @@
     background-repeat: no-repeat; /* A imagem não se repetirá */
     background-position: center center; /* A imagem ficará centralizada */
 
-	border-top-right-radius:  40px;
-	border-bottom-right-radius:  40px;
 }
 /*Titulo do Bannner*/
 .title_banner_register{
@@ -154,7 +152,10 @@ label{
     color: var(--azul);
 }
 
-
+.error{
+	color: red;
+	padding-top: 10px;
+}
 
 
 /* Responsivo TABLET's */

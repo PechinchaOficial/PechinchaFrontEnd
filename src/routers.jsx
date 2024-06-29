@@ -72,7 +72,7 @@ function RouterApp() {
 
                 <Route path='/userprofile' element={<UserProfile />} />
                 <Route path='/marketlogin' element={<MarketLogin />} />
-                <Route path='/rclientegister' element={<RegisterClient />} />
+                <Route path='/registerclient' element={<RegisterClient />} />
                 <Route path='/checkoutpage' element={<CheckoutPage />} />
                 <Route path='/filterProducts' element={<FilterProducts />} />
                 <Route path='/registerteste' element={<UserForm />} />

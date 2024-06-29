@@ -1,41 +1,44 @@
-import styles from './Home.module.css'
-import teste from '../../assets/img/pechinchaLogo.svg'
-import logosimple from '../../assets/img/logo_simple.svg'
-
-import star from '../../assets/img/star.svg'
-import starYellow from '../../assets/img/starYellow.svg'
+// Importando estilos e recursos necessários
+import styles from './Home.module.css';
+import teste from '../../assets/img/pechinchaLogo.svg';
+import logosimple from '../../assets/img/logo_simple.svg';
+import star from '../../assets/img/star.svg';
+import starYellow from '../../assets/img/starYellow.svg';
 import CategoryProd from '../../components/CategoryProd/CategoryProd';
-import step from '../../assets/img/etapa (1).svg'
-import step2 from '../../assets/img/step22.svg'
-import kaique from '../../assets/img/kaiqueAvalia.jpg'
+import step from '../../assets/img/etapa (1).svg';
+import step2 from '../../assets/img/step22.svg';
+import kaique from '../../assets/img/kaiqueAvalia.jpg';
 import React, { useRef } from 'react';
 import TituloFormato from '../../components/TituloFormato/TituloFormato';
-import { useState, useEffect } from 'react'
-// import carrossel
+import { useState, useEffect } from 'react';
+// Importando componentes do Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
-// imports banner
+// Importando banner e carrossel
 import Banner from '../../components/Banner/Banner';
 import imgBanner from '../../assets/img/banner.svg';
 import CarouselProd from '../../components/CarouselProd/CarouselProd';
-// imports mercados cadastrados
-import mercadoLogo from '../../assets/img/mercadodia.svg'
+// Importando logos de mercados cadastrados
+import mercadoLogo from '../../assets/img/mercadodia.svg';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
-import rateimg from '../../assets/img/altoFalante.png'
-import amigao from '../../assets/img/Market/amigao.png'
-import violeta from '../../assets/img/Market/violeta.png'
-import recoy from '../../assets/img/Market/ricoy.png'
+import rateimg from '../../assets/img/altoFalante.png';
+import amigao from '../../assets/img/Market/amigao.png';
+import violeta from '../../assets/img/Market/violeta.png';
+import recoy from '../../assets/img/Market/ricoy.png';
 import { useTranslation } from "react-i18next";
 import bannerc from '../../assets/img/bannerc.png'
 import ContainerPerguntas from './Questions/QuestionsSection'
 import Bannerverde from '../../assets/img/bannerverde.png'
 import Bannerjunina from '../../assets/img/bannerjunina.png'
 
-function Home() {
-    const { t } = useTranslation();
 
-    const [slidesPerView, setSlidePerView] = useState(1)
+// Definindo o componente principal Home
+function Home() {
+    const { t } = useTranslation();  // Usando a tradução
+
+    const [slidesPerView, setSlidePerView] = useState(1);  // Estado para controlar a quantidade de slides visíveis
 
     useEffect(() => {
+        // Função para ajustar a quantidade de slides visíveis com base na largura da janela
         function handleResize() {
             if (window.innerWidth > 720) {
                 setSlidePerView(1);
@@ -45,38 +48,22 @@ function Home() {
         }
 
         handleResize();
-    }, [])
+        // Adiciona um ouvinte de evento para redimensionar
+        window.addEventListener('resize', handleResize);
 
+        // Remove o ouvinte de evento ao desmontar o componente
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
+    // Referências para manipulação direta do DOM
     const descRef = useRef();
     const titleRef = useRef();
-    const pergunta = useRef();
-    const descRef3 = useRef();
-    const arrow_down = useRef();
-    const arrow_right = useRef();
 
-
-    function ShowAnswer() {
-        pergunta.current.style.height = 'auto';
-        arrow_right.current.style.display = 'none';
-        arrow_down.current.style.display = 'block';
-    }
-
-
-    function HiddenAnswer() {
-        pergunta.current.style.height = '60px';
-        pergunta.current.style.transition = '0.5s all';
-        arrow_right.current.style.display = 'block';
-        arrow_down.current.style.display = 'none';
-    }
-
-
-
+    // Funções para alterar o conteúdo dos passos
     function step1() {
         if (descRef.current || titleRef.current) {
             descRef.current.innerHTML = `${t("text01")}`;
             titleRef.current.innerHTML = `${t("Como chega os produtos?")}`;
-
         }
     }
 
@@ -84,7 +71,6 @@ function Home() {
         if (descRef.current || titleRef.current) {
             descRef.current.innerHTML = `${t("text02")}`;
             titleRef.current.innerHTML = `${t("2. Como encontrar os produtos?")}`;
-
         }
     }
 
@@ -92,7 +78,6 @@ function Home() {
         if (descRef.current || titleRef3.current) {
             descRef.current.innerHTML = `${t("text03")}`;
             titleRef.current.innerHTML = `${t("3. E para comprar?")}`;
-
         }
     }
 
@@ -308,7 +293,7 @@ function Home() {
                 </div>
             </main>
 
-            
+
         </div>
     )
 }

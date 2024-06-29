@@ -13,7 +13,6 @@ import Products from '../../../assets/data/localData'; // Substitua pelo caminho
 import { CreateProduto } from '../../../services/ProdutoService'; // Verifique se o caminho do serviço está correto
 import Btn from '../BtnMarket/BtnMarket';
 
-
 function MarketSystem({ imagem, classe }) {
     const results = React.useRef();
 
@@ -54,6 +53,7 @@ function MarketSystem({ imagem, classe }) {
         desconto: '',
         datavalidade: '',
         fotoproduto: '',
+        categorias: '',
         datacadastro: new Date().toISOString().split('T')[0]
     });
 
@@ -192,19 +192,6 @@ function MarketSystem({ imagem, classe }) {
                                             }}
                                             onClick={ShowResults}
                                         />
-{/* 
-                                        <input
-                                            type="text"
-                                            name="fotoproduto"
-                                            placeholder="imagem"
-                                            className={Styles.input_long}
-                                            value={produto.fotoproduto}
-                                            onChange={(e) => {
-                                                handleChange(e);
-                                                setSearch(e.target.value);
-                                            }}
-                                            onClick={ShowResults}
-                                        /> */}
                                         <div className={Styles.results} ref={results} onMouseLeave={HiddenResults}>
                                             <ul>
                                                 {filteredProducts.map(({ nome, id, datavalidade, fotoproduto }) => (
@@ -236,7 +223,7 @@ function MarketSystem({ imagem, classe }) {
                                         <input
                                             className={Styles.input_long} id={Styles.input_hidden}
                                             type="text"
-                                           name="fotoproduto"
+                                            name="fotoproduto"
                                             placeholder="img"
                                             value={produto.fotoproduto = imgUrl}
                                             readOnly
@@ -249,12 +236,13 @@ function MarketSystem({ imagem, classe }) {
                                             <div className={Styles.input}>
                                                 <p className={Styles.titulo_input}>Categoria</p>
                                                 <select
-                                                    id="categoria"
-                                                    name="categoria"
+                                                    id="categorias"
+                                                    name="categorias"
                                                     className={Styles.select}
-                                                    value={produto.categoria}
+                                                    value={produto.categorias}
                                                     onChange={handleChange}
                                                 >
+                                                    <option value="">Selecione uma categoria</option>
                                                     <option value="massas">Massas</option>
                                                     <option value="enlatados">Enlatados</option>
                                                     <option value="bebidas">Bebidas</option>
@@ -322,4 +310,3 @@ function MarketSystem({ imagem, classe }) {
 }
 
 export default MarketSystem;
-

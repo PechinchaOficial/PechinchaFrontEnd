@@ -1,5 +1,4 @@
-
-.btn{
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,11 +14,8 @@
     transition: 0.4s all;
 }
 
-
-
-
-.btn:hover{
+.btn:hover {
     transform: translateY(-3px);
-    background-color:  rgb(70, 167, 70);
+    background-color: rgb(70, 167, 70);
     transition: all 0.4s;
 }

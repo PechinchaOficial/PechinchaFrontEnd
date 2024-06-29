@@ -10,8 +10,8 @@
     padding: 15px;
     padding-top: 0;
     padding-bottom: 0;
+    box-shadow: 6px 13px 10px -3px rgba(0,0,0,0.1);
 }
-
 
 .total_info {
     display: flex;

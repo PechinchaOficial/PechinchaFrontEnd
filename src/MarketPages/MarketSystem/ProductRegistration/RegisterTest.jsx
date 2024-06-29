@@ -1,26 +1,27 @@
-import React, { useState } from 'react';
 import { createUser } from '../../../services/UsuarioService'; // Assumindo que haverá um serviço `createUser` para criar usuários
 
 function UserForm() {
     const [user, setUser] = useState({
-        email: '',
-        senha: '',
-        nome: '',
-        telefone: '',
-        datanascimento: '',
+        email: 'teste54@gmail.com',
+        senha: 'teste002',
+        nome: 'José',
+        telefone: '(11) 94756-2424',
+        datanascimento: '2024-06-20',
         status: 1,
-        documento: '',
-        tipo: 'Consumidor', // Padrão como Consumidor
+        documento: '476.125.648-66',
+        tipo: 'Mercado', // Padrão como Consumidor
         enderecos: [{
-            cidade: '',
-            estado: '',
-            cep: '',
-            bairro: '',
-            rua: '',
-            numero: '',
-            complemento: ''
+            cidade: 'Teste',
+            estado: 'SP',
+            cep: '06326030',
+            bairro: 'Cohab 2',
+            rua: 'Rio Branco',
+            numero: '31',
+            complemento: '19'
         }]
     });
+
+    const [errors, setErrors] = useState([]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -47,7 +48,7 @@ function UserForm() {
             if (error.response) {
                 // O servidor retornou uma resposta com status fora da faixa 2xx
                 console.error('Erro ao criar usuário:', error.response.data);
-                console.error('Status do erro:', error.response.status);
+                setErrors(error.response.data.errors);
             } else if (error.request) {
                 // A requisição foi feita, mas não houve resposta
                 console.error('Erro de requisição:', error.request);
@@ -57,113 +58,122 @@ function UserForm() {
             }
         }
     };
-    
 
     return (
         <form onSubmit={handleSubmit}>
             <input
                 type="email"
                 name="email"
-                defaultValue={user.email}
+                value={user.email}
                 onChange={handleChange}
                 placeholder="E-mail"
-                required
+                
             />
             <input
                 type="password"
                 name="senha"
-                defaultValue={user.senha}
+                value={user.senha}
                 onChange={handleChange}
                 placeholder="Senha"
-                required
+                
             />
             <input
                 type="text"
                 name="nome"
-                defaultValue={user.nome}
+                value={user.nome}
                 onChange={handleChange}
                 placeholder="Nome"
-                required
+                
             />
             <input
                 type="tel"
                 name="telefone"
-                defaultValue={user.telefone}
+                value={user.telefone}
                 onChange={handleChange}
                 placeholder="Telefone"
-                required
+                
             />
             <input
                 type="date"
                 name="datanascimento"
-                defaultValue={user.datanascimento}
+                value={user.datanascimento}
                 onChange={handleChange}
-                required
+                
             />
             <input
                 type="text"
                 name="documento"
-                defaultValue={user.documento}
+                value={user.documento}
                 onChange={handleChange}
                 placeholder="Documento"
-                required
+                
             />
             <input
                 type="text"
-                name="enderecos-cidade"
-                defaultValue={user.enderecos[0].cidade}
+                name="cidade"
+                value={user.enderecos[0].cidade}
                 onChange={(e) => handleEnderecoChange(e, 0)}
                 placeholder="Cidade"
-                required
+                
             />
             <input
                 type="text"
-                name="enderecos-estado"
-                defaultValue={user.enderecos[0].estado}
+                name="estado"
+                value={user.enderecos[0].estado}
                 onChange={(e) => handleEnderecoChange(e, 0)}
                 placeholder="Estado"
-                required
+                
             />
             <input
                 type="text"
-                name="enderecos-cep"
-                defaultValue={user.enderecos[0].cep}
+                name="cep"
+                value={user.enderecos[0].cep}
                 onChange={(e) => handleEnderecoChange(e, 0)}
                 placeholder="CEP"
-                required
+                
             />
             <input
                 type="text"
-                name="enderecos-bairro"
-                defaultValue={user.enderecos[0].bairro}
+                name="bairro"
+                value={user.enderecos[0].bairro}
                 onChange={(e) => handleEnderecoChange(e, 0)}
                 placeholder="Bairro"
-                required
+                
             />
             <input
                 type="text"
-                name="enderecos-rua"
-                defaultValue={user.enderecos[0].rua}
+                name="rua"
+                value={user.enderecos[0].rua}
                 onChange={(e) => handleEnderecoChange(e, 0)}
                 placeholder="Rua"
-                required
+                
             />
             <input
                 type="text"
-                name="enderecos-numero"
-                defaultValue={user.enderecos[0].numero}
+                name="numero"
+                value={user.enderecos[0].numero}
                 onChange={(e) => handleEnderecoChange(e, 0)}
                 placeholder="Número"
-                required
+                
             />
             <input
                 type="text"
-                name="enderecos-complemento"
-                defaultValue={user.enderecos[0].complemento}
+                name="complemento"
+                value={user.enderecos[0].complemento}
                 onChange={(e) => handleEnderecoChange(e, 0)}
                 placeholder="Complemento"
             />
             <button type="submit">Cadastrar Usuário</button>
+            {errors.length > 0 && (
+                <div>
+                    <h3>Erros de validação:</h3>
+                    <ul>
+                        {errors.map((error, index) => (
+                            <li key={index}>{error.defaultMessage}</li>
+                        ))}
+                    </ul>
+                </div>
+            )}
         </form>
     );
 }
