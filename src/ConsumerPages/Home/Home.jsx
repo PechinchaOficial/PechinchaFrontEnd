@@ -17,8 +17,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Banner from '../../components/Banner/Banner';
 import imgBanner from '../../assets/img/banner.svg';
 import CarouselProd from '../../components/CarouselProd/CarouselProd';
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 // Importando logos de mercados cadastrados
 import mercadoLogo from '../../assets/img/mercadodia.svg';
@@ -33,51 +31,20 @@ import ContainerPerguntas from './Questions/QuestionsSection'
 import Bannerverde from '../../assets/img/bannerverde.png'
 import Bannerjunina from '../../assets/img/bannerjunina.png'
 
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
+
 
 // Definindo o componente principal Home
 function Home() {
 
-
-    // Efeito de animação ao rolar ao rolar a página
-    const el = useRef();
-    const tl = useRef();
-
-    useLayoutEffect(() => {
-
-
-        gsap.registerPlugin(ScrollTrigger)
-        const ctx = gsap.context(() => {
-            tl.current = gsap.timeline({
-                scrollTrigger: {
-                    trigger: "#item",
-                    markers: true,
-                    start: "top 500px",
-                    end: "bottom 700px "
-                }
-            })
-                .fromTo(`.${styles.passos}`,
-                    {
-                        x: -700,
-                        opacity: 0,
-                    }, {
-                    x: 0,
-                    opacity: 1,
-                })
-
-                .fromTo(`.${styles.boxRight}`,
-                    {
-                        x: 700,
-                        opacity: 0,
-                    }, {
-                    x: 0,
-                    opacity: 1,
-                })
-        }, el)
-
-
-    }, []);
-
-
+    useEffect(() => {
+        AOS.init({
+          duration: 1200, // Duração das animações
+        });
+      }, []);
+      
     const { t } = useTranslation();  // Usando a tradução
 
     const [slidesPerView, setSlidePerView] = useState(1);  // Estado para controlar a quantidade de slides visíveis
@@ -131,8 +98,8 @@ function Home() {
             <HeaderConsumer />
             <main className={styles.container_home} >
                 {/*  Categorias dos produto*/}
-                <section className={styles.hero_section}>
-                    <div className={styles.container_slogan} id='container'>
+                <section className={styles.hero_section} >
+                    <div className={styles.container_slogan} id='container' data-aos="fade-up">
                         <div className={styles.img_temp}>
 
                             <img src={logosimple} alt="logo" className={styles.img_logo2} />
@@ -149,9 +116,9 @@ function Home() {
                     </div>
 
 
-                    <img src={star} alt="star" className={styles.star} />
+                    <img src={star} alt="star" className={styles.star} data-aos="fade-right" />
 
-                    <img src={starYellow} alt="star" className={styles.star_2} />
+                    <img src={starYellow} alt="star" className={styles.star_2} data-aos="fade-left" />
                 </section>
 
                 {/*  Categorias dos produto*/}
@@ -171,8 +138,8 @@ function Home() {
                     <div className={styles.comoFunciona} >
                         <TituloFormato categoria={t("Como funciona?")} />
 
-                        <div className={styles.container_content} ref={el}>
-                            <article className={styles.passos}>
+                        <div className={styles.container_content} >
+                            <article className={styles.passos} data-aos="fade-right">
 
                                 <div className={styles.boxLeft} >
                                     <div className={styles.passo} onClick={step1}>
@@ -195,7 +162,7 @@ function Home() {
                                 </p>
                             </article>
 
-                            <div className={styles.boxRight} id='item'>
+                            <div className={styles.boxRight} id='item' data-aos="fade-left">
 
                                 <Swiper
                                     // controla quantos slides por foto quero que apareça
@@ -231,32 +198,32 @@ function Home() {
                 </section>
 
                 <div id="background">
-                    <section className={styles.mercados} id='container'>
+                    <section className={styles.mercados} id='container' >
                         <TituloFormato
                             categoria={t("Ja trabalham conosco")} />
                         <div className={styles.container_mercados}>
-                            <div className={styles.card_mercado}>
+                            <div className={styles.card_mercado} data-aos="fade-up">
                                 <img src={mercadoLogo} alt="Logo Mercado" className={styles.logo_mercado} />
                                 <button className={styles.btn}>
                                     Ver Promoções
                                 </button>
                             </div>
 
-                            <div className={styles.card_mercado} id={styles.marketTwo}>
+                            <div className={styles.card_mercado} id={styles.marketTwo} data-aos="fade-up" data-aos-delay="200">
                                 <img src={amigao} alt="Logo Mercado" className={styles.logo_mercado} />
                                 <button className={styles.btn}>
                                     Ver Promoções
                                 </button>
                             </div>
 
-                            <div className={styles.card_mercado} id={styles.marketThree}>
+                            <div className={styles.card_mercado} id={styles.marketThree} data-aos="fade-up" data-aos-delay="300">
                                 <img src={violeta} alt="Logo Mercado" className={styles.logo_mercado_2} />
                                 <button className={styles.btn}>
                                     Ver Promoções
                                 </button>
                             </div>
 
-                            <div className={styles.card_mercado} id={styles.marketTwo}>
+                            <div className={styles.card_mercado} id={styles.marketTwo}data-aos="fade-up" data-aos-delay="400">
                                 <img src={recoy} alt="Logo Mercado" className={styles.logo_mercado_2} />
                                 <button className={styles.btn}>
                                     Ver Promoções
@@ -271,9 +238,9 @@ function Home() {
                         <h2 className={styles.title} id={styles.title_rate}>{t("O QUE ESTÃO COMENTANDO SOBRE A")}<span className={styles.destaque}> PECHINCHA</span></h2>
                         <div className={styles.rate_section} id='container'>
 
-                            <img src={rateimg} alt="Avaliação" className={styles.img_person} />
+                            <img src={rateimg} alt="Avaliação" className={styles.img_person} data-aos="fade-right"/>
 
-                            <div className={styles.container_rate}>
+                            <div className={styles.container_rate}data-aos="fade-left">
                                 <div className={styles.rate_card}>
                                     <div className={styles.info_user}>
                                         <div className={styles.user_icon}>
