@@ -35,6 +35,7 @@ import FilterProducts from './ConsumerPages/ListagemProdutos/FilterProducts/Filt
 import ProductForm from './MarketPages/MarketSystem/ProductRegistration/RegisterTest';
 import ReadyProduct from './ConsumerPages/ReadyProduct/ReadyProduct';
 import UserForm from './MarketPages/MarketSystem/ProductRegistration/RegisterTest';
+import CardDetails from './MarketPages/CardDetails/CardDetails';
 
 function RouterApp() {
     return (
@@ -76,6 +77,7 @@ function RouterApp() {
                 <Route path='/filterProducts' element={<FilterProducts />} />
                 <Route path='/registerteste' element={<UserForm />} />
                 <Route path='/readyProduct' element={<ReadyProduct />} />
+                <Route path='/carddetails' element={<CardDetails />} />
 
             </Routes>
             <Footer />

@@ -2,7 +2,6 @@ import Styles from './CardCheckout.module.css'
 import { Link } from 'react-router-dom'
 
 // Card de resumo do pedido
-
 function CardCheckout({ url }) {
     return (
 

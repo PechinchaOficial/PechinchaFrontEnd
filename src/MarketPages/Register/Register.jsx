@@ -1,5 +1,8 @@
+
 import Header from '../../components/Header/Header';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
+import TrailResgistration from '../../components/TrailRegistrationMarket/TrailRegistration';
+import CardDetails from '../CardDetails/CardDetails';
 import Styles from './Register.module.css'
 import { Link } from 'react-router-dom'
 
@@ -9,14 +12,16 @@ function RegisterMarket() {
         <div>
             <Header />
             <main id='container' className={Styles.ContainerForm}>
-
+            <div className={Styles.BoxTrial}>
+                <TrailResgistration Cicle={Styles.Cicle} Cicle1={Styles.Cicle1} Cicle2={Styles.Cicle1} Fase={Styles.Fase} Divider1={Styles.Divider} Divider2={Styles.Divider} />
+            </div>
                 <div id='titleForm' className={Styles.cabecalho}> {/*Título e subtítulo da página*/}
                     <h1 >Cadastro do <span className={Styles.attention}>mercado</span></h1>
                     <h2 className={Styles.Subtitle}>Insira as informações do estabelecimento</h2>
                 </div>
 
-                    <section id='toSpaceBox' className={Styles.toSpaceBox}> {/*Div para aplicar o space between*/}
-                <section className={Styles.Background}>
+                <section id='toSpaceBox' className={Styles.toSpaceBox}> {/*Div para aplicar o space between*/}
+                    <section className={Styles.Background}>
                         <div id='formBox' className={Styles.formBox}> {/*Box do formulário*/}
                             <form action='#' method='post' id='form' className={Styles.Forms}> {/*Formulário*/}
 
@@ -102,6 +107,9 @@ function RegisterMarket() {
                             <p>Benefício 3</p>
                             <p>Benefício 4 </p>
                             <Link to='/marketsystem' className={Styles.Btn}>
+                                <button type='submit' className={Styles.Btn} >ASSINAR</button>
+                            </Link>
+                            <Link to='/carddetails' className={Styles.Btn}>
                                 <button type='submit' className={Styles.Btn} >ASSINAR</button>
                             </Link>
                         </div>
