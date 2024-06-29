@@ -53,7 +53,7 @@ function Login() {
             )}
 
        {/*Div Container do formulario de login */}
-            <section className='container-login'>  
+            <div className='container-login'>  
                 <div className='forms-register'>
 
                     {/* Titulos do formulario de login */}
@@ -95,7 +95,7 @@ function Login() {
                         <button>CADASTRAR</button>
                     </Link>
                 </div>
-            </section>
+            </div>
         </main>
     );
 }
