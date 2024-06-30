@@ -9,8 +9,8 @@
 }
 .Cicle {
     position: relative;
-    height: 50%;
-    width: 50%;
+    height: 50px;
+    width: 50px;
     background-color: var(--azul);
     border-radius: 100%;
     display: flex;
@@ -20,8 +20,8 @@
 }
 .Cicle1 {
     position: relative;
-    height: 50%;
-    width: 50%;
+    height: 50px;
+    width: 50px;
     background-color: var(--background);
     border: 4px solid var(--azul);
     border-radius: 100%;
@@ -33,21 +33,29 @@
 .Divider {
     position: relative;
     height: 10px;
-    width: 28%;
+    width: 15%;
     background-color: rgba(0, 0, 0, 0.363);
     border-radius: 20px;
 }
 .Divider1 {
     position: relative;
     height: 10px;
-    width: 28%;
+    width: 15%;
     background-color: var(--azul);
     border-radius: 20px;
 }
 .cabecalho {
+    padding-left: 15%;
     width: 100%;
     height: 100%;
 }
+
+.cabecalho2{
+    padding: 5% 0 0 15%;
+    width: 100%;
+    height: 100%;   
+}
+
 .Subtitle {
     color: rgba(0, 0, 0, 0.466);
 }
@@ -73,10 +81,10 @@
     border-radius: 10px;
     margin-top: 15px;
     box-shadow: 6px 13px 10px -3px rgba(0,0,0,0.1);
-    width: 100%;
+    width: 70%;
     display: flex;
-    flex-wrap: wrap;
 }
+
 .Forms {
     display: flex;
     flex-direction: column;
@@ -84,23 +92,6 @@
     flex-wrap: wrap;
     width: 100%;
 
-}
-
-.schemeBox {
-    background-color: white;
-    padding: 30px;
-    height: 50%;
-    width: 35%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 5px;
-    box-shadow: 6px 13px 10px -3px rgba(0,0,0,0.1);
-    border-radius: 10px;
-}
-.schemeBox p {
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.46);
 }
 
 .toSpaceInput {
@@ -126,29 +117,39 @@
     font-size: 1rem;
 }
 .Btn {
-    background-color: var(--btn);
-    width: 100%;
-    height: 20%;
+    background-color: white;
+    width: 70%;
+    height: 5rem;
     border: none;
     cursor: pointer;
-    color: white;
-    transition: .5s;
-    border-radius: 10px;
-    font-size: 1.2rem;
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin-top: 1rem;
+    padding: 1rem ;
+    font-size: 1.2rem;
     font-weight: 600;
+    box-shadow: 6px 13px 10px -3px rgba(0,0,0,0.1);
 }
-.Btn:hover {
-    background-color: #43bf75;
+
+.Btn :hover{
+    border: .5px solid blue;
 }
+
+.Btn label{
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.Radio{
+    cursor: pointer;
+}
+
 .Inputs {
     width: 1000px;
 }
 .BoxTrial {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 18%;
     position: relative;
     display: flex;
@@ -181,5 +182,14 @@
     .schemeBox {
         width: 80%;
         height: 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    .Divider {
+        visibility: hidden;
+    }
+    .Divider1 {
+        visibility: hidden;
     }
 }

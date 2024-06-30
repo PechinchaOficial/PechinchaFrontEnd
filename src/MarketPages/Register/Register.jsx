@@ -20,8 +20,8 @@ function RegisterMarket() {
                     <h2 className={Styles.Subtitle}>Insira as informações do estabelecimento</h2>
                 </div>
 
-                <section id='toSpaceBox' className={Styles.toSpaceBox}> {/*Div para aplicar o space between*/}
-                    <section className={Styles.Background}>
+
+                    
                         <div id='formBox' className={Styles.formBox}> {/*Box do formulário*/}
                             <form action='#' method='post' id='form' className={Styles.Forms}> {/*Formulário*/}
 
@@ -98,23 +98,20 @@ function RegisterMarket() {
                             </form>
 
                         </div>
-
-
-                        <div id='schemeBox' className={Styles.schemeBox}> {/*Box dos planos*/}
-                            <h2>Barato</h2>
-                            <p>Benefício 1</p>
-                            <p>Benefício 2</p>
-                            <p>Benefício 3</p>
-                            <p>Benefício 4 </p>
-                            <Link to='/marketsystem' className={Styles.Btn}>
-                                <button type='submit' className={Styles.Btn} >ASSINAR</button>
+                    
+                        <div id='titleForm2' className={Styles.cabecalho2}> {/*Título e subtítulo da página*/}
+                            <h1 >Selecione a forma de <span className={Styles.attention}>pagamento</span></h1>
+                        </div>
+ 
+                            <Link to='/carddetails' className={Styles.Btn}>
+                                    Cartão   
                             </Link>
                             <Link to='/carddetails' className={Styles.Btn}>
-                                <button type='submit' className={Styles.Btn} >ASSINAR</button>
+                                    PIX
                             </Link>
-                        </div>
-                    </section>
-                </section>
+
+                  
+               
             </main>
         </div>
     )
