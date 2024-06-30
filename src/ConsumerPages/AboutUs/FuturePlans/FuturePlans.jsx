@@ -20,6 +20,9 @@ function FuturePlans() {
                         <p className={Styles.Text}> Que tal colocarmos no nosso carrinho <span className={Styles.Difere}>futuras novidades?</span> Nós da Pechincha sempre pensamos em trazer melhorias para nossos serviços. </p>
                     </div>
                 </div>
+                <div className={Styles.Text2}>
+                        <p className={Styles.Text1}> Que tal colocarmos no nosso carrinho <span className={Styles.Difere}>futuras novidades?</span> Nós da Pechincha sempre pensamos em trazer melhorias para nossos serviços. </p>
+                    </div>
             </section>
 
             <section className={Styles.App}>
@@ -41,12 +44,12 @@ function FuturePlans() {
                     <div className={Styles.Backtitle}>             {/*Card Integração com CRM*/}
                         <h1>INTEGRAÇÃO COM CRM</h1>
                     </div>
-                    <div >
+                    <div className={Styles.BoxtextApp}>
                         <p className={Styles.ptext1}>Temos planos de integrar nossa plataforma ao CRM do mercado, para que as ofertas cheguem automaticamente em nosso sistema.</p>
                     </div>
                 </article>
 
-                    <div>
+                    <div className={Styles.BackImgLaptop}>
                         <img className={Styles.laptop} src={Notebook} alt="imagem notebook" />
                     </div>
                
