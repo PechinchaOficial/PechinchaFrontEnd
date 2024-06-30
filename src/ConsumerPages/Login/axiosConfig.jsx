@@ -1,8 +1,8 @@
 // api.js
 import axios from 'axios';
-
+import { baseURL } from '../../shared';
 const api = axios.create({
-    baseURL: 'http://localhost:8080',
+    baseURL: `${baseURL}`,
 });
 
 // Adicionar um interceptor para incluir o token em todas as requisições

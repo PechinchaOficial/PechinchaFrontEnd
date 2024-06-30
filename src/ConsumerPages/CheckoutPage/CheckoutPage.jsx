@@ -6,6 +6,7 @@ import elo from '../../assets/img/elo.png'
 import pix from '../../assets/img/pix.png'
 import master from '../../assets/img/MasterCard.png'
 import american from '../../assets/img/american_express.png'
+import CardCheckout from '../../components/CardCheckout/CardCheckout';
 
 
 function CheckoutPage(){
@@ -49,7 +50,7 @@ function CheckoutPage(){
                             </div>
 
                            
-                            <Card
+                            <CardCheckout
                             url='/readyproduct'/>
 
                         </div>

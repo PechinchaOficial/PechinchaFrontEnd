@@ -1,6 +1,7 @@
 import axios from "axios";
+import { baseURL } from '../shared';
 
-const API_URL = "http://localhost:8080/usuario/cadastro"
+const API_URL = `${baseURL}/usuario/cadastro`
 
 export const GetUsuarios = () => axios.get(API_URL)
 export const GetUsuarioById = (id) => axios.get(`${API_URL}/${id}`)
