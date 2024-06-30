@@ -208,8 +208,8 @@ function Home({ header }) {
                         <div className={styles.rate_section} id='container'>
                             <img src={rateimg} alt="Avaliação" className={styles.img_person} data-aos="fade-right" />
                             <div className={styles.container_rate} data-aos="fade-left">
-                                <Swiper slidesPerView={2}>
-                                    <SwiperSlide>
+                              
+                                    
                                         <div className={styles.rate_card}>
                                             <div className={styles.info_user}>
                                                 <div className={styles.user_icon}>
@@ -231,7 +231,7 @@ function Home({ header }) {
                                                 <i className="fa-solid fa-star"></i>
                                             </div>
                                         </div>
-                                    </SwiperSlide>
+                                   
                                   
                                         <div className={styles.rate_card}>
                                             <div className={styles.info_user}>
@@ -255,7 +255,7 @@ function Home({ header }) {
                                             </div>
                                         </div>
                                  
-                                </Swiper>
+                                
                             </div>
                         </div>
                     </section>
