@@ -1,7 +1,9 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import styles from './QuestionsSection.module.css';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
-const Pergunta = ({ perguntaTexto, respostaTexto }) => {
+const Pergunta = ({ perguntaTexto, respostaTexto, delay }) => {
   const perguntaRef = useRef(null);
   const arrowRightRef = useRef(null);
   const arrowDownRef = useRef(null);
@@ -20,9 +22,15 @@ const Pergunta = ({ perguntaTexto, respostaTexto }) => {
     arrowDownRef.current.style.display = 'none';
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 500, // Duração das animações
+    });
+  }, []);
+
   return (
-    <div className={styles.pergunta} ref={perguntaRef}>
-      <div className={styles.container_pergunta}>
+    <div className={styles.pergunta} ref={perguntaRef} data-aos="fade-up" data-aos-delay={delay} >
+      <div className={styles.container_pergunta}  >
         <h3>{perguntaTexto}</h3>
         <i
           onClick={ShowAnswer}
@@ -47,21 +55,25 @@ const Pergunta = ({ perguntaTexto, respostaTexto }) => {
 const ContainerPerguntas = () => {
   return (
     <div className={styles.container_perguntas}>
-      <Pergunta
+      <Pergunta   data-aos="fade-right"
         perguntaTexto="A Pechincha é um App de descontos?"
-        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+        respostaTexto="A Pechincha é uma plataforma para divulgar descontos de forma que os consumidores economizem e os mercados possam evitar o desperdicios e prejuizo."
+        
       />
       <Pergunta
         perguntaTexto="A Pechincha tem sistema de pagamento?"
-        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+        respostaTexto="A Pechincha tem como plano futuro implementar um sistema de pagamento para que você consumidor possa comprar direto da plataforma."
+       delay='200'
       />
       <Pergunta
         perguntaTexto="A Pechincha faz entrega?"
-        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+        respostaTexto="Ainda não fazemos entrega mas futuramente isso sera possivel, para que os consumidores possam aproveitar essas ofertas imperdiveis do conforto da sua casa."
+       delay='300'
       />
       <Pergunta
         perguntaTexto="A Pechincha assegura que meu pedido não está vencido?"
-        respostaTexto="Lorem ipsum, dolor sit amet consecteturdicta natus commodi numquam sit minima pariatur molestias nihil reprehenderit error aperiam delectus officiis illo excepturi."
+        respostaTexto="Sim, a Pechincha conta com um sistema de exclusão automatico dos produtos vencidos da plataforma de forma que nenhum usuario nunca compre um produto vencido."
+       delay='500'
       />
     </div>
   );

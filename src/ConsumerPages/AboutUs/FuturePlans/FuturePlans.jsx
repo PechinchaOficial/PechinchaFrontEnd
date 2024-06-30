@@ -20,21 +20,21 @@ function FuturePlans() {
                         <p className={Styles.Text}> Que tal colocarmos no nosso carrinho <span className={Styles.Difere}>futuras novidades?</span> Nós da Pechincha sempre pensamos em trazer melhorias para nossos serviços. </p>
                     </div>
                 </div>
+                <div className={Styles.Text2}>
+                        <p className={Styles.Text1}> Que tal colocarmos no nosso carrinho <span className={Styles.Difere}>futuras novidades?</span> Nós da Pechincha sempre pensamos em trazer melhorias para nossos serviços. </p>
+                    </div>
             </section>
 
             <section className={Styles.App}>
-                <article className={Styles.BoxLeft}>
-                    <div className={Styles.Boximages}>
-                        <img src={Celular} alt="Foto de um celular" />
+                    <div>
+                        <img className={Styles.cellphone} src={Celular} alt="Foto de um celular" />
                     </div>
-                </article>
-
                 <article className={Styles.BoxRight}>
                     <div className={Styles.Boxtitle}>
                         <h1>APLICATIVO</h1>           {/*Card App*/}
                     </div>
                     <div className={Styles.BoxtextApp}>
-                        <p>Futuramente, a Pechincha pretende ter um aplicativo, para que nossos consumidores recebam notificações, avisando sobre as ofertas mais próximas.</p>
+                        <p className={Styles.ptext}>Futuramente, a Pechincha pretende ter um aplicativo, para que nossos consumidores recebam notificações, avisando sobre as ofertas mais próximas.</p>
                     </div>
                 </article>
             </section>
@@ -44,30 +44,28 @@ function FuturePlans() {
                     <div className={Styles.Backtitle}>             {/*Card Integração com CRM*/}
                         <h1>INTEGRAÇÃO COM CRM</h1>
                     </div>
-                    <div className={Styles.Backtxt}>
-                        <p>Temos planos de integrar nossa plataforma ao CRM do mercado, para que as ofertas cheguem automaticamente em nosso sistema.</p>
+                    <div className={Styles.BoxtextApp}>
+                        <p className={Styles.ptext1}>Temos planos de integrar nossa plataforma ao CRM do mercado, para que as ofertas cheguem automaticamente em nosso sistema.</p>
                     </div>
                 </article>
 
-                <article className={Styles.right}>
-                    <div className={Styles.Boximage}>
-                        <img src={Notebook} alt="imagem notebook" />
+                    <div className={Styles.BackImgLaptop}>
+                        <img className={Styles.laptop} src={Notebook} alt="imagem notebook" />
                     </div>
-                </article>
+               
             </section>
 
             <section className={Styles.ServicoEntrega}>
-                <article className={Styles.Leftbox}>
                     <div className={Styles.BoxIMG}>
-                        <img src={Entregador} alt="imagem entregador" />     {/*Card Serviços de entrega*/}
+                        <img className={Styles.ifood} src={Entregador} alt="imagem entregador" />     {/*Card Serviços de entrega*/}
                     </div>
-                </article>
+                    
                 <article className={Styles.Rightbox}>
                     <div className={Styles.BoxTitlEntrega}>
                         <h1>SERVIÇOS DE ENTREGA</h1>
                     </div>
                     <div className={Styles.Backtxtentrega}>
-                        <p>E para maior praticidade do nossos consumidores, pretendemos integrar serviços de entrega, onde o cliente pagará.</p>
+                        <p className={Styles.ptext2}>E para maior praticidade do nossos consumidores, pretendemos integrar serviços de entrega, onde o cliente pagará.</p>
                     </div>
                 </article>
             </section>

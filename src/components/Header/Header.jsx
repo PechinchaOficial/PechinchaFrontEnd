@@ -13,50 +13,61 @@ import close from '../../assets/img/close.jpg'
 
 function HeaderConsumer() {
 
-    const option = React.useRef();
-    const option_mobile = React.useRef();
+// Criação de referências usando o hook useRef
+const option = React.useRef();
+const option_mobile = React.useRef();
 
+// Função para mostrar as opções de login
+function ShowLogins() {
+    option.current.style.height = '120px';
+    option_mobile.current.style.height = '120px';
+    option_mobile.current.style.transition = '0.3s all';
+    option.current.style.transition = '0.3s all';
+}
 
-    function ShowLogins() {
-        option.current.style.height = '120px'
-        option_mobile.current.style.height = '120px'
-        option_mobile.current.style.transition = '0.3s all'
-        option.current.style.transition = '0.3s all'
-    }
+// Função para esconder as opções de login
+function HiddenLogins() {
+    option.current.style.height = '0px';
+    option.current.style.transition = '0.3s all';
+    option_mobile.current.style.height = '0px';
+}
 
+// Usando a função de tradução do hook useTranslation
+const { t } = useTranslation();
 
-    function HiddenLogins() {
-        option.current.style.height = '0px'
-        option.current.style.transition = '0.3s all'
-        option_mobile.current.style.height = '0px'
+// Criação de mais referências usando o hook useRef
+const profile_option = React.useRef();
+const mobile = React.useRef();
 
-    }
-    const { t } = useTranslation();
-    const profile_option = React.useRef();
-    const mobile = React.useRef();
+// Função para fechar o menu móvel
+function CloseMobile() {
+    mobile.current.style.width = '0px';
+    mobile.current.style.transition = '0.5s all';
+}
 
-    function CloseMobile() {
-        mobile.current.style.width = '0px'
-        mobile.current.style.transition = '0.5s all'
-    }
+// Função para mostrar o menu móvel
+function ShowMobile() {
+    mobile.current.style.width = '300px';
+}
 
-    function ShowMobile() {
-        mobile.current.style.width = '300px'
-    }
+// Função para mostrar as opções do perfil
+function ShowOption() {
+    profile_option.current.style.display = 'block';
+}
 
-    function ShowOption() {
-        profile_option.current.style.display = 'block'
-    }
+// Função para esconder as opções do perfil
+function HiddenOption() {
+    profile_option.current.style.display = 'none';
+}
 
-    function HiddenOption() {
-        profile_option.current.style.display = 'none'
-    }
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "auto"
-        });
-    };
+// Função para rolar a janela para o topo
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "auto"
+    });
+};
+
 
     return (
 

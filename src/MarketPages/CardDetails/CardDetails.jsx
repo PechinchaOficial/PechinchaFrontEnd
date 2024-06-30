@@ -22,36 +22,36 @@ function CardDetails() {
                                 <form action='#' method='post' id='form' className={Styles.Forms}> {/*Formulário*/}
 
                                     <div className={Styles.InputBox}>
-                                        <label htmlFor="name">Titular*</label><br />
-                                        <input type="text" id='name' placeholder='Digite o nome do mercado' required />
+                                        <label>Titular*</label><br />
+                                        <input type="text" id='name' placeholder='Digite o nome do titular' required />
                                     </div>
 
                                     <div className={Styles.InputBox}>
-                                        <label htmlFor="email">CPF do titular*</label><br />
-                                        <input type="email" id='email' placeholder='Digite o e-mail do mercado' required />
+                                        <label>CPF do titular*</label><br />
+                                        <input type="char" placeholder='Digite o CPF do titular' required />
                                     </div>
 
                                     <div className={Styles.toSpaceInput}>
                                         <div className={Styles.InputBox}>
-                                            <label htmlFor="password">Bandeira*</label><br />
-                                            <input type="password" id='password' placeholder='Digite uma senha' required className={Styles.Inputs} />
+                                            <label>Bandeira*</label><br />
+                                            <input type='char' placeholder='Mastercard' required className={Styles.Inputs} />
                                         </div>
 
                                         <div className={Styles.InputBox}>
-                                            <label htmlFor="passwordConfirm">Número do cartão*</label><br />
-                                            <input type="password" id='passwordConfirm' placeholder='Confirme sua senha' required className={Styles.Inputs} />
+                                            <label>Número do cartão*</label><br />
+                                            <input type="char" placeholder='Digite o número do cartão' required className={Styles.Inputs} />
                                         </div>
                                     </div>
 
                                     <div className={Styles.toSpaceInput}>
                                         <div className={Styles.InputBox}>
-                                            <label htmlFor="cnpj">Segurança*</label><br />
-                                            <input type="text" id='cnpj' placeholder='Digite o CNPJ' required className={Styles.Inputs} />
+                                            <label>Segurança*</label><br />
+                                            <input type="char" placeholder='Digite o código de segurança' required className={Styles.Inputs} />
                                         </div>
 
                                         <div className={Styles.InputBox}>
-                                            <label htmlFor="cep">Data de validade*</label><br />
-                                            <input type="text" id='cep' placeholder='Digite o CEP' required className={Styles.Inputs} />
+                                            <label>Data de validade*</label><br />
+                                            <input type="date" placeholder='Digite a data de validade' required className={Styles.Inputs} />
                                         </div>
                                     </div>
                                 </form>

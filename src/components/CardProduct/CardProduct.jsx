@@ -3,8 +3,16 @@ import prodImg from '../../assets/img/cheetos.png'
 import Button from '../Button/Button';
 import {Link} from 'react-router-dom'
 import { useTranslation } from "react-i18next";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import React, { useRef, useEffect } from 'react';
+function CardProduct({ categoria, nome, img, link, delay }) {
 
-function CardProduct({ categoria, nome, img, link }) {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Duração das animações
+        });
+    }, []);
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -16,7 +24,7 @@ function CardProduct({ categoria, nome, img, link }) {
 
     const { t } = useTranslation();
     return (
-        <div className={styles.card_prod} id={categoria}>
+        <div className={styles.card_prod} id={categoria} data-aos="fade-up" data-aos-delay={delay} >
             <div className={styles.img_prod} >
                 <img src={img} alt="Imagem categoria" className={styles.prodImg} />
             </div>
@@ -27,6 +35,8 @@ function CardProduct({ categoria, nome, img, link }) {
             </Link>
         </div>
     )
+
+
 }
 
 export default CardProduct;
