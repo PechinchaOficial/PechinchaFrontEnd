@@ -28,7 +28,7 @@ function ReadyProduct() {
                                 </div>
                                 <div className={styles.info_prod}>
                                     <div className={styles.prod_data}>
-                                        <h2>Arroz Camil</h2>
+                                        <h2>Plano: Pechinchas</h2>
                                         <p>Pagamento: Cartão de débito </p>
                                         <p>Endereço: Mercado Extra, Rua Lupércio, 87 </p>
 
@@ -39,7 +39,7 @@ function ReadyProduct() {
 
                             <div className={styles.btns}>
                                 <Link to='/listagem'>
-                                    <button className={styles.btn}>Continuar comprando.</button>
+                                    <button className={styles.btn}>Continuar comprando</button>
                                 </Link>
 
                                 <Link to='/listagem'>
