@@ -171,8 +171,8 @@ function Home() {
 
                                 >
 
-                                    <SwiperSlide>
-                                        <img src={step} alt="Banner Promocional" className={styles.step_img} />
+                                    <SwiperSlide  >
+                                        <img src={step} alt="Banner Promocional" className={styles.step_img}  />
                                     </SwiperSlide>
 
                                     <SwiperSlide>
@@ -190,8 +190,8 @@ function Home() {
 
                 {/* Promoções */}
 
-                <section className="background">
-                    <div className={styles.container_promotion} id="container">   {/* Container */}
+                <section className="background" >
+                    <div className={styles.container_promotion} id="container" data-aos="fade-up">   {/* Container */}
                         <Banner bannerimg={imgBanner} bannerc={bannerc} bannerverde={Bannerverde} bannerjunino={Bannerjunina} /> {/* Banner de promoções */}
                         <CarouselProd />    {/* Carrossel de produtos */}
                     </div>
@@ -241,7 +241,15 @@ function Home() {
                             <img src={rateimg} alt="Avaliação" className={styles.img_person} data-aos="fade-right"/>
 
                             <div className={styles.container_rate}data-aos="fade-left">
-                                <div className={styles.rate_card}>
+        
+                            <Swiper
+                             
+                                    slidesPerView={2}
+                    
+                                >
+
+                                    <SwiperSlide  >
+                                    <div className={styles.rate_card}>
                                     <div className={styles.info_user}>
                                         <div className={styles.user_icon}>
                                             <img src={kaique} alt="Usuária avaliador" />
@@ -266,8 +274,11 @@ function Home() {
 
                                     </div>
                                 </div>
+                                    </SwiperSlide>
 
-                                <div className={styles.rate_card}>
+                                    <SwiperSlide>
+                                     
+                                    <div className={styles.rate_card}>
                                     <div className={styles.info_user}>
                                         <div className={styles.user_icon}>
                                             <img src="https://media.licdn.com/dms/image/D4D03AQG1EFTN1o1MWA/profile-displayphoto-shrink_800_800/0/1694273409957?e=1723075200&v=beta&t=OmgLSaUwmM2X8Vz2aKmdSpSmPcSrp0W6g5p0_BPvBlg" alt="Usuária avaliador" />
@@ -292,6 +303,13 @@ function Home() {
 
                                     </div>
                                 </div>
+
+                                    </SwiperSlide>
+
+
+                                </Swiper>
+
+
                             </div>
                         </div>
                     </section>

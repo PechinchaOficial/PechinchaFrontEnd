@@ -8,15 +8,23 @@ import Cesar from '../../../assets/img/cesar.png'
 import Juan from '../../../assets/img/juan.png'
 import Sora from '../../../assets/img/sora.png'
 import TituloFormato from '../../../components/TituloFormato/TituloFormato'
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 function Team() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1200, // Duração das animações
+        });
+      }, []);
     return (
 
         <section className={Styles.team_section} id='container'>
             <TituloFormato categoria='Nossa equipe' />
             <div className={Styles.pics}>
                 
-                <div className={Styles.square}> 
+                <div className={Styles.square} data-aos="fade-up" > 
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Luane} />  {/*Classe luane da uma altura largura e espaçamento estre as divs*/}
                     </div>
@@ -29,7 +37,7 @@ function Team() {
                 </div>
                 
 
-                <div className={Styles.square}>
+                <div className={Styles.square} data-aos="fade-up"  data-aos-delay="200">
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Jessica} />
                     </div>
@@ -41,7 +49,7 @@ function Team() {
                 </div>
 
 
-                <div className={Styles.square}>
+                <div className={Styles.square} data-aos="fade-up"  data-aos-delay="300">
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Pablo} />
                     </div>
@@ -53,7 +61,7 @@ function Team() {
                 </div>
 
 
-                <div className={Styles.square}>
+                <div className={Styles.square}data-aos="fade-up" >
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Kaique} />
                     </div>
@@ -65,7 +73,7 @@ function Team() {
                 </div>
 
 
-                <div className={Styles.square}>
+                <div className={Styles.square} data-aos="fade-up"  data-aos-delay="200">
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Gallo} />
                     </div>
@@ -77,7 +85,7 @@ function Team() {
                 </div>
 
 
-                <div className={Styles.square}>
+                <div className={Styles.square}data-aos="fade-up"  data-aos-delay="300">
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Cesar} />
                     </div>
@@ -88,7 +96,7 @@ function Team() {
                 </div>
 
 
-                <div className={Styles.square}>
+                <div className={Styles.square} data-aos="fade-up" >
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Juan} />
                     </div>
@@ -99,7 +107,7 @@ function Team() {
                 </div>
 
 
-                <div className={Styles.square}>
+                <div className={Styles.square}data-aos="fade-up"  data-aos-delay="200">
                     <div className={Styles.image}>
                         <img className={Styles.luane} src={Sora} />
                     </div>
