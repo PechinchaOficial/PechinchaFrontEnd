@@ -236,6 +236,9 @@
 /*------------------------------ Responsivo notebook ----------------------------*/
 
 @media screen and (max-width: 1300px) {
+    .Title {
+        font-size: 3rem;
+    }
     .TitleInovacao h1 {
         font-size: 2rem;
         margin-top: 14%;
@@ -279,6 +282,9 @@
     }
 }
 @media screen and (max-width: 1200px) {
+    .Title {
+        font-size: 2rem;
+    }
 
     .Boxtitle h1 {
         font-size: 1.8rem;
@@ -357,6 +363,10 @@
 }
 
 @media screen and (max-width: 1110px) {
+    .Title {
+        font-size: 1.8rem;
+    }
+
     .Text {
         font-size: 1.2rem;
         margin-top: -80%;
