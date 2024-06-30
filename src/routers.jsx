@@ -36,6 +36,7 @@ import ProductForm from './MarketPages/MarketSystem/ProductRegistration/Register
 import ReadyProduct from './ConsumerPages/ReadyProduct/ReadyProduct';
 import UserForm from './MarketPages/MarketSystem/ProductRegistration/RegisterTest';
 import CardDetails from './MarketPages/CardDetails/CardDetails';
+import Analysis from './MarketPages/Analysis/Analysis'
 
 function RouterApp() {
     return (
@@ -78,7 +79,7 @@ function RouterApp() {
                 <Route path='/registerteste' element={<UserForm />} />
                 <Route path='/readyProduct' element={<ReadyProduct />} />
                 <Route path='/carddetails' element={<CardDetails />} />
-
+                <Route path='/analysis' element={<Analysis />} />
             </Routes>
             <Footer />
         </Router>
