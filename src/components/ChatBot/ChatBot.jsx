@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styles from './ChatBote.module.css';
 import $ from 'jquery';
-import Img from '../../assets/img/chatbot.png'
+import Img from '../../assets/img/chatbot.png';
+import Usuario from '../../assets/img/usuario.png';
 
 const Chatbot = () => {
   const [index, setIndex] = useState(0);
@@ -38,13 +39,7 @@ const Chatbot = () => {
     "como chegam os produtos na plataforma": "Assim que um produto chegar a uma data próxima de vencimento, ele pode ser cadastrado em nossa plataforma pelo mercado.",
     "Como chegam os produtos na plataforma": "Assim que um produto chegar a uma data próxima de vencimento, ele pode ser cadastrado em nossa plataforma pelo mercado.",
 
-    "qual o slogan da pechincha": "Se sua grana apertou a Pechincha chegou!",
-    "Qual o slogan da Pechincha?": "Se sua grana apertou a Pechincha chegou!",
 
-    "qual o slogan da pechincha": "Se sua grana apertou a Pechincha chegou!",
-    "Qual o slogan da Pechincha?": "Se sua grana apertou a Pechincha chegou!",
-
-    "como encontrar os produtos": "Com o produto cadastrado, ele ficará disponível na aba de produtos, na barra de pesquisa inicial, ou em categorias no início do site..",
    "Como encontrar os produtos": "Com o produto cadastrado, ele ficará disponível na aba de produtos, na barra de pesquisa inicial, ou em categorias no início do site..",
 
    "e para comprar": "É bem simples, primeiro você se cadastra na nossa plataforma, e será direcionado para página de produtos, onde poderá escolher as pechinchas desejadas, e adicionar ao carrinho. Após adicionar todos os itens desejados, você irá para a área de pagamento, e pronto, pechincha garantida!",
@@ -90,10 +85,11 @@ const Chatbot = () => {
 
   const generateMessage = (msg, type) => {
     setIndex((prevIndex) => prevIndex + 1);
+    const avatar = type === 'self' ? Usuario : Img;
     const str = `
       <div id='cm-msg-${index}' class="${styles.chatMsg} ${type}">
         <span class="${styles.msgAvatar}">
-          <img src={"https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745"} alt="avatar"/>
+          <img src="${avatar}" alt="avatar" class="${styles.msgAvatarImg}"/>
         </span>
         <div class="${styles.cmMsgText}">
           ${msg}
@@ -106,6 +102,7 @@ const Chatbot = () => {
     }
     $('.chat-logs').stop().animate({ scrollTop: $('.chat-logs')[0].scrollHeight }, 1000);
   };
+  
 
   const toggleChat = () => {
     $('#chat-circle').toggle('scale');
@@ -114,11 +111,10 @@ const Chatbot = () => {
 
   return (
     <div id="body">
-      
       <div id="chat-circle" className={styles.btnRaised} onClick={toggleChat}>
         <div id="chat-overlay"></div>
         <div className={styles.iconContainer}>
-            <img src={Img} alt="" />
+          <img src={Img} alt="Chatbot Icon" />
         </div>
       </div>
       
@@ -135,7 +131,7 @@ const Chatbot = () => {
           <form onSubmit={handleSubmit}>
             <input type="text" id="chat-input" placeholder="Envie uma mensagem..." />
             <button type="submit" className={styles.chatSubmit} id="chat-submit">
-              <i className="material-icons"><i class="fa-solid fa-paper-plane"></i></i>
+              <i className="material-icons"><i className="fa-solid fa-paper-plane"></i></i>
             </button>
           </form>
         </div>
