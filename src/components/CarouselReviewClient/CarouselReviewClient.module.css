@@ -1,0 +1,71 @@
+.background {
+    height: 80%;
+    width: 100%;
+    background-color: #F58220;
+  }
+  
+  .carouselContainer {
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    position: relative;
+    height: 450px;
+    max-width: 800px;
+    min-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .carouselCard {
+    height: 300px;
+    width: 200px;
+    padding: 20px;
+    transition: 1s;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    background-color: #F58220;
+    color: #FFF;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px grey;
+  }
+  
+  .carouselIcon {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+  }
+  
+  .farLeft {
+    left: 15%;
+    transform: scale(.9) translateY(0%) translateX(-50%);
+    z-index: 5;
+    background-color: #F0F0F0;
+  }
+  
+  .left {
+    left: 30%;
+    transform: scale(1) translateY(0%) translateX(-50%);
+    z-index: 10;
+    background-color: #C3C3C3;
+  }
+  
+  .center {
+    left: 50%;
+    transform: scale(1.05) translateY(0%) translateX(-50%);
+    z-index: 15;
+  }
+  
+  .right {
+    left: 70%;
+    transform: scale(1) translateY(0%) translateX(-50%);
+    z-index: 10;
+    background-color: #C3C3C3;
+  }
+  
+  .farRight {
+    left: 80%;
+    transform: scale(.9) translateY(0%) translateX(-50%);
+    z-index: 5;
+    background-color: #F0F0F0;
+  }
+  
