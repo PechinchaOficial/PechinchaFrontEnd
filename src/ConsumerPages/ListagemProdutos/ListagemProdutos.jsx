@@ -12,7 +12,7 @@ function ListagemProdutos() {
 
     const categoriaDinamica = 'Grão'
     const bebidas = 'Bebida'
-    const massas = 'Massa'
+    const massas = 'massa'
     const enlatados = 'enlatado'
     const snacks = 'snack'
 
@@ -23,11 +23,16 @@ function ListagemProdutos() {
             <main className={styles.prod_list}>
             <Banner bannerimg={imgBanner} bannerc={bannerc} bannerverde={Bannerverde} bannerjunino={Bannerjunina} /> {/* Banner de promoções */}
                 <MercadosRegiao />
-                <CategoriaProduto categoria='Snacks' category={snacks} />
-                <CategoriaProduto categoria='Bebida' category={bebidas} />
-                <CategoriaProduto categoria='Grãos' category={categoriaDinamica} />
-                <CategoriaProduto categoria='Massas' category={massas} />
-                <CategoriaProduto categoria='Enlatados' category={enlatados} />
+                <CategoriaProduto categoria='Snacks' category={snacks}
+                show_more='/snacks' />
+                <CategoriaProduto categoria='Bebida' category={bebidas} 
+              show_more='/bebidas' />
+                <CategoriaProduto categoria='Grãos' category={categoriaDinamica}
+                  show_more='/graos' />
+                <CategoriaProduto categoria='Massas' category={massas} 
+                 show_more='/massas' />
+                <CategoriaProduto categoria='Enlatados' category={enlatados}
+                 show_more='/enlatados' />
             </main>
         </div>
 

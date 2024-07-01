@@ -10,7 +10,7 @@ import { useCart } from '../../../ConsumerPages/Cart/CartContext';
 import { showPopUp } from '../../../components/PopUpCart/PopUpCart';
 import { usePopUp } from '../../../components/PopUpCart/PopUpContext';
 
-function Graos({ categoria, category }) {
+function Graos({ categoria, category, show_more }) {
     const pop_up = usePopUp(); // Use o Context
 
     const carousel = useRef(null);
@@ -26,16 +26,16 @@ function Graos({ categoria, category }) {
     const fetchProducts = async () => {
         try {
             const response = await GetProduto();
-            setTimeout(() => {
+           
                 setProducts(response.data.content);
                 setIsLoading(false);
-            }, 1000);
+          
         } catch (error) {
             console.error("Erro ao buscar produtos", error);
-            setTimeout(() => {
+          
                 setProducts(localData);
                 setIsLoading(false);
-            }, 100);
+           
         }
     };
 
@@ -84,7 +84,7 @@ function Graos({ categoria, category }) {
                     <h2>{categoria}</h2>
                 </div>
 
-                <Link to='/filterproducts'>
+                <Link to={show_more}>
                     <button className={styles.btn_show_more}>
                         MOSTRAR MAIS
                     </button>

@@ -114,12 +114,7 @@ function MarketSystem(){
             <main id="container"> {/*Main*/}
                 <div className={Styles.main}> {/*Container na main*/}
                     <div className={Styles.conteudo_central}> {/*Container oara os conteudos centrais*/}
-                        <div className={Styles.container_actions}> {/*Container para btn e barra de pesquisa*/}
-                            <Btn imagem={Services} texto="Mais ações" classe={Styles.action}container={Styles.container_btn_action} />
-                            <form action="/search" method="get">
-                            <input type="search" name="q" placeholder="Buscar" className={Styles.search_market} />
-                            </form>
-                        </div>
+
 
                         <div className={Styles.container_table}>
                             <Table 
