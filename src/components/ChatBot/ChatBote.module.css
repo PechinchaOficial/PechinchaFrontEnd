@@ -1,0 +1,145 @@
+#chat-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .chatBox {
+    width: 300px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+  }
+  
+  .chatBoxHeader {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chatBoxBody {
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+  }
+  
+  .chatInput {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chatInput form {
+    display: flex;
+  }
+  
+  .chatInput input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .chatInput button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 5px;
+  }
+  
+  .chatMsg {
+    margin-bottom: 10px;
+  }
+  
+  .chatMsg.self {
+    text-align: right;
+  }
+  
+  .msgAvatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  
+  .msgAvatar img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cmMsgText {
+    display: inline-block;
+    max-width: 70%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+  
+  .cmMsgText.self {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btnRaised {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 96.2%;
+    top: 90%;
+    z-index: 99;
+    position: fixed;
+    background-color: transparent; /* Remove background color to show the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .iconContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .iconContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Adicione este CSS ao arquivo ChatBote.module.css para estilizar a imagem do avatar */
+.msgAvatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  

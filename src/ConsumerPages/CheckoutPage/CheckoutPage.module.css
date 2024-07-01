@@ -162,6 +162,11 @@
     margin-right: 50px;
 }
 
+.container_co2{
+    width: 100%;
+    height: 50px;
+    margin-top: 0px;
+}
 
 @media screen and (max-width: 900px) {
     .container_cart {

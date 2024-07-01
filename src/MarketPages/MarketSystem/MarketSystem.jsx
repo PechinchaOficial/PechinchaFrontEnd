@@ -16,7 +16,6 @@ function MarketSystem() {
             <HeaderMarket />
 
             <div className={Styles.container}>  {/* Container pai*/}
-
                 <nav className={Styles.side_bar}>  {/*Nav-bar lateral */}
 
                     <div className={Styles.div_mercado}> {/* Div que mostra o nome e a imagem do mercado*/}

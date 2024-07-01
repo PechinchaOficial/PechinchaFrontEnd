@@ -87,6 +87,7 @@ function Cart() {
                                     </div>
                                 </div>
 
+
                                 <div className={styles.container}>
                                     <div className={styles.total_info}>
                                         <h4 className={styles.texto_total}>Total:</h4>
@@ -96,11 +97,14 @@ function Cart() {
 
                                 {/* Link com um props para trocar de URL onde eu chamar esse componente */}
 
-                                <Link >
+                                <Link to='/checkoutpage'>
                                     <button className={styles.btn}>
                                         FINALIZAR PAGAMENTO
                                     </button></Link>
                             </div>
+
+                          
+
                         </div>
                     </section>
                 </div>

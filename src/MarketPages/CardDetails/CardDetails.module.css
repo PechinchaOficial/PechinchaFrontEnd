@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 150px;
 }
 .BoxTrail {
     position: relative;
@@ -211,6 +212,10 @@
     justify-content: space-between;
     gap: 50px;
     width: 100%;
+}
+
+.co2{
+    display: none;
 }
 
 @media (max-width: 940px) {

@@ -1,0 +1,83 @@
+.container{
+	width: 100%;
+	background-color: #bebebe;
+	height:  350px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom:  50px;
+	color:  #020659;     								/*Aqui eu mexi na cor da fonte do Footer do mercado*/
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #bebebe;
+    color: #020659;
+	margin-bottom: 50px ;
+}
+
+/*Logo do footer de mercado*/
+.image_footerMarket{
+	width:  10%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+	margin-left: 150px;
+}
+.image_footerMarket img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*Mexendo na div Pai das listas do Footer de mercado*/
+.footer_lists{
+	display: flex;
+	width: 80%;
+	height: 350px ;
+	flex-direction: row;
+	justify-content: space-around;
+
+	margin-top:  150px;
+}
+
+
+.footerMarket_content{
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap:  11px;
+	
+}
+
+/* titulo das Listas do Footer de mercado*/
+.title_FooterMaarket{
+	font-size: 25px;
+
+}
+
+/*Mexendo nos itens de cada lista*/
+.footerMarket_item{
+	list-style: none;
+	transition: 0.5s all;
+	cursor: pointer;
+}
+.footerMarket_item:hover{
+	transform: translatey(-2px);
+}
+
+.copyright_Market{
+	color: white;
+	background-color:  var(--vermelho);
+	width:  100%;
+	text-align: center;
+	height:  70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
