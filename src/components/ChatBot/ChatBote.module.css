@@ -12,8 +12,8 @@
     justify-content: center;
     color: #fff;
     font-size: 24px;
-
   }
+  
   .chatBox {
     width: 300px;
     background-color: #fff;
@@ -27,6 +27,7 @@
     overflow: hidden;
     z-index: 9999;
   }
+  
   .chatBoxHeader {
     background-color: #007bff;
     color: #fff;
@@ -35,24 +36,29 @@
     justify-content: space-between;
     align-items: center;
   }
+  
   .chatBoxBody {
     padding: 10px;
     height: 300px;
     overflow-y: scroll;
   }
+  
   .chatInput {
     padding: 10px;
     border-top: 1px solid #ddd;
   }
+  
   .chatInput form {
     display: flex;
   }
+  
   .chatInput input {
     flex: 1;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
   }
+  
   .chatInput button {
     padding: 10px;
     border: none;
@@ -61,12 +67,15 @@
     border-radius: 4px;
     margin-left: 5px;
   }
+  
   .chatMsg {
     margin-bottom: 10px;
   }
+  
   .chatMsg.self {
     text-align: right;
   }
+  
   .msgAvatar {
     display: inline-block;
     width: 30px;
@@ -75,10 +84,12 @@
     overflow: hidden;
     vertical-align: middle;
   }
+  
   .msgAvatar img {
     width: 100%;
     height: auto;
   }
+  
   .cmMsgText {
     display: inline-block;
     max-width: 70%;
@@ -88,19 +99,47 @@
     margin: 0 10px;
     vertical-align: middle;
   }
+  
   .cmMsgText.self {
     background-color: #007bff;
     color: #fff;
   }
-
-  .btnRaised{
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
+  
+  .btnRaised {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
     position: absolute;
-    left: 94%;
-    top: 88%;
+    left: 96.2%;
+    top: 90%;
     z-index: 99;
     position: fixed;
+    background-color: transparent; /* Remove background color to show the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
+  .iconContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .iconContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Adicione este CSS ao arquivo ChatBote.module.css para estilizar a imagem do avatar */
+.msgAvatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
