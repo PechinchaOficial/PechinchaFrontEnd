@@ -520,12 +520,23 @@
 }
 
 @media (max-width: 460px) {
+    .Boxtext {
+        margin-top: 12%;
+    }
+    .InfoLeft {
+        width: 80%;
+    }
+    .InfoRight {
+        width: 80%;
+    }
+    .BoxInfo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
     .BackInfo {
         width: 100%;
-    }
-
-    .BoxInfo {
-        width: 80%;
     }
 
     .BackProducts {
@@ -533,7 +544,8 @@
     }
 
     .BoxLeft {
-        width: 50%;
+        width: 100%;
+        display: none;
     }
 
     .Box1 {
@@ -549,11 +561,12 @@
     }
 
     .BoxRight {
-        width: 50%;
+        width: 80%;
+        margin: auto;
     }
 
     .titulo_produto {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
     .sub_titulo_product {
@@ -562,30 +575,36 @@
     }
 
     .Date {
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
 
     .BoxTextProduct h1 {
-        font-size: 0.41rem;
+        font-size: 0.7rem;
     }
 
     .Values {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 
     .Desc {
-        width: 100px;
+        width: 50px;
         height: 30px;
-        font-size: 0.3rem;
+        font-size: 0.5rem;
         padding: 5px;
-        margin-left: 100%;
+        margin-left: 10%;
     }
 
     .Value {
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 
     .Btn {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .BackValuesProduct {
+        height: 30%;
+        width: 100%;
     }
 }

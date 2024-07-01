@@ -37,6 +37,7 @@ import ReadyProduct from './ConsumerPages/ReadyProduct/ReadyProduct';
 import UserForm from './MarketPages/MarketSystem/ProductRegistration/RegisterTest';
 import CardDetails from './MarketPages/CardDetails/CardDetails';
 import Analysis from './MarketPages/Analysis/Analysis'
+import CarouselReviewClient from './components/CarouselReviewClient/CarouselReviewClient';
 
 function RouterApp() {
     return (
@@ -70,6 +71,7 @@ function RouterApp() {
                 <Route path='/aboutusdeslogado' element={<AboutUsSemLogin />} />
                 <Route path='/listagemdeslogado' element={<ListagemDeslogado />} />
                 <Route path='/homemarketdeslogado' element={<HomeMarketDeslogado />} />
+                <Route path='/carouselreviewclient' element={< CarouselReviewClient />} />
 
                 <Route path='/userprofile' element={<UserProfile />} />
                 <Route path='/marketlogin' element={<MarketLogin />} />
