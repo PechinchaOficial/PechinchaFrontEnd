@@ -10,6 +10,7 @@ import Produtos from '../../assets/img/Produtos_market.png';
 import Add_Market from '../../assets/img/Add_market.png';
 import Conta from '../../assets/img/Conta.png';
 import Sair from '../../assets/img/Sair.png';
+import Footer from '../../components/FooterMarket/FooterMarket'
 
 const Graphic = () => {
   const lineData = {
@@ -276,9 +277,9 @@ const Graphic = () => {
               <Bar data={barData} options={barOptions} />
             </div>  
           </div>
-
        </div>
       </div>
+      <Footer/>
     </div>
   );
 };

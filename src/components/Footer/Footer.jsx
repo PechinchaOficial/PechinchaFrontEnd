@@ -15,7 +15,7 @@ function Footer() {
         <img src={logo} alt="Logo" className={styles.logo} />
     </div>
 
-    <div className={styles.footer_content}>
+    <div className={styles.footer_content}> 
         {/* Seção Institucional */}
         <div className={styles.footer_item}>
             <h3 className={styles.title}>Institucional</h3>
