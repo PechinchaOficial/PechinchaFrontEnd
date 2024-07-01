@@ -9,18 +9,26 @@ const Pergunta = ({ perguntaTexto, respostaTexto, delay }) => {
   const arrowDownRef = useRef(null);
 
   const ShowAnswer = () => {
-    perguntaRef.current.style.height = '200px';
-    perguntaRef.current.style.transition = '0.5s all';
-    arrowRightRef.current.style.display = 'none';
-    arrowDownRef.current.style.display = 'block';
-  };
+    const pergunta = perguntaRef.current;
+    const arrow = arrowRightRef.current;
 
-  const HiddenAnswer = () => {
-    perguntaRef.current.style.height = '60px';
-    perguntaRef.current.style.transition = '0.5s all';
-    arrowRightRef.current.style.display = 'block';
-    arrowDownRef.current.style.display = 'none';
-  };
+    pergunta.style.transition = '0.5s all';
+
+    // Defina um valor inicial se ainda não estiver definido
+    if (!pergunta.style.height) {
+        pergunta.style.height = '60px';
+    }
+
+    if (pergunta.style.height === '60px') {
+        pergunta.style.height = '200px';
+        arrow.style.transform = 'rotate(90deg)';
+    } else {
+        pergunta.style.height = '60px';
+        arrow.style.transform = 'rotate(0deg)';
+    }
+};
+
+ 
 
   useEffect(() => {
     AOS.init({
@@ -29,17 +37,17 @@ const Pergunta = ({ perguntaTexto, respostaTexto, delay }) => {
   }, []);
 
   return (
-    <div className={styles.pergunta} ref={perguntaRef} data-aos="fade-up" data-aos-delay={delay} >
-      <div className={styles.container_pergunta}  >
+    <div className={styles.pergunta} ref={perguntaRef} data-aos="fade-up" data-aos-delay={delay} onClick={ShowAnswer}   >
+      <div className={styles.container_pergunta}>
         <h3>{perguntaTexto}</h3>
         <i
-          onClick={ShowAnswer}
+          
           ref={arrowRightRef}
           className="fa-solid fa-circle-chevron-right"
           id={styles.right}
         ></i>
         <i
-          onClick={HiddenAnswer}
+         
           ref={arrowDownRef}
           className="fa-solid fa-circle-chevron-down"
           id={styles.arrow_down}

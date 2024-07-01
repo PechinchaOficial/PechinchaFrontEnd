@@ -1,16 +1,19 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import CardProduto from '../../../components/CardProduto/CardProduto';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import styles from './CategoriaProduto.module.css';
-import { Link } from 'react-router-dom';
 import { GetProduto } from '../../../services/ProdutoService';
 import localData from '../../../assets/data/localData';
+import { useCart } from '../../../ConsumerPages/Cart/CartContext';
 
 function Graos({ categoria, category }) {
     const carousel = useRef(null);
     const [products, setProducts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const { addToCart } = useCart();
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetchProducts();
@@ -21,7 +24,7 @@ function Graos({ categoria, category }) {
             const response = await GetProduto();
             setTimeout(() => {
                 setProducts(response.data.content);
-                setIsLoading(false); // Adicione isso aqui para parar o carregamento após sucesso
+                setIsLoading(false);
             }, 1000);
         } catch (error) {
             console.error("Erro ao buscar produtos", error);
@@ -40,6 +43,11 @@ function Graos({ categoria, category }) {
     const handleRightClick = (e) => {
         e.preventDefault();
         carousel.current.scrollLeft += carousel.current.offsetWidth;
+    };
+
+    const handleAddToCart = (product) => {
+        addToCart(product);
+        navigate('/cart');
     };
 
     const filteredProducts = products.filter((produto) =>
@@ -109,11 +117,14 @@ function Graos({ categoria, category }) {
                     ))
                 ) : (
                     filteredProducts.map(({ id, nome, datavalidade, preco, desconto, fotoproduto }) => (
-                        <Link key={id} to={`/produto/${id}`} className={styles.productLink}>
+                       
+                        <div key={id} className={styles.productLink}>
                             <div className={styles.cardproduto}>
+                            <Link key={id} to={`/produto/${id}`} className={styles.productLink}>
                                 <div className={styles.container_img} onClick={scrollToTop}>
                                     <img src={fotoproduto} alt="Produto" className={styles.imgprod} />
                                 </div>
+                                </Link>
                                 <h2 className={styles.prodNome}>{truncateString(nome, 15)}</h2>
                                 <div className={styles.prod_info}>
                                     <span className={styles.info_prod}>
@@ -133,13 +144,19 @@ function Graos({ categoria, category }) {
                                         </span>
                                     </div>
                                 </div>
-                                <Link to='/cart'>
-                                    <button className={styles.btn} onClick={scrollToTop}>
-                                        ADICIONAR
-                                    </button>
-                                </Link>
+                                <button className={styles.btn} onClick={() => handleAddToCart({
+                                    id,
+                                    nome,
+                                    datavalidade,
+                                    preco,
+                                    desconto,
+                                    fotoproduto
+                                })}>
+                                    ADICIONAR
+                                </button>
                             </div>
-                        </Link>
+                        </div>
+                       
                     ))
                 )}
             </div>

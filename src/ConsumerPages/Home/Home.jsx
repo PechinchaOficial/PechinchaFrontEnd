@@ -5,8 +5,11 @@ import logosimple from '../../assets/img/logo_base.svg';
 import star from '../../assets/img/star.svg';
 import starYellow from '../../assets/img/starYellow.svg';
 import CategoryProd from '../../components/CategoryProd/CategoryProd';
-import step from '../../assets/img/etapa (1).svg';
-import step2 from '../../assets/img/step22.svg';
+import img_step from '../../assets/img/step1.svg';
+import img_step_2 from '../../assets/img/etapa (1).svg';
+import img_step_3 from '../../assets/img/step3.svg';
+import img_step_4 from '../../assets/img/step4.svg';
+
 import kaique from '../../assets/img/kaiqueAvalia.jpg';
 import TituloFormato from '../../components/TituloFormato/TituloFormato';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -65,11 +68,28 @@ function Home({ header }) {
     const titleRef = useRef();
 
     // Funções para alterar o conteúdo dos passos
+    const img1 = useRef();
+    const img2 = useRef();
+    const img3 = useRef();
+    const img4 = useRef();
+
+
+
     function step1() {
         if (descRef.current || titleRef.current) {
             descRef.current.innerHTML = `${t("text01")}`;
             titleRef.current.innerHTML = `${t("Como chega os produtos?")}`;
         }
+
+        img1.current.style.transform = 'translateX(0)'
+        img1.current.style.opacity = '1'
+        img2.current.style.transform = 'translateX(100px)'
+        img2.current.style.opacity = '0'
+        img3.current.style.transform = 'translateX(0)'
+        img3.current.style.opacity = '0'
+        img3.current.style.transform = 'translateX(-100px)'
+        img4.current.style.opacity = '0'
+        img4.current.style.transform = 'translateX(100px)'
     }
 
     function alterarConteudo() {
@@ -77,6 +97,15 @@ function Home({ header }) {
             descRef.current.innerHTML = `${t("text02")}`;
             titleRef.current.innerHTML = `${t("2. Como encontrar os produtos?")}`;
         }
+        img1.current.style.transform = 'translateX(-100px)'
+        img1.current.style.opacity = '0'
+        img2.current.style.transform = 'translateX(0)'
+        img2.current.style.opacity = '1'
+        img3.current.style.transform = 'translateX(0)'
+        img3.current.style.opacity = '0'
+        img3.current.style.transform = 'translateX(100px)'
+        img4.current.style.opacity = '0'
+        img4.current.style.transform = 'translateX(100px)'
     }
 
     function step3() {
@@ -84,6 +113,31 @@ function Home({ header }) {
             descRef.current.innerHTML = `${t("text03")}`;
             titleRef.current.innerHTML = `${t("3. E para comprar?")}`;
         }
+        img1.current.style.transform = 'translateX(100px)'
+        img1.current.style.opacity = '0'
+        img2.current.style.transform = 'translateX(-100px)'
+        img2.current.style.opacity = '0'
+        img3.current.style.transform = 'translateX(0)'
+        img3.current.style.opacity = '1'
+        img4.current.style.opacity = '0'
+        img4.current.style.transform = 'translateX(100px)'
+    }
+
+
+    function step4() {
+        if (descRef.current || titleRef.current) {
+            descRef.current.innerHTML = `${t("text04")}`;
+            titleRef.current.innerHTML = `4. Como funciona a retirada`;
+        }
+        img1.current.style.transform = 'translateX(-100px)'
+        img1.current.style.opacity = '0'
+        img2.current.style.transform = 'translateX(-100px)'
+        img2.current.style.opacity = '0'
+        img3.current.style.transform = 'translateX(-100px)'
+        img3.current.style.opacity = '0'
+        img4.current.style.opacity = '1'
+        img4.current.style.transform = 'translateX(0)'
+
     }
 
     return (
@@ -133,7 +187,7 @@ function Home({ header }) {
                                     <div className={styles.passo} onClick={step3}>
                                         <span>3</span>
                                     </div>
-                                    <div className={styles.passo}>
+                                    <div className={styles.passo} onClick={step4}>
                                         <span>4</span>
                                     </div>
                                 </div>
@@ -143,20 +197,19 @@ function Home({ header }) {
                                 </p>
                             </article>
                             <div className={styles.boxRight} id='item' data-aos="fade-left">
-                                <Swiper
-                                    slidesPerView={slidesPerView}
-                                    
-                                >
-                                    <SwiperSlide>
-                                        <img src={step} alt="Banner Promocional" className={styles.step_img} />
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <img src={step2} alt="Banner Promocional" className={styles.step_img} />
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <img src={step} alt="Banner Promocional" className={styles.step_img} />
-                                    </SwiperSlide>
-                                </Swiper>
+
+
+                                <img src={img_step} ref={img1} id={styles.img_1} alt="Banner Promocional" className={styles.step_img} />
+
+
+                                <img src={img_step_2} ref={img2} id={styles.img2} alt="Banner Promocional" className={styles.step_img} />
+
+
+                                <img ref={img3} src={img_step_3} id={styles.img3} alt="Banner Promocional" className={styles.step_img} />
+                                <img ref={img4} src={img_step_4} id={styles.img4} alt="Banner Promocional" className={styles.step_img} />
+
+
+
                             </div>
                         </div>
                     </div>
@@ -208,54 +261,54 @@ function Home({ header }) {
                         <div className={styles.rate_section} id='container'>
                             <img src={rateimg} alt="Avaliação" className={styles.img_person} data-aos="fade-right" />
                             <div className={styles.container_rate} data-aos="fade-left">
-                              
-                                    
-                                        <div className={styles.rate_card}>
-                                            <div className={styles.info_user}>
-                                                <div className={styles.user_icon}>
-                                                    <img src={kaique} alt="Usuária avaliador" />
-                                                </div>
-                                                <div className={styles.user_info}>
-                                                    <h3>Kaique Oliveira Mota</h3>
-                                                    <p>{t("Estudante")}</p>
-                                                </div>
-                                            </div>
-                                            <div className={styles.rate_info}>
-                                                <p>{t("Comentario01")}</p>
-                                            </div>
-                                            <div className={styles.stars}>
-                                                <i className="fa-solid fa-star"></i>
-                                                <i className="fa-solid fa-star"></i>
-                                                <i className="fa-solid fa-star"></i>
-                                                <i className="fa-solid fa-star"></i>
-                                                <i className="fa-solid fa-star"></i>
-                                            </div>
+
+
+                                <div className={styles.rate_card}>
+                                    <div className={styles.info_user}>
+                                        <div className={styles.user_icon}>
+                                            <img src={kaique} alt="Usuária avaliador" />
                                         </div>
-                                   
-                                  
-                                        <div className={styles.rate_card}>
-                                            <div className={styles.info_user}>
-                                                <div className={styles.user_icon}>
-                                                    <img src="https://media.licdn.com/dms/image/D4D03AQG1EFTN1o1MWA/profile-displayphoto-shrink_800_800/0/1694273409957?e=1723075200&v=beta&t=OmgLSaUwmM2X8Vz2aKmdSpSmPcSrp0W6g5p0_BPvBlg" alt="Usuária avaliador" />
-                                                </div>
-                                                <div className={styles.user_info}>
-                                                    <h3>Gabriel Gallo</h3>
-                                                    <p>{t("Estudante")}</p>
-                                                </div>
-                                            </div>
-                                            <div className={styles.rate_info}>
-                                                <p>{t("Comentario02")}</p>
-                                            </div>
-                                            <div className={styles.stars}>
-                                                <i className="fa-solid fa-star"></i>
-                                                <i className="fa-solid fa-star"></i>
-                                                <i className="fa-solid fa-star"></i>
-                                                <i className="fa-solid fa-star"></i>
-                                                <i className="fa-solid fa-star"></i>
-                                            </div>
+                                        <div className={styles.user_info}>
+                                            <h3>Kaique Oliveira Mota</h3>
+                                            <p>{t("Estudante")}</p>
                                         </div>
-                                 
-                                
+                                    </div>
+                                    <div className={styles.rate_info}>
+                                        <p>{t("Comentario01")}</p>
+                                    </div>
+                                    <div className={styles.stars}>
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+
+                                <div className={styles.rate_card}>
+                                    <div className={styles.info_user}>
+                                        <div className={styles.user_icon}>
+                                            <img src="https://media.licdn.com/dms/image/D4D03AQG1EFTN1o1MWA/profile-displayphoto-shrink_800_800/0/1694273409957?e=1723075200&v=beta&t=OmgLSaUwmM2X8Vz2aKmdSpSmPcSrp0W6g5p0_BPvBlg" alt="Usuária avaliador" />
+                                        </div>
+                                        <div className={styles.user_info}>
+                                            <h3>Gabriel Gallo</h3>
+                                            <p>{t("Estudante")}</p>
+                                        </div>
+                                    </div>
+                                    <div className={styles.rate_info}>
+                                        <p>{t("Comentario02")}</p>
+                                    </div>
+                                    <div className={styles.stars}>
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                     </section>

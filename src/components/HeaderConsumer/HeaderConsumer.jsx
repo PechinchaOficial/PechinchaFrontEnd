@@ -26,7 +26,13 @@ function HeaderConsumer() {
     }
 
     function ShowOption() {
-        profile_option.current.style.display = 'block'
+        // Caso o icone seja visivel, ao clicar vai passar a ser none
+        if (profile_option.current.style.display === 'block') {
+            profile_option.current.style.display = 'none';
+        } else {
+            // caso contrário, ele deixará em block
+            profile_option.current.style.display = 'block';
+        }
     }
 
     function HiddenOption() {
@@ -96,20 +102,20 @@ function HeaderConsumer() {
 
                         </Link>
 
-                        <Link onClick={scrollToTop} onMouseOver={ShowOption} to='/userprofile' className={styles.icons_user} >
-                            <div className={styles.user_icon}>
+                       
+                            <div onClick={ShowOption}  className={styles.user_icon}>
                                 <img src={user} alt="Perfil de usuário" className={styles.user} />
                             </div>
-                        </Link>
+                      
                         <img onClick={ShowMobile} src={open} alt="Botão para fechar" className={styles.icon_mobile} />
 
 
-                        <nav className={styles.nav_profile} ref={profile_option} onMouseLeave={HiddenOption}>
+                        <nav className={styles.nav_profile} ref={profile_option} >
                             <ul>
                                 <Link to='/userprofile'><li><i class="fa-solid fa-pen"></i> <a href="#">{t("Editar informações")}</a></li></Link>
                                 <li><i class="fa-solid fa-shield-halved"></i> <a href="#">{t("Segurança")}</a></li>
                                 <li><i class="fa-solid fa-circle-question"></i><a href="#">{t("Ajuda")}</a></li>
-                                <li><i class="fa-solid fa-right-from-bracket"></i><Link to="/">{t("Sair")}</Link></li>
+                                <Link onClick={scrollToTop}  to="/"><li><i class="fa-solid fa-right-from-bracket"></i><a href="#">{t("Sair")}</a></li></Link>
                                 </ul>
                         </nav>
                     </div>
