@@ -125,6 +125,10 @@
     top: -120px;
     left: -68px;
 }
+
+.BtnLK{
+    color: #FFF;
+}
 @media screen and (min-width: 1000) {
     .Conteiner {
         display: flex;

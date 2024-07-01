@@ -20,14 +20,15 @@
     gap: 15%;
 }
 .TittleBoxBlue {
-    font-size: 3rem;
+    font-size: 3.1rem;
     color: white;
-    margin-top: 2%;
+    margin-top: 0;
+    margin-right: 80px;
 }
 .TittleBoxYellow {
-    font-size: 4.5rem;
+    font-size: 4.8rem;
     color: #112D81;
-    margin-top: -3%;
+    margin-top: 0;
     font-family: offer;
 }
 
