@@ -7,8 +7,12 @@ import styles from './CategoriaProduto.module.css';
 import { GetProduto } from '../../../services/ProdutoService';
 import localData from '../../../assets/data/localData';
 import { useCart } from '../../../ConsumerPages/Cart/CartContext';
+import { showPopUp } from '../../../components/PopUpCart/PopUpCart';
+import { usePopUp } from '../../../components/PopUpCart/PopUpContext';
 
 function Graos({ categoria, category }) {
+    const pop_up = usePopUp(); // Use o Context
+
     const carousel = useRef(null);
     const [products, setProducts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -48,6 +52,7 @@ function Graos({ categoria, category }) {
     const handleAddToCart = (product) => {
         addToCart(product);
         navigate('/cart');
+        scrollToTop()
     };
 
     const filteredProducts = products.filter((produto) =>
@@ -71,6 +76,8 @@ function Graos({ categoria, category }) {
 
     return (
         <section className={styles.categoria_produto} id='container'>
+            {/* <button onClick={() => showPopUp(pop_up)}>Esconder Pop-up</button> */}
+
             <div className={styles.title}>
                 <div className={styles.categoria}>
                     <i className="fa-solid fa-store"></i>
@@ -117,13 +124,13 @@ function Graos({ categoria, category }) {
                     ))
                 ) : (
                     filteredProducts.map(({ id, nome, datavalidade, preco, desconto, fotoproduto }) => (
-                       
+
                         <div key={id} className={styles.productLink}>
                             <div className={styles.cardproduto}>
-                            <Link key={id} to={`/produto/${id}`} className={styles.productLink}>
-                                <div className={styles.container_img} onClick={scrollToTop}>
-                                    <img src={fotoproduto} alt="Produto" className={styles.imgprod} />
-                                </div>
+                                <Link key={id} to={`/produto/${id}`} className={styles.productLink}>
+                                    <div className={styles.container_img} onClick={scrollToTop}>
+                                        <img src={fotoproduto} alt="Produto" className={styles.imgprod} />
+                                    </div>
                                 </Link>
                                 <h2 className={styles.prodNome}>{truncateString(nome, 15)}</h2>
                                 <div className={styles.prod_info}>
@@ -144,19 +151,23 @@ function Graos({ categoria, category }) {
                                         </span>
                                     </div>
                                 </div>
-                                <button className={styles.btn} onClick={() => handleAddToCart({
-                                    id,
-                                    nome,
-                                    datavalidade,
-                                    preco,
-                                    desconto,
-                                    fotoproduto
-                                })}>
-                                    ADICIONAR
-                                </button>
+
+                                <Link key={id} to={`/produto/${id}`} >
+                                    <button className={styles.btn} onClick={() => handleAddToCart({
+                                        id,
+                                        nome,
+                                        datavalidade,
+                                        preco,
+                                        desconto,
+                                        fotoproduto
+                                    })}>
+                                        COMPRAR
+                                    </button>
+                                </Link>
+
                             </div>
                         </div>
-                       
+
                     ))
                 )}
             </div>

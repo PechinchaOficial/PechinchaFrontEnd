@@ -28,6 +28,22 @@
     width: 100%;
 }
 
+.pop_up{
+    padding: 15px ;
+    width: 300px;
+    background-color: var(--btn);
+    border-radius: 10px;
+    color: #fff;
+    position: absolute ;
+    z-index: 1000;
+    font-size: 0.8rem;
+    top: 60px;
+    text-align: center;transform: translateY(-30px);
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+
 
 .nav_link a {
     text-decoration: none;

@@ -216,8 +216,12 @@
 }
 
 .Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     margin-top: 3%;
-    background-color: var(--vermelho);
+    background-color: var(--btn);
     width: 80%;
     height: 20%;
     border-radius: 8px;
@@ -225,10 +229,23 @@
     color: white;
     font-size: 1rem;
     font-weight: 600;
+    transition: 0.5s all;
+}
+
+#Btn_cart {
+    margin-top: 1%;
+    background-color: transparent;
+    color: var(--btn);
+    border: 1px solid var(--btn);
+}
+
+#Btn_cart:hover{
+    background-color: var(--btn);
+    color: #fff;
 }
 
 .Btn:hover {
-    background-color: #a51c1a;
+    background-color: var(--btn_hover);
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -370,6 +387,7 @@
     .BoxLeft {
         width: 50%;
     }
+
     .titulo_produto {
         font-size: 1rem;
     }

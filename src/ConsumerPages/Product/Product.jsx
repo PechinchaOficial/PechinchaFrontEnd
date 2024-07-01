@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 import CategoriaProduto from '../ListagemProdutos/CategoriaProduto/CategoriaProduto';
 import Styles from './Product.module.css';
@@ -6,24 +6,38 @@ import { useParams } from 'react-router-dom';
 import { GetProdutoById } from '../../services/ProdutoService';
 import localData from '../../assets/data/localData';
 import Skeleton from 'react-loading-skeleton';
+import { useCart } from '../../ConsumerPages/Cart/CartContext';
+import { useNavigate, Link } from 'react-router-dom';
+import { showPopUp } from '../../components/PopUpCart/PopUpCart'; // Verifique o caminho correto para o seu arquivo de funções
+
 import 'react-loading-skeleton/dist/skeleton.css';
 
 function Product() {
-    const { id } = useParams(); 
-    const [produto, setProduto] = useState(null); 
+    const handleAddToCart = (product) => {
+        addToCart(product);
+        navigate('/cart');
+        scrollToTop();
+        showPopUp(popupRef); // Mostra o popup ao adicionar ao carrinho
+    };
+
+    const { id } = useParams();
+    const [produto, setProduto] = useState(null);
+    const { addToCart } = useCart();
+    const navigate = useNavigate();
+    const popupRef = useRef(null); // Referência para o elemento de popup
 
     useEffect(() => {
-        fetchProduto(); 
+        fetchProduto();
     }, [id]);
 
-    const fetchProduto = async () => {                        // Chamdando o back
-        try {           
+    const fetchProduto = async () => {
+        try {
             console.log("Fetching product with ID:", id);
             const response = await GetProdutoById(id);
             console.log("API response:", response.data);
-           setTimeout(()=>{
-            setProduto(response.data); 
-           }, 1000)
+            setTimeout(() => {
+                setProduto(response.data);
+            }, 1000)
         } catch (error) {
             console.error("Erro ao buscar produto", error);
             const localProduto = localData.find(produto => String(produto.id) === String(id));
@@ -36,6 +50,7 @@ function Product() {
         <div>
             <HeaderConsumer />
             <main className={Styles.Background} id="container">
+
                 <article className={Styles.Boxtext}>
                     <h1 className={Styles.title}>Finalize seu pedido</h1>
                     <div className={Styles.Subtitlebox}>
@@ -47,10 +62,10 @@ function Product() {
                     <div className={Styles.BackProducts}>
                         <article className={Styles.BoxLeft}>
                             <div className={Styles.Box1}>
-                                {produto ? (   // Imagem vai variar dependendo do produto que vc selecionar
+                                {produto ? (
                                     <img src={produto.fotoproduto} alt="imagem do produto" className={Styles.img_product_2} />
                                 ) : (
-                                    <Skeleton height={100} width={100} />   
+                                    <Skeleton height={100} width={100} />
                                 )}
                             </div>
                         </article>
@@ -65,6 +80,7 @@ function Product() {
                         </article>
                     </div>
                     <div className={Styles.BackInfo}>
+
                         <article className={Styles.BoxInfo}>
                             <div className={Styles.InfoLeft}>
                                 <div className={Styles.BoxInfoProduct}>
@@ -117,27 +133,34 @@ function Product() {
                                     </div>
                                     <div className={Styles.Values}>
                                         {produto ? (
-                                            <p> R$ {(produto.preco / 100).toFixed(2)} </p>
+                                            <p> R$ {produto.preco} </p>
                                         ) : (
                                             <Skeleton height={20} width={50} />
                                         )}
                                     </div>
                                     <div className={Styles.Values}>
                                         {produto ? (
-                                            <p> R$ {(produto.preco / 100).toFixed(2)} </p>
+                                            <p> R$ {produto.preco} </p>
                                         ) : (
                                             <Skeleton height={20} width={50} />
                                         )}
                                     </div>
                                 </div>
-                                <button className={Styles.Btn}>
-                                    <p>Finalizar compra</p>
+                                <Link to='/checkoutpage' className={Styles.Btn}>
+                                    
+                                        Comprar agora
+                                   
+                                </Link>
+                                <button className={Styles.Btn} id={Styles.Btn_cart} onClick={() => handleAddToCart(produto)}>
+
+                                    <i className="fa-solid fa-cart-shopping"></i>Adicionar ao carrinho
                                 </button>
                             </div>
                         </article>
                     </div>
                 </article>
-                {produto && <CategoriaProduto categoria="Produtos relacionados" />}
+                <CategoriaProduto categoria="Produtos relacionados" />
+
             </main>
         </div>
     );
