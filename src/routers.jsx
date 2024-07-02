@@ -40,6 +40,10 @@ import HelpProfile from './ConsumerPages/HelpProfile/HelpProfile';
 import Analysis from './MarketPages/Analysis/Analysis'
 import CarouselReviewClient from './components/CarouselReviewClient/CarouselReviewClient';
 import ProfileSecurity from './components/ProfileSecurity/ProfileSecurity';
+import MarketPage from './ConsumerPages/MarketProductPage/MarketPage/MarketPage';
+import Extra from './ConsumerPages/MarketProductPage/MarketPage/Extra';
+import Ricoy from './ConsumerPages/MarketProductPage/MarketPage/Ricoy';
+import Carrefour from './ConsumerPages/MarketProductPage/MarketPage/Carrefour';
 
 function RouterApp() {
     return (
@@ -86,7 +90,14 @@ function RouterApp() {
                 <Route path='/carddetails' element={<CardDetails />} />
                 <Route path='/help' element={<HelpProfile />} />
                 <Route path='/analysis' element={<Analysis />} />
+<<<<<<< HEAD
 
+=======
+                <Route path='/marketpage' element={<MarketPage />} />
+                <Route path='/extra' element={<Extra />} />
+                <Route path='/ricoy' element={<Ricoy />} />
+                <Route path='/carrefour' element={<Carrefour />} />
+>>>>>>> ecce74816cea6078653547b3d6b7fcebbed08ad0
             </Routes>
             <Footer />
         </Router>

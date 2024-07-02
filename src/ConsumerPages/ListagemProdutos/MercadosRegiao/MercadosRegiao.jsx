@@ -31,12 +31,13 @@ function MercadosRegiao() {
 
             <div className={styles.carousel_prod} id='container' ref={carousel}>
 
-                {marketData.map(({ img, name, andress, rate }) => (
+                {marketData.map(({ img, name, andress, rate, url }) => (
                     <MercadoCard
                         name={name}
                         img={img}
                         andress={andress}
-                        rate={rate} />
+                        rate={rate} 
+                        url={url}/>
                 ))}
 
             </div>

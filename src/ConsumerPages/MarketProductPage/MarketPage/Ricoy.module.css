@@ -1,17 +1,25 @@
+.bannermarket{
+    background-image: url("../../../assets/img/Market/bannerricoy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 480px;
+    margin-top: 30px;
+    
+}
+
+.ricoy{
+    width: 90%;
+    height: 70%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
 .marketpage{
     flex-direction: column;
 }
 
-.bannermarket{
-    background-image: url("../../assets/img/Market/bannerassai.png");
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 430px;
-    margin-top: 30px;
-    
-}
+
 
 .infosmarket{
     width: 100%;
@@ -409,12 +417,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
- 
