@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 // import Enlatados from '../ListagemProdutos/CategoriaProduto/Enlatados';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 import TrailResgistration from '../../components/TrailRegistrationMarket/TrailRegistration';
+import Pechinchas from '../../assets/img/PlanoPechinchas.png'
 
 function ReadySystem() {
     return (
@@ -24,7 +25,7 @@ function ReadySystem() {
 
                             <div className={styles.product}>
                                 <div className={styles.img}>
-                                    <img src="" alt="Imagem do produto" />
+                                    <img src={Pechinchas} alt="Imagem do produto" className={styles.Image} />
                                 </div>
                                 <div className={styles.info_prod}>
                                     <div className={styles.prod_data}>

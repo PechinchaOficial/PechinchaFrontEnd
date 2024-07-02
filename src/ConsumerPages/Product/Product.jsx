@@ -54,8 +54,7 @@ function Product() {
                 <article className={Styles.Boxtext}>
                     <h1 className={Styles.title}>Finalize seu pedido</h1>
                     <div className={Styles.Subtitlebox}>
-                        <div className={Styles.icoHome}> <i class="fa-solid fa-house"></i> </div>
-                        <h4 className={Styles.Subtitle}>Rua.Tito N450</h4>
+                        <p>Verifique os dados do seu pedido</p>
                     </div>
                 </article>
                 <article className={Styles.ProductsInfo}>

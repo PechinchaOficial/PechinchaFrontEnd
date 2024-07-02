@@ -58,7 +58,7 @@ function CardDetails() {
                             </div>
                         </article>
                         <article className={Styles.Right}>
-                            <Card url='/readyproduct' produto="Plano: Pechinchas: " price="R$350.00" co2={Styles.co2} price_t="R$350.00" />
+                            <Card url='/readysystem' produto="Plano: Pechinchas: " price="R$350.00" co2={Styles.co2} price_t="R$350.00" />
                         </article>
                     </section>
                 </div>
