@@ -6,6 +6,7 @@ import elo from '../../assets/img/elo.png'
 import pix from '../../assets/img/pix.png'
 import master from '../../assets/img/MasterCard.png'
 import american from '../../assets/img/american_express.png'
+import CardCheckout from '../../components/CardCheckout/CardCheckout';
 
 
 function CheckoutPage(){
@@ -49,8 +50,8 @@ function CheckoutPage(){
                             </div>
 
                            
-                            <Card
-                            url='/readyproduct'/>
+                            <CardCheckout url='/readyproduct' produto="Salgadinho de Milho" price="R$2.40" price_t="R$2.40" co2={styles.container_co2} reducao="2,5Kg" />
+                            
 
                         </div>
                     </section>

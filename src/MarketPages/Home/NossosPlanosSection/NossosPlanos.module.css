@@ -92,10 +92,12 @@
     width: 300px;
     height: 8%;
     font-size: 1.8rem;
-    color: white;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.4s all;
+}
+.BtnLK {
+    color: white;
 }
 .Btn:hover {
     transform: translateY(-3px);
@@ -124,6 +126,10 @@
     position: absolute;
     top: -120px;
     left: -68px;
+}
+
+.BtnLK{
+    color: #FFF;
 }
 @media screen and (min-width: 1000) {
     .Conteiner {

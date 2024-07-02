@@ -15,21 +15,27 @@ import { Swiper, SwiperSlide} from 'swiper/react';
 
 function Banner({ bannerimg, bannerc , bannerverde, bannerjunino}) {
     
+// Importa a função useState e useEffect do React
+const [slidesPerView, setSlidePerView] = useState(1);
 
-    const [slidesPerView, setSlidePerView] = useState(1)
-
-
-    useEffect(() => {
-        function handleResize(){
-            if(window.innerWidth > 720){
-                setSlidePerView(1);
-            }else{
-                setSlidePerView(1);
-            }
+// Usa o useEffect para executar um efeito colateral após a montagem do componente
+useEffect(() => {
+    // Define a função handleResize para lidar com o redimensionamento da janela
+    function handleResize() {
+        // Verifica se a largura da janela é maior que 720 pixels
+        if (window.innerWidth > 720) {
+            // Se for maior que 720, define slidesPerView como 1
+            setSlidePerView(1);
+        } else {
+            // Se for menor ou igual a 720, também define slidesPerView como 1
+            setSlidePerView(1);
         }
+    }
 
-        handleResize();
-    }, [])
+    // Chama a função handleResize para definir o estado inicial
+    handleResize();
+}, []);
+
     
 
     

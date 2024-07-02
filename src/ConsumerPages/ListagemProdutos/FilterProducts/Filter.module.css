@@ -91,3 +91,14 @@ padding: 200px 10px 10px 0px;}
 .btn:hover{
     background-color: var(--btn_hover);
 }
+
+.carousel_prod{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth; /*Deixa a rolagem suave*/
+}

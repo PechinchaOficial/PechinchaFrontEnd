@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Modal from '../../components/ModalTerms/Modal';
 import axios from 'axios';
+import { baseURL } from '../../shared';
 
 function Login() {
     const [openModal, setOpenModal] = useState(false);
@@ -20,7 +21,7 @@ function Login() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8080/login', {
+            const response = await axios.post(`${baseURL}/login`, {
                 login,
                 senha
             });

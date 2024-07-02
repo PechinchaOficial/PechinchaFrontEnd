@@ -4,6 +4,8 @@ import logo from '../../assets/img/logoHeader.svg'
 import { createUser } from '../../services/UsuarioService'; // Assumindo que haverá um serviço `createUser` para criar usuários
 import React, { useState } from 'react';
 import axios from 'axios';
+import { baseURL } from '../../shared';
+
 
 const scrollToTop = () => {
     window.scrollTo({
@@ -30,7 +32,7 @@ function MarketLogin() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8080/login', {
+            const response = await axios.post(`${baseURL}/login`, {
                 login,
                 senha
             });

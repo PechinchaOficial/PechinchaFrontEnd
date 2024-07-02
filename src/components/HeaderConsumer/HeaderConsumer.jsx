@@ -10,11 +10,16 @@ import { useTranslation } from "react-i18next";
 import React from 'react';
 import open from '../../assets/img/open.svg'
 import close from '../../assets/img/close.jpg'
+import { useRef } from 'react';
+import { usePopUp } from '../../components/PopUpCart/PopUpContext'; 
+
 
 function HeaderConsumer() {
+    const pop_up = usePopUp(); 
     const { t } = useTranslation();
     const profile_option = React.useRef();
     const mobile = React.useRef();
+
 
     function CloseMobile() {
         mobile.current.style.width = '0px'
@@ -26,7 +31,13 @@ function HeaderConsumer() {
     }
 
     function ShowOption() {
-        profile_option.current.style.display = 'block'
+        // Caso o icone seja visivel, ao clicar vai passar a ser none
+        if (profile_option.current.style.display === 'block') {
+            profile_option.current.style.display = 'none';
+        } else {
+            // caso contrário, ele deixará em block
+            profile_option.current.style.display = 'block';
+        }
     }
 
     function HiddenOption() {
@@ -96,21 +107,25 @@ function HeaderConsumer() {
 
                         </Link>
 
-                        <Link onClick={scrollToTop} onMouseOver={ShowOption} to='/userprofile' className={styles.icons_user} >
-                            <div className={styles.user_icon}>
-                                <img src={user} alt="Perfil de usuário" className={styles.user} />
-                            </div>
-                        </Link>
+
+                        <div onClick={ShowOption} className={styles.user_icon}>
+                            <img src={user} alt="Perfil de usuário" className={styles.user} />
+                        </div>
+
+                        <div className={styles.pop_up} ref={pop_up}>
+                            <h2>Produto adicionado com sucesso!</h2>
+                        </div>
+
                         <img onClick={ShowMobile} src={open} alt="Botão para fechar" className={styles.icon_mobile} />
 
 
-                        <nav className={styles.nav_profile} ref={profile_option} onMouseLeave={HiddenOption}>
+                        <nav className={styles.nav_profile} ref={profile_option} >
                             <ul>
                                 <Link to='/userprofile'><li><i class="fa-solid fa-pen"></i> <a href="#">{t("Editar informações")}</a></li></Link>
                                 <li><i class="fa-solid fa-shield-halved"></i> <a href="#">{t("Segurança")}</a></li>
                                 <li><i class="fa-solid fa-circle-question"></i><a href="#">{t("Ajuda")}</a></li>
-                                <li><i class="fa-solid fa-right-from-bracket"></i><Link to="/">{t("Sair")}</Link></li>
-                                </ul>
+                                <Link onClick={scrollToTop} to="/"><li><i class="fa-solid fa-right-from-bracket"></i><a href="#">{t("Sair")}</a></li></Link>
+                            </ul>
                         </nav>
                     </div>
 
@@ -119,6 +134,7 @@ function HeaderConsumer() {
 
             <div className={styles.search_mobile}>
                 <SearchBar />
+                
             </div>
 
             {/* Header inferior */}
@@ -129,7 +145,6 @@ function HeaderConsumer() {
                         <li>
                             <Link onClick={scrollToTop} className={styles.principal_link} to="/listagem">PARA VOCÊ</Link>
                         </li>
-
 
                         <li>
                             <Link onClick={scrollToTop} to="/listagem">Categorias</Link>
@@ -174,9 +189,9 @@ function HeaderConsumer() {
                         </Link>
                     </div>
 
-                    
-                        <img onClick={CloseMobile} src={close} alt="Botão para fechar" className={styles.icon_mobile} />
-                    
+
+                    <img onClick={CloseMobile} src={close} alt="Botão para fechar" className={styles.icon_mobile} />
+
 
                 </div>
                 <nav className={styles.nav_mobile}>

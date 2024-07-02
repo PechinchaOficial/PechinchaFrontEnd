@@ -1,3 +1,4 @@
+
 import HeaderConsumer from "../../components/HeaderConsumer/HeaderConsumer";
 import FacaParte from "./FacaParteSection/FacaParteSection";
 import HeroMarket from "./HeroSection/HeroSection";

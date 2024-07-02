@@ -3,7 +3,7 @@ import Triade from '../../../assets/img/Triade.jpeg'
 import Pechincha from '../../../assets/img/Pechincha.jpeg'
 import Pechincha1 from '../../../assets/img/Pechincha1.jpeg'
 import Pechincha2 from '../../../assets/img/Pechincha2.jpeg'
-
+import { Link } from 'react-router-dom';
 
 function FacaParte() {
     return (
@@ -11,7 +11,7 @@ function FacaParte() {
             <article className={Styles.BoxLeft}>
                 <h1 className={Styles.Title}>FAÇA PARTE DESSA EQUIPE</h1>
                 <p className={Styles.Text}>nós somos o website nº1 do Brasil contra o desperdício de alimentos! Nascemos para revolucionar a forma como consumimos e a nossa missão.</p>
-                <button className={Styles.Btn}>SAIBA MAIS</button>
+                <Link to="/about"><button className={Styles.Btn}>SAIBA MAIS</button></Link>
             </article>
             <article className={Styles.BoxRight}>
                  <div className={Styles.Box} id={Styles.Box1}><img className={Styles.img} height={300} width={260} src={Pechincha} alt="P.O do Pechincha, Scrum Master do Pechincha e o Fincanceiro do Pechincha" /></div>

@@ -117,7 +117,7 @@
 
 
 @media screen and (max-width:393px) {
-    
+ 
     .logo {
         padding-left: 35%;
     }
@@ -128,30 +128,42 @@
         
     .footer_item {
         float: left;
-
+        width: 250px;
     }
-    
+
+    .title {
+        text-align: center;
+        
+
+        border-top:5px solid #020659 ;
+        border-radius: 3px;
+    }
+
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:430px) {
 
     .logo {
         padding-left: 8%;
    }
    
    .footer_content {
-       display: flex;
        flex-direction: column;
        align-items: center;
    }
    
    .footer_item {
        float: left;
+       width: 250px;
    }
    
    .title {
-       padding-top: 15%;
+     text-align: center;
+
+     border-top:5px solid #020659 ;
+     border-radius: 3px;
    }
+   
    
 
 }

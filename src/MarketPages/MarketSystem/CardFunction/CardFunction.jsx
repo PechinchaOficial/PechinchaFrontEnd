@@ -3,10 +3,10 @@ import Add_market from '../../../assets/img/Add_card_market.png'
 import Cesta from '../../../assets/img/Ingredients.png'
 import { Link } from 'react-router-dom';
 
-function CardFunction({texto}) {
+function CardFunction({texto, link}) {
     return (
 
-        <Link to = "/productregistration" >
+        <Link to = {link} >
         <div className={Styles.container}> {/*Div container*/}
 
                 <div className={Styles.container_imagens}> {/*Container das divs para as imagens*/}

@@ -16,7 +16,6 @@ function MarketSystem() {
             <HeaderMarket />
 
             <div className={Styles.container}>  {/* Container pai*/}
-
                 <nav className={Styles.side_bar}>  {/*Nav-bar lateral */}
 
                     <div className={Styles.div_mercado}> {/* Div que mostra o nome e a imagem do mercado*/}
@@ -109,8 +108,8 @@ function MarketSystem() {
 
                 <main id="container">
                     <div className={Styles.main}>                       {/*Chamando os card de função*/}
-                        <CardFunction texto="Cadastrar Produtos" />
-                        <CardFunction texto="Análise de Dados" />
+                        <CardFunction texto="Cadastrar Produtos" link="/productregistration" />
+                        <CardFunction texto="Análise de Dados" link="/analysis" />
                         <CardFunction texto="Suporte Online" />
                         <CardFunction texto="Feedback Clientes" />
                         <CardFunction texto="Promoções Personalizadas" />

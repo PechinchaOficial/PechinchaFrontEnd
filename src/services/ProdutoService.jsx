@@ -1,6 +1,7 @@
 import axios from 'axios';
+import { baseURL } from "../shared";
 
-const API_URL = "http://localhost:8080/Produto";
+const API_URL = `${baseURL}/Produto`
 
 // Crie uma instância do Axios
 const api = axios.create({

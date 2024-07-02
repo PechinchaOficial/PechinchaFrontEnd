@@ -19,7 +19,7 @@ function New () {
 
                               <Link to="/Login" ><button>REDEFINIR SENHA</button></Link>
 
-                                <p className={Styles.new_password}>Já possui cadastro? <Link to="/recover">Entre aqui</Link></p>
+                                <p className={Styles.new_password}>Já possui cadastro? <Link to="/login">Entre aqui</Link></p>
 
                             </form>
                     </div>

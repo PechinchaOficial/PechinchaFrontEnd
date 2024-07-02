@@ -1,0 +1,29 @@
+.rateCard {
+    /* Seus estilos para o card */
+  }
+  
+  .infoUser {
+    display: flex;
+    align-items: center;
+  }
+  
+  .userIcon img {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+  }
+  
+  .userInfo h3 {
+    margin: 0;
+  }
+  
+  .rateInfo {
+    /* Seus estilos para o comentário */
+  }
+  
+  .stars {
+    display: flex;
+    justify-content: center;
+    color: gold;
+  }
+  

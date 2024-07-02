@@ -8,7 +8,7 @@ function TrailResgistration( {Cicle, Cicle1, Cicle2, Divider1, Divider2} ) {
                     <div className={Cicle}>
                         <h1>1</h1>
                     </div>
-                    <p>Infomarções do mercado</p>
+                    <p>Informações do mercado</p>
                 </div>
 
                 <div className={Divider1}></div>

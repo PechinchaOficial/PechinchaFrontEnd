@@ -30,9 +30,7 @@ function TableMarket({ classe }) {
     };
 
     // Se ainda estiver carregando, exibe indicador de carregamento
-    if (loading) {
-        return <div>Carregando...</div>;
-    }
+
 
     // Renderiza a tabela com os produtos obtidos
     return (
@@ -54,7 +52,7 @@ function TableMarket({ classe }) {
                             <td className={Styles.atributo}>{produto.id}</td>
                             <td className={Styles.atributo}>{produto.nome}</td>
                             <td className={Styles.atributo}>{produto.descricao}</td>
-                            <td className={Styles.atributo}>{produto.validade}</td>
+                            <td className={Styles.atributo}>{produto.datavalidade}</td>
                             <td className={Styles.atributo}>{produto.categoria}</td>
                             <td className={Styles.atributo}>
                                 <div className={Styles.container_bts}>

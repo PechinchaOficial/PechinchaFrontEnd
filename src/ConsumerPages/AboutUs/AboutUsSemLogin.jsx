@@ -7,6 +7,7 @@ import Team from './TeamSection/Team';
 import Who from './WhoSection/Who';
 
 function AboutUsSemLogin() {
+    
     return (
 
         <main className="background" >

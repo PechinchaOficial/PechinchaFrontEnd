@@ -68,7 +68,7 @@ function UserProfile() {
                             </div>
                         </form>
                         <section className={styles.language_section}>     {/*Section para alterar idiomas*/}
-                            <h3>{t("Alterar idioma")}</h3>
+                            <h3>{t("Idiomas Preferidos")}</h3>
 
                             <BtnLang />         {/*Bts das linguas*/}
 
