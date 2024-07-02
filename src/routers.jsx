@@ -38,6 +38,11 @@ import UserForm from './MarketPages/MarketSystem/ProductRegistration/RegisterTes
 import CardDetails from './MarketPages/CardDetails/CardDetails';
 import Analysis from './MarketPages/Analysis/Analysis'
 import CarouselReviewClient from './components/CarouselReviewClient/CarouselReviewClient';
+import MarketPage from './ConsumerPages/MarketProductPage/MarketPage/MarketPage';
+import Extra from './ConsumerPages/MarketProductPage/MarketPage/Extra';
+import Ricoy from './ConsumerPages/MarketProductPage/MarketPage/Ricoy';
+import Carrefour from './ConsumerPages/MarketProductPage/MarketPage/Carrefour';
+
 
 function RouterApp() {
     return (
@@ -82,6 +87,10 @@ function RouterApp() {
                 <Route path='/readyProduct' element={<ReadyProduct />} />
                 <Route path='/carddetails' element={<CardDetails />} />
                 <Route path='/analysis' element={<Analysis />} />
+                <Route path='/marketpage' element={<MarketPage />} />
+                <Route path='/extra' element={<Extra />} />
+                <Route path='/ricoy' element={<Ricoy />} />
+                <Route path='/carrefour' element={<Carrefour />} />
             </Routes>
             <Footer />
         </Router>

@@ -12,7 +12,8 @@ const marketData = [
         name: "Assaí Atacadista",
         img: `${assai}`,
         andress: "Senac Lapa Tipo",
-        rate: "4,2"
+        rate: "4,2",
+       
     },
 
     {
@@ -20,7 +21,8 @@ const marketData = [
         name: "Extra",
         img: `${extra}`,
         andress: "Senac Lapa Tipo",
-        rate: "4,7"
+        rate: "4,7",
+        url: "listagem/extra"
     },
 
     {

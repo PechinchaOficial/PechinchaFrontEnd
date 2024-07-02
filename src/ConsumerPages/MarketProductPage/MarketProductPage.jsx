@@ -7,10 +7,11 @@ import Massas from '../ListagemProdutos/CategoriaProduto/Massas'
 import Styles from './MarketProductPage.module.css'
 import assai from '../../assets/img/Market/assai.png'
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer'
+import MarketPage from './MarketPage/MarketPage'
 
 
 
-function MarketProductPage() {
+function MarketProductPage({img}) {
 
     const categoriaDinamica = 'Grão'
     const bebidas = 'Bebida'
@@ -23,45 +24,15 @@ function MarketProductPage() {
         <div>
             <HeaderConsumer />
             <main>
-                <section className={Styles.marketpage} id='container'>
-                    <div className={Styles.bannermarket}>
-                    </div>
-                    <div className={Styles.infosmarket}>
-                        <div className={Styles.photomarket}>
-                            <img className={Styles.assai} src={assai} alt="Mercado logo" />
-                        </div>
-                        <div className={Styles.namemarket}>
-                            <h1>Assaí Atacadista</h1>
-                            <p className={Styles.adress}>Bairro Ariston Estela Azevedo, 762</p>
-                            <p className={Styles.map}>Veja no mapa</p>
-                            <div className={Styles.star}>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                        <div className={Styles.camps}>
-                            <div className={Styles.product}>
-                                <p>Produtos: 123</p>
-                            </div>
-                            <div className={Styles.datestart}>
-                                <p>anuncia desde: 20/10/2024</p>
-                            </div>
-                            <div className={Styles.date}>
-                                <p>Vendedor: Premium</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
+               <MarketPage banner={Styles.bannermarket} logo={Styles.assai}  img={assai} adress="Bairro Ariston Estela Azevedo, 762" name="Assai atacadista" product="Produtos: 123" date="anuncia desde: 20/10/2024" star="Vendedor: Premium"/>
+                
                 <div className={Styles.containerproduct} id='container'>
                     <CategoryProd />
                 <CategoriaProduto categoria='Snacks' category={snacks} />
                 <CategoriaProduto categoria='Bebida' category={bebidas} />
                 <CategoriaProduto categoria='Grãos' category={categoriaDinamica} />
                 <CategoriaProduto categoria='Massas' category={massas} />
-                <CategoriaProduto categoria='Enlatad    os' category={enlatados} />
+                <CategoriaProduto categoria='Enlatados' category={enlatados} />
                 </div>
             </main>
         </div>
