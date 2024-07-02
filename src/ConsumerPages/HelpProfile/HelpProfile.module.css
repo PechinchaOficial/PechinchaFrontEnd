@@ -1,5 +1,19 @@
-.main {
+.container_profile {
+    display: flex;
+    justify-content: end;
     width: 100%;
     height: 800px;
-    background-color: violet;
+    background-color: #F2F2F2;
+}
+
+.help_profile {
+    width: 70%;
+    height: auto;
+    padding-top: 230px;
+
+    background-color: aquamarine;
+}
+
+.forms_help {
+    width: 100%;
 }
