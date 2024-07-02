@@ -31,7 +31,7 @@ const Chatbot = () => {
     "tchau": "Tchau, estarei te esperando caso precise de ajuda novamente!",
 
     "Quais são os desenvolvedores da Pechincha?": "Os desenvolvedores da pechincha são César Couto, Kaique Oliveira, Gabriel Gallo, Gabriel Alves, Luane Moura, Jessica Magalhães e Pablo Henrique",
-    "quais sao os desenvolvedores da pechincha?": "Os desenvolvedores da pechincha são César Couto, Kaique Oliveira, Gabriel Gallo, Gabriel Alves, Luane Moura, Jessica Magalhães e Pablo Henrique",
+    "quais sao os desenvolvedores da pechincha?": "Os desenvolvedores da pechincha são César Couto, Kaique Oliveira, Gabriel Gallo, Gabriel Alves, Luane Moura, Jessica Magalhães, Pablo Henrique e Juan Pina",
 
     "qual o slogan da pechincha": "Se sua grana apertou a Pechincha chegou!",
     "Qual o slogan da Pechincha?": "Se sua grana apertou a Pechincha chegou!",
