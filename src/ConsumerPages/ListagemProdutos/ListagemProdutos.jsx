@@ -10,8 +10,8 @@ import Bannerjunina from '../../assets/img/bannerjunina.png'
 
 function ListagemProdutos() {
 
-    const categoriaDinamica = 'graos'
-    const bebidas = 'bebidas'
+    const categoriaDinamica = 'grão'
+    const bebidas = 'bebida'
     const massas = 'massa'
     const enlatados = 'enlatado'
     const snacks = 'snack'

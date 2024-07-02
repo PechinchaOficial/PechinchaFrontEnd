@@ -9,13 +9,13 @@ import { useCart } from '../../../ConsumerPages/Cart/CartContext';
 import { usePopUp } from '../../../components/PopUpCart/PopUpContext';
 
 function Graos({ categoria, category, show_more }) {
-    const pop_up = usePopUp(); // Use o Context
-
+    const pop_up = usePopUp();
     const carousel = useRef(null);
     const [products, setProducts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const { addToCart } = useCart();
     const navigate = useNavigate();
+    const [visibleProducts, setVisibleProducts] = useState(5); // Controla o número de produtos visíveis
 
     useEffect(() => {
         fetchProducts();
@@ -48,12 +48,10 @@ function Graos({ categoria, category, show_more }) {
         navigate('/cart');
         scrollToTop();
     };
-    
 
-    const filteredProducts = products.filter((produto) => { console.log(produto)
-        return  produto.nome && produto.nome.toLowerCase().includes(category ? category.toLowerCase() : '')
-       
-    });
+    const filteredProducts = products.filter((produto) =>
+        produto.nome && produto.nome.toLowerCase().includes(category ? category.toLowerCase() : '')
+    );
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -70,10 +68,12 @@ function Graos({ categoria, category, show_more }) {
         }
     };
 
+    const loadMoreProducts = () => {
+        setVisibleProducts((prevVisibleProducts) => prevVisibleProducts + 5);
+    };
+
     return (
         <section className={styles.categoria_produto} id='container'>
-            {/* <button onClick={() => showPopUp(pop_up)}>Esconder Pop-up</button> */}
-
             <div className={styles.title}>
                 <div className={styles.categoria}>
                     <i className="fa-solid fa-store"></i>
@@ -89,7 +89,7 @@ function Graos({ categoria, category, show_more }) {
 
             <div className={styles.carousel_prod} ref={carousel}>
                 {isLoading ? (
-                    Array.from({ length: 5 }).map((_, index) => (
+                    Array.from({ length: visibleProducts }).map((_, index) => (
                         <div key={index} className={styles.cardproduto}>
                             <div className={styles.container_img}>
                                 <Skeleton height={200} width={200} />
@@ -119,7 +119,7 @@ function Graos({ categoria, category, show_more }) {
                         </div>
                     ))
                 ) : (
-                    filteredProducts.map(({ id, nome, datavalidade, preco, desconto, fotoproduto, categorias }) => (
+                    filteredProducts.slice(0, visibleProducts).map(({ id, nome, datavalidade, preco, desconto, fotoproduto }) => (
                         <div key={id} className={styles.productLink}>
                             <div className={styles.cardproduto}>
                                 <Link key={id} to={`/produto/${id}`} className={styles.productLink}>
@@ -169,6 +169,8 @@ function Graos({ categoria, category, show_more }) {
 
             <button className={styles.btn_carousel} onClick={handleLeftClick} id={styles.left}><i className="fa-solid fa-chevron-left"></i></button>
             <button className={styles.btn_carousel} onClick={handleRightClick} id={styles.right}><i className="fa-solid fa-chevron-right"></i></button>
+
+
         </section>
     );
 }
