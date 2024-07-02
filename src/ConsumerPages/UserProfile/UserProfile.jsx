@@ -4,6 +4,7 @@ import BtnLang from '../../components/BtnLang/BtnLang';
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import ProfileSecurity from '../../components/ProfileSecurity/ProfileSecurity';
 
 function UserProfile() {
     //API translate const                          // Chamdando a API de tradução
@@ -16,11 +17,15 @@ function UserProfile() {
             <HeaderConsumer />
             <div className={styles.container_content} id='container'>
                 <nav className={styles.side_bar}>
+                    
                     <ul>
                         <li><h3 className={styles.side_title}>{t("Preferencias")}</h3></li>
                         <li><i class="fa-solid fa-pen"></i> <a href="#">{t("Editar informações")}</a></li>
                         <li><i class="fa-solid fa-shield-halved"></i> <a href="#">{t("Segurança")}</a></li>
+                        <li><i class="fa-solid fa-circle-question"></i> <a href="#">{t("Ajuda")}</a></li>
+                       <Link to='/profilesecurity'> <li><i class="fa-solid fa-shield-halved"></i> <a href="#">{t("Segurança")}</a></li> </Link>
                         <li><i class="fa-solid fa-circle-question"></i><a href="#">{t("Ajuda")}</a></li>
+
                         <li><i class="fa-solid fa-right-from-bracket"></i><Link to="/">{t("Sair")}</Link></li>
 
                     </ul>

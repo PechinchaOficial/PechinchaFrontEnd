@@ -1,17 +1,24 @@
+.bannermarket{
+    background-image: url("../../../assets/img/Market/bannercarrefour.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 480px;
+    margin-top: 30px;  
+}
+
+.carrefour{
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
 .marketpage{
     flex-direction: column;
 }
 
-.bannermarket{
-    background-image: url("../../assets/img/Market/bannerassai.png");
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 430px;
-    margin-top: 30px;
-    
-}
+
 
 .infosmarket{
     width: 100%;
@@ -24,7 +31,7 @@
 }
 
 .photomarket{
-    background-color: #aecdebc5;
+    background-color: #aeebcfc5;
     position: absolute;
     width: 400px;
     height: 300px;
@@ -409,12 +416,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
- 

@@ -36,9 +36,17 @@ import ProductForm from './MarketPages/MarketSystem/ProductRegistration/Register
 import ReadyProduct from './ConsumerPages/ReadyProduct/ReadyProduct';
 import UserForm from './MarketPages/MarketSystem/ProductRegistration/RegisterTest';
 import CardDetails from './MarketPages/CardDetails/CardDetails';
+import HelpProfile from './ConsumerPages/HelpProfile/HelpProfile';
 import Analysis from './MarketPages/Analysis/Analysis'
 import CarouselReviewClient from './components/CarouselReviewClient/CarouselReviewClient';
+
 import ProductEdit from './MarketPages/MarketSystem/ProductRegistration/ProductEdit';
+
+import ProfileSecurity from './components/ProfileSecurity/ProfileSecurity';
+import MarketPage from './ConsumerPages/MarketProductPage/MarketPage/MarketPage';
+import Extra from './ConsumerPages/MarketProductPage/MarketPage/Extra';
+import Ricoy from './ConsumerPages/MarketProductPage/MarketPage/Ricoy';
+import Carrefour from './ConsumerPages/MarketProductPage/MarketPage/Carrefour';
 
 function RouterApp() {
     return (
@@ -75,6 +83,7 @@ function RouterApp() {
                 <Route path='/listagemdeslogado' element={<ListagemDeslogado />} />
                 <Route path='/homemarketdeslogado' element={<HomeMarketDeslogado />} />
                 <Route path='/carouselreviewclient' element={< CarouselReviewClient />} />
+                <Route path='/profilesecurity' element={< ProfileSecurity />} />
 
                 <Route path='/userprofile' element={<UserProfile />} />
                 <Route path='/marketlogin' element={<MarketLogin />} />
@@ -84,7 +93,12 @@ function RouterApp() {
                 <Route path='/registerteste' element={<UserForm />} />
                 <Route path='/readyProduct' element={<ReadyProduct />} />
                 <Route path='/carddetails' element={<CardDetails />} />
+                <Route path='/help' element={<HelpProfile />} />
                 <Route path='/analysis' element={<Analysis />} />
+                <Route path='/marketpage' element={<MarketPage />} />
+                <Route path='/extra' element={<Extra />} />
+                <Route path='/ricoy' element={<Ricoy />} />
+                <Route path='/carrefour' element={<Carrefour />} />
             </Routes>
             <Footer />
         </Router>
