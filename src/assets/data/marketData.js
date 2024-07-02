@@ -13,7 +13,7 @@ const marketData = [
         img: `${assai}`,
         andress: "Senac Lapa Tipo",
         rate: "4,2",
-       
+        url: "/marketproductpage"
     },
 
     {
@@ -22,7 +22,7 @@ const marketData = [
         img: `${extra}`,
         andress: "Senac Lapa Tipo",
         rate: "4,7",
-        url: "listagem/extra"
+        url: "/extra"
     },
 
     {
@@ -30,7 +30,8 @@ const marketData = [
         name: "Ricoy",
         img: `${ricoy}`,
         andress: "Senac Lapa Tipo",
-        rate: "5,0"
+        rate: "5,0",
+        url: "/ricoy"
     },
 
     {
@@ -38,7 +39,8 @@ const marketData = [
         name: "Carrefour",
         img: `${carrefour}`,
         andress: "Senac Lapa Tipo",
-        rate: "4,1"
+        rate: "4,1",
+        url: "/carrefour"
     },
 
     {
@@ -46,7 +48,8 @@ const marketData = [
         name: "Assaí Atacadista",
         img: `${assai}`,
         andress: "Senac Lapa Tipo",
-        rate: "4,2"
+        rate: "4,2",
+        url: "/marketproductpage"
     },
 
     {
@@ -54,7 +57,8 @@ const marketData = [
         name: "Extra",
         img: `${extra}`,
         andress: "Senac Lapa Tipo",
-        rate: "4,7"
+        rate: "4,7",
+        url: "/extra"
     },
 
     {
@@ -62,7 +66,8 @@ const marketData = [
         name: "Ricoy",
         img: `${ricoy}`,
         andress: "Senac Lapa Tipo",
-        rate: "5,0"
+        rate: "5,0",
+        url: "/ricoy"
     },
 
     {
@@ -70,7 +75,8 @@ const marketData = [
         name: "Carrefour",
         img: `${carrefour}`,
         andress: "Senac Lapa Tipo",
-        rate: "4,1"
+        rate: "4,1",
+         url: "/carrefour"
     }
 ]
 

@@ -38,15 +38,11 @@ import UserForm from './MarketPages/MarketSystem/ProductRegistration/RegisterTes
 import CardDetails from './MarketPages/CardDetails/CardDetails';
 import Analysis from './MarketPages/Analysis/Analysis'
 import CarouselReviewClient from './components/CarouselReviewClient/CarouselReviewClient';
-<<<<<<< HEAD
 import ProfileSecurity from './components/ProfileSecurity/ProfileSecurity';
-=======
 import MarketPage from './ConsumerPages/MarketProductPage/MarketPage/MarketPage';
 import Extra from './ConsumerPages/MarketProductPage/MarketPage/Extra';
 import Ricoy from './ConsumerPages/MarketProductPage/MarketPage/Ricoy';
 import Carrefour from './ConsumerPages/MarketProductPage/MarketPage/Carrefour';
-
->>>>>>> jessi
 
 function RouterApp() {
     return (
