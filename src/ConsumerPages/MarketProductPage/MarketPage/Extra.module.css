@@ -1,17 +1,25 @@
+.bannermarket{
+    background-image: url("../../../assets/img/Market/bannerextra.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 480px;
+    margin-top: 30px;
+    
+}
+
+.extra{
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
 .marketpage{
     flex-direction: column;
 }
 
-.bannermarket{
-    background-image: url("../../assets/img/Market/bannerassai.png");
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 430px;
-    margin-top: 30px;
-    
-}
+
 
 .infosmarket{
     width: 100%;
@@ -411,10 +419,3 @@
 }
 
 
-
-
-
-
-
-
- 
