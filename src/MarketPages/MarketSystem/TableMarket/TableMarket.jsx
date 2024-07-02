@@ -2,37 +2,35 @@ import Styles from './TableMarket.module.css';
 import Btn from '../BtnMarket/BtnMarket';
 import Cancel from '../../../assets/img/Cancel.png';
 import Create from '../../../assets/img/Create.png';
-import { useParams } from 'react-router-dom';
 import { GetProduto } from '../../../services/ProdutoService'; // Supondo que você tenha um serviço para obter detalhes do produto
 import localData from '../../../assets/data/localData';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function TableMarket({ classe }) {
-    // Estado para armazenar a lista de produtos e indicar o carregamento
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetchProducts(); // Ao montar o componente, busca os produtos
+        fetchProducts();
     }, []);
 
-    // Função assíncrona para buscar os produtos
     const fetchProducts = async () => {
         try {
-            const response = await GetProduto(); // Chamada ao serviço para obter os produtos
-            setProducts(response.data.content); // Atualiza o estado com os produtos obtidos
-            setLoading(false); // Marca que o carregamento terminou
+            const response = await GetProduto();
+            setProducts(response.data.content);
         } catch (error) {
             console.error("Erro ao buscar produtos", error);
-            setProducts(localData); // Em caso de erro, carrega dados locais
-            setLoading(false); // Marca que o carregamento terminou
+            setProducts(localData);
+        } finally {
+            setLoading(false);
         }
     };
 
-    // Se ainda estiver carregando, exibe indicador de carregamento
+    if (loading) {
+        return <p>Carregando...</p>;
+    }
 
-
-    // Renderiza a tabela com os produtos obtidos
     return (
         <div className={Styles.container}>
             <table className={classe}>
@@ -47,17 +45,18 @@ function TableMarket({ classe }) {
                     </tr>
                 </thead>
                 <tbody>
-                    {products.map((produto) => ( // Mapeia os produtos para criar as linhas da tabela
+                    {products.map((produto) => (
                         <tr key={produto.id}>
                             <td className={Styles.atributo}>{produto.id}</td>
                             <td className={Styles.atributo}>{produto.nome}</td>
                             <td className={Styles.atributo}>{produto.descricao}</td>
                             <td className={Styles.atributo}>{produto.datavalidade}</td>
-                            <td className={Styles.atributo}>{produto.categoria}</td>
+                            <td className={Styles.atributo}>{produto.categorias}</td>
                             <td className={Styles.atributo}>
                                 <div className={Styles.container_bts}>
-                                    {/* Botões de editar e excluir */}
-                                    <Btn imagem={Create} texto="Editar" classe={Styles.edite} container={Styles.container_img_1} />
+                                    <Link to={`/atualizar/${produto.id}`}>
+                                        <Btn imagem={Create} texto="Editar" classe={Styles.edite} container={Styles.container_img_1} />
+                                    </Link>
                                     <Btn imagem={Cancel} texto="Excluir" classe={Styles.delete} container={Styles.container_img_2} />
                                 </div>
                             </td>

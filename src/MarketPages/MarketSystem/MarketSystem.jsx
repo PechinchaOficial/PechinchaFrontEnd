@@ -26,7 +26,7 @@ function MarketSystem() {
 
                         <div className={Styles.nome_mercado}> {/* Div para o nome do mercado */}
                             <h2 className={Styles.titulo_mercado}>Mercado Todo dia</h2>
-                            <p className={Styles.nome_responsavel}>Responsavel</p>
+                            <p className={Styles.nome_responsavel}>Responsável</p>
                         </div>
                     </div>
 
@@ -56,7 +56,7 @@ function MarketSystem() {
                             </div>
 
                             <div className={Styles.container_texto_nav}> {/*Texto da nav*/}
-                                <p className={Styles.texto_nav}>Pagina Inicial</p>
+                                <p className={Styles.texto_nav}>Página Inicial</p>
                             </div>
                         </div>
                     </div>

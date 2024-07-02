@@ -1,5 +1,5 @@
 import styles from './HeaderMarket.module.css'
-import logo from '../../../assets/img/marketLogo.svg'
+import logo from '../../../assets/img/logocorreta.svg'
 function HeaderMarket() {
     return (
 // Define o componente de cabeçalho

@@ -1,13 +1,11 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import CardProduto from '../../../components/CardProduto/CardProduto';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import styles from './CategoriaProduto.module.css';
 import { GetProduto } from '../../../services/ProdutoService';
 import localData from '../../../assets/data/localData';
 import { useCart } from '../../../ConsumerPages/Cart/CartContext';
-import { showPopUp } from '../../../components/PopUpCart/PopUpCart';
 import { usePopUp } from '../../../components/PopUpCart/PopUpContext';
 
 function Graos({ categoria, category, show_more }) {
@@ -26,16 +24,12 @@ function Graos({ categoria, category, show_more }) {
     const fetchProducts = async () => {
         try {
             const response = await GetProduto();
-           
-                setProducts(response.data.content);
-                setIsLoading(false);
-          
+            setProducts(response.data.content);
+            setIsLoading(false);
         } catch (error) {
             console.error("Erro ao buscar produtos", error);
-          
-                setProducts(localData);
-                setIsLoading(false);
-           
+            setProducts(localData);
+            setIsLoading(false);
         }
     };
 
@@ -52,12 +46,14 @@ function Graos({ categoria, category, show_more }) {
     const handleAddToCart = (product) => {
         addToCart(product);
         navigate('/cart');
-        scrollToTop()
+        scrollToTop();
     };
+    
 
-    const filteredProducts = products.filter((produto) =>
-        produto.nome.toLowerCase().includes(category ? category.toLowerCase() : '')
-    );
+    const filteredProducts = products.filter((produto) => { console.log(produto)
+        return  produto.nome && produto.nome.toLowerCase().includes(category ? category.toLowerCase() : '')
+       
+    });
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -123,8 +119,7 @@ function Graos({ categoria, category, show_more }) {
                         </div>
                     ))
                 ) : (
-                    filteredProducts.map(({ id, nome, datavalidade, preco, desconto, fotoproduto }) => (
-
+                    filteredProducts.map(({ id, nome, datavalidade, preco, desconto, fotoproduto, categorias }) => (
                         <div key={id} className={styles.productLink}>
                             <div className={styles.cardproduto}>
                                 <Link key={id} to={`/produto/${id}`} className={styles.productLink}>
@@ -145,6 +140,7 @@ function Graos({ categoria, category, show_more }) {
                                     <span className={styles.preco}>
                                         R$ {preco}
                                     </span>
+
                                     <div className={styles.desconto}>
                                         <span className={styles.porcentagem}>
                                             -{desconto}
@@ -167,7 +163,6 @@ function Graos({ categoria, category, show_more }) {
 
                             </div>
                         </div>
-
                     ))
                 )}
             </div>

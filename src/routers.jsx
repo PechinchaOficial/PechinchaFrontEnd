@@ -38,6 +38,7 @@ import UserForm from './MarketPages/MarketSystem/ProductRegistration/RegisterTes
 import CardDetails from './MarketPages/CardDetails/CardDetails';
 import Analysis from './MarketPages/Analysis/Analysis'
 import CarouselReviewClient from './components/CarouselReviewClient/CarouselReviewClient';
+import ProductEdit from './MarketPages/MarketSystem/ProductRegistration/ProductEdit';
 
 function RouterApp() {
     return (
@@ -58,6 +59,8 @@ function RouterApp() {
 
                 {/* Rota para exibir os detalhes do produto */}
                 <Route path='/produto/:id' element={<Product />} />
+                <Route path='/atualizar/:id' element={<ProductEdit />} />
+
 
                 <Route path='/marketproduct' element={<MarketProduct />} />
                 <Route path='/productregistration' element={<ProductRegistration />} />

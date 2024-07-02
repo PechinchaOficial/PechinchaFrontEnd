@@ -1,5 +1,5 @@
-import React, { useState, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import Styles from './ProductRegistration.module.css';
 import Add from '../../../assets/img/Add.png';
 import Home from '../../../assets/img/Home_markt.png';
@@ -10,11 +10,11 @@ import Services from '../../../assets/img/Services.png';
 import salgadinho from '../../../assets/img/salgadinho.png';
 import HeaderMarket from '../../../components/CardProduct/HeaderMarket/HeaderMarket';
 import Products from '../../../assets/data/localData'; // Substitua pelo caminho correto dos dados de produtos
-import { CreateProduto } from '../../../services/ProdutoService'; // Verifique se o caminho do serviço está correto
+import { GetProdutoById, UpdateProdutoById } from '../../../services/ProdutoService'; // Verifique se o caminho do serviço está correto
 import Btn from '../BtnMarket/BtnMarket';
 
-function MarketSystem({ imagem, classe }) {
-    const results = useRef();
+function ProductEdit({ imagem, classe }) {
+    const results = React.useRef();
 
     const ShowResults = () => {
         results.current.style.display = 'block';
@@ -59,36 +59,41 @@ function MarketSystem({ imagem, classe }) {
 
     const [successMessage, setSuccessMessage] = useState('');
     const navigate = useNavigate();
+    const { id } = useParams(); // Obtém o ID do produto dos parâmetros da rota
+
+    useEffect(() => {
+        const fetchProduto = async () => {
+            try {
+                const response = await GetProdutoById(id); // Busca os dados do produto pelo ID
+                setProduto(response.data);
+                setImgUrl(response.data.fotoproduto);
+            } catch (error) {
+                console.error('Erro ao buscar produto:', error);
+            }
+        };
+
+        fetchProduto();
+    }, [id]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setProduto({ ...produto, [name]: value });
     };
 
-    const handleCategoryChange = (e) => {
-        const { value } = e.target;
-        setProduto((prevProduto) => ({
-            ...prevProduto,
-            nome: `${prevProduto.nome} ${value}`.trim(),
-        }));
-    };
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await CreateProduto(produto); // Certifique-se de que CreateProduto está definido corretamente no serviço
-            console.log('Produto criado com sucesso:', response.data);
+            const response = await UpdateProdutoById(id, produto); // Atualiza o produto pelo ID
+            console.log('Produto atualizado com sucesso:', response.data);
 
-            // Definir a mensagem de sucesso e exibir o pop-up
-            setSuccessMessage('Produto cadastrado com sucesso!');
+            setSuccessMessage('Produto atualizado com sucesso!');
 
-            // Redirecionar para a página de listagem após 2 segundos
             setTimeout(() => {
                 setSuccessMessage('');
                 navigate('/marketproduct');
             }, 2000);
         } catch (error) {
-            console.error('Erro ao criar produto:', error);
+            console.error('Erro ao atualizar produto:', error);
             setError('Algum campo está incorreto.'); // Definir mensagem de erro
         }
     };
@@ -188,7 +193,7 @@ function MarketSystem({ imagem, classe }) {
                                             name="nome"
                                             placeholder="Digite o nome do produto"
                                             className={Styles.input_long}
-                                            value={produto.nome || search}
+                                            value={produto.nome}
                                             onChange={(e) => {
                                                 handleChange(e);
                                                 setSearch(e.target.value);
@@ -207,6 +212,7 @@ function MarketSystem({ imagem, classe }) {
                                                                 <h2>{nome}</h2>
                                                                 <p>Validade: {datavalidade}</p>
                                                             </div>
+
                                                         </div>
                                                     </li>
                                                 ))}
@@ -223,12 +229,11 @@ function MarketSystem({ imagem, classe }) {
                                         />
                                         <p className={Styles.titulo_input} id={Styles.input_hidden}>Imagem</p>
                                         <input
-                                            className={Styles.input_long}
-                                            id={Styles.input_hidden}
+                                            className={Styles.input_long} id={Styles.input_hidden}
                                             type="text"
                                             name="fotoproduto"
                                             placeholder="img"
-                                            value={produto.fotoproduto = imgUrl}
+                                            value={produto.fotoproduto}
                                             readOnly
                                             onChange={(e) => {
                                                 handleChange(e);
@@ -239,10 +244,11 @@ function MarketSystem({ imagem, classe }) {
                                             <div className={Styles.input}>
                                                 <p className={Styles.titulo_input}>Categoria</p>
                                                 <select
-                                                    id="categoria"
-                                                    name="categoria"
+                                                    id="categorias"
+                                                    name="categorias"
                                                     className={Styles.select}
-                                                    onChange={handleCategoryChange}
+                                                    value={produto.categorias}
+                                                    onChange={handleChange}
                                                 >
                                                     <option value="">Selecione uma categoria</option>
                                                     <option value="massas">Massas</option>
@@ -265,8 +271,7 @@ function MarketSystem({ imagem, classe }) {
                                             </div>
                                             <div className={Styles.input}>
                                                 <p className={Styles.titulo_input}>% Desconto</p>
-                                                <input
-                                                    type="number"
+                                                <input type="number"
                                                     name="desconto"
                                                     className={Styles.input_number}
                                                     placeholder="%"
@@ -284,11 +289,14 @@ function MarketSystem({ imagem, classe }) {
                                                     onChange={handleChange}
                                                 />
                                             </div>
+
                                         </div>
+
                                         <div className={Styles.btn_error}>
-                                            {error && <p className='error-message' id='error'>{error}</p>}
+                                            {error && <p className='error-message' id='error'>{error}</p>} {/* Mostrar mensagem de erro se houver */}
+
                                             <button className={Styles.btn} type="submit">
-                                                Cadastrar
+                                                Atualizar
                                             </button>
                                         </div>
                                     </form>
@@ -307,4 +315,4 @@ function MarketSystem({ imagem, classe }) {
     );
 }
 
-export default MarketSystem;
+export default ProductEdit;
