@@ -2,6 +2,7 @@ import Styles from './ProfileSecurity.module.css'
 import HeaderConsumer from '../HeaderConsumer/HeaderConsumer';
 import { Link } from 'react-router-dom';
 import user from '../../assets/img/user.png'
+import UserProfile from '../../ConsumerPages/UserProfile/UserProfile';
 
 function ProfileSecurity() {
     return (
@@ -13,9 +14,9 @@ function ProfileSecurity() {
                 <aside className={Styles.Left}>
                     <nav className={Styles.side_bar}>
                         <ul>
-                            <li><h3 className={Styles.side_title}>Preferencias</h3></li>
-                            <li><i class="fa-solid fa-pen"></i> <a href="#">Editar informações</a></li>
-                            <Link to=''> <li><i class="fa-solid fa-shield-halved"></i> <a href="#">Segurança</a></li> </Link>
+                           <li><h3 className={Styles.side_title}>Preferencias</h3></li>
+                           <Link to='/userprofile'> <li><i class="fa-solid fa-pen"></i> <a href="#">Editar informações</a></li> </Link>
+                            <Link to='/profilesecurity'> <li><i class="fa-solid fa-shield-halved"></i> <a href="#">Segurança</a></li> </Link>
                             <li><i class="fa-solid fa-circle-question"></i><a href="#">Ajuda</a></li>
                             <li><i class="fa-solid fa-right-from-bracket"></i><Link to="/">Sair</Link></li>
 
