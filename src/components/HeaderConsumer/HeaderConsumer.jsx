@@ -61,7 +61,7 @@ function HeaderConsumer() {
                             <img src={logoPocket} alt="Logo" className={styles.logo_pocket} />
                         </Link>
                     </div>
-                    <ul className={styles.nav_link}>
+                    <ul className={styles.nav_link} id={styles.header_up}>
                         <li>
                             <Link onClick={scrollToTop} to="/">Início</Link>
                         </li>
@@ -112,9 +112,9 @@ function HeaderConsumer() {
                             <img src={user} alt="Perfil de usuário" className={styles.user} />
                         </div>
 
-                        <div className={styles.pop_up} ref={pop_up}>
+                        {/* <div className={styles.pop_up} ref={pop_up}>
                             <h2>Produto adicionado com sucesso!</h2>
-                        </div>
+                        </div> */}
 
                         <img onClick={ShowMobile} src={open} alt="Botão para fechar" className={styles.icon_mobile} />
 
@@ -141,7 +141,7 @@ function HeaderConsumer() {
 
             <div className={styles.header_down}>
                 <div className={styles.container_header} id='container'>
-                    <ul className={styles.nav_link}>
+                    <ul className={styles.nav_link} id={styles.header_down}>
                         <li>
                             <Link onClick={scrollToTop} className={styles.principal_link} to="/listagem">PARA VOCÊ</Link>
                         </li>

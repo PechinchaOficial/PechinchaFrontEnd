@@ -76,6 +76,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: red;
 }
 
 .user_icon:hover {
@@ -222,7 +223,6 @@
     z-index: 999;
     top: 0px;
     transition: 0.1s all;
-    cursor: pointer;
     overflow: hidden;
 }
 

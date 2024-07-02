@@ -47,6 +47,7 @@ import MarketPage from './ConsumerPages/MarketProductPage/MarketPage/MarketPage'
 import Extra from './ConsumerPages/MarketProductPage/MarketPage/Extra';
 import Ricoy from './ConsumerPages/MarketProductPage/MarketPage/Ricoy';
 import Carrefour from './ConsumerPages/MarketProductPage/MarketPage/Carrefour';
+import ReadySystem from './MarketPages/Register/ReadySystem';
 
 function RouterApp() {
     return (
@@ -99,6 +100,8 @@ function RouterApp() {
                 <Route path='/extra' element={<Extra />} />
                 <Route path='/ricoy' element={<Ricoy />} />
                 <Route path='/carrefour' element={<Carrefour />} />
+                <Route path='/readysystem' element={<ReadySystem />} />
+
             </Routes>
             <Footer />
         </Router>

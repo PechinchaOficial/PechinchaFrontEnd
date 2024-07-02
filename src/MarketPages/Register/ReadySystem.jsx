@@ -1,15 +1,16 @@
-import styles from './ReadyProduct.module.css'
+import styles from '../../ConsumerPages/ReadyProduct/ReadyProduct.module.css'
 import { Link } from 'react-router-dom'
-import Enlatados from '../ListagemProdutos/CategoriaProduto/Enlatados';
+// import Enlatados from '../ListagemProdutos/CategoriaProduto/Enlatados';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 import TrailResgistration from '../../components/TrailRegistrationMarket/TrailRegistration';
 
-function ReadyProduct() {
+function ReadySystem() {
     return (
         <div>
             < HeaderConsumer />
             <main className={styles.cart_container} >
                 <div className={styles.BoxTrail}>
+                    <TrailResgistration Cicle={styles.Cicle} Cicle1={styles.Cicle} Cicle2={styles.Cicle} Fase={styles.Fase} Divider1={styles.Divider1} Divider2={styles.Divider1} />
                 </div>
                 <div className={styles.card_container} id='container'>
                     <section className={styles.cart}>
@@ -23,11 +24,11 @@ function ReadyProduct() {
 
                             <div className={styles.product}>
                                 <div className={styles.img}>
-                                    <img src="https://images-americanas.b2w.io/produtos/01/00/img/3910470/1/3910470124_1GG.jpg" alt="Imagem do produto" />
+                                    <img src="" alt="Imagem do produto" />
                                 </div>
                                 <div className={styles.info_prod}>
                                     <div className={styles.prod_data}>
-                                        <h2>Salgadinho de milho Cheetos</h2>
+                                        <h2>Plano: Pechinchas</h2>
                                         <p>Pagamento: Cartão de débito </p>
                                         <p>Endereço: Mercado Extra, Rua Lupércio, 87 </p>
 
@@ -58,4 +59,4 @@ function ReadyProduct() {
     )
 }
 
-export default ReadyProduct;
+export default ReadySystem;

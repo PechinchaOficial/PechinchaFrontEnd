@@ -23,8 +23,7 @@
     display: flex;
     align-items: center;
     background-color: #E7E7E7;
-    height: 40px;
-    padding: 0px 30px;
+    height: 100%;
     width: 100%;
 }
 
@@ -51,8 +50,25 @@
     color: #000000c5;
 }
 
-.nav_link li {
-    height: 100%;
+#header_down li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 20%;
+    text-align: center;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+#header_down li:hover{
+    background-color: #cfcfcf;
+
+}
+
+#header_up{
+    display: flex;
+    gap: 20px;
 }
 
 .principal_link {
@@ -167,9 +183,9 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap: 30px;
     list-style: none;
     font-size: 1rem;
+    height: 100%;
 }
 
 
@@ -239,7 +255,6 @@
     z-index: 999;
     top: 0px;
     transition: 0.1s all;
-    cursor: pointer;
     overflow: hidden;
 }
 
