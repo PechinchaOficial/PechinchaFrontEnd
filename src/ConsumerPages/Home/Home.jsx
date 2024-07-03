@@ -9,7 +9,7 @@ import img_step from '../../assets/img/step1.svg';
 import img_step_2 from '../../assets/img/etapa (1).svg';
 import img_step_3 from '../../assets/img/step3.svg';
 import img_step_4 from '../../assets/img/step4.svg';
-
+import { Link } from 'react-router-dom';
 import kaique from '../../assets/img/kaiqueAvalia.jpg';
 import TituloFormato from '../../components/TituloFormato/TituloFormato';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -153,10 +153,12 @@ function Home({ header }) {
                             <h2>Pechincha Chegou!</h2>
                         </div>
                         <h2 className={styles.slogan_subtitle}>Nós combatemos o desperdício e ainda fazemos aquela diferença no bolso!</h2>
-                        <div className={styles.search}>
-                            <input type="search" placeholder='Pechinchar' className={styles.search_bar} />
-                            <button className={styles.btn_bar}><i className="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
+                       
+                            <div className={styles.search}>
+                            <Link to='/listagem' > <input type="search" placeholder='Pechinchar' className={styles.search_bar} /></Link>
+                                <button className={styles.btn_bar}><i className="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        
                     </div>
                     <img src={star} alt="star" className={styles.star} data-aos="fade-right" />
                     <img src={starYellow} alt="star" className={styles.star_2} data-aos="fade-left" />

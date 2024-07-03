@@ -7,7 +7,12 @@ import Styles from './Register.module.css'
 import { Link } from 'react-router-dom'
 
 function RegisterMarket() {
-
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "auto"
+        });
+    };
     return (
         <div>
             <Header />
@@ -103,7 +108,7 @@ function RegisterMarket() {
                             <h1 >Selecione a forma de <span className={Styles.attention}>pagamento</span></h1>
                         </div>
  
-                            <Link to='/carddetails' className={Styles.Btn}>
+                            <Link to='/carddetails' className={Styles.Btn}onClick={scrollToTop}>
                                     Cartão   
                             </Link>
                             <Link to='/carddetails' className={Styles.Btn}>

@@ -23,8 +23,8 @@ function Graos({ categoria, category, show_more }) {
 
     const fetchProducts = async () => {
         try {
-            const response = await GetProduto();
-            setProducts(response.data.content);
+            
+            setProducts(localData);
             setIsLoading(false);
         } catch (error) {
             console.error("Erro ao buscar produtos", error);

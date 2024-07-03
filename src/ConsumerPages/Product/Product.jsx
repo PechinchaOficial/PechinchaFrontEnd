@@ -3,12 +3,11 @@ import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
 import CategoriaProduto from '../ListagemProdutos/CategoriaProduto/CategoriaProduto';
 import Styles from './Product.module.css';
 import { useParams } from 'react-router-dom';
-import { GetProdutoById } from '../../services/ProdutoService';
 import localData from '../../assets/data/localData';
 import Skeleton from 'react-loading-skeleton';
 import { useCart } from '../../ConsumerPages/Cart/CartContext';
 import { useNavigate, Link } from 'react-router-dom';
-import { showPopUp } from '../../components/PopUpCart/PopUpCart'; // Verifique o caminho correto para o seu arquivo de funções
+import { showPopUp } from '../../components/PopUpCart/PopUpCart';
 
 import 'react-loading-skeleton/dist/skeleton.css';
 
@@ -33,16 +32,11 @@ function Product() {
     const fetchProduto = async () => {
         try {
             console.log("Fetching product with ID:", id);
-            const response = await GetProdutoById(id);
-            console.log("API response:", response.data);
-            setTimeout(() => {
-                setProduto(response.data);
-            }, 1000)
-        } catch (error) {
-            console.error("Erro ao buscar produto", error);
             const localProduto = localData.find(produto => String(produto.id) === String(id));
             console.log("Local product found:", localProduto);
             setProduto(localProduto);
+        } catch (error) {
+            console.error("Erro ao buscar produto", error);
         }
     };
 
@@ -99,7 +93,7 @@ function Product() {
                                     <div className={Styles.BoxdateValue}>
                                         {produto ? (
                                             <>
-                                                <h4 className={Styles.Date}> Vence: {produto.datavalidade} </h4>
+                                                <p className={Styles.Date}> Vence: {produto.datavalidade} </p>
                                                 <h2 className={Styles.Value}>R$ {produto.preco} </h2>
                                             </>
                                         ) : (
@@ -146,12 +140,9 @@ function Product() {
                                     </div>
                                 </div>
                                 <Link to='/checkoutpage' className={Styles.Btn}>
-                                    
-                                        Comprar agora
-                                   
+                                    Comprar agora
                                 </Link>
                                 <button className={Styles.Btn} id={Styles.Btn_cart} onClick={() => handleAddToCart(produto)}>
-
                                     <i className="fa-solid fa-cart-shopping"></i>Adicionar ao carrinho
                                 </button>
                             </div>

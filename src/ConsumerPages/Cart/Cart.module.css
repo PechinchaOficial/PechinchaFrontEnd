@@ -18,6 +18,20 @@
     transition: 0.5s all;
 }
 
+.teste{
+    width: 100%;
+}
+
+.cart_item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart_item span{
+    opacity: 70%;
+}
+
 .header_cart a:hover {
     color: var(--azul);
 }
@@ -173,7 +187,8 @@
     flex-direction: column;
     justify-content: space-around;
     width: 400px;
-    height: 400px;
+    height: auto;
+    min-height: 300px;
     background-color: #fff;
     border: 0.5px solid #00000021;
     border-radius: 10px;
@@ -182,6 +197,16 @@
     padding-bottom: 0;
     box-shadow: 6px 13px 10px -3px rgba(0,0,0,0.1);
 }
+
+.co2{
+    color: var(--btn);
+    font-weight: 600;
+}
+
+#co2 span{
+    font-weight: 500;
+}
+
 
 .total_info {
     display: flex;
@@ -207,6 +232,7 @@
     background-color: var(--btn);
     cursor: pointer;
     transition: 0.5s all;
+    margin-top: 40px;
 }
 
 .btn:hover {

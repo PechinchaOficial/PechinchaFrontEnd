@@ -48,10 +48,22 @@ function CheckoutPage() {
                                     <div className={styles.container_img_2}>
                                         <img src={pix} alt="Pix" />
                                     </div>
+
+                                    
                                 </div>
+                                <div className={styles.btns}>
+                                <Link to='/readyproduct'>
+                                    <button className={styles.btn}>Finalizar</button>
+                                </Link>
+                                <Link to='/listagem' >
+                                    <button className={styles.btn} id={styles.cancel}>Cancelar</button>
+                                </Link>
+
+
+
+                            </div>
                             </div>
 
-                            <CardCheckout url='/readyproduct' produto="Salgadinho de Milho" price="R$2.40" price_t="R$2.40" co2={styles.container_co2} reducao="2,5Kg" />
                         </div>
                     </section>
                 </div>

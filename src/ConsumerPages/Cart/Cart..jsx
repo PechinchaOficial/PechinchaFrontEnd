@@ -1,21 +1,42 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useCart } from '../../ConsumerPages/Cart/CartContext';
 import styles from './Cart.module.css';
 import { Link } from 'react-router-dom';
 import HeaderConsumer from '../../components/HeaderConsumer/HeaderConsumer';
-import CardCheckout from '../../components/CardCheckout/CardCheckout';
 import CategoriaProduto from '../ListagemProdutos/CategoriaProduto/CategoriaProduto';
 
 function Cart() {
     const { cartItems } = useCart();
-    const preco = useRef()
+    const [totalPrice, setTotalPrice] = useState(0);
+    const [totalCO2, setTotalCO2] = useState(0);
 
-    const [precos, seteprecos] = useState()
+    const CO2_PER_PRODUCT = 0.2; // kg de CO2 economizados por produto
 
-    function asa() {
-        item.preco = item.preco * 3
-    }
-    
+    useEffect(() => {
+        calculateTotal();
+        calculateTotalCO2();
+    }, [cartItems]);
+
+    const calculateTotal = () => {
+        let total = 0;
+        cartItems.forEach((item) => {
+            total += parseFloat(item.preco); // Converte para número antes de somar
+        });
+        setTotalPrice(total.toFixed(2)); // Formata o total para duas casas decimais
+    };
+
+    const calculateTotalCO2 = () => {
+        let totalCO2 = cartItems.length * CO2_PER_PRODUCT; // Multiplica o número de itens pelo valor de CO2 por produto
+        setTotalCO2(totalCO2.toFixed(2)); // Formata o total de CO2 para duas casas decimais
+    };
+
+    const truncateString = (str, maxLength) => {
+        if (str.length > maxLength) {
+            return str.substring(0, maxLength) + '...';
+        } else {
+            return str;
+        }
+    };
 
     return (
         <div>
@@ -46,13 +67,13 @@ function Cart() {
                                                 <div className={styles.prod_info}>
                                                     <img src={item.fotoproduto} alt="Produto" className={styles.prod_img} />
                                                     <div className={styles.prod_text}>
-                                                        <h3>{item.name}</h3>
-                                                        <p>{item.expiryDate}</p>
+                                                        <h3>{truncateString(item.nome, 20)}</h3>
+                                                        <p>{item.datavalidade}</p>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <span>R$ {item.preco}</span>
+                                                <span>R$ {parseFloat(item.preco).toFixed(2)}</span> {/* Formata o preço para duas casas decimais */}
                                             </td>
                                             <td>
                                                 <div className={styles.container_qtd}>
@@ -60,15 +81,15 @@ function Cart() {
                                                         <button className={styles.btn_qtd}>
                                                             <span>-</span>
                                                         </button>
-                                                        <span>1</span>
+                                                        <span>1</span> {/* Quantidade do produto */}
                                                         <button className={styles.btn_qtd}>
-                                                            <span onClick={asa}>+</span>
+                                                            <span>+</span>
                                                         </button>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <span>R$ {item.preco}</span>
+                                                <span>R$ {(parseFloat(item.preco) * 1).toFixed(2)}</span> {/* Multiplica o preço pelo número de itens e formata para duas casas decimais */}
                                             </td>
                                             <td>
                                                 <i className="fa-solid fa-trash" id={styles.trash}></i>
@@ -80,36 +101,44 @@ function Cart() {
                             <div className={styles.total}>
                                 <h2 className={styles.container_titulo}>Resumo da compra</h2>
 
-                                <div className={styles.container_1}>
-                                    <div className={styles.total_info}>
-                                        <h4 className={styles.texto_produto}>Plano: Pechinchas</h4>
-                                        <span className={styles.price_produto}>R$ 2,50</span>
-                                    </div>
-                                </div>
-
-
                                 <div className={styles.container}>
                                     <div className={styles.total_info}>
-                                        <h4 className={styles.texto_total}>Total:</h4>
-                                        <span ref={preco} className={styles.price}>R$ 4,80</span>
+                                        {cartItems.length > 0 ? (
+                                            <div className={styles.teste}>
+                                                {cartItems.map((item, index) => (
+                                                    <div key={index} className={styles.cart_item}>
+                                                        <span>{truncateString(item.nome, 20)}</span>
+                                                        <span>R$ {parseFloat(item.preco).toFixed(2)}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        ) : (
+                                            <p>Seu carrinho está vazio.</p>
+                                        )}
+                                    </div>
+                                    <div className={styles.container}>
+                                        <div className={styles.cart_item} id={styles.co2}>
+                                            <span>Redução de <span className={styles.co2}>CO2</span>:</span>
+                                            <span>{totalCO2} kg</span>
+                                        </div>
+                                        <div className={styles.total_info}>
+                                            <h4 className={styles.texto_total}>Total:</h4>
+                                            <span className={styles.price}>R$ {totalPrice}</span>
+                                        </div>
                                     </div>
                                 </div>
-
-                                {/* Link com um props para trocar de URL onde eu chamar esse componente */}
 
                                 <Link to='/checkoutpage'>
                                     <button className={styles.btn}>
                                         FINALIZAR PAGAMENTO
-                                    </button></Link>
+                                    </button>
+                                </Link>
                             </div>
-
-                          
-
                         </div>
                     </section>
                 </div>
 
-               <CategoriaProduto categoria="Produtos relacionados" />
+                <CategoriaProduto categoria="Produtos relacionados" />
 
             </main>
         </div>

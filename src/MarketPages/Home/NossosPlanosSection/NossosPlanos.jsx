@@ -3,7 +3,12 @@ import StarRed from '../../../assets/img/StarRed.png'
 import StarBlue from '../../../assets/img/StarBlue.png'
 import { Link } from 'react-router-dom'
 
-
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "auto"
+    });
+};
 function NossosPlanos() {
     return (
         <section className={Styles.Background} id='container'>
@@ -27,7 +32,7 @@ function NossosPlanos() {
                     </ul>
 
                     <button className={Styles.Btn}>
-                        <Link to='/registerMarket' className={Styles.BtnLK}>
+                        <Link to='/registerMarket' className={Styles.BtnLK} onClick={scrollToTop}>
                             SELECIONAR
                         </Link>
                     </button>
@@ -48,7 +53,7 @@ function NossosPlanos() {
                         <li><h3>Alcance mediano</h3></li>
                     </ul>
 
-                    <button className={Styles.Btn}>
+                    <button className={Styles.Btn}  onClick={scrollToTop}>
                         <Link to='/registerMarket' className={Styles.BtnLK}>
                             SELECIONAR
                         </Link>
@@ -72,7 +77,7 @@ function NossosPlanos() {
                     <img src={StarRed} alt='' className={Styles.Img} />
 
 
-                    <button className={Styles.Btn}>
+                    <button className={Styles.Btn}  onClick={scrollToTop}>
                         <Link to='/registerMarket' className={Styles.BtnLK}>
                             SELECIONAR
                         </Link>

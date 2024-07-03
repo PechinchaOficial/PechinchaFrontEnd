@@ -8,10 +8,10 @@ function SearchBar() {
     const results = React.useRef();
 
 
-    function ShowResults(){
+    function ShowResults() {
         results.current.style.display = 'block';
     }
-    function HiddenResults(){
+    function HiddenResults() {
         results.current.style.display = 'none';
     }
 
@@ -31,19 +31,22 @@ function SearchBar() {
     const products = Produtos.filter((produto) => produto.nome.toLocaleLowerCase().includes(searchLowerCase)
     )
 
+    
+
     return (
         <div className={styles.search}>
 
-        <input type="search" placeholder='Busque na sua região' className={styles.search_bar} value={search} onChange={(e) => setSearch(e.target.value)}  onClick={ShowResults}/>
-            <button className={styles.btn} ><i class="fa-solid fa-magnifying-glass"></i></button> 
-            <div className={styles.results} ref={results}  onMouseLeave={HiddenResults}>
+            <input type="search" placeholder='Buscar Pechinchas' className={styles.search_bar} value={search} onChange={(e) => setSearch(e.target.value)} onClick={ShowResults} />
+            <button className={styles.btn} ><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div className={styles.results} ref={results} onMouseLeave={HiddenResults}>
                 <ul>
-                    {products.map(({  id, nome, datavalidade, preco, desconto, fotoproduto }) => (
+                    {products.map(({ id, nome, datavalidade, preco, desconto, fotoproduto }) => (
                         <li>
-                            <div className={styles.img}>
-                                <img src={fotoproduto} alt="Imagem do produto" />
-                            </div>
-
+                            <Link to={`/produto/${id}`}>
+                                <div className={styles.img}>
+                                    <img src={fotoproduto} alt="Imagem do produto" />
+                                </div>
+                            </Link>
                             <div className={styles.info_prod}>
                                 <div className={styles.prod_data}>
                                     <h2>{nome}</h2>
@@ -68,4 +71,4 @@ function SearchBar() {
     )
 }
 
-export default SearchBar;
+export default SearchBar;

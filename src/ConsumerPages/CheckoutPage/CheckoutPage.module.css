@@ -18,6 +18,17 @@
     transition: 0.5s all;
 }
 
+#cancel{
+    background-color: transparent;
+    color: var(--btn);
+    border: 1px solid var(--btn);
+}
+
+#cancel:hover{
+    background-color: var(--btn);
+    color: #fff;
+}
+
 .header_cart a:hover {
     color: var(--azul);
 }
@@ -40,6 +51,16 @@
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+.btns{
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.btns button{
+width: 240px;
 }
 
 .prod_list {
@@ -110,24 +131,28 @@
 }
 
 .container_pagamento{
-    width: 600px;
+    width: 100%;
     height: 200px;
 }
 
 .btn_compra{
-    width: 450px;
-    height: 70px;
+    width: 50%;
+    height: 90px;
     background-color: #FFF;
     border: none;
     margin-bottom: 25px;
     display: flex;
     align-items: center;
     border-radius: 5px;
+    border-radius:10px ;
+    transition: all 0.4s;
+    cursor: pointer;
+    border: 0.5px solid rgba(227, 227, 227, 0.341);
+
 }
 
 .btn_compra:hover{
     background-color: #dbdbdb;
-    transition: all 0.4s;
 }
 
 .texto_compra{

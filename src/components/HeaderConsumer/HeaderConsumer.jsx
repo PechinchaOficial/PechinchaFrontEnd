@@ -143,7 +143,7 @@ function HeaderConsumer() {
                 <div className={styles.container_header} id='container'>
                     <ul className={styles.nav_link} id={styles.header_down}>
                         <li>
-                            <Link onClick={scrollToTop} className={styles.principal_link} to="/listagem">PARA VOCÊ</Link>
+                            <Link onClick={scrollToTop} className={styles.principal_link} to="/listagem">PECHINCHAS</Link>
                         </li>
 
                         <li>

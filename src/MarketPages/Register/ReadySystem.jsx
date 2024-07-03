@@ -39,8 +39,8 @@ function ReadySystem() {
                             </div>
 
                             <div className={styles.btns}>
-                                <Link to='/listagem'>
-                                    <button className={styles.btn}>Continuar comprando</button>
+                                <Link to='/marketsystem'>
+                                    <button className={styles.btn}>Acessar sistema</button>
                                 </Link>
 
                                 <Link to='/listagem'>

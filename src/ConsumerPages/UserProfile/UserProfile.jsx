@@ -23,9 +23,6 @@ function UserProfile() {
                         <li><i class="fa-solid fa-pen"></i> <a href="#">{t("Editar informações")}</a></li>
                         <li><i class="fa-solid fa-shield-halved"></i> <a href="#">{t("Segurança")}</a></li>
                         <li><i class="fa-solid fa-circle-question"></i> <a href="#">{t("Ajuda")}</a></li>
-                       <Link to='/profilesecurity'> <li><i class="fa-solid fa-shield-halved"></i> <a href="#">{t("Segurança")}</a></li> </Link>
-                        <li><i class="fa-solid fa-circle-question"></i><a href="#">{t("Ajuda")}</a></li>
-
                         <li><i class="fa-solid fa-right-from-bracket"></i><Link to="/">{t("Sair")}</Link></li>
 
                     </ul>
